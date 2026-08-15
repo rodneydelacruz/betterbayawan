@@ -46,16 +46,16 @@ def extract_lang_dict(content, lang):
 
 PHRASES_FIL = {
     # Complete sentence starters
-    "Better Solano is committed to ensuring digital accessibility for people with disabilities": "Ang Better Solano ay nakatuon sa pagtiyak ng digital na accessibility para sa mga taong may kapansanan",
-    "Better Solano is committed to ensuring that our digital services are accessible to all citizens, regardless of ability": "Ang Better Solano ay nakatuon sa pagtiyak na ang aming mga digital na serbisyo ay naa-access ng lahat ng mamamayan, anuman ang kakayahan",
+    "Better Bayawan City is committed to ensuring digital accessibility for people with disabilities": "Ang Better Bayawan City ay nakatuon sa pagtiyak ng digital na accessibility para sa mga taong may kapansanan",
+    "Better Bayawan City is committed to ensuring that our digital services are accessible to all citizens, regardless of ability": "Ang Better Bayawan City ay nakatuon sa pagtiyak na ang aming mga digital na serbisyo ay naa-access ng lahat ng mamamayan, anuman ang kakayahan",
     "We are continually improving the user experience for everyone and applying the relevant accessibility standards": "Patuloy naming pinapabuti ang karanasan ng gumagamit para sa lahat at inilalapat ang mga kaugnay na pamantayan ng accessibility",
-    "BetterSolano.org is a civic platform dedicated to empowering the people of Solano by providing transparent access to": "Ang BetterSolano.org ay isang civic platform na nakatuon sa pagbibigay-kapangyarihan sa mga tao ng Solano sa pamamagitan ng pagbibigay ng transparent na access sa",
-    "BetterSolano.org is a general audience website providing civic information": "Ang BetterSolano.org ay isang website para sa pangkalahatang madla na nagbibigay ng civic na impormasyon",
-    "BetterSolano.org provides public domain information to support civic engagement, transparency, and informed participation": "Ang BetterSolano.org ay nagbibigay ng impormasyon sa public domain upang suportahan ang civic engagement, transparency, at may kaalamang pakikilahok",
-    "BetterSolano.org values accuracy, public safety, and respect for rights": "Pinahahalagahan ng BetterSolano.org ang katumpakan, kaligtasan ng publiko, at paggalang sa mga karapatan",
+    "betterbayawan.org is a civic platform dedicated to empowering the people of Bayawan City by providing transparent access to": "Ang betterbayawan.org ay isang civic platform na nakatuon sa pagbibigay-kapangyarihan sa mga tao ng Bayawan City sa pamamagitan ng pagbibigay ng transparent na access sa",
+    "betterbayawan.org is a general audience website providing civic information": "Ang betterbayawan.org ay isang website para sa pangkalahatang madla na nagbibigay ng civic na impormasyon",
+    "betterbayawan.org provides public domain information to support civic engagement, transparency, and informed participation": "Ang betterbayawan.org ay nagbibigay ng impormasyon sa public domain upang suportahan ang civic engagement, transparency, at may kaalamang pakikilahok",
+    "betterbayawan.org values accuracy, public safety, and respect for rights": "Pinahahalagahan ng betterbayawan.org ang katumpakan, kaligtasan ng publiko, at paggalang sa mga karapatan",
     "As a volunteer-run initiative, this website does not replace official government channels": "Bilang isang inisyatibang pinapatakbo ng mga boluntaryo, ang website na ito ay hindi pumapalit sa mga opisyal na channel ng pamahalaan",
     "Although volunteers aim to keep the website accessible and functional": "Bagaman naglalayong panatilihing accessible at functional ang website ng mga boluntaryo",
-    "BetterSolano.org cannot guarantee that the website will be": "Hindi magagarantiya ng BetterSolano.org na ang website ay magiging",
+    "betterbayawan.org cannot guarantee that the website will be": "Hindi magagarantiya ng betterbayawan.org na ang website ay magiging",
     "We do not knowingly collect personal information from children": "Hindi namin sinasadyang kinokolekta ang personal na impormasyon mula sa mga bata",
     "Despite good-faith efforts, some content may be": "Sa kabila ng mga pagsisikap na may mabuting layunin, ang ilang nilalaman ay maaaring",
     "Residents and stakeholders are encouraged to verify information through official LGU channels": "Ang mga residente at stakeholder ay hinihikayat na i-verify ang impormasyon sa pamamagitan ng mga opisyal na channel ng LGU",
@@ -90,19 +90,19 @@ PHRASES_FIL = {
     "does not replace": "ay hindi pumapalit sa",
 
     # Government/service phrases
-    "Official LGU Solano Portal": "Opisyal na Portal ng LGU Solano",
-    "Municipal Hall": "Munisipyo",
-    "Municipal Mayor": "Punong Bayan",
-    "Municipal Accounting Office": "Opisina ng Accounting ng Munisipyo",
-    "Municipal Budget Office": "Opisina ng Badyet ng Munisipyo",
-    "Municipal Engineering Office": "Opisina ng Inhinyeriya ng Munisipyo",
-    "Municipal General Services Office": "Opisina ng Pangkalahatang Serbisyo ng Munisipyo",
-    "Municipal Treasurer's Office": "Opisina ng Ingat-Yaman ng Munisipyo",
-    "Municipal Assessor's Office": "Opisina ng Tagapagtasa ng Munisipyo",
-    "Municipal Planning and Development Office": "Opisina ng Pagpaplano at Pagpapaunlad ng Munisipyo",
-    "Municipal Agriculture Office": "Opisina ng Agrikultura ng Munisipyo",
-    "Municipal Health Office": "Opisina ng Kalusugan ng Munisipyo",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Official LGU Bayawan City Portal": "Opisyal na Portal ng LGU Bayawan City",
+    "City Hall": "Munisipyo",
+    "City Mayor": "Punong Bayan",
+    "City Accounting Office": "Opisina ng Accounting ng Munisipyo",
+    "City Budget Office": "Opisina ng Badyet ng Munisipyo",
+    "City Engineering Office": "Opisina ng Inhinyeriya ng Munisipyo",
+    "City General Services Office": "Opisina ng Pangkalahatang Serbisyo ng Munisipyo",
+    "City Treasurer's Office": "Opisina ng Ingat-Yaman ng Munisipyo",
+    "City Assessor's Office": "Opisina ng Tagapagtasa ng Munisipyo",
+    "City Planning and Development Office": "Opisina ng Pagpaplano at Pagpapaunlad ng Munisipyo",
+    "City Agriculture Office": "Opisina ng Agrikultura ng Munisipyo",
+    "City Health Office": "Opisina ng Kalusugan ng Munisipyo",
+    "Sangguniang Panlungsod": "Sangguniang Panlungsod",
     "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Rural Health Units": "Rural Health Units",
     "Barangay Health Stations": "Barangay Health Stations",
@@ -602,9 +602,9 @@ def translate_sentence_fil(en_text):
 
     return result
 
-def build_ilo_from_fil(fil_val):
-    """Convert a Filipino translation to Ilocano using word substitutions."""
-    fil_to_ilo = {
+def build_bis_from_fil(fil_val):
+    """Convert a Filipino translation to Bisaya using word substitutions."""
+    fil_to_bis = {
         'araw': 'aldaw', 'Araw': 'Aldaw',
         'linggo': 'lawas', 'buwan': 'bulan', 'Buwan': 'Bulan',
         'taon': 'tawen', 'Taon': 'Tawen',
@@ -674,7 +674,7 @@ def build_ilo_from_fil(fil_val):
 
     ilo_val = fil_val
     for fil_word in sorted(fil_to_ilo.keys(), key=len, reverse=True):
-        ilo_word = fil_to_ilo[fil_word]
+        ilo_word = fil_to_bis[fil_word]
         ilo_val = re.sub(r'\b' + re.escape(fil_word) + r'\b', ilo_word, ilo_val)
     return ilo_val
 
@@ -704,12 +704,12 @@ def main():
 
     en, en_order = extract_lang_dict(content, 'en')
     fil, fil_order = extract_lang_dict(content, 'fil')
-    ilo, ilo_order = extract_lang_dict(content, 'ilo')
+    ilo, ilo_order = extract_lang_dict(content, 'bis')
 
     # Count bad before
     bad_fil_before = sum(1 for k in en if is_bad_translation(en[k], fil.get(k, '')))
-    bad_ilo_before = sum(1 for k in en if is_bad_translation(en[k], ilo.get(k, '')))
-    print(f"Before: {bad_fil_before} bad FIL, {bad_ilo_before} bad ILO")
+    bad_bis_before = sum(1 for k in en if is_bad_translation(en[k], bis.get(k, '')))
+    print(f"Before: {bad_fil_before} bad FIL, {bad_bis_before} bad ILO")
 
     # Fix bad translations by re-translating from English
     fil_fixed = 0
@@ -728,8 +728,8 @@ def main():
                 new_overlap = len(en_words & new_words) / len(en_words)
                 if new_overlap < 0.55:  # New translation is better
                     fil[key] = new_fil
-                    # Also build Ilocano from the new Filipino
-                    ilo[key] = build_ilo_from_fil(new_fil)
+                    # Also build Bisaya from the new Filipino
+                    bis[key] = build_bis_from_fil(new_fil)
                     fil_fixed += 1
                     ilo_fixed += 1
 
@@ -770,7 +770,7 @@ def main():
 
     print("Rebuilding translations.js...")
     content = replace_lang_block(content, 'fil', fil, fil_order)
-    content = replace_lang_block(content, 'ilo', ilo, ilo_order)
+    content = replace_lang_block(content, 'bis', ilo, ilo_order)
 
     with open(TRANSLATIONS_JS, 'w') as f:
         f.write(content)
@@ -781,23 +781,23 @@ def main():
 
     v_en, _ = extract_lang_dict(verify, 'en')
     v_fil, _ = extract_lang_dict(verify, 'fil')
-    v_ilo, _ = extract_lang_dict(verify, 'ilo')
+    v_bis, _ = extract_lang_dict(verify, 'bis')
 
     bad_fil_after = sum(1 for k in v_en if is_bad_translation(v_en[k], v_fil.get(k, '')))
-    bad_ilo_after = sum(1 for k in v_en if is_bad_translation(v_en[k], v_ilo.get(k, '')))
+    bad_bis_after = sum(1 for k in v_en if is_bad_translation(v_en[k], v_bis.get(k, '')))
     untrans_fil = sum(1 for k in v_en if v_fil.get(k) == v_en[k])
-    untrans_ilo = sum(1 for k in v_en if v_ilo.get(k) == v_en[k])
+    untrans_bis = sum(1 for k in v_en if v_bis.get(k) == v_en[k])
     total = len(v_en)
     trans_fil = total - untrans_fil
-    trans_ilo = total - untrans_ilo
+    trans_bis = total - untrans_ilo
 
     print(f"\n{'='*60}")
     print(f"RESULTS:")
     print(f"  FIL: {trans_fil}/{total} translated ({trans_fil/total*100:.1f}%)")
     print(f"       {untrans_fil} untranslated, {bad_fil_after} bad remaining (was {bad_fil_before})")
-    print(f"  ILO: {trans_ilo}/{total} translated ({trans_ilo/total*100:.1f}%)")
-    print(f"       {untrans_ilo} untranslated, {bad_ilo_after} bad remaining (was {bad_ilo_before})")
-    print(f"  Key parity: en={len(v_en)}, fil={len(v_fil)}, ilo={len(v_ilo)}")
+    print(f"  bis: {trans_ilo}/{total} translated ({trans_ilo/total*100:.1f}%)")
+    print(f"       {untrans_ilo} untranslated, {bad_bis_after} bad remaining (was {bad_bis_before})")
+    print(f"  Key parity: en={len(v_en)}, fil={len(v_fil)}, ilo={len(v_bis)}")
 
     # Show sample of remaining bad
     bad_remaining = []

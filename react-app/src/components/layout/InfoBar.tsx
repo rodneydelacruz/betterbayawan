@@ -68,9 +68,9 @@ export default function InfoBar() {
               <span className="rate-display">{rate}</span>
             </span>
           </div>
-          <div className="info-bar-item info-bar-weather" aria-label="Current weather in Solano">
+          <div className="info-bar-item info-bar-weather" aria-label="Current weather in Bayawan City">
             <i className="bi bi-thermometer-half" aria-hidden="true" />
-            <span className="weather-location">Solano</span>
+            <span className="weather-location">Bayawan City</span>
             <span className="weather-temp">{temp}</span>
           </div>
           <div className="info-bar-item info-bar-datetime" aria-label="Philippine Date and Time">

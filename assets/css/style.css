@@ -1,4 +1,4 @@
-/* Better Solano - Complete Main Stylesheet */
+/* Better Bayawan City - Complete Main Stylesheet */
 :root {
   --color-primary: #0032a0;
   --color-primary-dark: #002170;
@@ -229,7 +229,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 12px 0;
+  padding: 8px 0;
 }
 
 .header-inner {
@@ -243,11 +243,11 @@ p {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  padding: 4px 0;
+  padding: 0;
 }
 
 .logo-img {
-  height: 48px;
+  height: 64px;
   width: auto;
 }
 
@@ -2580,7 +2580,7 @@ h6 {
 }
 
 .cost-badge::before {
-  content: 'Cost to the People of Solano';
+  content: 'Cost to the People of Bayawan City';
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
@@ -6939,7 +6939,7 @@ cklist with Icons - Proper Indentation */
   }
 }
 
-/* Solano Quiz CTA */
+/* ___Bayawan City_QUIZ___ CTA */
 .quiz-cta-section {
   background:
     radial-gradient(circle, rgba(0, 50, 160, 0.1) 1px, transparent 1px),

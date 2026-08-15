@@ -98,8 +98,8 @@
   // Resolve the avatar path relative to where the page lives.
   var AVATAR_SRC =
     window.location.pathname.indexOf('/news') !== -1
-      ? '../assets/images/logo/favicon.svg'
-      : 'assets/images/logo/favicon.svg';
+      ? '../assets/images/logo/better-bayawan-favicon.svg'
+      : 'assets/images/logo/better-bayawan-favicon.svg';
 
   function renderLocalFeed(container, articles, pageUrl) {
     var items = sortByDateDesc(articles).slice(0, MAX_ITEMS);
@@ -129,7 +129,7 @@
           '<img src="' + AVATAR_SRC + '" class="fb-post-avatar" ' +
           'width="36" height="36" alt="" aria-hidden="true" loading="lazy">';
         html += '<div class="fb-post-author-info">';
-        html += '<span class="fb-post-page-name">LGU Solano</span>';
+        html += '<span class="fb-post-page-name">LGU Bayawan City</span>';
         html += '<time class="fb-post-date">' + formatDate(a.date) + '</time>';
         html += '</div>';
         if (a.category) {
@@ -179,7 +179,7 @@
       '&adapt_container_width=true&hide_cover=false&show_facepile=true';
 
     var iframe = document.createElement('iframe');
-    iframe.title = 'Latest posts from the Official LGU Solano Facebook Page';
+    iframe.title = 'Latest posts from the Official LGU Bayawan City Facebook Page';
     iframe.src = src;
     iframe.width = '500';
     iframe.height = '700';

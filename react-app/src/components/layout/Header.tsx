@@ -123,8 +123,8 @@ export default function Header() {
         <div className="logo-container">
           <Link href="/">
             <img
-              src="/assets/images/logo/better-solano-logo.svg"
-              alt="Better Solano Logo"
+              src="/assets/images/logo/better-bayawan-logo.png"
+              alt="Better Bayawan Logo"
               className="logo-img"
             />
           </Link>
@@ -240,11 +240,11 @@ export default function Header() {
             </button>
             <button
               type="button"
-              className={`btn btn-secondary btn-sm lang-btn ${language === 'ilo' ? 'active' : ''}`}
-              onClick={() => setLanguage('ilo')}
-              aria-label="Switch to Ilocano"
+              className={`btn btn-secondary btn-sm lang-btn ${language === 'bis' ? 'active' : ''}`}
+              onClick={() => setLanguage('bis')}
+              aria-label="Switch to Bisaya"
             >
-              ILO
+              BIS
             </button>
           </div>
         </div>

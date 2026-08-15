@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Enterprise-grade i18n upgrade script for BetterSolano.
+Enterprise-grade i18n upgrade script for BetterBayawan.
 Phase 1: Scans all HTML files, adds data-i18n attributes to untranslated elements.
-Phase 2: Generates Filipino (fil) and Ilocano (ilo) translation entries.
+Phase 2: Generates Filipino (fil) and Bisaya (bis) translation entries.
 Phase 3: Updates translations.js with all new keys.
 """
 
@@ -203,19 +203,19 @@ FIL_TRANSLATIONS = {
     "Follow these steps to request your death certificate": "Sundin ang mga hakbang na ito upang humiling ng iyong sertipiko ng kamatayan",
     "Follow these steps to request your marriage certificate": "Sundin ang mga hakbang na ito upang humiling ng iyong sertipiko ng kasal",
     "Visit Civil Registrar": "Pumunta sa Civil Registrar",
-    "Municipal Civil Registrar": "Tagapagrehistro Sibil ng Munisipalidad",
-    "Municipal Treasurer": "Ingat-yaman ng Munisipalidad",
-    "Municipal Mayor": "Punong Bayan",
-    "Municipal Vice Mayor": "Bise Punong Bayan",
-    "Municipal Hall": "Munisipyo",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "City Civil Registrar": "Tagapagrehistro Sibil ng Munisipalidad",
+    "City Treasurer": "Ingat-yaman ng Munisipalidad",
+    "City Mayor": "Punong Bayan",
+    "City Vice Mayor": "Bise Punong Bayan",
+    "City Hall": "Munisipyo",
+    "Sangguniang Panlungsod": "Sangguniang Panlungsod",
 
     # Government page
     "Elected Officials": "Mga Halal na Opisyal",
     "Executive Branch": "Ehekutibong Sangay",
     "Legislative Branch": "Sangay ng Lehislatura",
-    "Municipal Council": "Konseho ng Munisipalidad",
-    "Sangguniang Bayan Members": "Mga Miyembro ng Sangguniang Bayan",
+    "City Council": "Konseho ng Munisipalidad",
+    "Sangguniang Panlungsod Members": "Mga Miyembro ng Sangguniang Panlungsod",
     "Department Heads": "Mga Pinuno ng Departamento",
 
     # Budget/Transparency
@@ -285,7 +285,7 @@ FIL_TRANSLATIONS = {
     "Resources": "Mga Mapagkukunan",
     "Volunteer with us": "Mag-volunteer sa amin",
     "Contribute code with us": "Mag-ambag ng code sa amin",
-    "Solano Quiz": "Solano Quiz",
+    "___Bayawan City_QUIZ___": "___Bayawan City_QUIZ___",
 
     # Common descriptive text
     "Phone": "Telepono",
@@ -325,7 +325,7 @@ FIL_TRANSLATIONS = {
 }
 
 # ============================================================
-# COMPREHENSIVE ILOCANO TRANSLATIONS
+# COMPREHENSIVE Bisaya translations
 # ============================================================
 
 ILO_TRANSLATIONS = {
@@ -413,19 +413,19 @@ ILO_TRANSLATIONS = {
     "Follow these steps to request your death certificate": "Suroten dagitoy nga addang tapno agdawat ti sertipiko ti ipapatay",
     "Follow these steps to request your marriage certificate": "Suroten dagitoy nga addang tapno agdawat ti sertipiko ti kasar",
     "Visit Civil Registrar": "Bisitaen ti Civil Registrar",
-    "Municipal Civil Registrar": "Civil Registrar ti Munisipalidad",
-    "Municipal Treasurer": "Tesorero ti Munisipalidad",
-    "Municipal Mayor": "Mayor ti Munisipalidad",
-    "Municipal Vice Mayor": "Bise Mayor ti Munisipalidad",
-    "Municipal Hall": "Munisipio",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "City Civil Registrar": "Civil Registrar ti Munisipalidad",
+    "City Treasurer": "Tesorero ti Munisipalidad",
+    "City Mayor": "Mayor ti Munisipalidad",
+    "City Vice Mayor": "Bise Mayor ti Munisipalidad",
+    "City Hall": "Munisipio",
+    "Sangguniang Panlungsod": "Sangguniang Panlungsod",
 
     # Government page
     "Elected Officials": "Dagiti Nahalal nga Opisial",
     "Executive Branch": "Ehekutibo a Sanga",
     "Legislative Branch": "Sanga ti Lehislatura",
-    "Municipal Council": "Konseho ti Munisipalidad",
-    "Sangguniang Bayan Members": "Dagiti Kameng ti Sangguniang Bayan",
+    "City Council": "Konseho ti Munisipalidad",
+    "Sangguniang Panlungsod Members": "Dagiti Kameng ti Sangguniang Panlungsod",
     "Department Heads": "Dagiti Pangulo ti Departamento",
 
     # Budget/Transparency
@@ -495,7 +495,7 @@ ILO_TRANSLATIONS = {
     "Resources": "Dagiti Rekurso",
     "Volunteer with us": "Ag-volunteer kadakami",
     "Contribute code with us": "Ag-ambag ti code kadakami",
-    "Solano Quiz": "Solano Quiz",
+    "___Bayawan City_QUIZ___": "___Bayawan City_QUIZ___",
 
     # Common descriptive text
     "Phone": "Telepono",
@@ -589,7 +589,7 @@ def get_existing_translations(translations_js_path):
     with open(translations_js_path, 'r', encoding='utf-8') as f:
         content = f.read()
     result = {}
-    for lang in ['en', 'fil', 'ilo']:
+    for lang in ['en', 'fil', 'bis']:
         pattern = rf'{lang}:\s*\{{(.*?)\n    \}}'
         match = re.search(pattern, content, re.DOTALL)
         if match:
@@ -809,7 +809,7 @@ def _register_key(key, text, existing_keys, new_translations):
     new_translations[key] = {
         'en': clean_text,
         'fil': fil_text,
-        'ilo': ilo_text,
+        'bis': ilo_text,
     }
     return key
 
@@ -822,7 +822,7 @@ def update_translations_js(translations_js_path, new_translations, existing):
         print("  No new translations to add.")
         return
 
-    for lang in ['en', 'fil', 'ilo']:
+    for lang in ['en', 'fil', 'bis']:
         new_entries = []
         for key, trans in sorted(new_translations.items()):
             if key not in existing.get(lang, {}):
@@ -851,7 +851,7 @@ def update_translations_js(translations_js_path, new_translations, existing):
 def main():
     """Main entry point."""
     print("=" * 60)
-    print("BetterSolano i18n Upgrade Script")
+    print("BetterBayawan i18n Upgrade Script")
     print("=" * 60)
 
     # Phase 0: Load existing translations
@@ -885,19 +885,19 @@ def main():
 
     # Phase 3: Summary
     untranslated_fil = sum(1 for k, v in new_translations.items() if v['fil'] == v['en'])
-    untranslated_ilo = sum(1 for k, v in new_translations.items() if v['ilo'] == v['en'])
+    untranslated_bis = sum(1 for k, v in new_translations.items() if v['bis'] == v['en'])
     translated_fil = len(new_translations) - untranslated_fil
-    translated_ilo = len(new_translations) - untranslated_ilo
+    translated_bis = len(new_translations) - untranslated_bis
 
     print(f"\n[Phase 3] Summary")
     print(f"  New i18n attributes: {total_changes}")
     print(f"  New translation keys: {len(new_translations)}")
     print(f"  Filipino translated: {translated_fil}/{len(new_translations)}")
-    print(f"  Ilocano translated: {translated_ilo}/{len(new_translations)}")
+    print(f"  Bisaya translated: {translated_ilo}/{len(new_translations)}")
 
     if untranslated_fil > 0:
         print(f"\n  {untranslated_fil} keys need Filipino translation")
-        print(f"  {untranslated_ilo} keys need Ilocano translation")
+        print(f"  {untranslated_bis} keys need Bisaya translation")
 
     print("\n" + "=" * 60)
     print("Done!")

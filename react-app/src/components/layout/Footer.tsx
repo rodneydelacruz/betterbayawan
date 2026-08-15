@@ -23,14 +23,14 @@ export default function Footer() {
         <div className="footer-main-new">
           <div className="footer-brand">
             <img
-              src="/assets/images/logo/better-solano-logo-white.svg"
-              alt="Better Solano logo"
+              src="/assets/images/logo/better-bayawan-logo-white.svg"
+              alt="Better Bayawan logo"
               className="footer-logo"
             />
             <p className="footer-tagline">{t('footer-tagline')}</p>
             <div className="footer-social-new">
               <a
-                href="https://www.facebook.com/bettersolano.org"
+                href="https://www.facebook.com/betterbayawan.org"
                 className="footer-social-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -39,7 +39,7 @@ export default function Footer() {
                 <i className="bi bi-facebook"></i>
               </a>
               <a
-                href="https://www.linkedin.com/company/bettersolano/"
+                href="https://www.linkedin.com/company/BetterBayawan/"
                 className="footer-social-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -62,8 +62,8 @@ export default function Footer() {
             <h4>{t('footer-quick-links')}</h4>
             <ul className="footer-links-new">
               <li>
-                <a href="https://quiz.bettersolano.org/" target="_blank" rel="noopener noreferrer">
-                  {t('footer-solano-quiz')}
+                <a href="https://quiz.betterbayawan.org/" target="_blank" rel="noopener noreferrer">
+                  {t('footer-Bayawan City-quiz')}
                 </a>
               </li>
               <li>
@@ -71,7 +71,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://solano.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf"
+                  href="https://Bayawan City.gov.ph/wp-content/uploads/2025/10/As-of-October-21-2025-2.pdf"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -106,13 +106,13 @@ export default function Footer() {
                 </a>
               </li>
               <li>
-                <a href="https://solano.gov.ph/" target="_blank" rel="noopener noreferrer">
+                <a href="https://Bayawan City.gov.ph/" target="_blank" rel="noopener noreferrer">
                   {t('footer-lgu-portal')}
                 </a>
               </li>
               <li>
                 <a
-                  href="https://sangguniangbayan.solano.gov.ph/"
+                  href="https://sangguniangbayan.Bayawan City.gov.ph/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -121,7 +121,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/OfficialLguSolanoFanpage/"
+                  href="https://www.facebook.com/OfficialLguBayawan CityFanpage/"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
@@ -144,15 +144,15 @@ export default function Footer() {
             <div
               className="footer-cost"
               role="status"
-              aria-label="Cost to the People of Solano: Zero Pesos"
+              aria-label="Cost to the People of Bayawan City: Zero Pesos"
             >
               {t('footer-cost')} <span className="footer-cost-value">₱0</span>
             </div>
-            <a href="mailto:volunteer@bettersolano.org" className="footer-contribute">
+            <a href="mailto:volunteer@betterbayawan.org" className="footer-contribute">
               <i className="bi bi-envelope-heart"></i> {t('footer-volunteer')}
             </a>
             <a
-              href="https://github.com/BetterSolano/bettersolano"
+              href="https://github.com/BetterBayawan City/betterBayawan City"
               className="footer-contribute"
               target="_blank"
               rel="noopener noreferrer"

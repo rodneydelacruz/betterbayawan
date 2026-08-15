@@ -15,15 +15,15 @@ const translations: Record<string, Record<string, string>> = {
     'nav-contact': 'Contact',
 
     // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of LGU Solano Mayor's Office",
+    'appointment-cta-heading': "Enhancing Appointment Services of LGU Bayawan City Mayor's Office",
     'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
     'appointment-schedule-btn': 'Schedule Appointment',
     'appointment-create-btn': 'Create Account',
 
     // Hero Section
-    'hero-welcome': 'Welcome to BetterSolano.org',
+    'hero-welcome': 'Welcome to BetterBayawan.org',
     'hero-subtitle':
-      'Access government services, information, and resources for the people of Solano, Nueva Vizcaya.',
+      'Access government services, information, and resources for the people of Bayawan City, Negros Oriental.',
     'hero-find-service': 'Find a Service',
 
     // Popular Services
@@ -46,8 +46,8 @@ const translations: Record<string, Record<string, string>> = {
 
     // Municipal Leadership
     'section-leadership': 'Municipal Leadership',
-    'title-mayor': 'Municipal Mayor',
-    'title-vice-mayor': 'Municipal Vice Mayor',
+    'title-mayor': 'City Mayor',
+    'title-vice-mayor': 'City Vice Mayor',
     'btn-view-officials': 'View All Officials',
 
     // Contact Section
@@ -57,11 +57,11 @@ const translations: Record<string, Record<string, string>> = {
     'contact-address': 'Address',
     'contact-hours': 'Mon-Fri: 8:00 AM - 5:00 PM',
     'contact-response': "We'll respond within 24 hours",
-    'contact-municipal-hall': 'Municipal Hall',
+    'contact-municipal-hall': 'City Hall',
 
     // Services Page
     'services-title': 'Municipal Services Directory',
-    'services-subtitle': 'Browse all services offered by the Municipality of Solano',
+    'services-subtitle': 'Browse all services offered by the City of Bayawan',
     'life-events-title': 'Browse by Life Event',
     'life-events-subtitle': "Find services based on what's happening in your life",
     'life-starting-business': 'Starting a Business',
@@ -150,14 +150,14 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-facilities': 'Total Health Facilities',
     'health-stat-hospitals': 'Major Hospitals',
     'health-stat-bhs': 'Barangay Health Stations',
-    'health-stat-mho': 'Municipal Health Office',
-    'health-section-hospitals': 'Hospitals in Solano',
-    'health-section-mho': 'Municipal Health Office',
+    'health-stat-mho': 'City Health Office',
+    'health-section-hospitals': 'Hospitals in Bayawan City',
+    'health-section-mho': 'City Health Office',
     'health-section-bhs': 'Barangay Health Stations',
-    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Solano',
-    'health-mho-title': 'Solano Municipal Health Office',
+    'health-bhs-subtitle': '22 Barangay Health Stations/Centers serving all barangays of Bayawan City',
+    'health-mho-title': 'Bayawan City Health Office',
     'health-mho-desc':
-      'The Municipal Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
+      'The City Health Office provides primary healthcare services including a lying-in facility and laboratory services. It serves as the main public health center for the municipality.',
     'health-service-lying-in': 'Lying-in Facility',
     'health-service-laboratory': 'Laboratory Services',
     'health-service-immunization': 'Immunization',
@@ -167,7 +167,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited private hospital providing comprehensive medical services.',
-    'health-national-highway-solano': 'National Highway, Solano',
+    'health-national-highway-Bayawan City': 'National Highway, Bayawan City',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Services Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
@@ -217,17 +217,17 @@ const translations: Record<string, Record<string, string>> = {
     'agri-equipment-desc': 'Equipment rental and assistance',
     'agri-livelihood': 'Livelihood Programs',
     'agri-livelihood-desc': 'Training and support for farmers',
-    'agri-office-mao': 'Municipal Agriculture Office',
+    'agri-office-mao': 'City Agriculture Office',
     'agri-office-mao-desc':
       'RSBSA registration, certifications, rice/corn programs, livestock, fishery services',
 
     // Ordinance Framework Page
     'ord-page-title': 'Ordinance Framework',
-    'ord-page-desc': 'Municipal ordinances enacted by the Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'City Ordinances enacted by the Sangguniang Panlungsod ng Bayawan',
     'ord-page-badge': 'Legislative',
     'ord-what-is': 'What is an Ordinance?',
     'ord-what-is-p1':
-      'A municipal ordinance is a local law enacted by the Sangguniang Bayan (Municipal Council) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.',
+      'A City Ordinance is a local law enacted by the Sangguniang Panlungsod (City Council) that governs the municipality and its residents. Ordinances have the force and effect of law within the territorial jurisdiction of the municipality.',
     'ord-what-is-p2':
       'Ordinances may cover various subjects including but not limited to: taxation, business regulations, public safety, environmental protection, traffic management, and zoning.',
     'ord-categories-title': 'Ordinance Categories',
@@ -238,7 +238,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-traffic': 'Traffic & Transportation',
     'ord-cat-zoning': 'Zoning & Land Use',
     'ord-2025-title': '2025 Ordinances',
-    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Bayan ng Solano in 2025',
+    'ord-2025-subtitle': 'Official ordinances enacted by the Sangguniang Panlungsod ng Bayawan in 2025',
     'ord-table-number': 'Ordinance No.',
     'ord-table-title': 'Title',
     'ord-table-date': 'Session Date',
@@ -246,13 +246,13 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page
     'reso-page-title': 'Resolution Framework',
-    'reso-page-desc': 'Resolutions passed by the Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Resolutions passed by the Sangguniang Panlungsod ng Bayawan',
     'reso-page-badge': 'Legislative',
     'reso-what-is': 'What is a Resolution?',
     'reso-what-is-p1':
-      'A resolution is a formal expression of the opinion or will of the Sangguniang Bayan. Unlike ordinances, resolutions do not have the force and effect of law but serve as official statements of the legislative body.',
+      'A resolution is a formal expression of the opinion or will of the Sangguniang Panlungsod. Unlike ordinances, resolutions do not have the force and effect of law but serve as official statements of the legislative body.',
     'reso-what-is-p2':
-      'Resolutions are commonly used for: commendations, requests to higher government agencies, expressions of support or opposition, and administrative matters of the Sangguniang Bayan.',
+      'Resolutions are commonly used for: commendations, requests to higher government agencies, expressions of support or opposition, and administrative matters of the Sangguniang Panlungsod.',
     'reso-types-title': 'Types of Resolutions',
     'reso-type-commendation': 'Commendation',
     'reso-type-request': 'Request/Appeal',
@@ -261,9 +261,9 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-authorization': 'Authorization',
     'reso-type-appropriation': 'Appropriation',
     'reso-2026-title': '2026 Resolutions',
-    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Solano in 2026',
+    'reso-2026-subtitle': 'Official resolutions passed by the Sangguniang Panlungsod ng Bayawan in 2026',
     'reso-2025-title': '2025 Resolutions',
-    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Bayan ng Solano in 2025',
+    'reso-2025-subtitle': 'Official resolutions passed by the Sangguniang Panlungsod ng Bayawan in 2025',
     'reso-table-number': 'Resolution No.',
     'reso-table-title': 'Title',
     'reso-table-date': 'Session Date',
@@ -271,7 +271,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page
     'biz-page-title': 'Business Services',
-    'biz-page-desc': 'Permits, licenses, and support for businesses in Solano',
+    'biz-page-desc': 'Permits, licenses, and support for businesses in Bayawan City',
     'biz-page-badge': 'Business',
     'biz-permit-new': 'Business Permit (New)',
     'biz-permit-new-desc': "Apply for a new mayor's permit for your business",
@@ -380,7 +380,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Browse complete directory',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Solano at a Glance',
+    'stats-at-a-glance': 'Bayawan City at a Glance',
     'stats-view-statistics': 'View Statistics',
     'stats-population-label': 'Population',
     'stats-population-source': '2024 Census',
@@ -392,12 +392,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Total Municipal Area',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Weather and Map of Solano',
+    'weather-map-title': 'Weather and Map of Bayawan City',
     'weather-mainly-clear': 'Mainly clear',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Bayawan City, Negros Oriental',
 
     // Homepage - History
-    'history-title': 'Brief History of Solano',
+    'history-title': 'Brief History of Bayawan City',
     'history-1760':
       'The original name of the town was Bintauan, then a Gaddang settlement that is now a barangay of Villaverde.',
     'history-1767':
@@ -407,14 +407,14 @@ const translations: Record<string, Record<string, string>> = {
     'history-1851':
       'Governor General Antonio Urbiztondo declared Lumabang a barrio of Bayombong for insufficient inhabitants and revenue.',
     'history-1853':
-      'The first Ilocanos arrived, brought by Don Diego Lumicao, a former gobernadorcillo.',
+      'The first Bisayas arrived, brought by Don Diego Lumicao, a former gobernadorcillo.',
     'history-1889':
-      'Renamed Solano in honor of Governor General Ramon Solano y Llanderal. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
+      'Renamed Bayawan City in honor of Governor General ___HISTORICAL_RAMON_Bayawan City_Y_LLANDERAL___. The town was redeveloped by Father Juan Villaverde with 14 parallel wide streets, each 20 meters wide, forming 100 square blocks.',
     'history-1957':
-      "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Solano's land area was reduced to 13,980 hectares.",
+      "The barrios of Ibung and Bintawan were separated to form the town of Ibung, later renamed as Villaverde. Bayawan City's land area was reduced to 13,980 hectares.",
     'history-once-largest-title': 'Once the Largest',
     'history-once-largest-desc':
-      'Solano was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
+      'Bayawan City was the largest municipality in the province until Caliat and Bintawan were separated to become Quezon and Villaverde respectively.',
     'history-urban-planning-title': 'Urban Planning',
     'history-urban-planning-desc':
       'The 1889 redevelopment created a grid of 100 square blocks, each with an aggregate area of one hectare, with streets running north-south and east-west.',
@@ -428,23 +428,23 @@ const translations: Record<string, Record<string, string>> = {
       'Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged.',
     'news-market-title': 'New Public Market Wing Opens',
     'news-market-desc':
-      'The renovated wing of the Solano Public Market is now open to vendors and the public.',
+      'The renovated wing of the Bayawan City Public Market is now open to vendors and the public.',
     'news-power-title': 'Scheduled Power Interruption',
     'news-power-desc': 'Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'How well do you know Solano, Nueva Vizcaya?',
+    'quiz-title': '___Bayawan City_QUIZ___',
+    'quiz-subtitle': 'How well do you know Bayawan City, Negros Oriental?',
     'quiz-description':
-      "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Nueva Vizcaya's most prominent localities.",
+      "Evaluate your familiarity with the municipality's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Negros Oriental's most prominent localities.",
     'quiz-take': 'Take the Quiz',
 
     // Footer
     'footer-tagline':
-      'Empowering the people of Solano with transparent access to the services, programs, and public funds of LGU Solano.',
+      'Empowering the people of Bayawan City with transparent access to the services, programs, and public funds of LGU Bayawan City.',
     'footer-quick-links': 'Quick Links',
     'footer-resources': 'Resources',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-Bayawan City-quiz': '___Bayawan City_QUIZ___',
     'footer-sitemap': 'Sitemap',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Terms of Use',
@@ -453,15 +453,15 @@ const translations: Record<string, Record<string, string>> = {
     'footer-faq': 'FAQ',
     'footer-open-data': 'Open Data Philippines',
     'footer-foi': 'Freedom of Information',
-    'footer-lgu-portal': 'Official LGU Solano Portal',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-portal': 'Official LGU Bayawan City Portal',
+    'footer-sb': 'Sangguniang Panlungsod',
+    'footer-lgu-facebook': 'LGU Bayawan City Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Cost to the People of Solano =',
+    'footer-cost': 'Cost to the People of Bayawan City =',
     'footer-volunteer': 'Volunteer with us',
     'footer-contribute': 'Contribute code with us',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'betterbayawan.org',
     'footer-copyright-disclaimer':
       'All public information sourced from official government portals.',
     'footer-skip-to-main': 'Skip to main content',
@@ -478,15 +478,15 @@ const translations: Record<string, Record<string, string>> = {
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Solano',
+      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Bayawan City',
     'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
     'appointment-schedule-btn': 'Mag-iskedyul ng Appointment',
     'appointment-create-btn': 'Gumawa ng Account',
 
     // Hero Section
-    'hero-welcome': 'Maligayang Pagdating sa BetterSolano.org',
+    'hero-welcome': 'Maligayang Pagdating sa betterbayawan.org',
     'hero-subtitle':
-      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Solano, Nueva Vizcaya.',
+      'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Bayawan City, Negros Oriental.',
     'hero-find-service': 'Maghanap ng Serbisyo',
 
     // Popular Services
@@ -524,7 +524,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Services Page
     'services-title': 'Direktoryo ng Serbisyong Munisipal',
-    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Solano',
+    'services-subtitle': 'Tingnan ang lahat ng serbisyong inaalok ng Munisipalidad ng Bayawan City',
     'life-events-title': 'Maghanap Ayon sa Pangyayari sa Buhay',
     'life-events-subtitle': 'Hanapin ang mga serbisyo batay sa nangyayari sa iyong buhay',
     'life-starting-business': 'Magsimula ng Negosyo',
@@ -620,14 +620,14 @@ const translations: Record<string, Record<string, string>> = {
     'health-stat-hospitals': 'Mga Pangunahing Ospital',
     'health-stat-bhs': 'Mga Barangay Health Station',
     'health-stat-mho': 'Opisina ng Kalusugan ng Munisipalidad',
-    'health-section-hospitals': 'Mga Ospital sa Solano',
+    'health-section-hospitals': 'Mga Ospital sa Bayawan City',
     'health-section-mho': 'Opisina ng Kalusugan ng Munisipalidad',
     'health-section-bhs': 'Mga Barangay Health Station',
     'health-bhs-subtitle':
-      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Solano',
-    'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Solano',
+      '22 Barangay Health Stations/Centers na naglilingkod sa lahat ng barangay ng Bayawan City',
+    'health-mho-title': 'Opisina ng Kalusugan ng Munisipalidad ng Bayawan City',
     'health-mho-desc':
-      'Ang Municipal Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
+      'Ang City Health Office ay nagbibigay ng pangunahing serbisyo sa kalusugan kabilang ang lying-in facility at laboratory services. Ito ang pangunahing public health center ng munisipalidad.',
     'health-service-lying-in': 'Lying-in Facility',
     'health-service-laboratory': 'Serbisyo sa Laboratoryo',
     'health-service-immunization': 'Immunisasyon',
@@ -637,7 +637,7 @@ const translations: Record<string, Record<string, string>> = {
     'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
     'health-a-tertiary-level-philhealthaccredited-private':
       'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ng komprehensibong mga serbisyong medikal.',
-    'health-national-highway-solano': 'Pambansa Highway, Solano',
+    'health-national-highway-Bayawan City': 'Pambansa Highway, Bayawan City',
     'health-medical-mission-group-hospital-health-services':
       'Medical Mission Group Hospital & Health Mga serbisyo Cooperative',
     'health-also-known-as-new-mmg-hospital-providing-quality':
@@ -693,11 +693,11 @@ const translations: Record<string, Record<string, string>> = {
 
     // Ordinance Framework Page - Filipino
     'ord-page-title': 'Balangkas ng Ordinansa',
-    'ord-page-desc': 'Mga ordinansang ipinasa ng Sangguniang Bayan ng Solano',
+    'ord-page-desc': 'Mga ordinansang ipinasa ng Sangguniang Panlungsod ng Bayawan',
     'ord-page-badge': 'Lehislatura',
     'ord-what-is': 'Ano ang Ordinansa?',
     'ord-what-is-p1':
-      'Ang munisipal na ordinansa ay lokal na batas na ipinasa ng Sangguniang Bayan (Konseho ng Munisipalidad) na namamahala sa munisipalidad at mga residente nito. Ang mga ordinansa ay may bisa at epekto ng batas sa saklaw ng munisipalidad.',
+      'Ang munisipal na ordinansa ay lokal na batas na ipinasa ng Sangguniang Panlungsod (Konseho ng Munisipalidad) na namamahala sa munisipalidad at mga residente nito. Ang mga ordinansa ay may bisa at epekto ng batas sa saklaw ng munisipalidad.',
     'ord-what-is-p2':
       "Ang mga ordinansa ay maaaring sumasaklaw sa iba't ibang paksa kabilang ngunit hindi limitado sa: pagbubuwis, regulasyon sa negosyo, kaligtasang pampubliko, proteksyon sa kapaligiran, pamamahala ng trapiko, at zoning.",
     'ord-categories-title': 'Mga Kategorya ng Ordinansa',
@@ -709,7 +709,7 @@ const translations: Record<string, Record<string, string>> = {
     'ord-cat-zoning': 'Zoning at Paggamit ng Lupa',
     'ord-2025-title': 'Mga Ordinansa ng 2025',
     'ord-2025-subtitle':
-      'Mga opisyal na ordinansang ipinasa ng Sangguniang Bayan ng Solano sa 2025',
+      'Mga opisyal na ordinansang ipinasa ng Sangguniang Panlungsod ng Bayawan sa 2025',
     'ord-table-number': 'Numero ng Ordinansa',
     'ord-table-title': 'Pamagat',
     'ord-table-date': 'Petsa ng Sesyon',
@@ -717,13 +717,13 @@ const translations: Record<string, Record<string, string>> = {
 
     // Resolution Framework Page - Filipino
     'reso-page-title': 'Balangkas ng Resolusyon',
-    'reso-page-desc': 'Mga resolusyong ipinasa ng Sangguniang Bayan ng Solano',
+    'reso-page-desc': 'Mga resolusyong ipinasa ng Sangguniang Panlungsod ng Bayawan',
     'reso-page-badge': 'Lehislatura',
     'reso-what-is': 'Ano ang Resolusyon?',
     'reso-what-is-p1':
-      'Ang resolusyon ay pormal na pagpapahayag ng opinyon o kalooban ng Sangguniang Bayan. Hindi tulad ng mga ordinansa, ang mga resolusyon ay walang bisa at epekto ng batas ngunit nagsisilbing opisyal na pahayag ng lehislatura.',
+      'Ang resolusyon ay pormal na pagpapahayag ng opinyon o kalooban ng Sangguniang Panlungsod. Hindi tulad ng mga ordinansa, ang mga resolusyon ay walang bisa at epekto ng batas ngunit nagsisilbing opisyal na pahayag ng lehislatura.',
     'reso-what-is-p2':
-      'Ang mga resolusyon ay karaniwang ginagamit para sa: mga pagpupugay, mga kahilingan sa mas mataas na ahensya ng pamahalaan, mga pagpapahayag ng suporta o pagtutol, at mga administratibong bagay ng Sangguniang Bayan.',
+      'Ang mga resolusyon ay karaniwang ginagamit para sa: mga pagpupugay, mga kahilingan sa mas mataas na ahensya ng pamahalaan, mga pagpapahayag ng suporta o pagtutol, at mga administratibong bagay ng Sangguniang Panlungsod.',
     'reso-types-title': 'Mga Uri ng Resolusyon',
     'reso-type-commendation': 'Pagpupugay',
     'reso-type-request': 'Kahilingan/Apela',
@@ -733,10 +733,10 @@ const translations: Record<string, Record<string, string>> = {
     'reso-type-appropriation': 'Apropriyasyon',
     'reso-2026-title': 'Mga Resolusyon ng 2026',
     'reso-2026-subtitle':
-      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Solano sa 2026',
+      'Mga opisyal na resolusyong ipinasa ng Sangguniang Panlungsod ng Bayawan sa 2026',
     'reso-2025-title': 'Mga Resolusyon ng 2025',
     'reso-2025-subtitle':
-      'Mga opisyal na resolusyong ipinasa ng Sangguniang Bayan ng Solano sa 2025',
+      'Mga opisyal na resolusyong ipinasa ng Sangguniang Panlungsod ng Bayawan sa 2025',
     'reso-table-number': 'Numero ng Resolusyon',
     'reso-table-title': 'Pamagat',
     'reso-table-date': 'Petsa ng Sesyon',
@@ -744,7 +744,7 @@ const translations: Record<string, Record<string, string>> = {
 
     // Business Services Page - Filipino
     'biz-page-title': 'Serbisyo sa Negosyo',
-    'biz-page-desc': 'Mga permit, lisensya, at suporta para sa mga negosyo sa Solano',
+    'biz-page-desc': 'Mga permit, lisensya, at suporta para sa mga negosyo sa Bayawan City',
     'biz-page-badge': 'Negosyo',
     'biz-permit-new': 'Permit ng Negosyo (Bago)',
     'biz-permit-new-desc': "Mag-apply ng bagong mayor's permit para sa iyong negosyo",
@@ -854,7 +854,7 @@ const translations: Record<string, Record<string, string>> = {
     'popular-browse-directory': 'Tingnan ang kumpletong direktoryo',
 
     // Homepage - Stats
-    'stats-at-a-glance': 'Isang Tingin sa Solano',
+    'stats-at-a-glance': 'Isang Tingin sa Bayawan City',
     'stats-view-statistics': 'Tingnan ang Estadistika',
     'stats-population-label': 'Populasyon',
     'stats-population-source': '2024 Senso',
@@ -866,12 +866,12 @@ const translations: Record<string, Record<string, string>> = {
     'stats-land-area-source': 'Kabuuang Lawak ng Munisipalidad',
 
     // Homepage - Weather & Map
-    'weather-map-title': 'Panahon at Mapa ng Solano',
+    'weather-map-title': 'Panahon at Mapa ng Bayawan City',
     'weather-mainly-clear': 'Halos maaliwalas',
-    'weather-location': 'Solano, Nueva Vizcaya',
+    'weather-location': 'Bayawan City, Negros Oriental',
 
     // Homepage - History
-    'history-title': 'Maikling Kasaysayan ng Solano',
+    'history-title': 'Maikling Kasaysayan ng Bayawan City',
     'history-1760':
       'Ang orihinal na pangalan ng bayan ay Bintauan, isang pamayanan ng Gaddang na ngayon ay barangay ng Villaverde.',
     'history-1767':
@@ -881,14 +881,14 @@ const translations: Record<string, Record<string, string>> = {
     'history-1851':
       'Idineklara ni Gobernador Heneral Antonio Urbiztondo ang Lumabang bilang baryo ng Bayombong dahil sa kakulangan ng mga naninirahan at kita.',
     'history-1853':
-      'Dumating ang mga unang Ilocano, dinala ni Don Diego Lumicao, isang dating gobernadorcillo.',
+      'Dumating ang mga unang Bisaya, dinala ni Don Diego Lumicao, isang dating gobernadorcillo.',
     'history-1889':
-      'Pinalitan ang pangalan ng Solano bilang parangal kay Gobernador Heneral Ramon Solano y Llanderal. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
+      'Pinalitan ang pangalan ng Bayawan City bilang parangal kay Gobernador Heneral ___HISTORICAL_RAMON_Bayawan City_Y_LLANDERAL___. Ang bayan ay muling binuo ni Padre Juan Villaverde na may 14 na magkakahanay na malapad na kalye, bawat isa ay 20 metro ang lapad, na bumubuo ng 100 parisukat na bloke.',
     'history-1957':
-      'Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Solano ay nabawasan sa 13,980 ektarya.',
+      'Ang mga baryo ng Ibung at Bintawan ay pinaghiwalay upang bumuo ng bayan ng Ibung, na kalaunan ay pinalitan ng pangalang Villaverde. Ang lawak ng lupa ng Bayawan City ay nabawasan sa 13,980 ektarya.',
     'history-once-largest-title': 'Dating Pinakamalaki',
     'history-once-largest-desc':
-      'Ang Solano ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.',
+      'Ang Bayawan City ang pinakamalaking munisipalidad sa probinsya hanggang sa pinaghiwalay ang Caliat at Bintawan upang maging Quezon at Villaverde.',
     'history-urban-planning-title': 'Pagpaplano ng Lungsod',
     'history-urban-planning-desc':
       'Ang muling pagbuo noong 1889 ay lumikha ng grid na may 100 parisukat na bloke, bawat isa ay may kabuuang lawak na isang ektarya, na may mga kalye na patungo sa hilaga-timog at silangan-kanluran.',
@@ -902,24 +902,24 @@ const translations: Record<string, Record<string, string>> = {
       'Ang deadline para sa pag-renew ng permit sa negosyo ay Enero 20, 2025. Hinihikayat ang maagang pag-renew.',
     'news-market-title': 'Bagong Wing ng Pampublikong Palengke Bukas Na',
     'news-market-desc':
-      'Ang na-renovate na wing ng Pampublikong Palengke ng Solano ay bukas na sa mga nagtitinda at publiko.',
+      'Ang na-renovate na wing ng Pampublikong Palengke ng Bayawan City ay bukas na sa mga nagtitinda at publiko.',
     'news-power-title': 'Nakaiskedyul na Pagkaputol ng Kuryente',
     'news-power-desc':
       'Maintenance na nakaiskedyul para sa Barangay Osmeña sa Dis 1, 8:00 AM - 5:00 PM.',
 
     // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'Gaano mo kakilala ang Solano, Nueva Vizcaya?',
+    'quiz-title': '___Bayawan City_QUIZ___',
+    'quiz-subtitle': 'Gaano mo kakilala ang Bayawan City, Negros Oriental?',
     'quiz-description':
-      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Nueva Vizcaya.',
+      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng munisipalidad sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokalidad ng Negros Oriental.',
     'quiz-take': 'Subukin ang Quiz',
 
     // Footer
     'footer-tagline':
-      'Pagbibigay-kapangyarihan sa mga tao ng Solano na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Solano.',
+      'Pagbibigay-kapangyarihan sa mga tao ng Bayawan City na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Bayawan City.',
     'footer-quick-links': 'Mga Mabilisang Link',
     'footer-resources': 'Mga Mapagkukunan',
-    'footer-solano-quiz': 'Solano Quiz',
+    'footer-Bayawan City-quiz': '___Bayawan City_QUIZ___',
     'footer-sitemap': 'Mapa ng Site',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Mga Tuntunin ng Paggamit',
@@ -928,501 +928,360 @@ const translations: Record<string, Record<string, string>> = {
     'footer-faq': 'FAQ',
     'footer-open-data': 'Open Data Philippines',
     'footer-foi': 'Kalayaan sa Impormasyon',
-    'footer-lgu-portal': 'Opisyal na Portal ng LGU Solano',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
+    'footer-lgu-portal': 'Opisyal na Portal ng LGU Bayawan City',
+    'footer-sb': 'Sangguniang Panlungsod',
+    'footer-lgu-facebook': 'LGU Bayawan City Facebook',
     'footer-blgf': 'BLGF Portal',
     'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos sa mga Tao ng Solano =',
+    'footer-cost': 'Gastos sa mga Tao ng Bayawan City =',
     'footer-volunteer': 'Mag-volunteer sa amin',
     'footer-contribute': 'Mag-ambag ng code sa amin',
-    'footer-copyright-text': 'BetterSolano.org',
+    'footer-copyright-text': 'betterbayawan.org',
     'footer-copyright-disclaimer':
       'Lahat ng pampublikong impormasyon ay mula sa mga opisyal na portal ng pamahalaan.',
     'footer-skip-to-main': 'Lumaktaw sa pangunahing nilalaman',
   },
-  ilo: {
-    // Navigation - Ilocano
-    'nav-home': 'Pagtaengan',
-    'nav-services': 'Dagiti Serbisyo',
-    'nav-government': 'Gobierno',
+  bis: {
+    // Navigation - Bisaya
+    'nav-home': 'Home',
+    'nav-services': 'Mga Serbisyo',
+    'nav-government': 'Gobyerno',
     'nav-statistics': 'Estadistika',
     'nav-legislative': 'Lehislatura',
-    'nav-transparency': 'Transparensiya',
-    'nav-contact': 'Kontaken',
+    'nav-transparency': 'Transparency',
+    'nav-contact': 'Contact',
+    'nav-budget': 'Budget',
+    'nav-news': 'Balita',
+    'nav-faq': 'FAQ',
+    'nav-sitemap': 'Sitemap',
+    'nav-privacy': 'Privacy',
+    'nav-terms': 'Terms',
+    'nav-accessibility': 'Accessibility',
 
     // Appointment CTA
     'appointment-cta-heading':
-      'Panagpasayaat ti Serbisio ti Appointment ti Opisina ti Alkalde ti LGU Solano',
-    'appointment-cta-subtitle': 'Awan pila. Awan agpapasubli. Nasayaat nga appointment laeng.',
-    'appointment-schedule-btn': 'Ag-iskedyul ti Appointment',
-    'appointment-create-btn': 'Agaramid ti Account',
+      "Enhancing Appointment Services sa LGU Bayawan City Mayor's Office",
+    'appointment-cta-subtitle': 'Schedule imong appointment online',
+    'appointment-schedule-btn': 'Book Appointment',
+    'appointment-create-btn': 'Create Account',
 
     // Hero Section
-    'hero-welcome': 'Naragsak nga Isasangbay iti BetterSolano.org',
+    'hero-welcome': 'Welcome sa BetterBayawan.org',
     'hero-subtitle':
-      'Aksesen dagiti serbisyo ti gobierno, impormasyon, ken dagiti resources para kadagiti umili ti Solano, Nueva Vizcaya.',
-    'hero-find-service': 'Agsapul ti Serbisyo',
+      'Access government services, information, ug resources para sa mga tawo sa Bayawan City, Negros Oriental.',
+    'hero-find-service': 'Pangita ug Serbisyo',
 
     // Popular Services
-    'section-popular': 'Dagiti Popular a Serbisyo',
-    'service-certificates': 'Dagiti Sertipiko',
-    'service-certificates-desc': 'Sertipiko ti pannakayanak, kasar, ken patay',
-    'service-business': 'Permit ti Negosyo',
-    'service-business-desc': 'Baro a permit ken panagrenew',
-    'service-tax': 'Panagbayad ti Buwis',
-    'service-tax-desc': 'Buwis ti sanikua ken negosyo',
-    'service-social': 'Serbisyo Sosyal',
-    'service-social-desc': 'Serbisyo para kadagiti senior citizen ken PWD',
-    'service-health': 'Serbisyo ti Salun-at',
-    'service-health-desc': 'Tulong medikal ken dagiti programa',
-    'btn-view-all-services': 'Kitaen Amin a Serbisyo',
+    'section-popular': 'Popular nga Serbisyo',
+    'service-certificates': 'Mga Sertipiko',
+    'service-certificates-desc': 'Birth, marriage, ug death certificates',
+    'service-business': 'Business Permit',
+    'service-business-desc': 'Bag-o ug renewal sa permit',
+    'service-tax': 'Tax Payment',
+    'service-tax-desc': 'Real property ug business tax',
+    'service-social': 'Social Services',
+    'service-social-desc': 'Services para sa senior citizens ug PWD',
+    'service-health': 'Health Services',
+    'service-health-desc': 'Medical assistance ug programs',
+    'btn-view-all-services': 'View All Services',
 
     // Latest Updates
-    'section-updates': 'Kabarbaro nga Update',
-    'btn-view-all': 'Kitaen Amin',
+    'section-updates': 'Labing Bag-ong Updates',
+    'btn-view-all': 'View All',
 
     // Municipal Leadership
-    'section-leadership': 'Panguluan ti Munisipalidad',
-    'title-mayor': 'Mayor ti Munisipalidad',
-    'title-vice-mayor': 'Bise Mayor ti Munisipalidad',
-    'btn-view-officials': 'Kitaen Amin nga Opisyal',
+    'section-leadership': 'City Leadership',
+    'title-mayor': 'City Mayor',
+    'title-vice-mayor': 'City Vice Mayor',
+    'btn-view-officials': 'View All Officials',
 
-    // Contact Section
-    'section-contact': 'Impormasyon ti Panagkontak',
-    'contact-phone': 'Telepono',
-    'contact-email': 'Email',
-    'contact-address': 'Adres',
-    'contact-hours': 'Lunes-Biernes: 8:00 AM - 5:00 PM',
-    'contact-response': 'Sumungbat kami iti uneg ti 24 nga oras',
-    'contact-municipal-hall': 'Munisipio',
+    // Stats Section
+    'stats-title': 'City Statistics',
+    'stats-subtitle': 'Demographics ug economic data para sa Bayawan City',
+    'stats-population': 'Population',
+    'stats-land-area': 'Land Area',
+    'stats-density': 'Population Density',
+    'stats-households': 'Households',
+    'stats-growth-rate': 'Growth Rate',
+    'stats-barangays': 'Barangays',
+    'stats-barangay-population': 'Population by Barangay',
+    'stats-barangay-population-desc': 'Interactive chart sa population distribution',
 
-    // Services Page
-    'services-title': 'Direktorio ti Serbisyo ti Munisipalidad',
-    'services-subtitle': 'Kitaen amin a serbisyo nga idatag ti Munisipalidad ti Solano',
-    'life-events-title': 'Agsapul Segun iti Pasamak iti Biag',
-    'life-events-subtitle': 'Biroken dagiti serbisyo segun iti mapasamak iti biagmo',
-    'life-starting-business': 'Mangrugi ti Negosyo',
-    'life-getting-married': 'Agkasar',
-    'life-having-baby': 'Addaan ti Ubing',
-    'life-financial-help': 'Kasapulan ti Tulong Pinansyal',
-    'life-senior': 'Serbisyo para kadagiti Senior Citizen',
-    'life-pwd': 'Tao nga Addaan Kapansanan',
-    'life-building': 'Panagbangon/Panagpasayaat ti Balay',
-    'life-trouble': 'Nairaman iti Problema',
+    // Weather & Map
+    'weather-map-title': 'Weather ug Map sa Bayawan City',
+    'weather-location': 'Bayawan City, Negros Oriental',
+    'weather-humidity': 'Humidity',
+    'weather-wind': 'Wind',
+    'weather-sunrise': 'Sunrise',
+    'weather-sunset': 'Sunset',
+    'map-attribution': 'Bayawan City Hall, Negros Oriental 6221',
+    'map-interactive-desc': 'Interactive map nagpakita sa location sa Bayawan City Hall',
 
-    // Service Categories
-    'cat-certificates': 'Dagiti Sertipiko ken Vital Records',
-    'cat-certificates-desc':
-      'Sertipiko ti pannakayanak, patay, kasar, ken dadduma pay a vital records.',
-    'cat-business': 'Negosyo ken Kalakalan',
-    'cat-business-desc':
-      'Dagiti permit ti negosyo, lisensya, ken serbisyo ti panagparehistro ti kalakalan.',
-    'cat-social': 'Serbisyo Sosyal',
-    'cat-social-desc':
-      'Dagiti programa ti welfare, serbisyo para kadagiti senior citizen, benepisyo ti PWD, ken tulong pinansyal.',
-    'cat-health': 'Salun-at ken Wellness',
-    'cat-health-desc': 'Dagiti programa ti bakuna, health certificates, ken tulong medikal.',
-    'cat-tax': 'Panagbuwis ken Panagbayad',
-    'cat-tax-desc': 'Buwis ti sanikua, buwis ti negosyo, panagbayad, ken tax clearance.',
-    'cat-agriculture': 'Agrikultura',
-    'cat-agriculture-desc':
-      'Dagiti pautang ti agrikultura, insurance ti mula, tulong ti abono, ken panagsanay.',
-    'cat-infrastructure': 'Imprastraktura',
-    'cat-infrastructure-desc':
-      'Dagiti permit ti konstruksyon, dawat ti panagmantener ti kalsada, ken pampubliko a pasilidad.',
-    'cat-education': 'Edukasyon ken Iskolarship',
-    'cat-education-desc':
-      'Dagiti programa ti iskolarship, tulong ti estudiante, ken dagiti grant ti edukasyon.',
-    'cat-safety': 'Kinatalged ti Publiko',
-    'cat-safety-desc':
-      'Dagiti serbisyo ti emergency, panagisagana ti kalamidad, ken dagiti programa ti kinatalged ti komunidad.',
-    'cat-environment': 'Aglawlaw',
-    'cat-environment-desc':
-      'Dagiti permit ti aglawlaw, panagtaripato ti basura, ken dagiti programa ti konserbasyon.',
+    // History Section
+    'history-title': 'Brief History sa Bayawan City',
+    'history-1760': '1760 — Foundation',
+    'history-1760-desc':
+      'Bayawan City gihimo nga parish nga gipangalan sa Santo Niño.',
+    'history-1872': '1872 — Establishment',
+    'history-1872-desc':
+      'Gihimong municipality ang Bayawan sa ilalum sa Spanish colonial government.',
+    'history-1901': '1901 — American Period',
+    'history-1901-desc':
+      'Gihimong municipality sa ilalum sa American administration.',
+    'history-1947': '1947 — Post-War',
+    'history-1947-desc':
+      'Re-established nga municipality pagkatapos sa WWII.',
+    'history-2000': '2000 — Cityhood',
+    'history-2000-desc':
+      'Naging component city sa Negros Oriental pinaagi sa RA 8983.',
 
-    // FAQ Page
-    'faq-title': 'Masansan a Maisaludsod',
-    'faq-subtitle':
-      'Biruken dagiti sungbat kadagiti gagangay a saludsod maipapan kadagiti serbisyo ti munisipalidad',
-    'faq-general': 'Dagiti Gagangay a Saludsod',
-    'faq-certificates': 'Dagiti Sertipiko ken Dokumento',
-    'faq-business': 'Negosyo ken Permit',
-    'faq-payments': 'Panagbayad ken Bayadan',
-    'faq-social': 'Serbisyo Sosyal',
-    'faq-technical': 'Dagiti Teknikal a Saludsod',
-    'faq-still-questions': 'Adda pay saludsodyo?',
-    'faq-contact-help':
-      'No saandayo a nasarakan ti sungbat a sapulenyo, dikay agmuna nga agkontak kadakami.',
-
-    // Common Labels - Ilocano
-    'label-fee': 'Bayad:',
-    'label-time': 'Tiempo:',
-    'label-free': 'Libre',
-    'label-varies': 'Agdumaduma',
-    'label-walk-in': 'Walk-in',
-    'label-seasonal': 'Panawen',
-    'label-1-day': '1 aldaw',
-    'label-1-2-days': '1-2 aldaw',
-    'label-3-5-days': '3-5 aldaw',
-    'section-responsible-offices': 'Dagiti Responsable nga Opisina',
-
-    // Health Page - Ilocano
-    'health-page-title': 'Serbisio ti Salun-at',
-    'health-page-desc': 'Dagiti konsulta medikal, bakuna, ken programa ti salun-at',
-    'health-page-badge': 'Salun-at',
-    'health-consultation': 'Konsulta Medikal',
-    'health-consultation-desc': 'Libre a konsulta kadagiti Rural Health Units',
-    'health-vaccination': 'Dagiti Programa ti Bakuna',
-    'health-vaccination-desc': 'Libre nga immunization para kadagiti ubbing ken nataengan',
-    'health-prenatal': 'Prenatal Care',
-    'health-prenatal-desc': 'Libre a prenatal checkups ken serbisio',
-    'health-dental': 'Serbisio Dental',
-    'health-dental-desc': 'Basiko a dental care ken panagbunot',
-    'health-stats-title': 'Estadistika ti Salun-at',
-    'health-rhu': 'Rural Health Units',
-    'health-bhw': 'Barangay Health Workers',
-    'health-hospitals-title': 'Dagiti Ospital iti Lugar',
-    'label-schedule-varies': 'Agduduma ti iskedyul',
-    'label-by-appointment': 'Babaen ti appointment',
-    'label-free-subsidy': 'Libre (subsidiya)',
-    'label-1-3-days': '1-3 nga aldaw',
-    'health-maternal': 'Panangaywan iti Ina',
-    'health-maternal-desc': 'Serbisio ti salun-at sakbay ken kalpasan ti panaganak',
-    'health-medicine': 'Tulong iti Agas',
-    'health-medicine-desc': 'Tulong pinansyal para iti agas babaen ti MSWDO',
-    'health-stat-facilities': 'Dagup a Pasilidad ti Salun-at',
-    'health-stat-hospitals': 'Dagiti Kangrunaan nga Ospital',
-    'health-stat-bhs': 'Dagiti Barangay Health Station',
-    'health-stat-mho': 'Opisina ti Salun-at ti Munisipalidad',
-    'health-section-hospitals': 'Dagiti Ospital idiay Solano',
-    'health-section-mho': 'Opisina ti Salun-at ti Munisipalidad',
-    'health-section-bhs': 'Dagiti Barangay Health Station',
-    'health-bhs-subtitle':
-      '22 a Barangay Health Stations/Centers a mangserserbisio iti amin a barangay ti Solano',
-    'health-mho-title': 'Opisina ti Salun-at ti Munisipalidad ti Solano',
-    'health-mho-desc':
-      'Ti Municipal Health Office ket mangted ti kangrunaan a serbisio ti salun-at a mairaman ti lying-in facility ken serbisio ti laboratorio. Daytoy ti kangrunaan a public health center ti munisipalidad.',
-    'health-service-lying-in': 'Lying-in Facility',
-    'health-service-laboratory': 'Serbisio ti Laboratorio',
-    'health-service-immunization': 'Immunisasion',
-    'health-service-prenatal': 'Panangyawan Sakbay Panaganak',
-    'health-service-family-planning': 'Panagplano ti Pamilya',
-    'health-service-tb-dots': 'TB-DOTS',
-    'health-pltciluis-a-tiam-medical-center': 'PLTCI-Luis A. Tiam Medical Center',
-    'health-a-tertiary-level-philhealthaccredited-private':
-      'A tertiary level, PhilHealth-accredited pribadong hospital nagbibigay ti komprehensibong dagiti serbisyong medikal.',
-    'health-national-highway-solano': 'Nailian Highway, Solano',
-    'health-medical-mission-group-hospital-health-services':
-      'Medical Mission Group Hospital & Health Dagiti serbisio Cooperative',
-    'health-also-known-as-new-mmg-hospital-providing-quality':
-      'Also known as Baro a MMG Hospital, nagbibigay ti quality dagiti serbisio iti kalusugan iti ti community.',
-    'health-bintawan-road-brgy-quezon': 'Bintawan Road, Brgy. Quezon',
-    'health-salubris-inc-salubris-medical-center': 'SALUBRIS, INC. (Salubris Medical Center)',
-    'health-private-medical-center-offering-various':
-      'Pribado medical center offering various healthcare and diagnostic dagiti serbisio.',
-    'health-aggub-bhs': 'Aggub BHS',
-    'health-bagahabag-bhs': 'Bagahabag BHS',
-    'health-bangaan-bhs': 'Bangaan BHS',
-    'health-bangar-bhs': 'Bangar BHS',
-    'health-buenavista-bhs': 'Buenavista BHS',
-    'health-calaocan-bhs': 'Calaocan BHS',
-    'health-commando-bhs': 'Commando BHS',
-    'health-concepcion-bhs': 'Concepcion BHS',
-    'health-curifang-bhs': 'Curifang BHS',
-    'health-dadap-bhs': 'Dadap BHS',
-    'health-lactawan-bhs': 'Lactawan BHS',
-    'health-nangalisan-bhs': 'Nangalisan BHS',
-    'health-ocapon-bhs': 'Ocapon BHS',
-    'health-osmea-bhs': 'Osmeña BHS',
-    'health-paitan-bhs': 'Paitan BHS',
-    'health-pilar-bhs': 'Pilar BHS',
-    'health-poblacion-bhs': 'Poblacion BHS',
-    'health-quezon-bhs': 'Quezon BHS',
-    'health-quirino-bhs': 'Quirino BHS',
-    'health-roxas-bhs': 'Roxas BHS',
-    'health-tucal-bhs': 'Tucal BHS',
-    'health-uddiawan-bhs': 'Uddiawan BHS',
-    'health-hivcare-cta-eyebrow': 'Opisial a Direktorio manipud iti DOH',
-    'health-hivcare-cta-heading':
-      'Birukem ti Pasilidad para iti Panangagas ken Panangaywan iti HIV',
-    'health-hivcare-cta-desc':
-      'A searchable, mobile-first web directory of all 338 DOH-designated HIV treatment and care facilities in the Philippines, sourced from DOH Circular No. 2026-0065.',
-    'health-hivcare-cta-btn': 'Find HIV Care Facilities',
-    'health-hivcare-cta-stat-facilities': 'Pasilidad iti Intero a Pagilian',
-    'health-hivcare-cta-stat-mobile': 'Mobile-Friendly a Panagbirok',
-    'health-hivcare-cta-stat-verified': 'Naverify ti DOH',
-
-    // Agriculture Page - Ilocano
-    'agri-page-title': 'Serbisio ti Agrikultura',
-    'agri-page-desc': 'Suporta kadagiti mannalon ken progreso ti agrikultura',
-    'agri-page-badge': 'Agrikultura',
-    'agri-seedling': 'Panangibuno ti Mula',
-    'agri-seedling-desc': 'Libre a buto ken mula para kadagiti mannalon',
-    'agri-equipment': 'Gamit iti Talon',
-    'agri-equipment-desc': 'Pagrenta ken tulong iti gamit',
-    'agri-livelihood': 'Dagiti Programa ti Panagbiag',
-    'agri-livelihood-desc': 'Panagsanay ken suporta para kadagiti mannalon',
-    'agri-office-mao': 'Opisina ti Agrikultura ti Munisipalidad',
-    'agri-office-mao-desc':
-      'Panagrehistro iti RSBSA, sertipikasion, programa ti irik/mais, livestock, serbisio ti panagkalap',
-
-    // Ordinance Framework Page - Ilocano
-    'ord-page-title': 'Balangkas ti Ordinansa',
-    'ord-page-desc': 'Dagiti ordinansa a naipasa ti Sangguniang Bayan ng Solano',
-    'ord-page-badge': 'Lehislatura',
-    'ord-what-is': 'Ania ti Ordinansa?',
-    'ord-what-is-p1':
-      'Ti munisipal nga ordinansa ket lokal a linteg a naipasa ti Sangguniang Bayan (Konseho ti Munisipalidad) a mangituray ti munisipalidad ken dagiti residente na. Dagiti ordinansa ket addaan ti pigsa ken epekto ti linteg iti saklaw ti munisipalidad.',
-    'ord-what-is-p2':
-      'Dagiti ordinansa ket mabalin a manakup kadagiti nadumaduma a paksa a mairaman ngem saan a limitado iti: panagbuwis, regulasion ti negosio, kaligtasan pampubliko, proteksion ti aglawlaw, panagtaripato ti trapiko, ken zoning.',
-    'ord-categories-title': 'Dagiti Kategorya ti Ordinansa',
-    'ord-cat-revenue': 'Kita ken Panagbuwis',
-    'ord-cat-business': 'Negosio ken Kalakalan',
-    'ord-cat-safety': 'Kaligtasan Pampubliko',
-    'ord-cat-environment': 'Aglawlaw',
-    'ord-cat-traffic': 'Trapiko ken Transportasion',
-    'ord-cat-zoning': 'Zoning ken Panagusar ti Daga',
-    'ord-2025-title': 'Dagiti Ordinansa ti 2025',
-    'ord-2025-subtitle':
-      'Dagiti opisial nga ordinansa a naipasa ti Sangguniang Bayan ng Solano iti 2025',
-    'ord-table-number': 'Numero ti Ordinansa',
-    'ord-table-title': 'Titulo',
-    'ord-table-date': 'Petsa ti Sesion',
-    'ord-view-all': 'Kitaen Amin nga Ordinansa iti SB Website',
-
-    // Resolution Framework Page - Ilocano
-    'reso-page-title': 'Balangkas ti Resolusion',
-    'reso-page-desc': 'Dagiti resolusion a naipasa ti Sangguniang Bayan ng Solano',
-    'reso-page-badge': 'Lehislatura',
-    'reso-what-is': 'Ania ti Resolusion?',
-    'reso-what-is-p1':
-      'Ti resolusion ket pormal a panangibaga ti opinion wenno pagayatan ti Sangguniang Bayan. Saan a kas kadagiti ordinansa, dagiti resolusion ket awan ti pigsa ken epekto ti linteg ngem agserbida a kas opisial a pahayag ti lehislatura.',
-    'reso-what-is-p2':
-      'Dagiti resolusion ket kadawyan a mausar para iti: panangpadayaw, dawat kadagiti nangatngato nga ahensya ti gobierno, panangibaga ti suporta wenno supiat, ken dagiti administratibo a banag ti Sangguniang Bayan.',
-    'reso-types-title': 'Dagiti Kita ti Resolusion',
-    'reso-type-commendation': 'Panangpadayaw',
-    'reso-type-request': 'Dawat/Apela',
-    'reso-type-support': 'Suporta/Endorsement',
-    'reso-type-condolence': 'Pakipaglungkot',
-    'reso-type-authorization': 'Awtorisasion',
-    'reso-type-appropriation': 'Apropriyasion',
-    'reso-2026-title': 'Dagiti Resolusion ti 2026',
-    'reso-2026-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Solano iti 2026',
-    'reso-2025-title': 'Dagiti Resolusion ti 2025',
-    'reso-2025-subtitle':
-      'Dagiti opisial a resolusion a naipasa ti Sangguniang Bayan ng Solano iti 2025',
-    'reso-table-number': 'Numero ti Resolusion',
-    'reso-table-title': 'Titulo',
-    'reso-table-date': 'Petsa ti Sesion',
-    'reso-view-all': 'Kitaen Amin a Resolusion iti SB Website',
-
-    // Business Services Page - Ilocano
-    'biz-page-title': 'Serbisio ti Negosio',
-    'biz-page-desc': 'Dagiti permit, lisensya, ken suporta para kadagiti negosio idiay Solano',
-    'biz-page-badge': 'Negosio',
-    'biz-permit-new': 'Permit ti Negosio (Baro)',
-    'biz-permit-new-desc': "Agaplikar ti baro a mayor's permit para iti negosio",
-    'biz-permit-renew': 'Panag-renew ti Permit ti Negosio',
-    'biz-permit-renew-desc': 'I-renew ti tawenantawen a permit ti negosio',
-    'biz-closure': 'Panagrikep ti Negosio',
-    'biz-closure-desc': 'Proseso ti panagrikep ken clearance ti negosio',
-    'biz-cedula': 'Sedula (CTC)',
-    'biz-cedula-desc': 'Community tax certificate para kadagiti indibidual ken negosio',
-    'biz-online-badge': 'Online Services babaen ti Filipizen',
-    'biz-online-title': 'Online a Transaksion ti Negosio',
-    'biz-online-subtitle':
-      'Kompleto dagiti transaksionmo iti negosio online babaen ti opisial a portal ti Filipizen',
-    'biz-billing': 'Online Billing ken Panagbayad ti Negosio',
-    'biz-billing-desc': 'Kitaen ken bayadan dagiti business tax bills online',
-
-    // Tax & Payments Page - Ilocano
-    'tax-page-title': 'Buwis ken Panagbayad',
-    'tax-page-desc':
-      'Buwis ti sanikua, buwis ti negosio, ken dadduma pay a bayadan iti munisipalidad',
-    'tax-page-badge': 'Buwis ken Panagbayad',
-    'tax-property': 'Real Property Tax',
-    'tax-property-desc': 'Tawenantawen a buwis ti daga ken dagiti pagpasayaat',
-    'tax-business': 'Buwis ti Negosio',
-    'tax-business-desc': 'Quarterly ken tawenantawen a panagbayad ti buwis ti negosio',
-    'tax-online-badge': 'Online Services babaen ti Filipizen',
-    'tax-online-title': 'Online a Transaksion ti Buwis',
-    'tax-online-subtitle':
-      'Kompleto dagiti panagbayad ti buwis online babaen ti opisial a portal ti Filipizen',
-
-    // Social Services Page - Ilocano
-    'social-page-title': 'Serbisio Sosyal',
-    'social-page-desc':
-      'Dagiti programa ti suporta para kadagiti vulnerable a sektor ken komunidad',
-    'social-page-badge': 'Serbisio Sosyal',
-    'social-senior': 'Senior Citizen ID',
-    'social-senior-desc': 'ID para kadagiti umili nga 60 a tawen pataas',
-    'social-pwd': 'PWD ID',
-    'social-pwd-desc': 'Pagbibiagian para kadagiti addaan ti kapansanan',
-    'social-assistance': 'Tulong Pinansyal',
-    'social-assistance-desc':
-      'Emergency a tulong pinansyal para iti medikal, libing, ken edukasion',
-
-    // Education Page - Ilocano
-    'edu-page-title': 'Serbisio ti Edukasion',
-    'edu-page-desc': 'Dagiti programa ti iskolarship ken tulong pang-edukasion',
-    'edu-page-badge': 'Edukasion',
-    'edu-scholarship': 'Dagiti Programa ti Iskolarship',
-    'edu-scholarship-desc': 'Dagiti iskolarship ti munisipalidad para kadagiti estudiante',
-    'edu-training': 'Tulong Pang-edukasion',
-    'edu-training-desc': 'Tulong pinansyal para iti edukasion',
-
-    // Infrastructure Page - Ilocano
-    'infra-page-title': 'Serbisio ti Imprastraktura',
-    'infra-page-desc': 'Building permits, konstruksion, ken serbisio ti engineering',
-    'infra-page-badge': 'Imprastraktura',
-    'infra-building': 'Building Permit',
-    'infra-building-desc': 'Permit para iti baro a konstruksion ken renovation',
-    'infra-occupancy': 'Occupancy Permit',
-    'infra-occupancy-desc': 'Certificate of occupancy para kadagiti nalpas a pasdek',
-    'infra-engineering': 'Serbisio ti Engineering',
-    'infra-engineering-desc': 'Teknikal a tulong ken panagrepaso ti plano',
-
-    // Public Safety Page - Ilocano
-    'safety-page-title': 'Serbisio ti Kaligtasan Pampubliko',
-    'safety-page-desc': 'Tugon iti emergency ken panagisagana iti kalamidad',
-    'safety-page-badge': 'Kaligtasan Pampubliko',
-    'safety-disaster': 'Tugon iti Emergency',
-    'safety-disaster-desc': '24/7 a tugon ken serbisio ti rescue iti emergency',
-    'safety-relief': 'Tulong iti Kalamidad',
-    'safety-relief-desc': 'Relief goods ken suporta iti panaglikas',
-    'safety-preparedness': 'Panagisagana iti Kalamidad',
-    'safety-preparedness-desc': 'Panagsanay ken dagiti resources para iti disaster readiness',
-
-    // Environment Page - Ilocano
-    'env-page-title': 'Serbisio ti Aglawlaw',
-    'env-page-desc': 'Panagtaripato ti basura ken proteksion ti aglawlaw',
-    'env-page-badge': 'Aglawlaw',
-    'env-waste': 'Panangurnong ti Basura',
-    'env-waste-desc': 'Dagiti iskedyul ti panangurnong ti basura segun iti barangay',
-    'env-recycling': 'Programa ti Recycling',
-    'env-recycling-desc': 'Segregasion ken dagiti inisyatiba ti recycling',
-
-    // Header Dropdown Items
-    'dropdown-certificates': 'Dagiti Sertipiko',
-    'dropdown-business': 'Negosio',
-    'dropdown-tax-payments': 'Panagbayad ti Buwis',
-    'dropdown-social-services': 'Serbisio Sosyal',
-    'dropdown-health': 'Salun-at',
-    'dropdown-agriculture': 'Agrikultura',
-    'dropdown-infrastructure': 'Imprastraktura',
-    'dropdown-education': 'Edukasion',
-    'dropdown-public-safety': 'Kaligtasan Pampubliko',
-    'dropdown-environment': 'Aglawlaw',
-    'dropdown-ordinance-framework': 'Balangkas ti Ordinansa',
-    'dropdown-resolution-framework': 'Balangkas ti Resolusion',
-
-    // Homepage - Hero
-    'hero-browse-services': 'Kitaen dagiti Serbisio',
-    'hero-contact-us': 'Kontaken',
-    'hero-search-placeholder': 'kas pagarigan, birth certificate, business permit',
-    'hero-popular': 'Popular:',
-    'hero-birth-certificate': 'Birth Certificate',
-    'hero-business-permit': 'Permit ti Negosio',
-    'hero-real-property-tax': 'Buwis ti Kukua',
-
-    // Homepage - Popular Services
-    'popular-services-subtitle':
-      'Napartak a panag-akses kadagiti masansan a makiddaw a serbisio ti munisipalidad',
-    'popular-browse-directory': 'Kitaen ti kompleto a direktorio',
-
-    // Homepage - Stats
-    'stats-at-a-glance': 'Maysa a Panagkita iti Solano',
-    'stats-view-statistics': 'Kitaen ti Estadistika',
-    'stats-population-label': 'Populasion',
-    'stats-population-source': '2024 a Senso',
-    'stats-barangays-label': 'Dagiti Barangay',
-    'stats-barangays-source': 'Dagiti Yunit Administratibo',
-    'stats-municipality-label': 'Munisipalidad',
-    'stats-municipality-source': 'Klasipikasion ti Sapul',
-    'stats-land-area-label': 'Kalawa ti Daga',
-    'stats-land-area-source': 'Dagup a Kalawa ti Munisipalidad',
-
-    // Homepage - Weather & Map
-    'weather-map-title': 'Tiempo ken Mapa ti Solano',
-    'weather-mainly-clear': 'Kaaduan a nalawag',
-    'weather-location': 'Solano, Nueva Vizcaya',
-
-    // Homepage - History
-    'history-title': 'Ababa a Pakasaritaan ti Solano',
-    'history-1760':
-      'Ti orihinal a nagan ti ili ket Bintauan, maysa a pagnaedanan ti Gaddang a ita ket barangay ti Villaverde.',
-    'history-1767':
-      'Ti ili ket pormal a naipasdek babaen ni Padre Alejandro Vidal, maysa a padi a Dominikano a nangidaulo iti misyon nga Espanyol.',
-    'history-1768':
-      'Napanaganan iti Lungabang, manipud iti sao a Gaddang a lungab a kaipapananna ket rukib. Nabaliwan dagiti Espanyol iti Lumabang.',
-    'history-1851':
-      'Indeklara ni Gobernador Heneral Antonio Urbiztondo ti Lumabang a kas baryo ti Bayombong gapu iti kaawan dagiti agnanaed ken sapul.',
-    'history-1853':
-      'Dimteng dagiti umuna nga Ilocano, inyeg ni Don Diego Lumicao, maysa a dati a gobernadorcillo.',
-    'history-1889':
-      'Nabaliwan ti nagan iti Solano tapno padayawan ni Gobernador Heneral Ramon Solano y Llanderal. Ti ili ket naipasayaat manen babaen ni Padre Juan Villaverde nga addaan 14 a magkakahanay a nalawa a kalsada, tunggal maysa ket 20 metro ti kalawa na, a mangbukel iti 100 a kuadrado a bloke.',
-    'history-1957':
-      'Dagiti baryo ti Ibung ken Bintawan ket naisina tapno mangbukel iti ili ti Ibung, a nabaliwan ti nagan iti Villaverde. Ti kalawa ti daga ti Solano ket nabassitan iti 13,980 ektarya.',
-    'history-once-largest-title': 'Idi Kadakkelan',
-    'history-once-largest-desc':
-      'Ti Solano ti kadakkelan a munisipalidad iti probinsia agingga a naisina ti Caliat ken Bintawan tapno agbalin a Quezon ken Villaverde.',
-    'history-urban-planning-title': 'Panagplano ti Ili',
-    'history-urban-planning-desc':
-      'Ti panagpasayaat idi 1889 ket nangaramid iti grid a 100 a kuadrado a bloke, tunggal maysa ket addaan dagup a kalawa a maysa nga ektarya, nga addaan kadagiti kalsada a mapan iti amianan-abagatan ken daya-laud.',
-
-    // Homepage - News
-    'news-announcement': 'Pakaammo',
-    'news-project': 'Proyekto',
-    'news-advisory': 'Abiso',
-    'news-business-permit-title': 'Panag-renew ti Permit ti Negosio 2025',
-    'news-business-permit-desc':
-      'Ti deadline para iti panag-renew ti permit ti negosio ket Enero 20, 2025. Maparegta ti nasapa a panag-renew.',
-    'news-market-title': 'Baro a Wing ti Pampubliko a Tiendaan Nalukat',
-    'news-market-desc':
-      'Ti na-renovate a wing ti Pampubliko a Tiendaan ti Solano ket nalukat kadagiti aglaklako ken publiko.',
-    'news-power-title': 'Naiskedyul a Pannakaputol ti Kuryente',
-    'news-power-desc':
-      'Maintenance a naiskedyul para iti Barangay Osmeña iti Dis 1, 8:00 AM - 5:00 PM.',
-
-    // Homepage - Quiz CTA
-    'quiz-title': 'Solano Quiz',
-    'quiz-subtitle': 'Kasano ti pannakaammom iti Solano, Nueva Vizcaya?',
-    'quiz-description':
-      'Evaluaren ti pannakaammom iti tawid, kultural a pagbigbigan, ken heograpiko a kapatgan ti munisipalidad babaen ti maysa nga interactive a panagsubok ti pannakaammo a naidisinio tapno ipakita ti maysa kadagiti kalatakan a lokalidad ti Nueva Vizcaya.',
-    'quiz-take': 'Subokan ti Quiz',
+    // News Section
+    'news-title': 'News ug Announcements',
+    'news-subtitle': 'Labing bag-ong updates gikan sa City of Bayawan',
+    'news-read-more': 'Basa Pa',
+    'news-no-news': 'Walay available nga balita karon.',
 
     // Footer
-    'footer-tagline':
-      'Panangted ti bileg kadagiti umili ti Solano nga addaan ti transparente a panag-akses kadagiti serbisio, programa, ken pampubliko a pondo ti LGU Solano.',
-    'footer-quick-links': 'Dagiti Napartak a Silpo',
-    'footer-resources': 'Dagiti Rekurso',
-    'footer-solano-quiz': 'Solano Quiz',
-    'footer-sitemap': 'Mapa ti Site',
-    'footer-citizens-charter': "Citizen's Charter",
-    'footer-terms': 'Dagiti Kondision ti Panagusar',
-    'footer-privacy': 'Pagannurotan ti Pagkapribado',
-    'footer-accessibility': 'Aksesibilidad',
+    'footer-quick-links': 'Quick Links',
+    'footer-services': 'Mga Serbisyo',
+    'footer-government': 'Gobyerno',
+    'footer-transparency': 'Transparency',
+    'footer-contact': 'Contact',
     'footer-faq': 'FAQ',
-    'footer-open-data': 'Open Data Philippines',
-    'footer-foi': 'Wayawaya ti Impormasion',
-    'footer-lgu-portal': 'Opisial a Portal ti LGU Solano',
-    'footer-sb': 'Sangguniang Bayan',
-    'footer-lgu-facebook': 'LGU Solano Facebook',
-    'footer-blgf': 'BLGF Portal',
-    'footer-cmci': 'CMCI DTI Portal',
-    'footer-cost': 'Gastos kadagiti Umili ti Solano =',
-    'footer-volunteer': 'Ag-volunteer kadakami',
-    'footer-contribute': 'Ag-ambag ti code kadakami',
-    'footer-copyright-text': 'BetterSolano.org',
-    'footer-copyright-disclaimer':
-      'Amin a pampubliko nga impormasion ket nagtaud kadagiti opisial a portal ti gobierno.',
-    'footer-skip-to-main': 'Lumaktaw iti kangrunaan a linaon',
-  },
+    'footer-sitemap': 'Sitemap',
+    'footer-privacy': 'Privacy Policy',
+    'footer-terms': 'Terms of Use',
+    'footer-accessibility': 'Accessibility',
+    'footer-bayawan-quiz': 'Bayawan Quiz',
+    'footer-lgu-portal': 'Official LGU Bayawan Portal',
+    'footer-lgu-facebook': 'LGU Bayawan Facebook',
+    'footer-copyright-text': '© 2026 betterbayawan.org. All rights reserved.',
+    'footer-copyright-license': 'MIT License | CC BY 4.0',
+    'footer-copyright-disclaimer': 'Not an official government website.',
+    'footer-cost': 'Cost to the People of Bayawan City =',
+    'footer-cost-value': '₱0',
+
+    // Services Page
+    'services-title': 'Mga Serbisyo sa Siyudad',
+    'services-subtitle': 'Browse tanan nga serbisyo nga inalok sa City of Bayawan',
+    'services-search-placeholder': 'Pangita ug serbisyo...',
+    'services-categories': 'Mga Kategorya sa Serbisyo',
+    'services-all': 'Tanan nga Serbisyo',
+
+    // Government Page
+    'gov-title': 'City Government',
+    'gov-subtitle': 'Meet the leadership ug offices nga nag-alagad sa Bayawan City',
+    'gov-mayor': 'City Mayor',
+    'gov-vice-mayor': 'City Vice Mayor',
+    'gov-sb-title': 'Sangguniang Panlungsod',
+    'gov-sb-subtitle': 'City Councilors nga nag-alagad sa tawo sa Bayawan City',
+    'gov-sb-member': 'SP Member',
+    'gov-barangays': 'Mga Barangay sa Bayawan City',
+    'gov-departments': 'Mga Departamento',
+    'gov-department-head': 'Department Head',
+
+    // Legislative Page
+    'legislative-title': 'Legislative Documents',
+    'legislative-ordinances': 'Ordinances',
+    'legislative-resolutions': 'Resolutions',
+    'legislative-search': 'Pangita ug documents...',
+    'legislative-year': 'Tuig',
+    'legislative-number': 'Numero',
+    'legislative-title-col': 'Title',
+    'legislative-date': 'Petsa',
+    'legislative-status': 'Status',
+
+    // Budget Page
+    'budget-title': 'Budget Transparency',
+    'budget-income': 'Kita',
+    'budget-expenses': 'Gastos',
+    'budget-projects': 'Mga Proyekto',
+    'budget-year': 'Fiscal Year',
+    'budget-download': 'Download Report',
+    'budget-dpwh-projects': 'DPWH Infrastructure Projects sa Bayawan City',
+
+    // News Page
+    'news-page-title': 'News ug Announcements',
+    'news-page-subtitle': 'Labing bag-ong updates gikan sa City of Bayawan',
+
+    // Contact Page
+    'contact-page-title': 'Contact Us',
+    'contact-page-subtitle': 'Makig-uyab sa amoa',
+    'contact-address': 'Address',
+    'contact-phone': 'Telepono',
+    'contact-email': 'Email',
+    'contact-hours': 'Office Hours',
+    'contact-form-name': 'Ngalan',
+    'contact-form-email': 'Email',
+    'contact-form-subject': 'Subject',
+    'contact-form-message': 'Mensahe',
+    'contact-form-submit': 'Padala ug Mensahe',
+
+    // Emergency Hotlines
+    'emergency-hotlines': 'Emergency Hotlines',
+    'emergency-police': 'Police (PNP)',
+    'emergency-fire': 'Fire (BFP)',
+    'emergency-medical': 'Medical',
+    'emergency-disaster': 'Disaster (MDRRMO)',
+    'emergency-call': 'Tawag',
+
+    // Language
+    'language-select': 'Pili ang Pinulongan',
+    'language-en': 'English',
+    'language-fil': 'Filipino',
+    'language-bis': 'Bisaya',
+
+    // PWA
+    'pwa-install': 'Install App',
+    'pwa-dismiss': 'Dismiss',
+    'pwa-update-available': 'Update Available',
+    'pwa-refresh': 'Refresh',
+
+    // Offline
+    'offline-title': 'Offline ka',
+    'offline-message': 'Walay internet connection. Unsaon pag work ang uban nga features.',
+    'offline-emergency-hotlines': 'Emergency Hotlines - Bayawan City, Negros Oriental',
+
+    // Common
+    'loading': 'Loading...',
+    'error': 'Error',
+    'retry': 'Usab',
+    'close': 'Sarang',
+    'save': 'Save',
+    'cancel': 'Cancel',
+    'submit': 'Submit',
+    'back': 'Balik',
+    'continue': 'Padayon',
+    'view-all': 'Tan-awon Tanan',
+    'read-more': 'Basa Pa',
+    'show-more': 'Ipakita Pa',
+    'show-less': 'Ipakita Gamay',
+
+    // Accessibility
+    'a11y-skip': 'Skip to main content',
+    'a11y-menu': 'Menu',
+    'a11y-search': 'Search',
+    'a11y-language': 'Pinulongan',
+    'a11y-theme': 'Theme',
+
+    // Services Detail
+    'service-requirements': 'Mga Requirements',
+    'service-fees': 'Mga Bayad',
+    'service-processing-time': 'Processing Time',
+    'service-office': 'Opisina',
+    'service-contact': 'Contact',
+    'service-online': 'Online Application',
+    'service-walkin': 'Walk-in',
+
+    // Certificate Services
+    'cert-birth': 'Birth Certificate',
+    'cert-death': 'Death Certificate',
+    'cert-marriage': 'Marriage Certificate',
+    'cert-cenomar': 'CENOMAR',
+    'cert-birth-desc': 'Get certified copy sa birth certificate nga narehistro sa Bayawan City',
+    'cert-death-desc': 'Get certified copy sa death certificate',
+    'cert-marriage-desc': 'Get certified copy sa marriage certificate',
+
+    // Business Services
+    'biz-permit': 'Business Permit',
+    'biz-renewal': 'Business Permit Renewal',
+    'biz-new': 'New Business Registration',
+    'biz-barangay': 'Barangay Clearance',
+    'biz-page-desc': 'Permits, licenses, ug support para sa mga negosyo sa Bayawan City',
+
+    // Health Services
+    'health-page-title': 'Health Services',
+    'health-subtitle': 'Medical ug health services sa Bayawan City',
+    'health-hospitals': 'Mga Hospital sa Bayawan City',
+    'health-rhu': 'Rural Health Unit',
+    'health-bhs': 'Barangay Health Stations',
+    'health-bhs-subtitle': '22 Barangay Health Stations/Centers nga nag-alagad sa tanang barangay sa Bayawan City',
+    'health-mho-title': 'City Health Office',
+
+    // Social Services
+    'social-page-title': 'Social Services',
+    'social-subtitle': 'Social welfare programs ug services',
+    'social-mswdo': 'MSWDO',
+    'social-senior': 'Senior Citizen',
+    'social-pwd': 'PWD',
+    'social-solo-parent': 'Solo Parent',
+    'social-4ps': '4Ps',
+
+    // Agriculture Services
+    'agri-page-title': 'Agriculture Services',
+    'agri-subtitle': 'Agricultural support ug services',
+    'agri-seedo': 'SEEDO',
+    'agri-market': 'Public Market',
+    'agri-slaughterhouse': 'Slaughterhouse',
+
+    // Environment Services
+    'env-page-title': 'Environment Services',
+    'env-subtitle': 'Environmental protection ug management',
+    'env-waste': 'Waste Management',
+    'env-cleanup': 'Cleanup Drive',
+    'env-tree': 'Tree Planting',
+
+    // Infrastructure Services
+    'infra-page-title': 'Infrastructure Services',
+    'infra-subtitle': 'Building permits ug infrastructure projects',
+    'infra-permits': 'Building Permits',
+    'infra-projects': 'DPWH Projects',
+    'infra-roads': 'Road Maintenance',
+
+    // Education Services
+    'edu-page-title': 'Education Services',
+    'edu-subtitle': 'Educational programs ug services',
+    'edu-schools': 'Mga Paaralan',
+    'edu-scholarship': 'Scholarship',
+    'edu-als': 'ALS',
+
+    // Public Safety
+    'safety-page-title': 'Public Safety',
+    'safety-subtitle': 'Emergency ug safety services',
+    'safety-pnp': 'PNP',
+    'safety-bfp': 'BFP',
+    'safety-mdrrmo': 'MDRRMO',
+    'safety-traffic': 'Traffic Management',
+
+    // Tax Services
+    'tax-page-title': 'Tax Payments',
+    'tax-subtitle': 'Online ug walk-in tax payment options',
+    'tax-rpt': 'Real Property Tax',
+    'tax-business': 'Business Tax',
+    'tax-online': 'Online Payment',
+
+    // FAQ
+    'faq-title': 'Frequently Asked Questions',
+    'faq-subtitle': 'Common questions ug answers',
+
+    // Sitemap
+    'sitemap-title': 'Sitemap',
+    'sitemap-subtitle': 'Complete list sa tanang pages',
+
+    // Privacy
+    'privacy-title': 'Privacy Policy',
+    'privacy-subtitle': 'How we handle imong data',
+
+    // Terms
+    'terms-title': 'Terms of Use',
+    'terms-subtitle': 'Terms ug conditions sa paggamit',
+
+// Metadata
+    'page-title': 'betterbayawan.org | Official Portal',
+    'meta-description': 'Better Bayawan - Imong digital gateway sa LGU Bayawan City services.',
+    'meta-keywords': 'Bayawan City, Negros Oriental, LGU, government services',
+
+    // Quiz
+    'quiz-title': 'Bayawan Quiz',
+    'quiz-subtitle': 'Kasano kabalo ka sa Bayawan City, Negros Oriental?',
+    'quiz-description':
+      'Evaluate imong familiarity sa heritage, cultural identity, ug geographic significance sa syudad pinaagi sa interactive nga knowledge assessment.',
+    'quiz-take': 'Take the Quiz',
+    'footer-Bayawan City-quiz': 'Bayawan Quiz',
+  },},
 };
 
-type Language = 'en' | 'fil' | 'ilo';
+type Language = 'en' | 'fil' | 'bis';
 
 interface LanguageContextType {
   language: Language;
@@ -1437,15 +1296,15 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
 
   useEffect(() => {
     // Load saved language from localStorage
-    const savedLang = localStorage.getItem('bettersolano_lang') as Language;
-    if (savedLang && ['en', 'fil', 'ilo'].includes(savedLang)) {
+    const savedLang = localStorage.getItem('BetterBayawan_lang') as Language;
+    if (savedLang && ['en', 'fil', 'bis'].includes(savedLang)) {
       setLanguageState(savedLang);
     }
   }, []);
 
   const setLanguage = (lang: Language) => {
     setLanguageState(lang);
-    localStorage.setItem('bettersolano_lang', lang);
+    localStorage.setItem('BetterBayawan_lang', lang);
   };
 
   const t = (key: string): string => {

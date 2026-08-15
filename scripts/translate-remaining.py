@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Translate remaining ~2988 untranslated keys in translations.js
-into Filipino (fil) and Ilocano (ilo).
+into Filipino (fil) and Bisaya (bis).
 
 Strategy:
 1. Build comprehensive word/phrase dictionaries for fil and ilo
@@ -23,7 +23,7 @@ TRANSLATIONS_JS = 'assets/js/translations.js'
 
 # Words/phrases that should NOT be translated (proper nouns, acronyms, etc.)
 KEEP_AS_IS = {
-    'BLGF Portal', 'CMCI DTI Portal', 'LGU Solano Facebook',
+    'BLGF Portal', 'CMCI DTI Portal', 'LGU Bayawan City Facebook',
     'Open Data Philippines', 'PhilHealth', 'GSIS', 'SSS', 'Pag-IBIG',
     'BFP', 'PNP', 'DILG', 'MDRRMO', 'MSWDO', 'SEEDO', 'MPDO',
     'TB-DOTS', 'BIR', 'DTI', 'SEC', 'DENR', 'DPWH', 'DSWD',
@@ -32,11 +32,11 @@ KEEP_AS_IS = {
     'DAR', 'DICT', 'DOE', 'DOF', 'DOJ', 'DOST', 'DND', 'NEDA',
     'NAPC', 'PCSO', 'PAGASA', 'PHIVOLCS', 'NDRRMC', 'OCD',
     'R2TMC', 'MTOF', 'BPLS', 'RPT', 'CTC', 'RPTA',
-    'Filipizen', 'BetterSolano.org', 'Better Solano',
-    'Abakada.org', 'volunteer@bettersolano.org',
-    'accounting@solano.gov.ph', 'Facebook', 'Google',
-    'Sangguniang Bayan', 'Sangguniang Panlalawigan',
-    'Nueva Vizcaya', 'Solano', 'Bayombong',
+    'Filipizen', 'betterbayawan.org', 'Better Bayawan City',
+    'Abakada.org', 'volunteer@betterbayawan.org',
+    'accounting@Bayawan City.gov.ph', 'Facebook', 'Google',
+    'Sangguniang Panlungsod', 'Sangguniang Panlalawigan',
+    'Negros Oriental', 'Bayawan City', 'Bayombong',
 }
 
 # Patterns that should be kept as-is (regex)
@@ -99,28 +99,28 @@ FIL_WORDS = {
 FIL_PHRASES = {
     # Government & Municipal
     "Citizen's Charter": "Citizen's Charter",
-    "Municipal Hall": "Munisipyo",
-    "Municipal Mayor": "Punong Bayan",
-    "Municipal Vice Mayor": "Bise Punong Bayan",
+    "City Hall": "Munisipyo",
+    "City Mayor": "Punong Bayan",
+    "City Vice Mayor": "Bise Punong Bayan",
     "Mayor's Office": "Opisina ng Punong Bayan",
     "Vice Mayor's Office": "Opisina ng Bise Punong Bayan",
     "Municipal Administrator": "Tagapangasiwa ng Munisipyo",
     "Municipal Accountant": "Akawntant ng Munisipyo",
-    "Municipal Assessor": "Tagapagtasa ng Munisipyo",
-    "Municipal Budget Officer": "Opisyal ng Badyet ng Munisipyo",
-    "Municipal Civil Registrar": "Tagapagrehistro Sibil ng Munisipyo",
+    "City Assessor": "Tagapagtasa ng Munisipyo",
+    "City Budget Officer": "Opisyal ng Badyet ng Munisipyo",
+    "City Civil Registrar": "Tagapagrehistro Sibil ng Munisipyo",
     "Municipal Engineer": "Inhinyero ng Munisipyo",
-    "Municipal Health Officer": "Opisyal ng Kalusugan ng Munisipyo",
-    "Municipal Planning and Development": "Pagpaplano at Pagpapaunlad ng Munisipyo",
-    "Municipal Treasurer": "Ingat-Yaman ng Munisipyo",
-    "Municipal Social Welfare": "Kagawaran ng Kapakanan ng Munisipyo",
+    "City Health Officer": "Opisyal ng Kalusugan ng Munisipyo",
+    "City Planning and Development": "Pagpaplano at Pagpapaunlad ng Munisipyo",
+    "City Treasurer": "Ingat-Yaman ng Munisipyo",
+    "City Social Welfare": "Kagawaran ng Kapakanan ng Munisipyo",
     "Municipal Agriculture": "Kagawaran ng Agrikultura ng Munisipyo",
     "Human Resource Management": "Pamamahala ng Yamang Tao",
     "General Services": "Pangkalahatang Serbisyo",
     "Ground Floor": "Unang Palapag",
     "2nd Floor": "Ikalawang Palapag",
     "3rd Floor": "Ikatlong Palapag",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Sangguniang Panlungsod": "Sangguniang Panlungsod",
     "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Barangay Captain": "Kapitan ng Barangay",
     "Barangay Hall": "Barangay Hall",
@@ -275,34 +275,34 @@ FIL_PHRASES = {
 }
 
 # ============================================================
-# ILOCANO (ilo) DICTIONARY
+# Bisaya (bis) DICTIONARY
 # ============================================================
 
 ILO_PHRASES = {
     # Government & Municipal
     "Citizen's Charter": "Citizen's Charter",
-    "Municipal Hall": "Munisipalidad",
-    "Municipal Mayor": "Mayor ti Munisipalidad",
-    "Municipal Vice Mayor": "Bise Mayor ti Munisipalidad",
+    "City Hall": "Munisipalidad",
+    "City Mayor": "Mayor ti Munisipalidad",
+    "City Vice Mayor": "Bise Mayor ti Munisipalidad",
     "Mayor's Office": "Opisina ti Mayor",
     "Vice Mayor's Office": "Opisina ti Bise Mayor",
     "Municipal Administrator": "Administrador ti Munisipalidad",
     "Municipal Accountant": "Akawntant ti Munisipalidad",
-    "Municipal Assessor": "Assessor ti Munisipalidad",
-    "Municipal Budget Officer": "Opisyal ti Badyet ti Munisipalidad",
-    "Municipal Civil Registrar": "Sibil a Rehistrador ti Munisipalidad",
+    "City Assessor": "Assessor ti Munisipalidad",
+    "City Budget Officer": "Opisyal ti Badyet ti Munisipalidad",
+    "City Civil Registrar": "Sibil a Rehistrador ti Munisipalidad",
     "Municipal Engineer": "Inhinyero ti Munisipalidad",
-    "Municipal Health Officer": "Opisyal ti Salun-at ti Munisipalidad",
-    "Municipal Planning and Development": "Panagplano ken Panagrang-ay ti Munisipalidad",
-    "Municipal Treasurer": "Tesorero ti Munisipalidad",
-    "Municipal Social Welfare": "Departamento ti Pakasaritaan ti Munisipalidad",
+    "City Health Officer": "Opisyal ti Salun-at ti Munisipalidad",
+    "City Planning and Development": "Panagplano ken Panagrang-ay ti Munisipalidad",
+    "City Treasurer": "Tesorero ti Munisipalidad",
+    "City Social Welfare": "Departamento ti Pakasaritaan ti Munisipalidad",
     "Municipal Agriculture": "Departamento ti Agrikultura ti Munisipalidad",
     "Human Resource Management": "Panagtaripato ti Tao a Rekurso",
     "General Services": "Sapasap a Serbisio",
     "Ground Floor": "Umuna a Kadsaaran",
     "2nd Floor": "Maikadua a Kadsaaran",
     "3rd Floor": "Maikatlo a Kadsaaran",
-    "Sangguniang Bayan": "Sangguniang Bayan",
+    "Sangguniang Panlungsod": "Sangguniang Panlungsod",
     "Sangguniang Panlalawigan": "Sangguniang Panlalawigan",
     "Barangay Captain": "Kapitan ti Barangay",
     "Barangay Hall": "Barangay Hall",
@@ -465,18 +465,18 @@ FIL_SENTENCES = {
     # Common footer/sidebar links
     "BLGF Portal": "BLGF Portal",
     "CMCI DTI Portal": "CMCI DTI Portal",
-    "LGU Solano Facebook": "LGU Solano Facebook",
+    "LGU Bayawan City Facebook": "LGU Bayawan City Facebook",
     "Open Data Philippines": "Open Data Philippines",
-    "Better Solano": "Better Solano",
-    "BFP Solano": "BFP Solano",
+    "Better Bayawan City": "Better Bayawan City",
+    "BFP Bayawan City": "BFP Bayawan City",
 
     # Common service phrases
     "Contact us for assistance with this service.": "Makipag-ugnayan sa amin para sa tulong sa serbisyong ito.",
-    "Municipal Hall, Ground Floor Solano, Nueva Vizcaya 3708": "Munisipyo, Unang Palapag, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, 2nd Floor Solano, Nueva Vizcaya 3708": "Munisipyo, Ikalawang Palapag, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, Ground Floor, Solano, Nueva Vizcaya 3708": "Munisipyo, Unang Palapag, Solano, Nueva Vizcaya 3708",
-    "2nd Floor, Municipal Hall, Solano, Nueva Vizcaya": "Ikalawang Palapag, Munisipyo, Solano, Nueva Vizcaya",
-    "Ground Floor, Municipal Hall, Solano, Nueva Vizcaya": "Unang Palapag, Munisipyo, Solano, Nueva Vizcaya",
+    "City Hall, Ground Floor Bayawan City, Negros Oriental 6221": "Munisipyo, Unang Palapag, Bayawan City, Negros Oriental 6221",
+    "City Hall, 2nd Floor Bayawan City, Negros Oriental 6221": "Munisipyo, Ikalawang Palapag, Bayawan City, Negros Oriental 6221",
+    "City Hall, Ground Floor, Bayawan City, Negros Oriental 6221": "Munisipyo, Unang Palapag, Bayawan City, Negros Oriental 6221",
+    "2nd Floor, City Hall, Bayawan City, Negros Oriental": "Ikalawang Palapag, Munisipyo, Bayawan City, Negros Oriental",
+    "Ground Floor, City Hall, Bayawan City, Negros Oriental": "Unang Palapag, Munisipyo, Bayawan City, Negros Oriental",
 
     # Time/duration phrases
     "8AM - 5PM": "8AM - 5PM",
@@ -577,7 +577,7 @@ FIL_SENTENCES = {
     "1st Class": "Unang Klase",
 
     # Offline page
-    "Emergency Hotlines - Solano, Nueva Vizcaya": "Mga Emergency Hotline - Solano, Nueva Vizcaya",
+    "Emergency Hotlines - Bayawan City, Negros Oriental": "Mga Emergency Hotline - Bayawan City, Negros Oriental",
     "Fire (BFP)": "Sunog (BFP)",
     "Police (PNP)": "Pulis (PNP)",
 
@@ -618,18 +618,18 @@ ILO_SENTENCES = {
     # Common footer/sidebar links
     "BLGF Portal": "BLGF Portal",
     "CMCI DTI Portal": "CMCI DTI Portal",
-    "LGU Solano Facebook": "LGU Solano Facebook",
+    "LGU Bayawan City Facebook": "LGU Bayawan City Facebook",
     "Open Data Philippines": "Open Data Philippines",
-    "Better Solano": "Better Solano",
-    "BFP Solano": "BFP Solano",
+    "Better Bayawan City": "Better Bayawan City",
+    "BFP Bayawan City": "BFP Bayawan City",
 
     # Common service phrases
     "Contact us for assistance with this service.": "Kontakennakami para iti tulong iti daytoy a serbisio.",
-    "Municipal Hall, Ground Floor Solano, Nueva Vizcaya 3708": "Munisipalidad, Umuna a Kadsaaran, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, 2nd Floor Solano, Nueva Vizcaya 3708": "Munisipalidad, Maikadua a Kadsaaran, Solano, Nueva Vizcaya 3708",
-    "Municipal Hall, Ground Floor, Solano, Nueva Vizcaya 3708": "Munisipalidad, Umuna a Kadsaaran, Solano, Nueva Vizcaya 3708",
-    "2nd Floor, Municipal Hall, Solano, Nueva Vizcaya": "Maikadua a Kadsaaran, Munisipalidad, Solano, Nueva Vizcaya",
-    "Ground Floor, Municipal Hall, Solano, Nueva Vizcaya": "Umuna a Kadsaaran, Munisipalidad, Solano, Nueva Vizcaya",
+    "City Hall, Ground Floor Bayawan City, Negros Oriental 6221": "Munisipalidad, Umuna a Kadsaaran, Bayawan City, Negros Oriental 6221",
+    "City Hall, 2nd Floor Bayawan City, Negros Oriental 6221": "Munisipalidad, Maikadua a Kadsaaran, Bayawan City, Negros Oriental 6221",
+    "City Hall, Ground Floor, Bayawan City, Negros Oriental 6221": "Munisipalidad, Umuna a Kadsaaran, Bayawan City, Negros Oriental 6221",
+    "2nd Floor, City Hall, Bayawan City, Negros Oriental": "Maikadua a Kadsaaran, Munisipalidad, Bayawan City, Negros Oriental",
+    "Ground Floor, City Hall, Bayawan City, Negros Oriental": "Umuna a Kadsaaran, Munisipalidad, Bayawan City, Negros Oriental",
 
     # Time/duration phrases
     "8AM - 5PM": "8AM - 5PM",
@@ -730,7 +730,7 @@ ILO_SENTENCES = {
     "1st Class": "Umuna a Klase",
 
     # Offline page
-    "Emergency Hotlines - Solano, Nueva Vizcaya": "Dagiti Emergency Hotline - Solano, Nueva Vizcaya",
+    "Emergency Hotlines - Bayawan City, Negros Oriental": "Dagiti Emergency Hotline - Bayawan City, Negros Oriental",
     "Fire (BFP)": "Apuy (BFP)",
     "Police (PNP)": "Polis (PNP)",
 
@@ -989,7 +989,7 @@ FIL_WORD_MAP = {
     'healthy': 'malusog', 'sustainable': 'napapanatili',
 }
 
-# Ilocano word map
+# Bisaya word map
 ILO_WORD_MAP = {
     # Nouns - Government
     'office': 'opisina', 'offices': 'dagiti opisina',
@@ -1416,16 +1416,16 @@ def main():
 
     en, en_order = extract_lang_dict(content, 'en')
     fil, fil_order = extract_lang_dict(content, 'fil')
-    ilo, ilo_order = extract_lang_dict(content, 'ilo')
+    ilo, ilo_order = extract_lang_dict(content, 'bis')
 
     print(f"EN keys: {len(en)}")
     print(f"FIL keys: {len(fil)}")
     print(f"ILO keys: {len(ilo)}")
 
-    # Find untranslated keys (where fil/ilo == en)
+    # Find untranslated keys (where fil/bis == en)
     untranslated = []
     for key in en:
-        if fil.get(key) == en[key] or ilo.get(key) == en[key]:
+        if fil.get(key) == en[key] or bis.get(key) == en[key]:
             untranslated.append(key)
 
     print(f"\nUntranslated keys: {len(untranslated)}")
@@ -1448,11 +1448,11 @@ def main():
             else:
                 fil_kept += 1
 
-        # Translate Ilocano
-        if ilo.get(key) == en_val:
-            new_ilo = translate_text(en_val, 'ilo')
+        # Translate Bisaya
+        if bis.get(key) == en_val:
+            new_bis = translate_text(en_val, 'bis')
             if new_ilo != en_val:
-                ilo[key] = new_ilo
+                bis[key] = new_ilo
                 ilo_translated += 1
             else:
                 ilo_kept += 1
@@ -1510,7 +1510,7 @@ def main():
 
     print("\nRebuilding translations.js...")
     content = replace_lang_block(content, 'fil', fil, fil_order)
-    content = replace_lang_block(content, 'ilo', ilo, ilo_order)
+    content = replace_lang_block(content, 'bis', ilo, ilo_order)
 
     with open(TRANSLATIONS_JS, 'w') as f:
         f.write(content)
@@ -1523,7 +1523,7 @@ def main():
 
     new_en, _ = extract_lang_dict(verify_content, 'en')
     new_fil, _ = extract_lang_dict(verify_content, 'fil')
-    new_ilo, _ = extract_lang_dict(verify_content, 'ilo')
+    new_ilo, _ = extract_lang_dict(verify_content, 'bis')
 
     print(f"\nVerification:")
     print(f"  EN keys: {len(new_en)}")
@@ -1532,9 +1532,9 @@ def main():
 
     # Count remaining untranslated
     still_untranslated_fil = sum(1 for k in new_en if new_fil.get(k) == new_en[k])
-    still_untranslated_ilo = sum(1 for k in new_en if new_ilo.get(k) == new_en[k])
+    still_untranslated_bis = sum(1 for k in new_en if new_bis.get(k) == new_en[k])
     print(f"  FIL still untranslated: {still_untranslated_fil}")
-    print(f"  ILO still untranslated: {still_untranslated_ilo}")
+    print(f"  ILO still untranslated: {still_untranslated_bis}")
 
     # Show some examples of what was translated
     print(f"\n--- Sample translations ---")
@@ -1542,14 +1542,14 @@ def main():
     for key in untranslated[:30]:
         en_val = new_en.get(key, '')
         fil_val = new_fil.get(key, '')
-        ilo_val = new_ilo.get(key, '')
+        ilo_val = new_bis.get(key, '')
         if fil_val != en_val or ilo_val != en_val:
             print(f"  {key}:")
             print(f"    EN:  {en_val[:70]}")
             if fil_val != en_val:
                 print(f"    FIL: {fil_val[:70]}")
             if ilo_val != en_val:
-                print(f"    ILO: {ilo_val[:70]}")
+                print(f"    bis: {ilo_val[:70]}")
             count += 1
             if count >= 15:
                 break

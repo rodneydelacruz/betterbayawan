@@ -143,7 +143,7 @@ export default function HealthPage() {
               <div className="health-facility-meta">
                 <span>
                   <i className="bi bi-geo-alt"></i>
-                  <span>{t('health-national-highway-solano')}</span>
+                  <span>{t('health-national-highway-Bayawan City')}</span>
                 </span>
               </div>
             </div>
@@ -171,7 +171,7 @@ export default function HealthPage() {
               <div className="health-facility-meta">
                 <span>
                   <i className="bi bi-geo-alt"></i>
-                  <span>{t('health-national-highway-solano')}</span>
+                  <span>{t('health-national-highway-Bayawan City')}</span>
                 </span>
               </div>
             </div>
@@ -179,7 +179,7 @@ export default function HealthPage() {
         </div>
       </section>
 
-      {/* Municipal Health Office */}
+      {/* City Health Office */}
       <section className="section section-compact bg-alt">
         <div className="container">
           <h2 className="section-title">

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """
 Second pass: translate remaining ~1590 keys using comprehensive
-phrase-level dictionaries for Filipino and Ilocano.
+phrase-level dictionaries for Filipino and Bisaya.
 """
 
 import re
@@ -494,7 +494,7 @@ PASS2_FIL_2 = {
     "Solid Waste Management": "Pamamahala ng Solidong Basura",
     "Source Links and External References": "Mga Link ng Pinagmulan at Panlabas na Sanggunian",
     "Starting a Business": "Pagsisimula ng Negosyo",
-    "Stay informed about the latest happenings in Solano": "Manatiling may kaalaman tungkol sa mga pinakabagong pangyayari sa Solano",
+    "Stay informed about the latest happenings in Bayawan City": "Manatiling may kaalaman tungkol sa mga pinakabagong pangyayari sa Bayawan City",
     "Storekeeper": "Tagapag-ingat ng Bodega",
     "Submit Documents": "Isumite ang mga Dokumento",
     "Subsidized": "Subsidyado",
@@ -651,7 +651,7 @@ PASS2_FIL_3 = {
     # Legislative
     "Browse Ordinances": "Mag-browse ng mga Ordinansa",
     "Flowchart for Legislative Proposal": "Flowchart para sa Panukalang Lehislatibo",
-    "Ordinances and resolutions of the Sangguniang Bayan ng Solano": "Mga ordinansa at resolusyon ng Sangguniang Bayan ng Solano",
+    "Ordinances and resolutions of the Sangguniang Panlungsod ng Bayawan": "Mga ordinansa at resolusyon ng Sangguniang Panlungsod ng Bayawan",
 
     # Statistics/Data
     "Competitiveness": "Kompetitibidad",
@@ -666,9 +666,9 @@ PASS2_FIL_3 = {
     "Key Indicators Trend (2016-2024)": "Trend ng mga Pangunahing Tagapagpahiwatig (2016-2024)",
     "Population Bar Chart": "Bar Chart ng Populasyon",
     "Resiliency Trend": "Trend ng Katatagan",
-    "Solano Competitive Index": "Competitive Index ng Solano",
-    "Solano at a Glance": "Solano sa Isang Tingin",
-    "Brief History of Solano": "Maikling Kasaysayan ng Solano",
+    "Bayawan City Competitive Index": "Competitive Index ng Bayawan City",
+    "Bayawan City at a Glance": "Bayawan City sa Isang Tingin",
+    "Brief History of Bayawan City": "Maikling Kasaysayan ng Bayawan City",
     "22 Barangays": "22 Barangay",
     "24/7 Operations": "24/7 Operasyon",
     "60 Years+": "60 Taon+",
@@ -694,13 +694,13 @@ PASS2_FIL_3 = {
     "Supporting documentation or evidence, where applicable": "Mga suportang dokumento o ebidensya, kung naaangkop",
     "Fully compatible with all devices, browsers, or assistive technologies": "Ganap na tugma sa lahat ng device, browser, o assistive technology",
     "Is this website mobile-friendly?": "Ang website ba na ito ay mobile-friendly?",
-    "Who developed Better Solano?": "Sino ang gumawa ng Better Solano?",
+    "Who developed Better Bayawan City?": "Sino ang gumawa ng Better Bayawan City?",
     "What if I missed the registration deadline?": "Paano kung napalampas ko ang deadline ng pagpaparehistro?",
     "Select the scenario that applies to your situation": "Piliin ang senaryo na naaangkop sa iyong sitwasyon",
     "Response times may vary due to the volunteer nature of this initiative.": "Ang oras ng pagtugon ay maaaring mag-iba dahil sa boluntaryong katangian ng inisyatibang ito.",
-    "Fetching news and updates from Solano.": "Kinukuha ang mga balita at update mula sa Solano.",
-    "Fetching the latest news from Solano.": "Kinukuha ang pinakabagong balita mula sa Solano.",
-    "Stay informed about the latest happenings in Solano": "Manatiling may kaalaman tungkol sa mga pinakabagong pangyayari sa Solano",
+    "Fetching news and updates from Bayawan City.": "Kinukuha ang mga balita at update mula sa Bayawan City.",
+    "Fetching the latest news from Bayawan City.": "Kinukuha ang pinakabagong balita mula sa Bayawan City.",
+    "Stay informed about the latest happenings in Bayawan City": "Manatiling may kaalaman tungkol sa mga pinakabagong pangyayari sa Bayawan City",
     "Number of visitors and page views": "Bilang ng mga bisita at page view",
     "Browser type and version": "Uri at bersyon ng browser",
     "Device type and operating system": "Uri ng device at operating system",
@@ -722,7 +722,7 @@ PASS2_FIL_4 = {
     # Specific long sentences from service pages
     "Certification by the MBO of the availability of appropriation and allotment": "Sertipikasyon ng MBO ng pagkakaroon ng appropriasyon at allotment",
     "Certification for crop damage due to natural calamities": "Sertipikasyon para sa pinsala sa pananim dahil sa mga natural na kalamidad",
-    "Certification that individual is a registered farmer in Solano": "Sertipikasyon na ang indibidwal ay isang rehistradong magsasaka sa Solano",
+    "Certification that individual is a registered farmer in Bayawan City": "Sertipikasyon na ang indibidwal ay isang rehistradong magsasaka sa Bayawan City",
     "Checking/validating of the availability of appropriation and allotment from the Status of Appropriation, Allotment, Obligation (SAOB)": "Pagsusuri/pagpapatunay ng pagkakaroon ng appropriasyon at allotment mula sa Status of Appropriation, Allotment, Obligation (SAOB)",
     "Cities and Municipalities Competitiveness Index (CMCI) Performance 2016-2024": "Pagganap ng Cities and Municipalities Competitiveness Index (CMCI) 2016-2024",
     "Classification (Agricultural, Commercial, Industrial, Residential)": "Klasipikasyon (Agrikultural, Komersyal, Industriyal, Residensyal)",
@@ -753,7 +753,7 @@ PASS2_FIL_4 = {
     "Early childhood care and development program": "Programa ng maagang pangangalaga at pagpapaunlad ng bata",
     "Emergency response and disaster preparedness programs.": "Mga programa ng pagtugon sa emergency at paghahanda sa sakuna.",
     "Employment Facilitation (EF)": "Pagpapadali ng Trabaho (EF)",
-    "Farm registration, certifications, and agricultural programs for Solano farmers": "Pagpaparehistro ng bukid, mga sertipikasyon, at mga programang agrikultural para sa mga magsasaka ng Solano",
+    "Farm registration, certifications, and agricultural programs for Bayawan City farmers": "Pagpaparehistro ng bukid, mga sertipikasyon, at mga programang agrikultural para sa mga magsasaka ng Bayawan City",
     "Financial aid for hospitalization, medicines, laboratory tests, and medical procedures.": "Tulong pinansyal para sa ospitalisasyon, gamot, mga pagsusuri sa laboratoryo, at mga medikal na pamamaraan.",
     "Financial standing for fiscal year 2023": "Kalagayang pinansyal para sa taong piskal 2023",
     "For newly constructed buildings, improvements, or newly discovered properties.": "Para sa mga bagong itinayong gusali, pagpapabuti, o bagong natuklasang ari-arian.",
@@ -801,7 +801,7 @@ PASS2_FIL_4 = {
     "Procurement of Common-Use Supplies": "Pagkuha ng mga Karaniwang Suplay",
     "Proof of Acquisition/Invoice": "Patunay ng Pagkuha/Invoice",
     "Proof of Income (if employed)": "Patunay ng Kita (kung may trabaho)",
-    "Proof of residence in Solano": "Patunay ng paninirahan sa Solano",
+    "Proof of residence in Bayawan City": "Patunay ng paninirahan sa Bayawan City",
     "RA 9048 - Clerical Error Correction": "RA 9048 - Pagwawasto ng Klerikal na Error",
     "Recording and storage of supplies": "Pagtatala at pag-iimbak ng mga suplay",
     "Registration in the Fisherfolk Registry (FishR)": "Pagpaparehistro sa Fisherfolk Registry (FishR)",
@@ -813,13 +813,13 @@ PASS2_FIL_4 = {
     "Releasing of MTOF": "Paglabas ng MTOF",
     "Report/referral received at MSWDO": "Ulat/referral na natanggap sa MSWDO",
     "Reporting of utility issues and concerns": "Pag-uulat ng mga isyu at alalahanin sa utilidad",
-    "Resolutions passed by the Sangguniang Bayan expressing the will or opinion of the legislative body on various matters.": "Mga resolusyong ipinasa ng Sangguniang Bayan na nagpapahayag ng kalooban o opinyon ng lehislatura sa iba't ibang usapin.",
+    "Resolutions passed by the Sangguniang Panlungsod expressing the will or opinion of the legislative body on various matters.": "Mga resolusyong ipinasa ng Sangguniang Panlungsod na nagpapahayag ng kalooban o opinyon ng lehislatura sa iba't ibang usapin.",
     "Segregation and recycling initiatives": "Mga inisyatiba sa paghihiwalay at pag-recycle",
     "Sex/DOB Correction (RA 10172)": "Pagwawasto ng Kasarian/Petsa ng Kapanganakan (RA 10172)",
     "Signatures of at least two (2) witnesses": "Mga lagda ng hindi bababa sa dalawang (2) saksi",
     "Sketch of Farm Location": "Sketch ng Lokasyon ng Bukid",
     "Submission to PS-DBM for common-use supplies": "Pagsusumite sa PS-DBM para sa mga karaniwang suplay",
-    "Submission to Sangguniang Bayan": "Pagsusumite sa Sangguniang Bayan",
+    "Submission to Sangguniang Panlungsod": "Pagsusumite sa Sangguniang Panlungsod",
     "Subsidized fertilizer for corn production": "Subsidyadong pataba para sa produksyon ng mais",
     "Supplies issuance follows FIFO method": "Ang pagbibigay ng suplay ay sumusunod sa FIFO method",
     "Timely Registration (Within 30 days)": "Napapanahong Pagpaparehistro (Sa loob ng 30 araw)",
@@ -900,7 +900,7 @@ PASS2_FIL_4 = {
     "Taxable/Exempt Status": "Katayuang Buwisable/Exempt",
     "10% Discount": "10% Diskwento",
     "2% per month": "2% bawat buwan",
-    "Ilocanos arrived": "Dumating ang mga Ilocano",
+    "Bisayas arrived": "Dumating ang mga Bisaya",
     "Higher Educational Institutions": "Mga Institusyon ng Mas Mataas na Edukasyon",
     "Secondary Schools": "Mga Sekundaryang Paaralan",
     "Rural Health Units": "Mga Rural Health Unit",
@@ -916,7 +916,7 @@ PASS2_FIL_4 = {
     "Total Income": "Kabuuang Kita",
     "Jan 1 - Jan 20": "Ene 1 - Ene 20",
     "FY 2025 quarterly financial performance": "Quarterly na pagganap pinansyal ng FY 2025",
-    "DPWH Infrastructure Projects in Solano": "Mga Proyekto ng Imprastraktura ng DPWH sa Solano",
+    "DPWH Infrastructure Projects in Bayawan City": "Mga Proyekto ng Imprastraktura ng DPWH sa Bayawan City",
     "DPWH Transparency Portal": "DPWH Transparency Portal",
     "DTI Cities and Municipalities Competitiveness Index (CMCI)": "DTI Cities and Municipalities Competitiveness Index (CMCI)",
     "FCDS Package 5 - Magat River Flood Control": "FCDS Package 5 - Flood Control ng Ilog Magat",
@@ -1000,21 +1000,21 @@ PASS2_FIL_4 = {
     "Crop Insurance (PCIC)": "Crop Insurance (PCIC)",
     "PCIC insurance coverage for corn crops": "Saklaw ng seguro ng PCIC para sa mga pananim na mais",
     "SEEDO - Slaughterhouse": "SEEDO - Katayan",
-    "SEEDO Slaughterhouse, Solano, Nueva Vizcaya": "SEEDO Katayan, Solano, Nueva Vizcaya",
+    "SEEDO Slaughterhouse, Bayawan City, Negros Oriental": "SEEDO Katayan, Bayawan City, Negros Oriental",
     "SEEDO – Slaughterhouse": "SEEDO – Katayan",
     "Bintawan Road, Brgy. Quezon": "Bintawan Road, Brgy. Quezon",
-    "Magat River, Bagahabag Section, Solano, Nueva Vizcaya": "Ilog Magat, Seksyon ng Bagahabag, Solano, Nueva Vizcaya",
-    "Solano, Nueva Vizcaya 3708": "Solano, Nueva Vizcaya 3708",
+    "Magat River, Bagahabag Section, Bayawan City, Negros Oriental": "Ilog Magat, Seksyon ng Bagahabag, Bayawan City, Negros Oriental",
+    "Bayawan City, Negros Oriental 6221": "Bayawan City, Negros Oriental 6221",
 }
 
 # ============================================================
-# ILOCANO PASS 2 - Build from Filipino with Ilocano equivalents
+# Bisaya PASS 2 - Build from Filipino with Bisaya equivalents
 # ============================================================
 
-def build_ilo_from_fil(fil_dict):
-    """Build Ilocano translations using Filipino as reference + Ilocano-specific overrides."""
-    # Core Ilocano word substitutions from Filipino
-    fil_to_ilo = {
+def build_bis_from_fil(fil_dict):
+    """Build Bisaya translations using Filipino as reference + Bisaya-specific overrides."""
+    # Core Bisaya word substitutions from Filipino
+    fil_to_bis = {
         # Time
         'araw': 'aldaw', 'Araw': 'Aldaw',
         'oras': 'oras', 'minuto': 'minuto',
@@ -1185,15 +1185,15 @@ def build_ilo_from_fil(fil_dict):
         'Manatiling': 'Agtalinaed a',
     }
     
-    ilo = {}
+    bis = {}
     for en_key, fil_val in fil_dict.items():
         ilo_val = fil_val
         # Apply word substitutions (longest first to avoid partial matches)
         for fil_word in sorted(fil_to_ilo.keys(), key=len, reverse=True):
-            ilo_word = fil_to_ilo[fil_word]
+            ilo_word = fil_to_bis[fil_word]
             # Use word boundary matching
             ilo_val = re.sub(r'\b' + re.escape(fil_word) + r'\b', ilo_word, ilo_val)
-        ilo[en_key] = ilo_val
+        bis[en_key] = ilo_val
     return ilo
 
 # ============================================================
@@ -1210,7 +1210,7 @@ def main():
 
     en, en_order = extract_lang_dict(content, 'en')
     fil, fil_order = extract_lang_dict(content, 'fil')
-    ilo, ilo_order = extract_lang_dict(content, 'ilo')
+    ilo, ilo_order = extract_lang_dict(content, 'bis')
 
     # Merge all Filipino dictionaries
     all_fil = {}
@@ -1219,12 +1219,12 @@ def main():
     all_fil.update(PASS2_FIL_3)
     all_fil.update(PASS2_FIL_4)
 
-    # Build Ilocano from Filipino
-    all_ilo = build_ilo_from_fil(all_fil)
+    # Build Bisaya from Filipino
+    all_bis = build_bis_from_fil(all_fil)
 
     # Count untranslated before
     before_fil = sum(1 for k in en if fil.get(k) == en[k])
-    before_ilo = sum(1 for k in en if ilo.get(k) == en[k])
+    before_bis = sum(1 for k in en if bis.get(k) == en[k])
     print(f"Before - FIL untranslated: {before_fil}, ILO untranslated: {before_ilo}")
 
     # Apply translations
@@ -1240,14 +1240,14 @@ def main():
                 fil[key] = new_val
                 fil_count += 1
         
-        # Ilocano
-        if ilo.get(key) == en_val and en_val in all_ilo:
-            new_val = all_ilo[en_val]
+        # Bisaya
+        if bis.get(key) == en_val and en_val in all_bis:
+            new_val = all_bis[en_val]
             if new_val != en_val:
-                ilo[key] = new_val
+                bis[key] = new_val
                 ilo_count += 1
 
-    print(f"Applied - FIL: {fil_count}, ILO: {ilo_count}")
+    print(f"Applied - FIL: {fil_count}, bis: {ilo_count}")
 
     # Rebuild translations.js
     def build_lang_block(lang_dict, order, indent='        '):
@@ -1284,7 +1284,7 @@ def main():
 
     print("Rebuilding translations.js...")
     content = replace_lang_block(content, 'fil', fil, fil_order)
-    content = replace_lang_block(content, 'ilo', ilo, ilo_order)
+    content = replace_lang_block(content, 'bis', ilo, ilo_order)
 
     with open(TRANSLATIONS_JS, 'w') as f:
         f.write(content)
@@ -1295,13 +1295,13 @@ def main():
 
     v_en, _ = extract_lang_dict(verify, 'en')
     v_fil, _ = extract_lang_dict(verify, 'fil')
-    v_ilo, _ = extract_lang_dict(verify, 'ilo')
+    v_bis, _ = extract_lang_dict(verify, 'bis')
 
     after_fil = sum(1 for k in v_en if v_fil.get(k) == v_en[k])
-    after_ilo = sum(1 for k in v_en if v_ilo.get(k) == v_en[k])
+    after_bis = sum(1 for k in v_en if v_bis.get(k) == v_en[k])
     print(f"\nAfter - FIL untranslated: {after_fil}, ILO untranslated: {after_ilo}")
     print(f"FIL: {len(v_en)} keys, {len(v_en) - after_fil} translated ({(len(v_en) - after_fil) / len(v_en) * 100:.1f}%)")
-    print(f"ILO: {len(v_en)} keys, {len(v_en) - after_ilo} translated ({(len(v_en) - after_ilo) / len(v_en) * 100:.1f}%)")
+    print(f"bis: {len(v_en)} keys, {len(v_en) - after_ilo} translated ({(len(v_en) - after_ilo) / len(v_en) * 100:.1f}%)")
 
     # Show remaining untranslated
     remaining = []

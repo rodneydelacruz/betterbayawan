@@ -1,4 +1,4 @@
-# Better Solano - Robots.txt
+# Better Bayawan City - Robots.txt
 # Author: Ramon Logan Jr
 # This file tells search engine crawlers which pages to index
 
@@ -7,7 +7,7 @@ Allow: /
 Allow: /assets/images/banners/opengraph.png
 
 # Sitemap location
-Sitemap: https://bettersolano.org/sitemap.xml
+Sitemap: https://betterbayawan.org/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1
@@ -44,3 +44,4 @@ Allow: /assets/images/banners/opengraph.png
 User-agent: LinkedInBot
 Allow: /
 Allow: /assets/images/banners/opengraph.png
+

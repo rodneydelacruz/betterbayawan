@@ -1,4 +1,4 @@
-/* Responsive Styles - Better Solano */
+/* Responsive Styles - Better Bayawan City */
 
 /* Large Desktop */
 @media (min-width: 1200px) {
@@ -41,7 +41,7 @@
   }
 
   .site-header {
-    padding: 10px 0;
+    padding: 7px 0;
   }
 
   .header-inner {
@@ -52,12 +52,12 @@
 
   .logo-container {
     order: 1;
-    padding: 2px 0;
+    padding: 0;
     flex-shrink: 0;
   }
 
   .logo-img {
-    height: 40px;
+    height: 50px;
   }
 
   .mobile-menu-toggle {
@@ -316,11 +316,11 @@
   }
 
   .logo-container {
-    padding: 2px 0;
+    padding: 0;
   }
 
   .logo-img {
-    height: 36px;
+    height: 40px;
   }
 
   h1 {
@@ -527,8 +527,12 @@
     min-height: 32px;
   }
 
+  .logo-container {
+    padding: 0;
+  }
+
   .logo-img {
-    height: 32px;
+    height: 36px;
   }
 
   .header-actions {

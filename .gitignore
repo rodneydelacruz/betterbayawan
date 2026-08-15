@@ -5,3 +5,5 @@ dist/
 react-app/out/
 out/
 *.backup
+
+.commandcode/

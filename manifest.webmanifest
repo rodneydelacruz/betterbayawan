@@ -1,7 +1,7 @@
 {
-  "name": "BetterSolano.org - LGU Solano Portal",
-  "short_name": "BetterSolano",
-  "description": "Access government services, emergency hotlines, and transparency data for Solano, Nueva Vizcaya.",
+  "name": "betterbayawan.org - LGU Bayawan City Portal",
+  "short_name": "BetterBayawan",
+  "description": "Access government services, emergency hotlines, and transparency data for Bayawan City, Negros Oriental.",
   "start_url": "/?source=pwa",
   "scope": "/",
   "display": "standalone",
@@ -13,19 +13,25 @@
   "categories": ["government", "utilities"],
   "icons": [
     {
-      "src": "/assets/images/logo/favicon.svg",
+      "src": "/assets/images/logo/better-bayawan-favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "any"
     },
     {
-      "src": "/assets/images/logo/favicon.svg",
+      "src": "/assets/images/logo/better-bayawan-favicon.svg",
       "sizes": "any",
       "type": "image/svg+xml",
       "purpose": "maskable"
     },
     {
-      "src": "/assets/images/logo/favicon.ico",
+      "src": "/assets/images/logo/better-bayawan-logo.png",
+      "sizes": "256x256",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/images/logo/better-bayawan-favicon.ico",
       "sizes": "48x48",
       "type": "image/x-icon"
     }
@@ -35,25 +41,25 @@
       "name": "Services",
       "short_name": "Services",
       "url": "/services/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/better-bayawan-favicon.svg", "sizes": "any" }]
     },
     {
       "name": "Contact & Hotlines",
       "short_name": "Contact",
       "url": "/contact/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/better-bayawan-favicon.svg", "sizes": "any" }]
     },
     {
       "name": "Government",
       "short_name": "Government",
       "url": "/government/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/better-bayawan-favicon.svg", "sizes": "any" }]
     },
     {
       "name": "Transparency",
       "short_name": "Budget",
       "url": "/budget/?source=pwa",
-      "icons": [{ "src": "/assets/images/logo/favicon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/assets/images/logo/better-bayawan-favicon.svg", "sizes": "any" }]
     }
   ],
   "prefer_related_applications": false

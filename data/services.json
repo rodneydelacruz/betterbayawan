@@ -5,7 +5,7 @@
       "title": "Birth Certificate",
       "category": "Certificates & Vital Records",
       "categoryId": "certificates",
-      "description": "Get a certified copy of birth certificate registered in Solano",
+      "description": "Get a certified copy of birth certificate registered in Bayawan City",
       "keywords": [
         "birth",
         "certificate",
@@ -94,7 +94,7 @@
       "keywords": ["police", "clearance", "nbi", "criminal", "record"],
       "fee": "Varies",
       "processingTime": "3-5 days",
-      "office": "PNP Solano",
+      "office": "PNP Bayawan City",
       "url": "certificates.html"
     },
     {
@@ -142,7 +142,7 @@
       "keywords": ["sanitary", "permit", "health", "sanitation", "food", "restaurant"],
       "fee": "Varies",
       "processingTime": "1-3 days",
-      "office": "Municipal Health Office",
+      "office": "City Health Office",
       "url": "business.html"
     },
     {
@@ -226,7 +226,7 @@
       "keywords": ["vaccine", "vaccination", "immunization", "shot", "covid", "flu"],
       "fee": "Free",
       "processingTime": "Same day",
-      "office": "Municipal Health Office",
+      "office": "City Health Office",
       "url": "health.html"
     },
     {
@@ -238,7 +238,7 @@
       "keywords": ["health", "certificate", "medical", "employment", "work"],
       "fee": "₱100-200",
       "processingTime": "Same day",
-      "office": "Municipal Health Office",
+      "office": "City Health Office",
       "url": "health.html"
     },
     {
@@ -250,7 +250,7 @@
       "keywords": ["medical", "assistance", "hospital", "medicine", "health", "sick"],
       "fee": "Free",
       "processingTime": "1-3 days",
-      "office": "Municipal Health Office / MSWDO",
+      "office": "City Health Office / MSWDO",
       "url": "health.html"
     },
     {
@@ -262,7 +262,7 @@
       "keywords": ["prenatal", "pregnant", "pregnancy", "baby", "maternal", "checkup"],
       "fee": "Free",
       "processingTime": "Same day",
-      "office": "Municipal Health Office",
+      "office": "City Health Office",
       "url": "health.html"
     },
     {
@@ -382,7 +382,7 @@
       "keywords": ["scholarship", "student", "education", "school", "college", "tuition"],
       "fee": "Free",
       "processingTime": "Varies",
-      "office": "Municipal Mayor's Office",
+      "office": "City Mayor's Office",
       "url": "education.html"
     },
     {
@@ -608,19 +608,19 @@
       ],
       "fee": "Varies",
       "processingTime": "3-5 days",
-      "office": "Municipal Assessor's Office",
+      "office": "City Assessor's Office",
       "url": "../service-details/property-declaration.html"
     },
     {
       "id": "municipal-assessor",
-      "title": "Municipal Assessor's Office",
+      "title": "City Assessor's Office",
       "category": "Taxation & Payments",
       "categoryId": "tax-payments",
       "description": "Property assessment, tax declaration, and land records",
       "keywords": ["assessor", "property", "assessment", "tax declaration", "land", "appraisal"],
       "fee": "Varies",
       "processingTime": "3-5 days",
-      "office": "Municipal Assessor's Office",
+      "office": "City Assessor's Office",
       "url": "../service-details/municipal-assessor.html"
     },
     {
@@ -746,7 +746,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/billing"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/bpls/billing"
     },
     {
       "id": "online-new-business",
@@ -758,7 +758,7 @@
       "fee": "Varies",
       "processingTime": "3-5 days",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/newbusiness"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/bpls/newbusiness"
     },
     {
       "id": "online-business-renewal",
@@ -770,7 +770,7 @@
       "fee": "Varies",
       "processingTime": "Same day",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/bpls/renewbusiness"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/bpls/renewbusiness"
     },
     {
       "id": "online-rpt-billing",
@@ -782,7 +782,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/rptis/billing"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/rptis/billing"
     },
     {
       "id": "online-payment-order",
@@ -794,7 +794,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_solano/po/billing"
+      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/po/billing"
     }
   ]
 }

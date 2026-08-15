@@ -92,7 +92,7 @@ FIL2 = {
     "Preparation and submission of monthly financial reports to oversight agencies": "Paghahanda at pagsusumite ng buwanang mga ulat pinansyal sa mga ahensyang nangangasiwa",
     "Submit to COA, DBM, and other oversight agencies": "Isumite sa COA, DBM, at iba pang mga ahensyang nangangasiwa",
     "Checked/validated Obligation Request (ObR)": "Nasuri/napatunayan na Obligation Request (ObR)",
-    "ObR duly signed by the Municipal Budget Officer": "ObR na wastong nilagdaan ng Municipal Budget Officer",
+    "ObR duly signed by the City Budget Officer": "ObR na wastong nilagdaan ng City Budget Officer",
     "Processing of Obligation Request": "Pagproseso ng Obligation Request",
     "Processing of checks for approved disbursements and payments": "Pagproseso ng mga tseke para sa mga naaprubahang disbursement at pagbabayad",
     "Processing of salaries, wages, and other compensation for municipal employees": "Pagproseso ng mga sahod, suweldo, at iba pang kabayaran para sa mga empleyado ng munisipyo",
@@ -108,8 +108,8 @@ FIL2 = {
 
     # Civil Registry / Certificates
     "Registration of Live Birth": "Pagpaparehistro ng Kapanganakan",
-    "Registration of birth for children born in Solano, Nueva Vizcaya": "Pagpaparehistro ng kapanganakan para sa mga batang ipinanganak sa Solano, Nueva Vizcaya",
-    "Registration of death for persons who died in Solano, Nueva Vizcaya": "Pagpaparehistro ng pagkamatay para sa mga taong namatay sa Solano, Nueva Vizcaya",
+    "Registration of birth for children born in Bayawan City, Negros Oriental": "Pagpaparehistro ng kapanganakan para sa mga batang ipinanganak sa Bayawan City, Negros Oriental",
+    "Registration of death for persons who died in Bayawan City, Negros Oriental": "Pagpaparehistro ng pagkamatay para sa mga taong namatay sa Bayawan City, Negros Oriental",
     "Registration and issuance of death certificates": "Pagpaparehistro at pagbibigay ng mga sertipiko ng pagkamatay",
     "Register births and deaths within 30 days to avoid penalties": "Irehistro ang mga kapanganakan at pagkamatay sa loob ng 30 araw upang maiwasan ang mga multa",
     "Issuance of certified true copies and registration of births": "Pagbibigay ng mga sertipikadong tunay na kopya at pagpaparehistro ng mga kapanganakan",
@@ -135,7 +135,7 @@ FIL2 = {
     "Certificate of occupancy for completed buildings": "Sertipiko ng paninirahan para sa mga natapos na gusali",
     "Certification of crops planted and production data": "Sertipikasyon ng mga pananim na itinanim at datos ng produksyon",
     "Certification of farm location and area cultivated": "Sertipikasyon ng lokasyon ng bukid at lugar na sinasaka",
-    "Certification that a person has no declared property in Solano.": "Sertipikasyon na ang isang tao ay walang idineklaang ari-arian sa Solano.",
+    "Certification that a person has no declared property in Bayawan City.": "Sertipikasyon na ang isang tao ay walang idineklaang ari-arian sa Bayawan City.",
     "Certification that employee has no pending administrative case": "Sertipikasyon na ang empleyado ay walang nakabinbing kasong administratibo",
     "Clerical error corrections and change of first name": "Mga pagwawasto ng klerikal na error at pagbabago ng unang pangalan",
     "Correction of Day/Month of Birth (RA 10172)": "Pagwawasto ng Araw/Buwan ng Kapanganakan (RA 10172)",
@@ -148,7 +148,7 @@ FIL2 = {
     "Affidavit of the solemnizing officer or the person reporting or presenting the marriage certificate": "Sinumpaang Salaysay ng opisyal na nagkasal o ng taong nag-uulat o nagpapakita ng sertipiko ng kasal",
     "Application for Marriage License duly signed by the couple and the MCR": "Aplikasyon para sa Lisensya sa Kasal na wastong nilagdaan ng mag-asawa at ng MCR",
     "Marriage license is valid for 120 days from issuance": "Ang lisensya sa kasal ay balido sa loob ng 120 araw mula sa pagbibigay",
-    "For engaged couples intending to get married in Solano": "Para sa mga magkasintahang nagbabalak magpakasal sa Solano",
+    "For engaged couples intending to get married in Bayawan City": "Para sa mga magkasintahang nagbabalak magpakasal sa Bayawan City",
     "After the PMC, go back to MCRO": "Pagkatapos ng PMC, bumalik sa MCRO",
     "MHO Certification of Cause of Death": "Sertipikasyon ng MHO ng Sanhi ng Pagkamatay",
     "For Death at Home (Unattended)": "Para sa Pagkamatay sa Bahay (Walang Dumalo)",
@@ -193,7 +193,7 @@ FIL2 = {
 
 FIL3 = {
     # Business/Permits
-    "Application for new business permit for businesses operating in Solano": "Aplikasyon para sa bagong permiso sa negosyo para sa mga negosyong nag-ooperate sa Solano",
+    "Application for new business permit for businesses operating in Bayawan City": "Aplikasyon para sa bagong permiso sa negosyo para sa mga negosyong nag-ooperate sa Bayawan City",
     "Annual business tax based on gross sales/receipts": "Taunang buwis sa negosyo batay sa kabuuang benta/resibo",
     "Annual renewal of existing business permit (January 1-20 without surcharge)": "Taunang pag-renew ng umiiral na permiso sa negosyo (Enero 1-20 nang walang karagdagang singil)",
     "Business permit renewal deadline: January 20": "Deadline ng pag-renew ng permiso sa negosyo: Enero 20",
@@ -210,7 +210,7 @@ FIL3 = {
     "Transfer of Business Location": "Paglipat ng Lokasyon ng Negosyo",
     "View and pay your business tax bills online": "Tingnan at bayaran ang iyong mga bill ng buwis sa negosyo online",
     "When should I renew my business permit?": "Kailan ko dapat i-renew ang aking permiso sa negosyo?",
-    "What do I need to start a new business in Solano?": "Ano ang kailangan ko upang magsimula ng bagong negosyo sa Solano?",
+    "What do I need to start a new business in Bayawan City?": "Ano ang kailangan ko upang magsimula ng bagong negosyo sa Bayawan City?",
     "Secure zoning clearance before applying for business permit": "Kumuha ng zoning clearance bago mag-apply ng permiso sa negosyo",
     "DTI Certificate of Business Name Registration (for sole proprietorship)": "DTI Certificate ng Pagpaparehistro ng Pangalan ng Negosyo (para sa sole proprietorship)",
     "Contract of Lease (if applicable)": "Kontrata ng Pag-upa (kung naaangkop)",
@@ -232,7 +232,7 @@ FIL3 = {
     "Declaration must be filed within 60 days of acquisition": "Ang deklarasyon ay dapat ihain sa loob ng 60 araw mula sa pagkuha",
     "Declaration of Land, Building and Machineries": "Deklarasyon ng Lupa, Gusali at Makinarya",
     "Tax Declaration is an official document showing the assessed value of a property. It is used as basis for real property tax computation": "Ang Tax Declaration ay isang opisyal na dokumento na nagpapakita ng tinasang halaga ng ari-arian. Ito ay ginagamit bilang batayan para sa pagkalkula ng buwis sa tunay na ari-arian",
-    "Tax declaration form for real property assessment in Solano, Nueva Vizcaya": "Form ng tax declaration para sa pagtatasa ng tunay na ari-arian sa Solano, Nueva Vizcaya",
+    "Tax declaration form for real property assessment in Bayawan City, Negros Oriental": "Form ng tax declaration para sa pagtatasa ng tunay na ari-arian sa Bayawan City, Negros Oriental",
     "Assessor's staff will conduct on-site inspection and measurement of the property.": "Ang kawani ng Tagapagtasa ay magsasagawa ng on-site na inspeksyon at pagsukat ng ari-arian.",
     "For changes in property details, corrections, or general revision updates.": "Para sa mga pagbabago sa detalye ng ari-arian, mga pagwawasto, o mga update sa pangkalahatang rebisyon.",
     "For newly constructed buildings, improvements, or newly discovered properties.": "Para sa mga bagong itinayong gusali, mga pagpapabuti, o mga bagong natuklasang ari-arian.",
@@ -256,7 +256,7 @@ FIL3 = {
     "Pay early in January for 10% discount": "Magbayad nang maaga sa Enero para sa 10% diskwento",
     "Arrangement for installment payment of taxes": "Kasunduan para sa hulugang pagbabayad ng buwis",
     "How can I pay my real property tax?": "Paano ko mababayaran ang aking buwis sa tunay na ari-arian?",
-    "Visit the Municipal Treasurer's Office at the Municipal Hall with your Tax Declaration or latest Official Receipt": "Bumisita sa Opisina ng Ingat-Yaman ng Munisipyo sa Munisipyo na may iyong Tax Declaration o pinakabagong Opisyal na Resibo",
+    "Visit the City Treasurer's Office at the City Hall with your Tax Declaration or latest Official Receipt": "Bumisita sa Opisina ng Ingat-Yaman ng Munisipyo sa Munisipyo na may iyong Tax Declaration o pinakabagong Opisyal na Resibo",
     "Tax Clearance from Treasurer": "Tax Clearance mula sa Ingat-Yaman",
     "Appraisal and valuation of real properties for taxation purposes": "Pagtatasa at pagpapahalaga ng mga tunay na ari-arian para sa layunin ng pagbubuwis",
 }
@@ -347,7 +347,7 @@ FIL4 = {
     "Job placement, employment assistance, career guidance": "Paglalagay sa trabaho, tulong sa trabaho, gabay sa karera",
     "Unemployed or underemployed residents": "Mga walang trabaho o kulang ang trabaho na mga residente",
     "For medical, educational, burial, and other assistance programs": "Para sa mga programa ng tulong medikal, pang-edukasyon, libing, at iba pa",
-    "Proof of residence in Solano": "Patunay ng paninirahan sa Solano",
+    "Proof of residence in Bayawan City": "Patunay ng paninirahan sa Bayawan City",
     "Proof of Income (if employed)": "Patunay ng Kita (kung may trabaho)",
     "All information is treated with confidentiality": "Ang lahat ng impormasyon ay tinatrato nang may pagiging kumpidensyal",
     "All information is treated with strict confidentiality": "Ang lahat ng impormasyon ay tinatrato nang may mahigpit na pagiging kumpidensyal",
@@ -367,7 +367,7 @@ FIL5 = {
     "Distribution of certified corn seeds (OPV and hybrid varieties)": "Pamamahagi ng mga sertipikadong binhi ng mais (OPV at hybrid na mga uri)",
     "Distribution of tilapia, carp, and other fingerlings": "Pamamahagi ng mga tilapia, karpa, at iba pang fingerling",
     "Distribution to requesting offices": "Pamamahagi sa mga humihiling na opisina",
-    "Farm registration, certifications, and agricultural programs for Solano farmers": "Pagpaparehistro ng bukid, mga sertipikasyon, at mga programang agrikultural para sa mga magsasaka ng Solano",
+    "Farm registration, certifications, and agricultural programs for Bayawan City farmers": "Pagpaparehistro ng bukid, mga sertipikasyon, at mga programang agrikultural para sa mga magsasaka ng Bayawan City",
     "Fish feeds and pond supplies support": "Suporta sa pagkain ng isda at mga suplay ng palaisdaan",
     "Free certified inbred rice seeds for registered farmers": "Libreng sertipikadong inbred na binhi ng bigas para sa mga rehistradong magsasaka",
     "Free of charge for all farmers": "Libre para sa lahat ng magsasaka",
@@ -380,7 +380,7 @@ FIL5 = {
     "Support for organic farmers' groups and cooperatives": "Suporta para sa mga grupo ng organikong magsasaka at kooperatiba",
     "Support for organic farming practices and certification": "Suporta para sa mga kasanayan sa organikong pagsasaka at sertipikasyon",
     "Support for PGS and third-party organic certification": "Suporta para sa PGS at third-party na organikong sertipikasyon",
-    "Support programs for corn farmers in Solano": "Mga programa ng suporta para sa mga magsasaka ng mais sa Solano",
+    "Support programs for corn farmers in Bayawan City": "Mga programa ng suporta para sa mga magsasaka ng mais sa Bayawan City",
     "Support programs for rice farmers under the Rice Competitiveness Enhancement Fund (RCEF)": "Mga programa ng suporta para sa mga magsasaka ng bigas sa ilalim ng Rice Competitiveness Enhancement Fund (RCEF)",
     "Support services for fisherfolk and aquaculture operators": "Mga serbisyong suporta para sa mga mangingisda at operator ng akwakultura",
     "Support services for livestock and poultry raisers": "Mga serbisyong suporta para sa mga nag-aalaga ng livestock at manok",
@@ -438,7 +438,7 @@ FIL6 = {
     "Equipment rental is subject to availability and approval. Priority is given to municipal projects and emergency situations": "Ang pag-upa ng kagamitan ay depende sa pagkakaroon at pag-apruba. Ang prayoridad ay ibinibigay sa mga proyekto ng munisipyo at mga sitwasyon ng emergency",
     "Management and maintenance of municipal vehicles and heavy equipment": "Pamamahala at pagpapanatili ng mga sasakyan at mabibigat na kagamitan ng munisipyo",
     "Regular maintenance and repair coordination": "Regular na pagpapanatili at koordinasyon ng pagkukumpuni",
-    "Request letter addressed to the Municipal Mayor stating purpose and date of use": "Sulat ng kahilingan na nakadirekta sa Punong Bayan na nagsasaad ng layunin at petsa ng paggamit",
+    "Request letter addressed to the City Mayor stating purpose and date of use": "Sulat ng kahilingan na nakadirekta sa Punong Bayan na nagsasaad ng layunin at petsa ng paggamit",
     "Service motorcycles for field operations": "Mga motorsiklo ng serbisyo para sa mga operasyon sa field",
     "Service vehicles, patrol cars, and administrative vehicles": "Mga sasakyang panserbisyo, patrol car, at mga sasakyang pang-administrasyon",
     "Vehicle and equipment rental, property management, and procurement services": "Pag-upa ng sasakyan at kagamitan, pamamahala ng ari-arian, at mga serbisyo ng pagkuha",
@@ -461,37 +461,37 @@ FIL6 = {
     "Submission of Purchase Request (PR) from requesting office": "Pagsusumite ng Purchase Request (PR) mula sa humihiling na opisina",
     "Supplies issuance follows FIFO method": "Ang pagbibigay ng suplay ay sumusunod sa FIFO method",
     "The GSO assists in the procurement process for municipal supplies, equipment, and services in accordance with RA 9184": "Ang GSO ay tumutulong sa proseso ng pagkuha para sa mga suplay, kagamitan, at serbisyo ng munisipyo alinsunod sa RA 9184",
-    "The Municipal General Services Office takes custody of all properties, real or personal, owned by the municipality": "Ang Opisina ng Pangkalahatang Serbisyo ng Munisipyo ay nag-iingat ng lahat ng ari-arian, tunay o personal, na pagmamay-ari ng munisipyo",
+    "The City General Services Office takes custody of all properties, real or personal, owned by the municipality": "Ang Opisina ng Pangkalahatang Serbisyo ng Munisipyo ay nag-iingat ng lahat ng ari-arian, tunay o personal, na pagmamay-ari ng munisipyo",
 
     # Legislative
     "All enacted ordinances and resolutions are made available to the public as part of our commitment to transparency": "Ang lahat ng naipatupad na ordinansa at resolusyon ay ginagawang magagamit sa publiko bilang bahagi ng aming pangako sa transparency",
-    "Citizens can attend Sangguniang Bayan sessions and participate in public hearings for proposed ordinances": "Ang mga mamamayan ay maaaring dumalo sa mga sesyon ng Sangguniang Bayan at lumahok sa mga pagdinig publiko para sa mga iminumungkahing ordinansa",
+    "Citizens can attend Sangguniang Panlungsod sessions and participate in public hearings for proposed ordinances": "Ang mga mamamayan ay maaaring dumalo sa mga sesyon ng Sangguniang Panlungsod at lumahok sa mga pagdinig publiko para sa mga iminumungkahing ordinansa",
     "Committee conducts public hearing and deliberates on the proposed ordinance": "Ang komite ay nagsasagawa ng pagdinig publiko at nagdedelibera sa iminumungkahing ordinansa",
     "Committee reviews and approves the proposed resolution": "Sinusuri at inaprubahan ng komite ang iminumungkahing resolusyon",
-    "Committee submits findings and recommendations to the Sangguniang Bayan": "Isinusumite ng komite ang mga natuklasan at rekomendasyon sa Sangguniang Bayan",
+    "Committee submits findings and recommendations to the Sangguniang Panlungsod": "Isinusumite ng komite ang mga natuklasan at rekomendasyon sa Sangguniang Panlungsod",
     "Detailed discussion and debate on the proposed ordinance": "Detalyadong talakayan at debate sa iminumungkahing ordinansa",
     "Expressions of the legislative body's will or opinion on specific matters, often used for commendations": "Mga pagpapahayag ng kalooban o opinyon ng lehislatura sa mga tiyak na usapin, kadalasang ginagamit para sa mga pagkilala",
-    "Final voting on the proposed ordinance by the Sangguniang Bayan": "Huling pagboto sa iminumungkahing ordinansa ng Sangguniang Bayan",
+    "Final voting on the proposed ordinance by the Sangguniang Panlungsod": "Huling pagboto sa iminumungkahing ordinansa ng Sangguniang Panlungsod",
     "First Reading / Referral to Committee": "Unang Pagbasa / Referral sa Komite",
     "Initial reading and assignment to the relevant committee for review": "Paunang pagbasa at pagtatalaga sa kaugnay na komite para sa pagsusuri",
-    "Learn about the legislative process of the Sangguniang Bayan": "Alamin ang tungkol sa prosesong lehislatibo ng Sangguniang Bayan",
+    "Learn about the legislative process of the Sangguniang Panlungsod": "Alamin ang tungkol sa prosesong lehislatibo ng Sangguniang Panlungsod",
     "Legislative staff prepares and prints the final draft of the resolution": "Ang kawani ng lehislatura ay naghahanda at nagpi-print ng huling draft ng resolusyon",
     "Mayor reviews and approves the enacted ordinance within 10 days": "Sinusuri at inaprubahan ng Alkalde ang naipatupad na ordinansa sa loob ng 10 araw",
-    "Municipal ordinances enacted by the Sangguniang Bayan — local laws that govern the municipality": "Mga ordinansa ng munisipyo na naipatupad ng Sangguniang Bayan — mga lokal na batas na namamahala sa munisipyo",
+    "City Ordinances enacted by the Sangguniang Panlungsod — local laws that govern the municipality": "Mga ordinansa ng munisipyo na naipatupad ng Sangguniang Panlungsod — mga lokal na batas na namamahala sa munisipyo",
     "Ordinance takes effect and is enforced within the municipality": "Ang ordinansa ay nagkakabisa at ipinapatupad sa loob ng munisipyo",
     "Public posting and publication of the approved ordinance": "Pampublikong pag-post at publikasyon ng naaprubahang ordinansa",
     "Resolution is posted publicly and transmitted to concerned parties": "Ang resolusyon ay naka-post sa publiko at ipinadala sa mga kinauukulan",
-    "Resolution is scheduled for inclusion in the Sangguniang Bayan session": "Ang resolusyon ay naka-iskedyul para sa pagsasama sa sesyon ng Sangguniang Bayan",
-    "Resolutions passed by the Sangguniang Bayan expressing the will or opinion of the legislative body on various matters.": "Mga resolusyong ipinasa ng Sangguniang Bayan na nagpapahayag ng kalooban o opinyon ng lehislatura sa iba't ibang usapin.",
+    "Resolution is scheduled for inclusion in the Sangguniang Panlungsod session": "Ang resolusyon ay naka-iskedyul para sa pagsasama sa sesyon ng Sangguniang Panlungsod",
+    "Resolutions passed by the Sangguniang Panlungsod expressing the will or opinion of the legislative body on various matters.": "Mga resolusyong ipinasa ng Sangguniang Panlungsod na nagpapahayag ng kalooban o opinyon ng lehislatura sa iba't ibang usapin.",
     "Step-by-step process for enacting ordinances and resolutions": "Hakbang-hakbang na proseso para sa pagpapatupad ng mga ordinansa at resolusyon",
     "Submit approved ordinance to Sangguniang Panlalawigan for review within 3 days": "Isumite ang naaprubahang ordinansa sa Sangguniang Panlalawigan para sa pagsusuri sa loob ng 3 araw",
-    "Submit the proposed ordinance to the Sangguniang Bayan for consideration": "Isumite ang iminumungkahing ordinansa sa Sangguniang Bayan para sa pagsasaalang-alang",
-    "Submit the proposed resolution to the Sangguniang Bayan": "Isumite ang iminumungkahing resolusyon sa Sangguniang Bayan",
+    "Submit the proposed ordinance to the Sangguniang Panlungsod for consideration": "Isumite ang iminumungkahing ordinansa sa Sangguniang Panlungsod para sa pagsasaalang-alang",
+    "Submit the proposed resolution to the Sangguniang Panlungsod": "Isumite ang iminumungkahing resolusyon sa Sangguniang Panlungsod",
     "Submit transmittal letter and franchise applications to the SB": "Isumite ang transmittal letter at mga aplikasyon ng prangkisa sa SB",
     "Third and Final Reading": "Ikatlo at Huling Pagbasa",
     "View All Ordinances on SB Website": "Tingnan ang Lahat ng Ordinansa sa Website ng SB",
     "View All Resolutions on SB Website": "Tingnan ang Lahat ng Resolusyon sa Website ng SB",
-    "Sangguniang Bayan Members approve the MTOF": "Ang mga Miyembro ng Sangguniang Bayan ay inaprubahan ang MTOF",
+    "Sangguniang Panlungsod Members approve the MTOF": "Ang mga Miyembro ng Sangguniang Panlungsod ay inaprubahan ang MTOF",
     "Vice Mayor or Secretary to the Sanggunian approves/disapproves the request": "Ang Bise Alkalde o Kalihim ng Sanggunian ay inaprubahan/tinanggihan ang kahilingan",
     "BPLS Inspector inspects the tricycle unit": "Ang BPLS Inspector ay nag-iinspeksyon ng yunit ng traysikel",
     "BPLS Inspector receives the franchise application form": "Ang BPLS Inspector ay tumatanggap ng application form ng prangkisa",
@@ -509,9 +509,9 @@ FIL6 = {
     "Review and evaluation of Barangay Budget": "Pagsusuri at ebalwasyon ng Badyet ng Barangay",
     "Review and evaluation of SEF Budget": "Pagsusuri at ebalwasyon ng Badyet ng SEF",
     "Budget preparation, appropriations, fiscal management": "Paghahanda ng badyet, mga appropriasyon, pamamahala ng piskal",
-    "The Municipal Budget Office assists barangays in the preparation of their Annual Budget. It conducts review and evaluation": "Ang Opisina ng Badyet ng Munisipyo ay tumutulong sa mga barangay sa paghahanda ng kanilang Taunang Badyet. Nagsasagawa ito ng pagsusuri at ebalwasyon",
-    "The Municipal Budget Office processes disbursement vouchers particularly the integral part of Obligation Request": "Ang Opisina ng Badyet ng Munisipyo ay nagpoproseso ng mga disbursement voucher lalo na ang mahalagang bahagi ng Obligation Request",
-    "The Municipal Accounting Office pre-audits disbursement vouchers to ensure compliance with accounting rules": "Ang Opisina ng Accounting ng Munisipyo ay nag-pre-audit ng mga disbursement voucher upang matiyak ang pagsunod sa mga patakaran ng accounting",
+    "The City Budget Office assists barangays in the preparation of their Annual Budget. It conducts review and evaluation": "Ang Opisina ng Badyet ng Munisipyo ay tumutulong sa mga barangay sa paghahanda ng kanilang Taunang Badyet. Nagsasagawa ito ng pagsusuri at ebalwasyon",
+    "The City Budget Office processes disbursement vouchers particularly the integral part of Obligation Request": "Ang Opisina ng Badyet ng Munisipyo ay nagpoproseso ng mga disbursement voucher lalo na ang mahalagang bahagi ng Obligation Request",
+    "The City Accounting Office pre-audits disbursement vouchers to ensure compliance with accounting rules": "Ang Opisina ng Accounting ng Munisipyo ay nag-pre-audit ng mga disbursement voucher upang matiyak ang pagsunod sa mga patakaran ng accounting",
     "Barangay budgets must be submitted within 10 days of approval": "Ang mga badyet ng barangay ay dapat isumite sa loob ng 10 araw mula sa pag-apruba",
     "Barangay Development Plan and Barangay Annual Investment Plan": "Plano ng Pagpapaunlad ng Barangay at Taunang Plano ng Pamumuhunan ng Barangay",
     "The Authorized Expenditure Program for the Budget Year or Appropriation Ordinance": "Ang Awtorisadong Programa ng Gastusin para sa Taon ng Badyet o Ordinansa ng Appropriasyon",
@@ -542,7 +542,7 @@ FIL6 = {
 
 FIL7 = {
     # Privacy Policy
-    "This Privacy Policy explains how BetterSolano.org collects, uses, and protects your information": "Ang Patakaran sa Privacy na ito ay nagpapaliwanag kung paano kinokolekta, ginagamit, at pinoprotektahan ng BetterSolano.org ang iyong impormasyon",
+    "This Privacy Policy explains how betterbayawan.org collects, uses, and protects your information": "Ang Patakaran sa Privacy na ito ay nagpapaliwanag kung paano kinokolekta, ginagamit, at pinoprotektahan ng betterbayawan.org ang iyong impormasyon",
     "We are committed to protecting your privacy and ensuring the security of your personal information": "Kami ay nakatuon sa pagprotekta ng iyong privacy at pagtiyak ng seguridad ng iyong personal na impormasyon",
     "We do not sell, trade, or rent your personal information to third parties": "Hindi namin ibinebenta, ipinagpapalit, o ipinapaupa ang iyong personal na impormasyon sa mga third party",
     "We may update this Privacy Policy from time to time": "Maaari naming i-update ang Patakaran sa Privacy na ito paminsan-minsan",
@@ -575,13 +575,13 @@ FIL7 = {
 
     # Terms of Use
     "By accessing and using this website, you agree to be bound by these Terms of Use": "Sa pag-access at paggamit ng website na ito, sumasang-ayon ka na sumunod sa mga Tuntunin ng Paggamit na ito",
-    "These Terms of Use govern your access to and use of the BetterSolano.org website": "Ang mga Tuntunin ng Paggamit na ito ay namamahala sa iyong pag-access at paggamit ng website ng BetterSolano.org",
+    "These Terms of Use govern your access to and use of the betterbayawan.org website": "Ang mga Tuntunin ng Paggamit na ito ay namamahala sa iyong pag-access at paggamit ng website ng betterbayawan.org",
     "We reserve the right to modify these terms at any time": "Inilalaan namin ang karapatan na baguhin ang mga tuntuning ito sa anumang oras",
     "The content on this website is provided for general informational purposes only": "Ang nilalaman sa website na ito ay ibinibigay para sa pangkalahatang layunin ng impormasyon lamang",
     "We make no warranties or representations about the accuracy or completeness of the content": "Wala kaming mga garantiya o representasyon tungkol sa katumpakan o pagkakumpleto ng nilalaman",
     "This website is not intended to provide professional, legal, or financial advice": "Ang website na ito ay hindi nilalayong magbigay ng propesyonal, legal, o pinansiyal na payo",
     "We shall not be liable for any damages arising from the use of this website": "Hindi kami mananagot para sa anumang pinsala na nagmumula sa paggamit ng website na ito",
-    "All content on this website is the property of BetterSolano.org unless otherwise stated": "Ang lahat ng nilalaman sa website na ito ay pag-aari ng BetterSolano.org maliban kung iba ang nakasaad",
+    "All content on this website is the property of betterbayawan.org unless otherwise stated": "Ang lahat ng nilalaman sa website na ito ay pag-aari ng betterbayawan.org maliban kung iba ang nakasaad",
     "Links to third-party websites are provided for convenience only": "Ang mga link sa mga third-party na website ay ibinibigay para sa kaginhawahan lamang",
     "We do not endorse or assume responsibility for third-party content": "Hindi namin ineendorso o inaako ang responsibilidad para sa nilalaman ng third-party",
     "If any provision of these terms is found to be unenforceable, the remaining provisions shall continue in effect": "Kung ang anumang probisyon ng mga tuntuning ito ay matuklasang hindi maipapatupad, ang mga natitirang probisyon ay mananatiling may bisa",
@@ -599,15 +599,15 @@ FIL7 = {
 
     # FAQ
     "Frequently Asked Questions": "Mga Madalas Itanong",
-    "Find answers to common questions about Solano municipal services": "Maghanap ng mga sagot sa mga karaniwang tanong tungkol sa mga serbisyo ng munisipyo ng Solano",
+    "Find answers to common questions about Bayawan City municipal services": "Maghanap ng mga sagot sa mga karaniwang tanong tungkol sa mga serbisyo ng munisipyo ng Bayawan City",
     "Is this website mobile-friendly?": "Ang website ba na ito ay mobile-friendly?",
-    "Who developed Better Solano?": "Sino ang gumawa ng Better Solano?",
+    "Who developed Better Bayawan City?": "Sino ang gumawa ng Better Bayawan City?",
     "What if I missed the registration deadline?": "Paano kung napalampas ko ang deadline ng pagpaparehistro?",
     "Select the scenario that applies to your situation": "Piliin ang senaryo na naaangkop sa iyong sitwasyon",
     "Response times may vary due to the volunteer nature of this initiative.": "Ang oras ng pagtugon ay maaaring mag-iba dahil sa boluntaryong katangian ng inisyatibang ito.",
     "How do I contact the municipal government?": "Paano ako makikipag-ugnayan sa pamahalaang munisipal?",
     "What services are available online?": "Anong mga serbisyo ang magagamit online?",
-    "Where is the Municipal Hall located?": "Nasaan ang Munisipyo?",
+    "Where is the City Hall located?": "Nasaan ang Munisipyo?",
 
     # Accessibility
     "Accessibility Statement": "Pahayag ng Accessibility",
@@ -623,23 +623,23 @@ FIL7 = {
 
     # Statistics
     "Municipal Statistics": "Estadistika ng Munisipyo",
-    "Data and statistics about Solano, Nueva Vizcaya": "Datos at estadistika tungkol sa Solano, Nueva Vizcaya",
+    "Data and statistics about Bayawan City, Negros Oriental": "Datos at estadistika tungkol sa Bayawan City, Negros Oriental",
     "Demographics Overview": "Pangkalahatang Demograpiya",
     "Economic Indicators": "Mga Tagapagpahiwatig ng Ekonomiya",
     "Population by Barangay": "Populasyon ayon sa Barangay",
     "Historical growth from 1990 to 2024": "Makasaysayang paglago mula 1990 hanggang 2024",
     "Cities and Municipalities Competitiveness Index (CMCI) Performance 2016-2024": "Pagganap ng Cities and Municipalities Competitiveness Index (CMCI) 2016-2024",
-    "Solano at a Glance": "Solano sa Isang Tingin",
-    "Brief History of Solano": "Maikling Kasaysayan ng Solano",
+    "Bayawan City at a Glance": "Bayawan City sa Isang Tingin",
+    "Brief History of Bayawan City": "Maikling Kasaysayan ng Bayawan City",
     "Major development projects serving the community": "Mga pangunahing proyekto ng pagpapaunlad na nagsisilbi sa komunidad",
-    "DPWH Infrastructure Projects in Solano": "Mga Proyekto ng Imprastraktura ng DPWH sa Solano",
+    "DPWH Infrastructure Projects in Bayawan City": "Mga Proyekto ng Imprastraktura ng DPWH sa Bayawan City",
 
     # Home page
-    "Welcome to Better Solano": "Maligayang Pagdating sa Better Solano",
-    "Your gateway to Solano municipal services and information": "Ang iyong daan patungo sa mga serbisyo at impormasyon ng munisipyo ng Solano",
-    "Fetching news and updates from Solano.": "Kinukuha ang mga balita at update mula sa Solano.",
-    "Fetching the latest news from Solano.": "Kinukuha ang pinakabagong balita mula sa Solano.",
-    "Stay informed about the latest happenings in Solano": "Manatiling may kaalaman tungkol sa mga pinakabagong pangyayari sa Solano",
+    "Welcome to Better Bayawan City": "Maligayang Pagdating sa Better Bayawan City",
+    "Your gateway to Bayawan City municipal services and information": "Ang iyong daan patungo sa mga serbisyo at impormasyon ng munisipyo ng Bayawan City",
+    "Fetching news and updates from Bayawan City.": "Kinukuha ang mga balita at update mula sa Bayawan City.",
+    "Fetching the latest news from Bayawan City.": "Kinukuha ang pinakabagong balita mula sa Bayawan City.",
+    "Stay informed about the latest happenings in Bayawan City": "Manatiling may kaalaman tungkol sa mga pinakabagong pangyayari sa Bayawan City",
     "Loading news...": "Naglo-load ng balita...",
     "Loading updates...": "Naglo-load ng mga update...",
     "Schedule Appointment": "Mag-iskedyul ng Appointment",
@@ -657,9 +657,9 @@ FIL7 = {
 
     # Contact
     "Contact the Municipal Government": "Makipag-ugnayan sa Pamahalaang Munisipal",
-    "Get in touch with the municipal government of Solano": "Makipag-ugnayan sa pamahalaang munisipal ng Solano",
+    "Get in touch with the municipal government of Bayawan City": "Makipag-ugnayan sa pamahalaang munisipal ng Bayawan City",
     "Office Hours": "Oras ng Opisina",
-    "Municipal Hall Address": "Adres ng Munisipyo",
+    "City Hall Address": "Adres ng Munisipyo",
 
     # Sitemap
     "Site Map": "Mapa ng Site",
@@ -707,12 +707,12 @@ FIL7 = {
 }
 
 # ============================================================
-# ILOCANO - Build from Filipino with systematic substitutions
+# Bisaya - Build from Filipino with systematic substitutions
 # ============================================================
 
-def build_ilo_from_fil(fil_dict):
-    """Build Ilocano translations using Filipino as reference + systematic word substitutions."""
-    fil_to_ilo = {
+def build_bis_from_fil(fil_dict):
+    """Build Bisaya translations using Filipino as reference + systematic word substitutions."""
+    fil_to_bis = {
         # Time
         'araw': 'aldaw', 'Araw': 'Aldaw',
         'oras': 'oras', 'minuto': 'minuto',
@@ -855,14 +855,14 @@ def build_ilo_from_fil(fil_dict):
         'Huli': 'Maudi', 'huli': 'maudi',
     }
 
-    ilo = {}
+    bis = {}
     for en_key, fil_val in fil_dict.items():
         ilo_val = fil_val
         # Apply word substitutions (longest first to avoid partial matches)
         for fil_word in sorted(fil_to_ilo.keys(), key=len, reverse=True):
-            ilo_word = fil_to_ilo[fil_word]
+            ilo_word = fil_to_bis[fil_word]
             ilo_val = re.sub(r'\b' + re.escape(fil_word) + r'\b', ilo_word, ilo_val)
-        ilo[en_key] = ilo_val
+        bis[en_key] = ilo_val
     return ilo
 
 
@@ -871,14 +871,14 @@ def build_ilo_from_fil(fil_dict):
 # ============================================================
 
 KEEP_AS_IS = {
-    'BLGF Portal', 'CMCI DTI Portal', 'LGU Solano Facebook',
+    'BLGF Portal', 'CMCI DTI Portal', 'LGU Bayawan City Facebook',
     'PhilHealth', 'GSIS', 'SSS', 'Pag-IBIG', 'BFP', 'PNP', 'DILG',
     'MDRRMO', 'MSWDO', 'SEEDO', 'MPDO', 'BIR', 'DTI', 'SEC', 'DENR',
     'DPWH', 'DSWD', 'PSA', 'NBI', 'COA', 'CSC', 'DBM', 'DOH',
     'MTOF', 'BPLS', 'RPT', 'CTC', 'RPTA', 'Filipizen',
-    'BetterSolano.org', 'Better Solano', 'Abakada.org',
-    'Sangguniang Bayan', 'Sangguniang Panlalawigan',
-    'Nueva Vizcaya', 'Solano', 'Bayombong', 'Facebook', 'Google',
+    'betterbayawan.org', 'Better Bayawan City', 'Abakada.org',
+    'Sangguniang Panlungsod', 'Sangguniang Panlalawigan',
+    'Negros Oriental', 'Bayawan City', 'Bayombong', 'Facebook', 'Google',
 }
 
 KEEP_PATTERNS = [
@@ -939,7 +939,7 @@ def main():
 
     en, en_order = extract_lang_dict(content, 'en')
     fil, fil_order = extract_lang_dict(content, 'fil')
-    ilo, ilo_order = extract_lang_dict(content, 'ilo')
+    ilo, ilo_order = extract_lang_dict(content, 'bis')
 
     print(f"Total keys: en={len(en)}, fil={len(fil)}, ilo={len(ilo)}")
 
@@ -950,18 +950,18 @@ def main():
 
     print(f"Pass 3 dictionary size: {len(all_fil)} entries")
 
-    # Build Ilocano from Filipino
-    all_ilo = build_ilo_from_fil(all_fil)
+    # Build Bisaya from Filipino
+    all_bis = build_bis_from_fil(all_fil)
 
     # Count states before
     untranslated_fil = sum(1 for k in en if fil.get(k) == en[k])
-    untranslated_ilo = sum(1 for k in en if ilo.get(k) == en[k])
+    untranslated_bis = sum(1 for k in en if bis.get(k) == en[k])
     bad_fil = sum(1 for k in en if is_bad_translation(en[k], fil.get(k, '')))
-    bad_ilo = sum(1 for k in en if is_bad_translation(en[k], ilo.get(k, '')))
+    bad_bis = sum(1 for k in en if is_bad_translation(en[k], bis.get(k, '')))
 
     print(f"\nBefore:")
     print(f"  FIL untranslated: {untranslated_fil}, bad translations: {bad_fil}")
-    print(f"  ILO untranslated: {untranslated_ilo}, bad translations: {bad_ilo}")
+    print(f"  ILO untranslated: {untranslated_bis}, bad translations: {bad_bis}")
 
     # Apply translations - both untranslated AND bad translations
     fil_new = 0
@@ -987,20 +987,20 @@ def main():
                     fil[key] = new_val
                     fil_fixed += 1
 
-        # Ilocano: apply if untranslated OR bad translation
-        if en_val in all_ilo:
-            new_val = all_ilo[en_val]
+        # Bisaya: apply if untranslated OR bad translation
+        if en_val in all_bis:
+            new_val = all_bis[en_val]
             if new_val != en_val:
-                if ilo.get(key) == en_val:
-                    ilo[key] = new_val
+                if bis.get(key) == en_val:
+                    bis[key] = new_val
                     ilo_new += 1
-                elif is_bad_translation(en_val, ilo.get(key, '')):
-                    ilo[key] = new_val
+                elif is_bad_translation(en_val, bis.get(key, '')):
+                    bis[key] = new_val
                     ilo_fixed += 1
 
     print(f"\nApplied:")
     print(f"  FIL: {fil_new} new + {fil_fixed} fixed = {fil_new + fil_fixed}")
-    print(f"  ILO: {ilo_new} new + {ilo_fixed} fixed = {ilo_new + ilo_fixed}")
+    print(f"  bis: {ilo_new} new + {ilo_fixed} fixed = {ilo_new + ilo_fixed}")
 
     # Rebuild translations.js
     def build_lang_block(lang_dict, order, indent='        '):
@@ -1037,7 +1037,7 @@ def main():
 
     print("\nRebuilding translations.js...")
     content = replace_lang_block(content, 'fil', fil, fil_order)
-    content = replace_lang_block(content, 'ilo', ilo, ilo_order)
+    content = replace_lang_block(content, 'bis', ilo, ilo_order)
 
     with open(TRANSLATIONS_JS, 'w') as f:
         f.write(content)
@@ -1048,24 +1048,24 @@ def main():
 
     v_en, _ = extract_lang_dict(verify, 'en')
     v_fil, _ = extract_lang_dict(verify, 'fil')
-    v_ilo, _ = extract_lang_dict(verify, 'ilo')
+    v_bis, _ = extract_lang_dict(verify, 'bis')
 
     after_untrans_fil = sum(1 for k in v_en if v_fil.get(k) == v_en[k])
-    after_untrans_ilo = sum(1 for k in v_en if v_ilo.get(k) == v_en[k])
+    after_untrans_bis = sum(1 for k in v_en if v_bis.get(k) == v_en[k])
     after_bad_fil = sum(1 for k in v_en if is_bad_translation(v_en[k], v_fil.get(k, '')))
-    after_bad_ilo = sum(1 for k in v_en if is_bad_translation(v_en[k], v_ilo.get(k, '')))
+    after_bad_bis = sum(1 for k in v_en if is_bad_translation(v_en[k], v_bis.get(k, '')))
 
     total_en = len(v_en)
     trans_fil = total_en - after_untrans_fil
-    trans_ilo = total_en - after_untrans_ilo
+    trans_bis = total_en - after_untrans_ilo
 
     print(f"\n{'='*60}")
     print(f"RESULTS:")
     print(f"  FIL: {trans_fil}/{total_en} translated ({trans_fil/total_en*100:.1f}%)")
     print(f"       {after_untrans_fil} untranslated, {after_bad_fil} bad remaining")
-    print(f"  ILO: {trans_ilo}/{total_en} translated ({trans_ilo/total_en*100:.1f}%)")
-    print(f"       {after_untrans_ilo} untranslated, {after_bad_ilo} bad remaining")
-    print(f"  Key parity: en={len(v_en)}, fil={len(v_fil)}, ilo={len(v_ilo)}")
+    print(f"  bis: {trans_ilo}/{total_en} translated ({trans_ilo/total_en*100:.1f}%)")
+    print(f"       {after_untrans_ilo} untranslated, {after_bad_bis} bad remaining")
+    print(f"  Key parity: en={len(v_en)}, fil={len(v_fil)}, ilo={len(v_bis)}")
 
     # Show remaining untranslated (first 20)
     remaining = []

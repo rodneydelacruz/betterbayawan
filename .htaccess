@@ -1,4 +1,4 @@
-# Better Solano - Apache Configuration for cPanel
+# Better Bayawan City - Apache Configuration for cPanel
 # Security Headers & Performance Optimizations
 # Updated: 2025-12-10
 
@@ -233,6 +233,6 @@ ServerSignature Off
 # Uncomment to prevent image hotlinking
 # <IfModule mod_rewrite.c>
 #     RewriteCond %{HTTP_REFERER} !^$
-#     RewriteCond %{HTTP_REFERER} !^https?://(www\.)?bettersolano\.org [NC]
+#     RewriteCond %{HTTP_REFERER} !^https?://(www\.)?betterbayawan\.org [NC]
 #     RewriteRule \.(jpg|jpeg|png|gif|svg|webp)$ - [F,NC,L]
 # </IfModule>

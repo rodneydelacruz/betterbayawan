@@ -1,6 +1,6 @@
 name: Facebook News Sync
 
-# Fully automated: pulls the latest LGU Solano Facebook posts, categorizes them,
+# Fully automated: pulls the latest LGU Bayawan City Facebook posts, categorizes them,
 # merges them into data/news.json, and (if changed) deploys the file to cPanel.
 # Runs on a schedule with no manual intervention. Stays dormant and harmless
 # until FB_ACCESS_TOKEN is added as a repository secret.

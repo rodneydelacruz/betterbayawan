@@ -1,4 +1,4 @@
-/* Better Solano - Ordinance Table JavaScript */
+/* Better Bayawan - Ordinance Table JavaScript */
 
 /**
  * Fetches ordinance data from the JSON file

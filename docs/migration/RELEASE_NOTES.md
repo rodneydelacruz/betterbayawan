@@ -6,7 +6,7 @@
 
 ## Overview
 
-This release introduces a React + TypeScript version of BetterSolano.org, providing modern tooling and component-based architecture for contributors who prefer this development approach.
+This release introduces a React + TypeScript version of betterbayawan.org, providing modern tooling and component-based architecture for contributors who prefer this development approach.
 
 ## Technology Stack
 
@@ -30,7 +30,7 @@ All features from the static HTML version are available:
 - Legislative documents (Ordinances and Resolutions)
 - Municipal Statistics and demographic data
 - Real-time weather and currency information
-- Multi-language support (English, Filipino, Ilocano)
+- Multi-language support (English, Filipino, Bisaya)
 - WCAG 2.1 accessibility compliance
 
 ## New Capabilities
@@ -76,7 +76,7 @@ Report issues or provide feedback:
 
 - GitHub Issues with `react` label
 - Discord community
-- Email: volunteer@bettersolano.org
+- Email: volunteer@betterbayawan.org
 
 ## Contributors
 
@@ -85,4 +85,4 @@ Thank you to all contributors who helped develop this version.
 ---
 
 Ramon Logan Jr.
-BetterSolano.org
+betterbayawan.org

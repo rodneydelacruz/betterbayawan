@@ -1,10 +1,10 @@
-# Contributing to betterbayawan.org
+# Contributing to BetterBayawan.org
 
-Thank you for your interest in contributing to betterbayawan.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Bayawan City, your contributions are welcome.
+Thank you for your interest in contributing to BetterBayawan.org! This civic-tech project thrives on community participation. Whether you're a developer, designer, translator, or a concerned citizen of Bayawan City, your contributions are welcome.
 
 ## Choosing a Version
 
-betterbayawan.org has two versions. Choose based on your preference:
+BetterBayawan.org has two versions. Choose based on your preference:
 
 | Version            | Branch             | Best For                                                          |
 | ------------------ | ------------------ | ----------------------------------------------------------------- |
@@ -183,9 +183,9 @@ Pull requests are reviewed for:
 ## Community
 
 - **Discord:** [Join our community](https://discord.com/invite/qeSu7RJkjQ)
-- **Facebook:** [@betterbayawan.org](https://www.facebook.com/betterbayawan.org)
+- **Facebook:** [@BetterBayawan.org](https://www.facebook.com/BetterBayawan.org)
 - **LinkedIn:** [Connect with us](https://www.linkedin.com/company/BetterBayawan)
-- **Email:** volunteer@betterbayawan.org
+- **Email:** volunteer@BetterBayawan.org
 
 ## Recognition
 

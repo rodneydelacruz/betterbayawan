@@ -3,6 +3,7 @@
 import Link from 'next/link';
 import { useLanguage } from '@/contexts/LanguageContext';
 import SearchAutocomplete from '@/components/SearchAutocomplete';
+import WeatherWidget from '@/components/weather/WeatherWidget';
 
 export default function HomePage() {
   const { t } = useLanguage();
@@ -14,6 +15,7 @@ export default function HomePage() {
         <div className="container">
           <div className="home-hero-v2-inner">
             <div className="home-hero-v2-text">
+              <p className="home-hero-slogan">Ibayaw Bayawan, Kita ang Bayawan</p>
               <h1>{t('hero-welcome')}</h1>
               <p>{t('hero-subtitle')}</p>
               <div className="home-hero-v2-actions">
@@ -232,34 +234,7 @@ export default function HomePage() {
           <div className="weather-map-grid">
             <div className="weather-column">
               <div id="weather-container" aria-live="polite">
-                <div
-                  className="weather-widget"
-                  role="region"
-                  aria-label="Current weather in Bayawan City"
-                >
-                  <div className="weather-current">
-                    <div className="weather-current-icon">
-                      <i className="bi bi-cloud-sun-fill"></i>
-                    </div>
-                    <div className="weather-current-info">
-                      <div className="weather-current-temp">29°C</div>
-                      <div className="weather-current-condition">{t('weather-mainly-clear')}</div>
-                      <div className="weather-current-location">
-                        <i className="bi bi-geo-alt"></i> {t('weather-location')}
-                      </div>
-                    </div>
-                  </div>
-                  <div className="weather-stats">
-                    <div className="weather-stat">
-                      <i className="bi bi-droplet"></i>
-                      <span>65%</span>
-                    </div>
-                    <div className="weather-stat">
-                      <i className="bi bi-wind"></i>
-                      <span>12 km/h</span>
-                    </div>
-                  </div>
-                </div>
+                <WeatherWidget />
               </div>
             </div>
             <div className="map-column">
@@ -271,7 +246,7 @@ export default function HomePage() {
                   data-map-loaded="iframe"
                 >
                   <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=122.7700%2C9.3300%2C122.8300%2C9.3900&layer=mapnik&marker=9.36%2C122.80"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=122.7592%2C9.3539%2C122.8192%2C9.4139&layer=mapnik&marker=9.3839%2C122.7892"
                     className="map-iframe"
                     title="Map of Bayawan City, Negros Oriental"
                     aria-label="OpenStreetMap showing Bayawan City Hall, Negros Oriental"

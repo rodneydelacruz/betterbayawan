@@ -27,10 +27,11 @@ export default function Footer() {
               alt="Better Bayawan logo"
               className="footer-logo"
             />
+            <p className="footer-slogan">Ibayaw Bayawan, Kita ang Bayawan</p>
             <p className="footer-tagline">{t('footer-tagline')}</p>
             <div className="footer-social-new">
               <a
-                href="https://www.facebook.com/betterbayawan.org"
+                href="https://www.facebook.com/BetterBayawan.org"
                 className="footer-social-btn"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -143,11 +144,11 @@ export default function Footer() {
             >
               {t('footer-cost')} <span className="footer-cost-value">₱0</span>
             </div>
-            <a href="mailto:volunteer@betterbayawan.org" className="footer-contribute">
+            <a href="mailto:volunteer@BetterBayawan.org" className="footer-contribute">
               <i className="bi bi-envelope-heart"></i> {t('footer-volunteer')}
             </a>
             <a
-              href="https://github.com/BetterBayawan City/betterBayawan City"
+              href="https://github.com/rodneydelacruz/betterbayawan"
               className="footer-contribute"
               target="_blank"
               rel="noopener noreferrer"

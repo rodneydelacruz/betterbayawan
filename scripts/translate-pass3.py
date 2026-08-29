@@ -542,7 +542,7 @@ FIL6 = {
 
 FIL7 = {
     # Privacy Policy
-    "This Privacy Policy explains how betterbayawan.org collects, uses, and protects your information": "Ang Patakaran sa Privacy na ito ay nagpapaliwanag kung paano kinokolekta, ginagamit, at pinoprotektahan ng betterbayawan.org ang iyong impormasyon",
+    "This Privacy Policy explains how BetterBayawan.org collects, uses, and protects your information": "Ang Patakaran sa Privacy na ito ay nagpapaliwanag kung paano kinokolekta, ginagamit, at pinoprotektahan ng BetterBayawan.org ang iyong impormasyon",
     "We are committed to protecting your privacy and ensuring the security of your personal information": "Kami ay nakatuon sa pagprotekta ng iyong privacy at pagtiyak ng seguridad ng iyong personal na impormasyon",
     "We do not sell, trade, or rent your personal information to third parties": "Hindi namin ibinebenta, ipinagpapalit, o ipinapaupa ang iyong personal na impormasyon sa mga third party",
     "We may update this Privacy Policy from time to time": "Maaari naming i-update ang Patakaran sa Privacy na ito paminsan-minsan",
@@ -575,13 +575,13 @@ FIL7 = {
 
     # Terms of Use
     "By accessing and using this website, you agree to be bound by these Terms of Use": "Sa pag-access at paggamit ng website na ito, sumasang-ayon ka na sumunod sa mga Tuntunin ng Paggamit na ito",
-    "These Terms of Use govern your access to and use of the betterbayawan.org website": "Ang mga Tuntunin ng Paggamit na ito ay namamahala sa iyong pag-access at paggamit ng website ng betterbayawan.org",
+    "These Terms of Use govern your access to and use of the BetterBayawan.org website": "Ang mga Tuntunin ng Paggamit na ito ay namamahala sa iyong pag-access at paggamit ng website ng BetterBayawan.org",
     "We reserve the right to modify these terms at any time": "Inilalaan namin ang karapatan na baguhin ang mga tuntuning ito sa anumang oras",
     "The content on this website is provided for general informational purposes only": "Ang nilalaman sa website na ito ay ibinibigay para sa pangkalahatang layunin ng impormasyon lamang",
     "We make no warranties or representations about the accuracy or completeness of the content": "Wala kaming mga garantiya o representasyon tungkol sa katumpakan o pagkakumpleto ng nilalaman",
     "This website is not intended to provide professional, legal, or financial advice": "Ang website na ito ay hindi nilalayong magbigay ng propesyonal, legal, o pinansiyal na payo",
     "We shall not be liable for any damages arising from the use of this website": "Hindi kami mananagot para sa anumang pinsala na nagmumula sa paggamit ng website na ito",
-    "All content on this website is the property of betterbayawan.org unless otherwise stated": "Ang lahat ng nilalaman sa website na ito ay pag-aari ng betterbayawan.org maliban kung iba ang nakasaad",
+    "All content on this website is the property of BetterBayawan.org unless otherwise stated": "Ang lahat ng nilalaman sa website na ito ay pag-aari ng BetterBayawan.org maliban kung iba ang nakasaad",
     "Links to third-party websites are provided for convenience only": "Ang mga link sa mga third-party na website ay ibinibigay para sa kaginhawahan lamang",
     "We do not endorse or assume responsibility for third-party content": "Hindi namin ineendorso o inaako ang responsibilidad para sa nilalaman ng third-party",
     "If any provision of these terms is found to be unenforceable, the remaining provisions shall continue in effect": "Kung ang anumang probisyon ng mga tuntuning ito ay matuklasang hindi maipapatupad, ang mga natitirang probisyon ay mananatiling may bisa",
@@ -876,7 +876,7 @@ KEEP_AS_IS = {
     'MDRRMO', 'MSWDO', 'SEEDO', 'MPDO', 'BIR', 'DTI', 'SEC', 'DENR',
     'DPWH', 'DSWD', 'PSA', 'NBI', 'COA', 'CSC', 'DBM', 'DOH',
     'MTOF', 'BPLS', 'RPT', 'CTC', 'RPTA', 'Filipizen',
-    'betterbayawan.org', 'Better Bayawan City', 'Abakada.org',
+    'BetterBayawan.org', 'Better Bayawan City', 'Abakada.org',
     'Sangguniang Panlungsod', 'Sangguniang Panlalawigan',
     'Negros Oriental', 'Bayawan City', 'Bayombong', 'Facebook', 'Google',
 }

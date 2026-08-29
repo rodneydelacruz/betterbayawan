@@ -1,10 +1,10 @@
 # Migration Guide: Static HTML to React + TypeScript
 
-This document provides guidance for contributors migrating from the static HTML version to the React + TypeScript version of betterbayawan.org.
+This document provides guidance for contributors migrating from the static HTML version to the React + TypeScript version of BetterBayawan.org.
 
 ## Overview
 
-betterbayawan.org now has two versions:
+BetterBayawan.org now has two versions:
 
 | Version            | Branch             | Status             | Technology                       |
 | ------------------ | ------------------ | ------------------ | -------------------------------- |
@@ -231,7 +231,7 @@ export default function ExampleCard({ title, description }: ExampleCardProps) {
 
 - Open an issue on GitHub with the `react` label
 - Join our Discord community for real-time discussion
-- Email: volunteer@betterbayawan.org
+- Email: volunteer@BetterBayawan.org
 
 ---
 

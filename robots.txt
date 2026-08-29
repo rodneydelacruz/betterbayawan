@@ -7,7 +7,7 @@ Allow: /
 Allow: /assets/images/banners/opengraph.png
 
 # Sitemap location
-Sitemap: https://betterbayawan.org/sitemap.xml
+Sitemap: https://BetterBayawan.org/sitemap.xml
 
 # Crawl-delay for polite crawling
 Crawl-delay: 1

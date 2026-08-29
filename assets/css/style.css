@@ -934,15 +934,21 @@ body.mobile-menu-open {
 .hotline-bar {
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
   color: var(--color-white);
-  padding: 8px 0;
+  padding: 4px 0;
   font-size: 0.8125rem;
+  overflow: hidden;
+}
+
+.hotline-bar .container {
+  max-width: 100%;
+  padding: 0;
 }
 
 .hotline-inner {
   display: flex;
   align-items: center;
-  gap: var(--spacing-md);
-  flex-wrap: wrap;
+  gap: 0;
+  flex-wrap: nowrap;
 }
 
 .hotline-label {
@@ -957,10 +963,11 @@ body.mobile-menu-open {
   display: flex;
   align-items: center;
   gap: var(--spacing-sm);
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   overflow: hidden;
   flex: 1 1 auto;
   min-width: 0;
+  width: 100%;
 }
 
 .hotline-item {
@@ -995,7 +1002,7 @@ body.mobile-menu-open {
   flex-wrap: nowrap;
   gap: var(--spacing-sm);
   width: max-content;
-  padding: 8px 0;
+  padding: 4px 0;
   animation: hotlineScroll 25s linear infinite;
   will-change: transform;
 }
@@ -2748,7 +2755,7 @@ h6 {
     gap: var(--spacing-lg);
   }
 
-  .footer-left {
+.footer-left {
     align-items: center;
   }
 
@@ -6502,6 +6509,22 @@ cklist with Icons - Proper Indentation */
   grid-template-columns: 1fr 1fr;
   gap: var(--spacing-xl);
   align-items: center;
+}
+
+.home-hero-slogan {
+  font-family: 'Great Vibes', 'Segoe Script', cursive;
+  font-size: 2.75rem;
+  line-height: 1.2;
+  color: #f5c76a;
+  margin: 0;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
+}
+
+@media (min-width: 993px) {
+  .home-hero-slogan {
+    font-size: 4.25rem;
+    margin-bottom: 0;
+  }
 }
 
 .home-hero-v2-text h1 {

@@ -30,7 +30,7 @@ const nextConfig = {
 
   // Environment variables
   env: {
-    SITE_URL: process.env.SITE_URL || 'https://betterbayawan.org',
+    SITE_URL: process.env.SITE_URL || 'https://BetterBayawan.org',
   },
 };
 

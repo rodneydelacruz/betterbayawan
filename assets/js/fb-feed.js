@@ -98,8 +98,8 @@
   // Resolve the avatar path relative to where the page lives.
   var AVATAR_SRC =
     window.location.pathname.indexOf('/news') !== -1
-      ? '../assets/images/logo/better-bayawan-favicon.svg'
-      : 'assets/images/logo/better-bayawan-favicon.svg';
+      ? '../assets/images/logo/better-bayawan-icon-white.png'
+      : 'assets/images/logo/better-bayawan-icon-white.png';
 
   function renderLocalFeed(container, articles, pageUrl) {
     var items = sortByDateDesc(articles).slice(0, MAX_ITEMS);

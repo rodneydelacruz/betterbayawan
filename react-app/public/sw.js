@@ -3,7 +3,7 @@
  * Enterprise-grade PWA with versioned caching, runtime strategies, and offline resilience.
  */
 
-var CACHE_VERSION = 'v3';
+var CACHE_VERSION = 'v5';
 var STATIC_CACHE = 'BetterBayawan-static-' + CACHE_VERSION;
 var RUNTIME_CACHE = 'BetterBayawan-runtime-' + CACHE_VERSION;
 var OFFLINE_URL = '/offline.html';
@@ -20,8 +20,8 @@ var PRECACHE_URLS = [
   '/assets/js/translations.js',
   '/assets/js/info-bar.js',
   '/assets/images/logo/better-bayawan-logo.png',
-  '/assets/images/logo/better-bayawan-favicon.svg',
-  '/assets/images/logo/better-bayawan-favicon.ico',
+  '/assets/images/logo/better-bayawan-icon-white.png',
+  '/assets/images/logo/better-bayawan-icon-white.png',
   '/manifest.webmanifest',
 ];
 
@@ -237,8 +237,8 @@ self.addEventListener('push', function (event) {
   event.waitUntil(
     self.registration.showNotification(data.title || 'BetterBayawan', {
       body: data.body || '',
-      icon: '/assets/images/logo/better-bayawan-favicon.svg',
-      badge: '/assets/images/logo/better-bayawan-favicon.svg',
+      icon: '/assets/images/logo/better-bayawan-icon-white.png',
+      badge: '/assets/images/logo/better-bayawan-icon-white.png',
       tag: data.tag || 'BetterBayawan-notification',
       data: { url: data.url || '/' },
     })

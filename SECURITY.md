@@ -9,13 +9,13 @@
 
 ## Reporting a Vulnerability
 
-We take security seriously at betterbayawan.org. If you discover a security vulnerability, please report it responsibly.
+We take security seriously at BetterBayawan.org. If you discover a security vulnerability, please report it responsibly.
 
 ### How to Report
 
 **Do NOT open a public GitHub issue for security vulnerabilities.**
 
-Instead, please email: **volunteer@betterbayawan.org**
+Instead, please email: **volunteer@BetterBayawan.org**
 
 Include in your report:
 
@@ -83,7 +83,7 @@ When contributing code:
 
 This security policy covers:
 
-- The betterbayawan.org website
+- The BetterBayawan.org website
 - The GitHub repository
 - Associated build tools and scripts
 
@@ -95,10 +95,10 @@ Out of scope:
 
 ## Contact
 
-For security concerns: **volunteer@betterbayawan.org**
+For security concerns: **volunteer@BetterBayawan.org**
 
 For general inquiries: Open a GitHub issue or join our [Discord](https://discord.com/invite/qeSu7RJkjQ)
 
 ---
 
-Thank you for helping keep betterbayawan.org secure for the community.
+Thank you for helping keep BetterBayawan.org secure for the community.

@@ -6,7 +6,7 @@
 
 ## Overview
 
-This release introduces a React + TypeScript version of betterbayawan.org, providing modern tooling and component-based architecture for contributors who prefer this development approach.
+This release introduces a React + TypeScript version of BetterBayawan.org, providing modern tooling and component-based architecture for contributors who prefer this development approach.
 
 ## Technology Stack
 
@@ -76,7 +76,7 @@ Report issues or provide feedback:
 
 - GitHub Issues with `react` label
 - Discord community
-- Email: volunteer@betterbayawan.org
+- Email: volunteer@BetterBayawan.org
 
 ## Contributors
 
@@ -85,4 +85,4 @@ Thank you to all contributors who helped develop this version.
 ---
 
 Ramon Logan Jr.
-betterbayawan.org
+BetterBayawan.org

@@ -94,13 +94,13 @@ const bisayaTranslations = {
   'footer-linkedin': 'LinkedIn',
   'footer-github': 'GitHub',
   'footer-discord': 'Discord',
-  'footer-copyright': '© 2026 betterbayawan.org. All rights reserved.',
+  'footer-copyright': '© 2026 BetterBayawan.org. All rights reserved.',
   'footer-license': 'MIT License | CC BY 4.0',
   'footer-disclaimer': 'Not an official government website.',
   'footer-cost': 'Cost to the People of Bayawan City =',
   'footer-cost-value': '₱0',
   'footer-bayawan-quiz': 'Bayawan Quiz',
-  'footer-lgu-portal': 'Official LGU Bayawan Portal',
+  'footer-lgu-portal': 'LGU Bayawan Portal',
   'footer-lgu-facebook': 'LGU Bayawan Facebook',
   
   // Homepage
@@ -297,8 +297,8 @@ const bisayaTranslations = {
   'tax-online': 'Online Payment',
   
   // Metadata
-  'page-title': 'betterbayawan.org | Official Portal',
-  'meta-description': 'Better Bayawan - Your digital gateway to LGU Bayawan City services.',
+  'page-title': 'BetterBayawan.org | Civic Portal',
+  'meta-description': 'Better Bayawan - Civic portal for Bayawan City services.',
   'meta-keywords': 'Bayawan City, Negros Oriental, LGU, government services',
   
   // Accessibility

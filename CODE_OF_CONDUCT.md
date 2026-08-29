@@ -2,7 +2,7 @@
 
 ## Our Pledge
 
-betterbayawan.org is a civic-tech project built for the people of Bayawan City, Negros Oriental. We are committed to providing a welcoming, inclusive, and harassment-free environment for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
+BetterBayawan.org is a civic-tech project built for the people of Bayawan City, Negros Oriental. We are committed to providing a welcoming, inclusive, and harassment-free environment for everyone, regardless of age, body size, disability, ethnicity, gender identity and expression, level of experience, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Our Standards
 
@@ -40,7 +40,7 @@ This Code of Conduct applies to all project spaces, including:
 
 Instances of unacceptable behavior may be reported to:
 
-- Email: volunteer@betterbayawan.org
+- Email: volunteer@BetterBayawan.org
 - Discord: Contact a moderator
 
 All complaints will be reviewed and investigated promptly and fairly. The project team is obligated to maintain confidentiality regarding the reporter.
@@ -57,4 +57,4 @@ This Code of Conduct is adapted from the [Contributor Covenant](https://www.cont
 
 ---
 
-By participating in betterbayawan.org, you agree to abide by this Code of Conduct.
+By participating in BetterBayawan.org, you agree to abide by this Code of Conduct.

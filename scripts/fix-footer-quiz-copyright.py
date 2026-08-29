@@ -126,7 +126,7 @@ def get_page_prefix(filepath):
 def fix_footer_quiz_link(content, filepath):
     """Add ___Bayawan City_QUIZ___ link before Sitemap in footer Quick Links."""
     # Check if quiz link already exists
-    if 'quiz.betterbayawan.org' in content:
+    if 'quiz.BetterBayawan.org' in content:
         return content, False
     
     prefix = get_page_prefix(filepath)
@@ -141,7 +141,7 @@ def fix_footer_quiz_link(content, filepath):
     # Pattern: <li><a href="...sitemap..." ...>Sitemap</a></li>
     sitemap_pattern = r'(<li><a href="' + re.escape(rel) + r'sitemap/[^"]*"[^>]*>)'
     
-    quiz_link = f'<li><a href="https://quiz.betterbayawan.org/" target="_blank" rel="noopener noreferrer" data-i18n="{prefix}-Bayawan City-quiz">___Bayawan City_QUIZ___</a></li>\n                        '
+    quiz_link = f'<li><a href="https://quiz.BetterBayawan.org/" target="_blank" rel="noopener noreferrer" data-i18n="{prefix}-Bayawan City-quiz">___Bayawan City_QUIZ___</a></li>\n                        '
     
     match = re.search(sitemap_pattern, content)
     if match:
@@ -166,7 +166,7 @@ def fix_copyright(content, filepath):
     old_pattern1 = r'<div class="footer-copyright">\s*<span[^>]*>&copy;.*?</span>\s*<span class="footer-version">'
     
     new_copyright = '''<div class="footer-copyright">
-                    <span class="footer-copyright-text">&copy; 2026 betterbayawan.org.</span>
+                    <span class="footer-copyright-text">&copy; 2026 BetterBayawan.org.</span>
                     <span class="footer-copyright-license">MIT | CC BY 4.0</span>
                     <span class="footer-copyright-disclaimer">All public information sourced from official government portals.</span>
                     <span class="footer-version">'''
@@ -181,9 +181,9 @@ def fix_copyright(content, filepath):
         content = content.replace('id="copyright-year">2025<', 'id="copyright-year">2026<')
         changed = True
     
-    # Update "Better Bayawan City" to "betterbayawan.org" in copyright if still old
+    # Update "Better Bayawan City" to "BetterBayawan.org" in copyright if still old
     if 'Better Bayawan City. MIT' in content:
-        content = content.replace('Better Bayawan City. MIT', 'betterbayawan.org. MIT')
+        content = content.replace('Better Bayawan City. MIT', 'BetterBayawan.org. MIT')
         changed = True
     
     return content, changed
@@ -191,7 +191,7 @@ def fix_copyright(content, filepath):
 
 def add_quiz_to_sitemap(content):
     """Add ___Bayawan City_QUIZ___ entry to sitemap page content."""
-    if 'quiz.betterbayawan.org' in content:
+    if 'quiz.BetterBayawan.org' in content:
         return content, False
     
     # Find the External Resources section and add quiz there
@@ -206,7 +206,7 @@ def add_quiz_to_sitemap(content):
     news_pattern = r'(<a href="\.\./news/"[^>]*>.*?News.*?</a>)'
     match = re.search(news_pattern, content)
     if match:
-        quiz_entry = '\n                        <a href="https://quiz.betterbayawan.org/" target="_blank" rel="noopener noreferrer" class="sitemap-link-item sitemap-link-item--external"><i class="bi bi-box-arrow-up-right"></i> <span data-i18n="sitemap-Bayawan City-quiz">___Bayawan City_QUIZ___</span></a>'
+        quiz_entry = '\n                        <a href="https://quiz.BetterBayawan.org/" target="_blank" rel="noopener noreferrer" class="sitemap-link-item sitemap-link-item--external"><i class="bi bi-box-arrow-up-right"></i> <span data-i18n="sitemap-Bayawan City-quiz">___Bayawan City_QUIZ___</span></a>'
         insert_pos = match.end()
         content = content[:insert_pos] + quiz_entry + content[insert_pos:]
         return content, True

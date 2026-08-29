@@ -47,7 +47,7 @@ export default function InfoBar() {
       .catch(() => {});
 
     fetch(
-      'https://api.open-meteo.com/v1/forecast?latitude=9.3767&longitude=122.8089&current_weather=true'
+      'https://api.open-meteo.com/v1/forecast?latitude=9.3839&longitude=122.7892&current_weather=true'
     )
       .then((r) => r.json())
       .then((data) => {

@@ -56,7 +56,7 @@ const replacements = [
   // Branding
   { from: 'BetterBayawan City', to: 'BetterBayawan' },
   { from: 'betterBayawan City', to: 'betterbayawan' },
-  { from: 'betterbayawan.org', to: 'betterbayawan.org' }, // already correct
+  { from: 'BetterBayawan.org', to: 'BetterBayawan.org' }, // already correct
   
   // URLs and social media
   { from: 'Bayawan City.gov.ph', to: 'bayawan.gov.ph' },

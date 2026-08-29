@@ -38,6 +38,15 @@
   margin-bottom: 24px;
 }
 
+.footer-slogan {
+  font-family: 'Great Vibes', 'Segoe Script', cursive;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  color: #f2cf66;
+  margin: 0 0 12px;
+  max-width: 360px;
+}
+
 .footer-social-new {
   display: flex;
   gap: 12px;

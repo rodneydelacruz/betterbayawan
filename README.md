@@ -1,4 +1,4 @@
-# betterbayawan.org
+# BetterBayawan.org
 
 A civic-tech initiative providing transparent access to municipal services, programs, and public funds of LGU Bayawan City, Negros Oriental, Philippines.
 
@@ -13,7 +13,7 @@ A civic-tech initiative providing transparent access to municipal services, prog
 
 ## Version Notice
 
-A **React + TypeScript** version of betterbayawan.org is now available for contributors who prefer modern tooling and component-based architecture.
+A **React + TypeScript** version of BetterBayawan.org is now available for contributors who prefer modern tooling and component-based architecture.
 
 | Version            | Branch             | Status             | Documentation                |
 | ------------------ | ------------------ | ------------------ | ---------------------------- |
@@ -37,13 +37,13 @@ To adapt this project for your LGU, fork the repository and customize the conten
 
 ## About
 
-betterbayawan.org is a volunteer-driven, open-source project that empowers the people of Bayawan City with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
+BetterBayawan.org is a volunteer-driven, open-source project that empowers the people of Bayawan City with easy access to local government information. The platform aggregates public data from official government portals and presents it in a user-friendly, accessible format.
 
 **Cost to the People of Bayawan City = ₱0**
 
 ## Live Demo
 
-Visit the live website: [https://betterbayawan.org](https://betterbayawan.org)
+Visit the live website: [https://BetterBayawan.org](https://BetterBayawan.org)
 
 ## Technology Stack
 
@@ -353,9 +353,9 @@ BetterBayawan/
 ### Footer & Copyright
 
 - Standardized copyright across all 51 HTML files and React Footer: three styled spans (`footer-copyright-text`, `footer-copyright-license`, `footer-copyright-disclaimer`)
-- Updated copyright year to 2026, name to "betterbayawan.org"
+- Updated copyright year to 2026, name to "BetterBayawan.org"
 - Footer copyright uses `flex-wrap: wrap; gap: 6px` layout with version badge right-aligned via `margin-left: auto`
-- Removed trailing period after "betterbayawan.org" from all pages and all 3 translation languages
+- Removed trailing period after "BetterBayawan.org" from all pages and all 3 translation languages
 
 ### Clean URLs
 
@@ -453,9 +453,9 @@ See [LICENSE](LICENSE) for full details.
 
 | Channel  | Link                                                                      |
 | -------- | ------------------------------------------------------------------------- |
-| Website  | [betterbayawan.org](https://betterbayawan.org)                              |
-| Email    | volunteer@betterbayawan.org                                                |
-| Facebook | [@betterbayawan.org](https://www.facebook.com/betterbayawan.org)            |
+| Website  | [BetterBayawan.org](https://BetterBayawan.org)                              |
+| Email    | volunteer@BetterBayawan.org                                                |
+| Facebook | [@BetterBayawan.org](https://www.facebook.com/BetterBayawan.org)            |
 | LinkedIn | [BetterBayawan](https://www.linkedin.com/company/BetterBayawan/)            |
 | Discord  | [Join Community](https://discord.com/invite/qeSu7RJkjQ)                   |
 | GitHub   | [BetterBayawan/betterbayawan](https://github.com/BetterBayawan/betterbayawan) |
@@ -475,4 +475,4 @@ Made for the people of Bayawan City, Negros Oriental
 
 ## Developer
 
-[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind betterbayawan.org, [Abakada.org](https://abakada.org), and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).
+[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterBayawan.org, [Abakada.org](https://abakada.org), and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).

@@ -119,9 +119,9 @@ const bisayaTranslations = `  bis: {
     'footer-terms': 'Terms of Use',
     'footer-accessibility': 'Accessibility',
     'footer-bayawan-quiz': 'Bayawan Quiz',
-    'footer-lgu-portal': 'Official LGU Bayawan Portal',
+    'footer-lgu-portal': 'LGU Bayawan Portal',
     'footer-lgu-facebook': 'LGU Bayawan Facebook',
-    'footer-copyright-text': '© 2026 betterbayawan.org. All rights reserved.',
+    'footer-copyright-text': '© 2026 BetterBayawan.org. All rights reserved.',
     'footer-copyright-license': 'MIT License | CC BY 4.0',
     'footer-copyright-disclaimer': 'Not an official government website.',
     'footer-cost': 'Cost to the People of Bayawan City =',
@@ -333,7 +333,7 @@ const bisayaTranslations = `  bis: {
     'terms-subtitle': 'Terms ug conditions sa paggamit',
 
     // Metadata
-    'page-title': 'betterbayawan.org | Official Portal',
+    'page-title': 'BetterBayawan.org | Civic Portal',
     'meta-description': 'Better Bayawan - Imong digital gateway sa LGU Bayawan City services.',
     'meta-keywords': 'Bayawan City, Negros Oriental, LGU, government services',
   },`;

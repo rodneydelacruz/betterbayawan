@@ -147,58 +147,52 @@ document.addEventListener('DOMContentLoaded', () => {
     return window.matchMedia('(max-width: 1024px)').matches;
   };
 
-  // Hotline Marquee (tablet + mobile)
+  // Hotline Marquee (all viewports)
   var initHotlineMarquee = function () {
-    var isTabletOrBelow = function () {
-      return window.matchMedia('(max-width: 1024px)').matches;
-    };
     var hotlineItems = document.querySelector('.hotline-items');
     if (!hotlineItems) return;
 
     var track = null;
     var originalItems = Array.from(hotlineItems.children);
+    var copies = 0;
 
-    var buildMarquee = function () {
-      if (!isTabletOrBelow() || track) return;
-      track = document.createElement('div');
-      track.className = 'hotline-items-track';
-      track.setAttribute('aria-label', 'Emergency contacts scrolling');
-      while (hotlineItems.firstChild) {
-        track.appendChild(hotlineItems.firstChild);
-      }
+    var appendCopy = function () {
       originalItems.forEach(function (item) {
         var clone = item.cloneNode(true);
         clone.setAttribute('aria-hidden', 'true');
         clone.setAttribute('tabindex', '-1');
         track.appendChild(clone);
       });
-      hotlineItems.appendChild(track);
+      copies += 1;
+      track.style.setProperty('--hotline-copies', copies);
     };
 
-    var destroyMarquee = function () {
-      if (!track) return;
+    var buildMarquee = function () {
+      if (track) return;
+      track = document.createElement('div');
+      track.className = 'hotline-items-track';
+      track.setAttribute('aria-label', 'Emergency contacts scrolling');
       while (hotlineItems.firstChild) {
-        hotlineItems.removeChild(hotlineItems.firstChild);
+        track.appendChild(hotlineItems.firstChild);
       }
-      originalItems.forEach(function (item) {
-        hotlineItems.appendChild(item);
-      });
-      track = null;
+      copies = 1;
+      track.style.setProperty('--hotline-copies', copies);
+      hotlineItems.appendChild(track);
+      ensureCopies();
     };
 
-    var handleResize = function () {
-      if (isTabletOrBelow()) {
-        buildMarquee();
-      } else {
-        destroyMarquee();
+    var ensureCopies = function () {
+      if (!track) return;
+      while (track.scrollWidth < hotlineItems.clientWidth * 2) {
+        appendCopy();
       }
     };
 
-    handleResize();
+    buildMarquee();
     var resizeTimer;
     window.addEventListener('resize', function () {
       clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(handleResize, 150);
+      resizeTimer = setTimeout(ensureCopies, 150);
     });
   };
 

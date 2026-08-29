@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect, useRef, useCallback } from 'react';
+import { useEffect, useRef } from 'react';
 
 const hotlines = [
   { icon: 'bi-shield-fill', label: 'Police', number: '0927 144 1875', tel: '09271441875' },
@@ -18,59 +18,46 @@ const hotlines = [
 
 export default function HotlineBar() {
   const itemsRef = useRef<HTMLDivElement>(null);
-  const trackRef = useRef<HTMLDivElement | null>(null);
-
-  const isTabletOrBelow = useCallback(() => {
-    return typeof window !== 'undefined' && window.matchMedia('(max-width: 1024px)').matches;
-  }, []);
 
   useEffect(() => {
     const container = itemsRef.current;
-    if (!container) return;
+    if (!container || container.querySelector('.hotline-items-track')) return;
 
-    function buildMarquee() {
-      if (!isTabletOrBelow() || trackRef.current || !container) return;
-      const track = document.createElement('div');
-      track.className = 'hotline-items-track';
-      track.setAttribute('aria-label', 'Emergency contacts scrolling');
+    const originalItems = Array.from(container.children);
+    if (originalItems.length === 0) return;
 
-      const items = Array.from(container.children);
-      while (container.firstChild) track.appendChild(container.firstChild);
-      items.forEach((item) => {
+    const track = document.createElement('div');
+    track.className = 'hotline-items-track';
+    track.setAttribute('aria-label', 'Emergency contacts scrolling');
+
+    let copies = 0;
+    while (container.firstChild) track.appendChild(container.firstChild);
+    copies = 1;
+
+    const appendCopy = () => {
+      originalItems.forEach((item) => {
         const clone = item.cloneNode(true) as HTMLElement;
         clone.setAttribute('aria-hidden', 'true');
         clone.setAttribute('tabindex', '-1');
         track.appendChild(clone);
       });
-      container.appendChild(track);
-      trackRef.current = track;
-    }
-
-    function destroyMarquee() {
-      if (!trackRef.current || !container) return;
-      const originals = Array.from(trackRef.current.children).slice(0, hotlines.length);
-      while (container.firstChild) container.removeChild(container.firstChild);
-      originals.forEach((item) => container.appendChild(item));
-      trackRef.current = null;
-    }
-
-    function handleResize() {
-      if (isTabletOrBelow()) buildMarquee();
-      else destroyMarquee();
-    }
-
-    handleResize();
-    let timer: ReturnType<typeof setTimeout>;
-    const onResize = () => {
-      clearTimeout(timer);
-      timer = setTimeout(handleResize, 150);
+      copies += 1;
+      track.style.setProperty('--hotline-copies', String(copies));
     };
-    window.addEventListener('resize', onResize);
-    return () => {
-      clearTimeout(timer);
-      window.removeEventListener('resize', onResize);
+
+    const ensureCopies = () => {
+      while (track.scrollWidth < container.clientWidth * 2) {
+        appendCopy();
+      }
     };
-  }, [isTabletOrBelow]);
+
+    track.style.setProperty('--hotline-copies', String(copies));
+    container.appendChild(track);
+    ensureCopies();
+
+    window.addEventListener('resize', ensureCopies);
+    return () => window.removeEventListener('resize', ensureCopies);
+  }, []);
 
   return (
     <div className="hotline-bar">

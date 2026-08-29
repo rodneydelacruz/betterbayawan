@@ -210,19 +210,11 @@ const translations: Record<string, Record<string, string>> = {
     'news-power-title': 'Scheduled Power Interruption',
     'news-power-desc': 'Maintenance scheduled for Barangay Osmeña on Dec 1, 8:00 AM - 5:00 PM.',
 
-    // Homepage - Quiz CTA
-    'quiz-title': '___Bayawan City_QUIZ___',
-    'quiz-subtitle': 'How well do you know Bayawan City, Negros Oriental?',
-    'quiz-description':
-      "Evaluate your familiarity with the city's heritage, cultural identity, and geographic significance through an interactive knowledge assessment designed to showcase one of Negros Oriental's most prominent cities.",
-    'quiz-take': 'Take the Quiz',
-
     // Footer
     'footer-tagline':
       'Empowering the people of Bayawan City with transparent access to the services, programs, and public funds of LGU Bayawan City.',
     'footer-quick-links': 'Quick Links',
     'footer-resources': 'Resources',
-    'footer-Bayawan City-quiz': '___Bayawan City_QUIZ___',
     'footer-sitemap': 'Sitemap',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Terms of Use',
@@ -453,19 +445,11 @@ const translations: Record<string, Record<string, string>> = {
     'news-power-desc':
       'Maintenance na nakaiskedyul para sa Barangay Osmeña sa Dis 1, 8:00 AM - 5:00 PM.',
 
-    // Homepage - Quiz CTA
-    'quiz-title': '___Bayawan City_QUIZ___',
-    'quiz-subtitle': 'Gaano mo kakilala ang Bayawan City, Negros Oriental?',
-    'quiz-description':
-      'Suriin ang iyong kaalaman sa pamana, pagkakakilanlan sa kultura, at kahalagahang heograpiko ng Lungsod sa pamamagitan ng isang interactive na pagtatasa ng kaalaman na idinisenyo upang ipakita ang isa sa mga pinakatanyag na lokasyon ng Negros Oriental.',
-    'quiz-take': 'Subukin ang Quiz',
-
     // Footer
     'footer-tagline':
       'Pagbibigay-kapangyarihan sa mga tao ng Bayawan City na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Bayawan City.',
     'footer-quick-links': 'Mga Mabilisang Link',
     'footer-resources': 'Mga Mapagkukunan',
-    'footer-Bayawan City-quiz': '___Bayawan City_QUIZ___',
     'footer-sitemap': 'Mapa ng Site',
     'footer-citizens-charter': "Citizen's Charter",
     'footer-terms': 'Mga Tuntunin ng Paggamit',
@@ -627,14 +611,6 @@ const translations: Record<string, Record<string, string>> = {
     // Terms
 
 // Metadata
-
-    // Quiz
-    'quiz-title': 'Bayawan Quiz',
-    'quiz-subtitle': 'Kasano kabalo ka sa Bayawan City, Negros Oriental?',
-    'quiz-description':
-      'Evaluate imong familiarity sa heritage, cultural identity, ug geographic significance sa syudad pinaagi sa interactive nga knowledge assessment.',
-    'quiz-take': 'Take the Quiz',
-    'footer-Bayawan City-quiz': 'Bayawan Quiz',
   },
 };
 

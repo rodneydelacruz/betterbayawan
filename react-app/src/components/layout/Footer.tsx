@@ -23,7 +23,7 @@ export default function Footer() {
         <div className="footer-main-new">
           <div className="footer-brand">
             <img
-              src="/assets/images/logo/better-bayawan-logo-white.svg"
+              src="/assets/images/logo/better-bayawan-logo.png"
               alt="Better Bayawan logo"
               className="footer-logo"
             />
@@ -61,11 +61,6 @@ export default function Footer() {
           <div className="footer-column">
             <h4>{t('footer-quick-links')}</h4>
             <ul className="footer-links-new">
-              <li>
-                <a href="https://quiz.betterbayawan.org/" target="_blank" rel="noopener noreferrer">
-                  {t('footer-Bayawan City-quiz')}
-                </a>
-              </li>
               <li>
                 <a href="/sitemap-page">{t('footer-sitemap')}</a>
               </li>

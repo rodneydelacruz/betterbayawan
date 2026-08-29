@@ -685,35 +685,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* ___Bayawan City_QUIZ___ CTA */}
-      <section className="quiz-cta-section" aria-label="___Bayawan City_QUIZ___">
-        <div className="container">
-          <div className="quiz-cta-inner">
-            <div className="quiz-cta-animation" aria-hidden="true">
-              <dotlottie-player
-                src="/assets/animation/ramonloganjr-exam.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></dotlottie-player>
-            </div>
-            <div className="quiz-cta-content">
-              <h2 className="quiz-cta-heading">{t('quiz-title')}</h2>
-              <p className="quiz-cta-subtitle">{t('quiz-subtitle')}</p>
-              <p className="quiz-cta-description">{t('quiz-description')}</p>
-              <a
-                href="https://quiz.betterbayawan.org/"
-                className="quiz-cta-btn"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <i className="bi bi-play-circle-fill" aria-hidden="true"></i> {t('quiz-take')}
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-    </>
+      </>
   );
 }

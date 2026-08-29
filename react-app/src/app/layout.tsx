@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     icon: [
       '/assets/images/logo/better-bayawan-favicon.svg',
       '/assets/images/logo/better-bayawan-favicon.ico',
-      { href: '/assets/images/logo/better-bayawan-logo.png', type: 'image/png', sizes: '256x256' },
+      { url: '/assets/images/logo/better-bayawan-logo.png', type: 'image/png', sizes: '256x256' },
     ],
     apple: '/assets/images/logo/better-bayawan-favicon.svg',
   },

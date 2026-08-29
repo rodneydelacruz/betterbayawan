@@ -20,7 +20,6 @@ var PRECACHE_URLS = [
   '/assets/js/translations.js',
   '/assets/js/info-bar.js',
   '/assets/images/logo/better-bayawan-logo.png',
-  '/assets/images/logo/better-bayawan-logo-white.svg',
   '/assets/images/logo/better-bayawan-favicon.svg',
   '/assets/images/logo/better-bayawan-favicon.ico',
   '/manifest.webmanifest',

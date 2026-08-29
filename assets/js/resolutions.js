@@ -47,10 +47,19 @@ function sortResolutionsByNumber(resolutions) {
 
 /**
  * Formats resolution number for display
- * @param {string} resolutionNo - Resolution number (e.g., "2025-001")
- * @returns {string} Resolution number as-is
+ * @param {string} resolutionNo - Resolution number (e.g., "001-2026-10")
+ * @returns {string} Display form (e.g., "No. 1, Series of 2026")
  */
 function formatResolutionNo(resolutionNo) {
+  if (!resolutionNo) return resolutionNo;
+  const parts = String(resolutionNo).split('-');
+  if (parts.length >= 2) {
+    const num = parseInt(parts[0], 10);
+    const year = parseInt(parts[1], 10);
+    if (!isNaN(num) && !isNaN(year) && String(num) === parts[0].replace(/^0+/, '')) {
+      return 'No. ' + num + ', Series of ' + year;
+    }
+  }
   return resolutionNo;
 }
 

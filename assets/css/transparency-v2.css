@@ -834,6 +834,45 @@
   margin-top: 24px;
 }
 
+/* DPWH Projects - Empty State */
+.dpwh-empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 8px;
+  padding: 40px 24px;
+  background: white;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.dpwh-empty-icon {
+  font-size: 2rem;
+  color: var(--color-primary);
+  opacity: 0.6;
+}
+
+.dpwh-empty-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.dpwh-empty-text {
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+  max-width: 640px;
+  margin: 0;
+  line-height: 1.6;
+}
+
+.dpwh-empty-text a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
 /* DPWH Projects - Progressive Loading Design */
 
 /* Summary Bar */

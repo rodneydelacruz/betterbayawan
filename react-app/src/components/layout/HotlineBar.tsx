@@ -3,17 +3,17 @@
 import { useEffect, useRef, useCallback } from 'react';
 
 const hotlines = [
-  { icon: 'bi-shield-fill', label: 'Police', number: '0927 400 8033', tel: '09274008033' },
-  { icon: 'bi-heart-fill', label: 'MSWDO', number: '0916 284 0885', tel: '09162840885' },
-  { icon: 'bi-fire', label: 'Fire', number: '0936 062 0305', tel: '09360620305' },
-  { icon: 'bi-building', label: 'DILG', number: '0906 188 086', tel: '0906188086' },
+  { icon: 'bi-shield-fill', label: 'Police', number: '0927 144 1875', tel: '09271441875' },
+  { icon: 'bi-heart-fill', label: 'Ambulance', number: '0945 569 0083', tel: '09455690083' },
+  { icon: 'bi-fire', label: 'Fire', number: '0955 817 3397', tel: '09558173397' },
+  { icon: 'bi-building', label: 'NORECO', number: '0908 864 2365', tel: '09088642365' },
   {
     icon: 'bi-exclamation-triangle-fill',
-    label: 'MDRRMO',
-    number: '0926 383 3744',
-    tel: '09263833744',
+    label: 'Coast Guard',
+    number: '0995 746 8679',
+    tel: '09957468679',
   },
-  { icon: 'bi-truck', label: 'R2TMC', number: '0906 819 5569', tel: '09068195569' },
+  { icon: 'bi-truck', label: 'City Hall', number: '(035) 531-0020', tel: '+63355310020' },
 ];
 
 export default function HotlineBar() {

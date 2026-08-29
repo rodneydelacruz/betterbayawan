@@ -121,7 +121,7 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="https://www.facebook.com/OfficialLguBayawan CityFanpage/"
+                  href="https://www.facebook.com/IbayawBayawanCity"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

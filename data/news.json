@@ -1,31 +1,74 @@
 {
   "news": [
     {
-      "id": "business-permit-renewal-2025",
-      "title": "Business Permit Renewal 2025",
-      "date": "2025-11-28",
+      "id": "local-overseas-jobs-fair-2026",
+      "title": "\u201cLocal and Overseas Jobs Fair 2026\u201d",
+      "date": "2026-06-16",
       "category": "Announcement",
       "badge": "info",
-      "summary": "Deadline for business permit renewal is set for January 20, 2025. Early renewal is encouraged to avoid penalties.",
-      "url": null
+      "summary": "The Public Employment Service Office (PESO) \u2013 Bayawan, under the City Cooperative & Manpower Development Office and the ICT Office, invites jobseekers to the Local and Overseas Jobs Fair on June 25, 2026 at the Puregold Main Atrium, Bayawan City.",
+      "url": "https://www.bayawancity.gov.ph/article/articles-display.php?id=462",
+      "source": "Read the full announcement"
     },
     {
-      "id": "new-public-market-wing",
-      "title": "New Public Market Wing Opens",
-      "date": "2025-11-15",
-      "category": "Project",
+      "id": "3rd-ibayaw-ict-month-2026",
+      "title": "Empowering Innovation, Inspiring Futures: 3rd iBayaw ICT Month 2026",
+      "date": "2026-05-05",
+      "category": "Event",
       "badge": "success",
-      "summary": "The renovated wing of the Bayawan City Public Market is now open to vendors and the public.",
-      "url": null
+      "summary": "The City of Bayawan celebrates the 3rd iBayaw ICT Month in June 2026 \u2014 a month-long showcase of technology, innovation, and digital empowerment, highlighted by the iBayaw Robotics Competition and the Local and Overseas Jobs Fair.",
+      "url": "https://www.bayawancity.gov.ph/article/articles-display.php?id=457",
+      "source": "Read the full announcement"
     },
     {
-      "id": "scheduled-power-interruption",
-      "title": "Scheduled Power Interruption",
-      "date": "2025-11-10",
+      "id": "d-bookshop",
+      "title": "D Bookshop \u2014 Bayawan\u2019s Newest Bookstore",
+      "date": "2026-05-06",
+      "category": "Spotlight",
+      "badge": "info",
+      "summary": "Located along the National Highway in Brgy. Malabugas, D Bookshop was founded by local writer Dara Tumaca-Ramos and welcomes bibliophiles with a curated selection of books in a cozy, community-centered space.",
+      "url": "https://www.bayawancity.gov.ph/experience-bayawan/tourism-display.php?id=138",
+      "source": "Read the full feature"
+    },
+    {
+      "id": "pahibalo-sa-publiko-2026",
+      "title": "Pahibalo sa Publiko \u2014 Business Permit Renewal and Registration",
+      "date": "2026-01-13",
       "category": "Advisory",
       "badge": "warning",
-      "summary": "Maintenance scheduled for Barangay Osme\u00f1a on Dec 1, 8:00 AM - 5:00 PM.",
-      "url": null
+      "summary": "Public notice on the renewal and registration of business permits and licenses for the year.",
+      "url": "https://www.bayawancity.gov.ph/article/articles-display.php?id=448",
+      "source": "Read the full advisory"
+    },
+    {
+      "id": "pahibalo-gikan-sa-city-treasurer",
+      "title": "Pahibalo Gikan sa City Treasurer",
+      "date": "2026-01-13",
+      "category": "Advisory",
+      "badge": "warning",
+      "summary": "Reminder from the Office of the City Treasurer on the renewal of business permits, payment of taxes, and related deadlines.",
+      "url": "https://www.bayawancity.gov.ph/article/articles-display.php?id=449",
+      "source": "Read the full advisory"
+    },
+    {
+      "id": "hiring-alert-2025",
+      "title": "Hiring Alert!",
+      "date": "2025-10-01",
+      "category": "Opportunity",
+      "badge": "success",
+      "summary": "Job opportunities and hiring announcements from the City Government of Bayawan.",
+      "url": "https://www.bayawancity.gov.ph/citizens/citizen-display.php?id=89",
+      "source": "View the announcement"
+    },
+    {
+      "id": "why-invest-with-us-2025",
+      "title": "Why Invest with Us?",
+      "date": "2025-04-21",
+      "category": "Feature",
+      "badge": "info",
+      "summary": "An introduction to investment opportunities in Bayawan City, Negros Oriental.",
+      "url": "https://www.bayawancity.gov.ph/business/business-display.php?id=52",
+      "source": "Read the full feature"
     }
   ]
 }

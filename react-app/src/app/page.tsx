@@ -184,7 +184,7 @@ export default function HomePage() {
                 <i className="bi bi-people-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">69,296</span>
+                <span className="home-stat-card-value">126,744</span>
                 <span className="home-stat-card-label">{t('stats-population-label')}</span>
                 <span className="home-stat-card-source">{t('stats-population-source')}</span>
               </div>
@@ -194,7 +194,7 @@ export default function HomePage() {
                 <i className="bi bi-geo-alt-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">22</span>
+                <span className="home-stat-card-value">28</span>
                 <span className="home-stat-card-label">{t('stats-barangays-label')}</span>
                 <span className="home-stat-card-source">{t('stats-barangays-source')}</span>
               </div>
@@ -204,7 +204,7 @@ export default function HomePage() {
                 <i className="bi bi-award-fill"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">1st Class</span>
+                <span className="home-stat-card-value">Component City</span>
                 <span className="home-stat-card-label">{t('stats-municipality-label')}</span>
                 <span className="home-stat-card-source">{t('stats-municipality-source')}</span>
               </div>
@@ -214,7 +214,7 @@ export default function HomePage() {
                 <i className="bi bi-rulers"></i>
               </div>
               <div className="home-stat-card-content">
-                <span className="home-stat-card-value">162.70 km²</span>
+                <span className="home-stat-card-value">699.08 km²</span>
                 <span className="home-stat-card-label">{t('stats-land-area-label')}</span>
                 <span className="home-stat-card-source">{t('stats-land-area-source')}</span>
               </div>
@@ -271,7 +271,7 @@ export default function HomePage() {
                   data-map-loaded="iframe"
                 >
                   <iframe
-                    src="https://www.openstreetmap.org/export/embed.html?bbox=121.1633%2C16.5017%2C121.2033%2C16.5317&layer=mapnik&marker=16.5167%2C121.1833"
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=122.7700%2C9.3300%2C122.8300%2C9.3900&layer=mapnik&marker=9.36%2C122.80"
                     className="map-iframe"
                     title="Map of Bayawan City, Negros Oriental"
                     aria-label="OpenStreetMap showing Bayawan City Hall, Negros Oriental"
@@ -279,8 +279,8 @@ export default function HomePage() {
                   ></iframe>
                 </div>
                 <p className="map-attribution">
-                  <i className="bi bi-geo-alt" aria-hidden="true"></i> Bayawan City Hall, Nueva
-                  Vizcaya 6221
+                  <i className="bi bi-geo-alt" aria-hidden="true"></i> Bayawan City Hall, Cabcabon,
+                  Banga, Bayawan City 6221
                 </p>
               </div>
             </div>
@@ -298,53 +298,32 @@ export default function HomePage() {
           </div>
           <div className="history-content">
             <div className="history-timeline">
-              <div className="timeline-item" data-year="1760">
+              <div className="timeline-item" data-year="1751">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1760</span>
-                  <p>{t('history-1760')}</p>
+                  <span className="timeline-year">1751</span>
+                  <p>{t('history-1751')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1767">
+              <div className="timeline-item" data-year="1872">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1767</span>
-                  <p>{t('history-1767')}</p>
+                  <span className="timeline-year">1872</span>
+                  <p>{t('history-1872')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1768">
+              <div className="timeline-item" data-year="1953">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1768</span>
-                  <p>{t('history-1768')}</p>
+                  <span className="timeline-year">1953</span>
+                  <p>{t('history-1953')}</p>
                 </div>
               </div>
-              <div className="timeline-item" data-year="1851">
+              <div className="timeline-item" data-year="2000">
                 <div className="timeline-marker"></div>
                 <div className="timeline-content">
-                  <span className="timeline-year">1851</span>
-                  <p>{t('history-1851')}</p>
-                </div>
-              </div>
-              <div className="timeline-item" data-year="1853">
-                <div className="timeline-marker"></div>
-                <div className="timeline-content">
-                  <span className="timeline-year">1853</span>
-                  <p>{t('history-1853')}</p>
-                </div>
-              </div>
-              <div className="timeline-item" data-year="1889">
-                <div className="timeline-marker"></div>
-                <div className="timeline-content">
-                  <span className="timeline-year">1889</span>
-                  <p>{t('history-1889')}</p>
-                </div>
-              </div>
-              <div className="timeline-item" data-year="1957">
-                <div className="timeline-marker"></div>
-                <div className="timeline-content">
-                  <span className="timeline-year">1957</span>
-                  <p>{t('history-1957')}</p>
+                  <span className="timeline-year">2000</span>
+                  <p>{t('history-2000')}</p>
                 </div>
               </div>
             </div>
@@ -354,17 +333,17 @@ export default function HomePage() {
                   <i className="bi bi-geo-alt-fill"></i>
                 </div>
                 <div className="history-card-content">
-                  <h4>{t('history-once-largest-title')}</h4>
-                  <p>{t('history-once-largest-desc')}</p>
+                  <h4>{t('history-geography-title')}</h4>
+                  <p>{t('history-geography-desc')}</p>
                 </div>
               </div>
               <div className="history-card">
                 <div className="history-card-icon">
-                  <i className="bi bi-grid-3x3"></i>
+                  <i className="bi bi-tree"></i>
                 </div>
                 <div className="history-card-content">
-                  <h4>{t('history-urban-planning-title')}</h4>
-                  <p>{t('history-urban-planning-desc')}</p>
+                  <h4>{t('history-agriculture-title')}</h4>
+                  <p>{t('history-agriculture-desc')}</p>
                 </div>
               </div>
             </div>
@@ -636,25 +615,25 @@ export default function HomePage() {
           <div className="home-leadership-grid">
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-mayor')}</div>
-              <h3>Hon. Philip A. Dacayo</h3>
+              <h3>Hon. John T. "Jack" Raymond Jr.</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:mayor@Bayawan City.gov.ph">
-                  <i className="bi bi-envelope"></i> mayor@Bayawan City.gov.ph
+                <a href="mailto:mayorbayawan@gmail.com">
+                  <i className="bi bi-envelope"></i> mayorbayawan@gmail.com
                 </a>
-                <a href="tel:0783265002">
-                  <i className="bi bi-telephone"></i> (078) 326-5002
+                <a href="tel:0355310020">
+                  <i className="bi bi-telephone"></i> (035) 531-0020
                 </a>
               </div>
             </div>
             <div className="home-leader-card">
               <div className="home-leader-badge">{t('title-vice-mayor')}</div>
-              <h3>Hon. Eduardo D. Tiongson</h3>
+              <h3>Hon. Rusmar Ian D. Tijing</h3>
               <div className="home-leader-contacts">
-                <a href="mailto:vicemayor@Bayawan City.gov.ph">
-                  <i className="bi bi-envelope"></i> vicemayor@Bayawan City.gov.ph
+                <a href="mailto:mayorbayawan@gmail.com">
+                  <i className="bi bi-envelope"></i> mayorbayawan@gmail.com
                 </a>
-                <a href="tel:0783265003">
-                  <i className="bi bi-telephone"></i> (078) 326-5003
+                <a href="tel:0355310020">
+                  <i className="bi bi-telephone"></i> (035) 531-0020
                 </a>
               </div>
             </div>
@@ -672,23 +651,23 @@ export default function HomePage() {
             </Link>
           </div>
           <div className="home-contact-v2-grid">
-            <a href="tel:0788053581" className="home-contact-v2-card">
+            <a href="tel:0355310020" className="home-contact-v2-card">
               <div className="home-contact-v2-icon">
                 <i className="bi bi-telephone-fill"></i>
               </div>
               <div className="home-contact-v2-content">
                 <h3>{t('contact-phone')}</h3>
-                <p className="home-contact-v2-value">(078) 805-3581</p>
+                <p className="home-contact-v2-value">(035) 531-0020</p>
                 <span className="home-contact-v2-note">{t('contact-hours')}</span>
               </div>
             </a>
-            <a href="mailto:lguBayawan Citynv@gmail.com" className="home-contact-v2-card">
+            <a href="mailto:mayorbayawan@gmail.com" className="home-contact-v2-card">
               <div className="home-contact-v2-icon">
                 <i className="bi bi-envelope-fill"></i>
               </div>
               <div className="home-contact-v2-content">
                 <h3>{t('contact-email')}</h3>
-                <p className="home-contact-v2-value">lguBayawan Citynv@gmail.com</p>
+                <p className="home-contact-v2-value">mayorbayawan@gmail.com</p>
                 <span className="home-contact-v2-note">{t('contact-response')}</span>
               </div>
             </a>

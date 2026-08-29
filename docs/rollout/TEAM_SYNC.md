@@ -27,15 +27,18 @@
 
 The following hotlines must be verified monthly against official LGU records:
 
-| Service                 | Number         | Source                    |
-| ----------------------- | -------------- | ------------------------- |
-| Police (PNP)            | 0927 400 8033  | LGU Bayawan City Hall |
-| MSWDO                   | 0916 284 0885  | LGU Bayawan City Hall |
-| Fire (BFP)              | 0936 062 0305  | LGU Bayawan City Hall |
-| DILG                    | 0906 188 086   | LGU Bayawan City Hall |
-| MDRRMO                  | 0926 383 3744  | LGU Bayawan City Hall |
-| R2TMC                   | 0906 819 5569  | LGU Bayawan City Hall |
-| Municipal Hall Landline | (078) 805-3581 | Official records          |
+| Service                 | Number                                   | Source                  |
+| ----------------------- | ---------------------------------------- | ----------------------- |
+| Police (PNP)            | 0927 144 1875 / 0998 598 7514 / 0998 598 7515 | bayawancity.gov.ph |
+| Fire (BFP)              | (035) 527-2567 / 0955 817 3397 / 0917 846 0982 | bayawancity.gov.ph |
+| NORECO                  | 0908 864 2365 / 0998 585 8326             | bayawancity.gov.ph |
+| Coast Guard             | 0995 746 8679                             | bayawancity.gov.ph |
+| Ambulance               | 0945 569 0083                             | bayawancity.gov.ph |
+| City Hall (Mayor's Office) | (035) 531-0020 to 21, telefax (035) 430-0020 | bayawancity.gov.ph |
+| MSWDO                   | Verify with LGU (unverified)              | Pending                 |
+| DILG                    | Verify with LGU (unverified)              | Pending                 |
+| MDRRMO                  | Verify with LGU (unverified)              | Pending                 |
+| R2TMC                   | Verify with LGU (unverified)              | Pending                 |
 
 **Last Verified:** [DATE]
 

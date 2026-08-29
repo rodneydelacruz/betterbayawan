@@ -1,9 +1,43 @@
 {
   "_schema_version": "1.0",
-  "_status": "draft",
-  "_source": "Bureau of Local Government Finance (BLGF) / LGU Bayawan City Budget Office",
-  "_note": "Awaiting official fiscal data",
+  "_status": "verified",
+  "_source": "Official Website of the City of Bayawan (Full Disclosure page); Bayawan City Council Legislative Library (bayawancitycouncil.com); Bureau of Local Government Finance (BLGF)",
+  "_updated": "2026-08-29",
+  "_note": "Full Disclosure reports on bayawancity.gov.ph are rendered dynamically; ordinance-based figures below are drawn from official council records (verified verbatim).",
   "municipality": "Bayawan City",
   "province": "Negros Oriental",
+  "full_disclosure_url": "https://www.bayawancity.gov.ph/transparency/full-disclosure/full-disclosure.php",
+  "blgf_notices": [
+    {
+      "title": "Notice of Payment of Real Property Tax - Bayawan City (CY 2026)",
+      "url": "https://blgf.gov.ph/wp-content/uploads/2026/01/Bayawan-City-1.pdf"
+    },
+    {
+      "title": "Notice of Tax Amnesty Program for Delinquent Real Property Tax - Bayawan City (CY 2026)",
+      "url": "https://blgf.gov.ph/wp-content/uploads/2026/01/Bayawan-City-2.pdf"
+    }
+  ],
+  "fiscal_notes": [
+    {
+      "title": "CY 2024 General Fund surplus (net income)",
+      "amount": 105245236.57,
+      "source": "Council record Resolution No. 232, Series of 2025 (ordinance-type record in the Council Legislative Library) appropriating P1,500,000.00 from this surplus for the State of the City Address (SOCA)"
+    },
+    {
+      "title": "Unappropriated balance of the General Fund",
+      "amount": 103745236.57,
+      "source": "Ordinance No. 20, Series of 2025 (P2,370,000.00 lot acquisition for LGU development projects, funded from this balance)"
+    },
+    {
+      "title": "Loan for the New Public Market Complex (two-storey), City of Bayawan",
+      "amount": 800000000.00,
+      "source": "Ordinance No. 71, Series of 2024, amended by Ordinance No. 11, Series of 2025"
+    },
+    {
+      "title": "Real Property Tax (RPT) amnesty grant under RA 12001 (RPVARA)",
+      "amount": null,
+      "source": "Ordinance No. 17, Series of 2025 - two-year amnesty until July 5, 2025"
+    }
+  ],
   "fiscal_years": []
 }

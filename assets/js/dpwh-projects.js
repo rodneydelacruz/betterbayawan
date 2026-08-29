@@ -94,6 +94,24 @@
   }
 
   function renderSection(container, data) {
+    if (!data.projects || data.projects.length === 0) {
+      container.innerHTML = `
+            <div class="dpwh-empty-state">
+                <div class="dpwh-empty-icon"><i class="bi bi-cone-striped"></i></div>
+                <p class="dpwh-empty-title">No project list displayed here.</p>
+                <p class="dpwh-empty-text">
+                    Infrastructure projects in Bayawan City are implemented by the ${data.summary.implementingAgency}
+                    under the Negros Island Region. View the official, live listings on the
+                    <a href="https://transparency.dpwh.gov.ph/" target="_blank" rel="noopener noreferrer">DPWH Transparency Portal</a>
+                    and the
+                    <a href="https://sumbongsapangulo.ph/flood-control-map/" target="_blank" rel="noopener noreferrer">Sumbong sa Pangulo</a>
+                    flood control map.
+                </p>
+            </div>
+        `;
+      return;
+    }
+
     const counts = getCategoryCounts(allProjects);
     const completedCount = allProjects.filter((p) => p.status === 100).length;
 

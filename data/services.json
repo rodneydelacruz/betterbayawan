@@ -746,7 +746,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/bpls/billing"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/billing"
     },
     {
       "id": "online-new-business",
@@ -758,7 +758,7 @@
       "fee": "Varies",
       "processingTime": "3-5 days",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/bpls/newbusiness"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/newbusiness"
     },
     {
       "id": "online-business-renewal",
@@ -770,7 +770,7 @@
       "fee": "Varies",
       "processingTime": "Same day",
       "office": "BPLS Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/bpls/renewbusiness"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/bpls/renewbusiness"
     },
     {
       "id": "online-rpt-billing",
@@ -782,7 +782,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/rptis/billing"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/rptis/billing"
     },
     {
       "id": "online-payment-order",
@@ -794,7 +794,7 @@
       "fee": "Varies",
       "processingTime": "Instant",
       "office": "Municipal Treasurer's Office",
-      "url": "https://www.filipizen.com/partners/nuevavizcaya_Bayawan City/po/billing"
+      "url": "https://www.filipizen.com/partners/negor_bayawan/po/billing"
     }
   ]
 }

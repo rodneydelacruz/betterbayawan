@@ -14,7 +14,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: { default: 'betterbayawan.org | Official Portal', template: '%s | betterbayawan.org' },
   description: 'betterbayawan.org - Your digital gateway to LGU Bayawan City services.',
-  keywords: ['BetterBayawan', 'Bayawan City Negros Oriental', 'LGU Bayawan City', 'municipal services'],
+  keywords: ['BetterBayawan', 'Bayawan City Negros Oriental', 'LGU Bayawan City', 'City services'],
   authors: [{ name: 'Ramon Logan Jr.' }],
   openGraph: {
     type: 'website',

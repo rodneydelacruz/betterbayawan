@@ -63,7 +63,7 @@
     CACHE_KEY: 'Bayawan City_weather_cache',
     CACHE_TTL: 30 * 60 * 1000,
     API_URL: 'https://api.open-meteo.com/v1/forecast',
-    COORDINATES: { lat: 16.5167, lon: 121.1833 },
+    COORDINATES: { lat: 9.3767, lon: 122.8089 },
 
     mapWeatherCode(code) {
       const mappings = {
@@ -390,7 +390,7 @@
                 scrolling="no" 
                 marginheight="0" 
                 marginwidth="0" 
-                src="https://www.openstreetmap.org/export/embed.html?bbox=121.1633%2C16.5017%2C121.2033%2C16.5317&layer=mapnik&marker=16.5167%2C121.1833"
+                src="https://www.openstreetmap.org/export/embed.html?bbox=122.7689%2C9.3567%2C122.8489%2C9.3967&layer=mapnik&marker=9.3767%2C122.8089"
                 style="border:0;display:block;"
                 title="Map of Bayawan City, Negros Oriental"
                 loading="lazy">

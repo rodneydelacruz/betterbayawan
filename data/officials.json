@@ -1,54 +1,78 @@
 {
+  "_schema_version": "1.0",
+  "_status": "verified",
+  "_source": "Official Website of the Bayawan City Council (bayawancitycouncil.com) and the City of Bayawan (bayawancity.gov.ph)",
+  "_updated": "2026-08-29",
   "mayor": {
-    "name": "Hon. Philip A. Dacayo",
+    "name": "Hon. John T. \"Jack\" Raymond Jr.",
     "title": "City Mayor",
     "image": "assets/images/officials/mayor.jpg"
   },
   "vice_mayor": {
-    "name": "Hon. Eduardo D. Tiongson",
-    "title": "Municipal Vice Mayor",
+    "name": "Hon. Rusmar Ian D. Tijing",
+    "title": "City Vice Mayor",
     "image": "assets/images/officials/vice-mayor.jpg"
   },
   "councilors": [
     {
-      "name": "Hon. Councilor One",
-      "title": "SB Member",
+      "name": "Hon. Mark Fidencio L. Aurelia",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb1.jpg"
     },
     {
-      "name": "Hon. Councilor Two",
-      "title": "SB Member",
+      "name": "Hon. Stanley Brian Fortugaleza",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb2.jpg"
     },
     {
-      "name": "Hon. Councilor Three",
-      "title": "SB Member",
+      "name": "Hon. Severino Salvador M. Capulso",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb3.jpg"
     },
     {
-      "name": "Hon. Councilor Four",
-      "title": "SB Member",
+      "name": "Hon. Felipe O. Santiago Jr.",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb4.jpg"
     },
     {
-      "name": "Hon. Councilor Five",
-      "title": "SB Member",
+      "name": "Hon. Rolando B. Abrasaldo",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb5.jpg"
     },
     {
-      "name": "Hon. Councilor Six",
-      "title": "SB Member",
+      "name": "Hon. Sharlou Jamin",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb6.jpg"
     },
     {
-      "name": "Hon. Councilor Seven",
-      "title": "SB Member",
+      "name": "Hon. Luis J. Sumalpong",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb7.jpg"
     },
     {
-      "name": "Hon. Councilor Eight",
-      "title": "SB Member",
+      "name": "Hon. Efleda Arias Renacia",
+      "title": "City Councilor",
       "image": "assets/images/officials/sb8.jpg"
+    },
+    {
+      "name": "Hon. Karl T. Sara\u00f1a",
+      "title": "City Councilor",
+      "image": "assets/images/officials/sb9.jpg"
+    },
+    {
+      "name": "Hon. Sanie Tizon",
+      "title": "City Councilor",
+      "image": "assets/images/officials/sb10.jpg"
+    },
+    {
+      "name": "Hon. Teofilo M. Cagas",
+      "title": "Ex-Officio Member, Liga ng mga Barangay President",
+      "image": "assets/images/officials/sb11.jpg"
+    },
+    {
+      "name": "Hon. Edilbert J. Boltiador",
+      "title": "Ex-Officio Member, SK Federation President",
+      "image": "assets/images/officials/sb12.jpg"
     }
   ]
 }

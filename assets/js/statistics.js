@@ -42,44 +42,48 @@ function getChartColors(count) {
   return colors;
 }
 
-// Barangay population data (2024 Census) - Source: PSA, July 1, 2024
+// Barangay population data (2020 Census) - Source: PhilAtlas
 const barangayData = [
-  { name: 'Roxas', population: 9088, classification: 'Urban' },
-  { name: 'Quirino', population: 6572, classification: 'Urban' },
-  { name: 'Osmeña', population: 6403, classification: 'Urban' },
-  { name: 'Quezon', population: 5758, classification: 'Urban' },
-  { name: 'Curifang', population: 4885, classification: 'Rural' },
-  { name: 'Bagahabag', population: 4731, classification: 'Rural' },
-  { name: 'Uddiawan', population: 4217, classification: 'Rural' },
-  { name: 'Bascaran', population: 3845, classification: 'Rural' },
-  { name: 'Aggub', population: 3101, classification: 'Rural' },
-  { name: 'San Luis', population: 2668, classification: 'Rural' },
-  { name: 'Communal', population: 2586, classification: 'Rural' },
-  { name: 'Lactawan', population: 2109, classification: 'Rural' },
-  { name: 'Concepcion', population: 1954, classification: 'Rural' },
-  { name: 'San Juan', population: 1965, classification: 'Rural' },
-  { name: 'Wacal', population: 1398, classification: 'Rural' },
-  { name: 'Dadap', population: 1409, classification: 'Rural' },
-  { name: 'Tucal', population: 1244, classification: 'Rural' },
-  { name: 'Bangaan', population: 1284, classification: 'Rural' },
-  { name: 'Bangar', population: 1146, classification: 'Rural' },
-  { name: 'Pilar D. Galima', population: 1146, classification: 'Rural' },
-  { name: 'Poblacion North', population: 970, classification: 'Urban' },
-  { name: 'Poblacion South', population: 817, classification: 'Urban' },
+  { name: 'Villareal', population: 10730 },
+  { name: 'Nangka', population: 10637 },
+  { name: 'Banga', population: 7568 },
+  { name: 'Maninihon', population: 7502 },
+  { name: 'Kalumboyan', population: 7004 },
+  { name: 'Narra', population: 6603 },
+  { name: 'Tayawan', population: 6419 },
+  { name: 'Malabugas', population: 6126 },
+  { name: 'Bugay', population: 5607 },
+  { name: 'Banaybanay', population: 4896 },
+  { name: 'Mandu-ao', population: 4780 },
+  { name: 'Dawis', population: 4683 },
+  { name: 'Tabuan', population: 4539 },
+  { name: 'Villasol', population: 3854 },
+  { name: 'Kalamtukan', population: 3618 },
+  { name: 'Tinago', population: 3191 },
+  { name: 'Ali-is', population: 2980 },
+  { name: 'Poblacion', population: 2921 },
+  { name: 'Minaba', population: 2890 },
+  { name: 'San Jose', population: 2450 },
+  { name: 'Suba', population: 2412 },
+  { name: 'Pagatban', population: 2152 },
+  { name: 'San Miguel', population: 1731 },
+  { name: 'Cansumalig', population: 1715 },
+  { name: 'Ubos', population: 1600 },
+  { name: 'San Roque', population: 1452 },
+  { name: 'Boyco', population: 1407 },
+  { name: 'San Isidro', population: 1280 },
 ];
 
 // Historical population data (Census years)
 const historicalData = {
-  years: [1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
-  populations: [38500, 43200, 48100, 52800, 56400, 60500, 65287, 69296],
+  years: [1903, 1918, 1939, 1948, 1960, 1970, 1975, 1980, 1990, 1995, 2000, 2007, 2010, 2015, 2020, 2024],
+  populations: [6099, 10283, 15954, 10608, 30429, 44615, 62114, 71153, 78280, 90953, 101391, 110250, 114074, 117900, 122747, 126744],
 };
 
 // Economic indicators data
 const economicData = {
-  registeredBusinesses: 1200,
-  agriculturalLand: 8500, // hectares
-  incomeClass: '1st Class',
-  landArea: 162.7, // km²
+  agriculturalLand: 46707, // hectares (66.8% of total area)
+  landArea: 699.08, // km²
 };
 
 // Chart instances storage

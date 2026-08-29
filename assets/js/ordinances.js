@@ -35,10 +35,19 @@ function sortOrdinancesByNumber(ordinances) {
 
 /**
  * Formats ordinance number for display
- * @param {string} ordinanceNo - Ordinance number (e.g., "2025-001")
- * @returns {string} Ordinance number as-is
+ * @param {string} ordinanceNo - Ordinance number (e.g., "2025-01-10")
+ * @returns {string} Display form (e.g., "No. 1, Series of 2025")
  */
 function formatOrdinanceNo(ordinanceNo) {
+  if (!ordinanceNo) return ordinanceNo;
+  const parts = String(ordinanceNo).split('-');
+  if (parts.length >= 2) {
+    const num = parseInt(parts[1], 10);
+    const year = parseInt(parts[0], 10);
+    if (!isNaN(num) && !isNaN(year) && String(num) === parts[1].replace(/^0+/, '')) {
+      return 'No. ' + num + ', Series of ' + year;
+    }
+  }
   return ordinanceNo;
 }
 

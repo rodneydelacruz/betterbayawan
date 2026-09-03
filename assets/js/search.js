@@ -877,7 +877,7 @@
                 box-shadow: 0 12px 40px rgba(0, 50, 160, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
                 max-height: 480px;
                 overflow-y: auto;
-                z-index: 1000;
+                z-index: 2147483000;
                 display: none;
                 margin-top: 8px;
                 animation: searchDropdownFadeIn 0.2s ease;

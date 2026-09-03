@@ -24,12 +24,11 @@ const bisayaTranslations = `  bis: {
     'nav-terms': 'Terms',
     'nav-accessibility': 'Accessibility',
 
-    // Appointment CTA
-    'appointment-cta-heading':
-      "Enhancing Appointment Services sa LGU Bayawan City Mayor's Office",
-    'appointment-cta-subtitle': 'Schedule imong appointment online',
-    'appointment-schedule-btn': 'Book Appointment',
-    'appointment-create-btn': 'Create Account',
+    // Emergency Hotlines CTA
+    'emergency-cta-heading': 'Sa Uhog sa Emergency, Andam Kitang Makatabang',
+    'emergency-cta-subtitle': 'I-save kini nga mga numero. Dali nga makaabot sa saktong responder.',
+    'emergency-call-cdrrmo': 'Tawag sa CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'Tan-awa ang Tanang Hotline',
 
     // Hero Section
     'hero-welcome': 'Welcome sa BetterBayawan.org',

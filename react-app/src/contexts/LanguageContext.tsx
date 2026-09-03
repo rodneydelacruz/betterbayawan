@@ -14,11 +14,11 @@ const translations: Record<string, Record<string, string>> = {
     'nav-transparency': 'Transparency',
     'nav-contact': 'Contact',
 
-    // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of LGU Bayawan City Mayor's Office",
-    'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
-    'appointment-schedule-btn': 'Schedule Appointment',
-    'appointment-create-btn': 'Create Account',
+    // Emergency Hotlines CTA
+    'emergency-cta-heading': "In an Emergency, We're Ready to Help",
+    'emergency-cta-subtitle': 'Save these numbers. Reach the right responders fast.',
+    'emergency-call-cdrrmo': 'Call CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'View All Hotlines',
 
     // Hero Section
     'hero-welcome': 'Welcome to BetterBayawan.org',
@@ -259,12 +259,11 @@ const translations: Record<string, Record<string, string>> = {
     'nav-transparency': 'Transparensiya',
     'nav-contact': 'Makipag-ugnayan',
 
-    // Appointment CTA
-    'appointment-cta-heading':
-      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Bayawan City',
-    'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
-    'appointment-schedule-btn': 'Mag-iskedyul ng Appointment',
-    'appointment-create-btn': 'Gumawa ng Account',
+    // Emergency Hotlines CTA
+    'emergency-cta-heading': 'Sa Oras ng Emergency, Handa Kaming Tumulong',
+    'emergency-cta-subtitle': 'I-save ang mga numerong ito. Mabilis na maabot ang tamang responder.',
+    'emergency-call-cdrrmo': 'Tumawag sa CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'Tingnan ang Lahat ng Hotline',
 
     // Hero Section
     'hero-welcome': 'Maligayang Pagdating sa BetterBayawan.org',
@@ -508,12 +507,11 @@ const translations: Record<string, Record<string, string>> = {
     'nav-transparency': 'Transparency',
     'nav-contact': 'Contact',
 
-    // Appointment CTA
-    'appointment-cta-heading':
-      "Enhancing Appointment Services sa LGU Bayawan City Mayor's Office",
-    'appointment-cta-subtitle': 'Schedule imong appointment online',
-    'appointment-schedule-btn': 'Book Appointment',
-    'appointment-create-btn': 'Create Account',
+    // Emergency Hotlines CTA
+    'emergency-cta-heading': 'Sa Uhog sa Emergency, Andam Kitang Makatabang',
+    'emergency-cta-subtitle': 'I-save kini nga mga numero. Dali nga makaabot sa saktong responder.',
+    'emergency-call-cdrrmo': 'Tawag sa CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'Tan-awa ang Tanang Hotline',
 
     // Hero Section
     'hero-welcome': 'Welcome sa BetterBayawan.org',

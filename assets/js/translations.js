@@ -25,9 +25,11 @@ const translations = {
     'hero-subtitle':
       'Access government services, information, and resources for the people of Bayawan City, Negros Oriental.',
 
-    // Appointment CTA
-    'appointment-cta-heading': "Enhancing Appointment Services of LGU Bayawan City Mayor\'s Office",
-    'appointment-cta-subtitle': 'No lines. No back-and-forth. Just efficient appointments.',
+    // Emergency Hotlines CTA
+    'emergency-cta-heading': "In an Emergency, We're Ready to Help",
+    'emergency-cta-subtitle': 'Save these numbers. Reach the right responders fast.',
+    'emergency-call-cdrrmo': 'Call CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'View All Hotlines',
 
     // Popular Services
     'section-popular': 'Popular Services',
@@ -2393,7 +2395,6 @@ const translations = {
     'home-citizens-charter': "Citizen's Charter",
     'home-cmci-dti-portal': 'CMCI DTI Portal',
     'home-contact-us': 'Contact Us',
-    'home-create-account': 'Create Account',
     'home-education': 'Education',
     'home-empowering-the-people-of-Bayawan City-with-transparent':
       'Empowering the people of Bayawan City with transparent access to the services, programs, and public funds of LGU Bayawan City.',
@@ -2422,7 +2423,6 @@ const translations = {
     'home-resolution-framework': 'Resolution Framework',
     'home-resources': 'Resources',
     'home-sangguniang-bayan': 'Sangguniang Panlungsod',
-    'home-schedule-appointment': 'Schedule Appointment',
     'home-sitemap': 'Sitemap',
     'home-skip-to-main-content': 'Skip to main content',
     'home-social-services': 'Social Services',
@@ -5762,9 +5762,11 @@ const translations = {
     'hero-welcome': 'Maligayang Pagdating sa BetterBayawan.org',
     'hero-subtitle':
       'I-access ang mga serbisyo ng pamahalaan, impormasyon, at mga mapagkukunan para sa mga mamamayan ng Bayawan City, Negros Oriental.',
-    'appointment-cta-heading':
-      'Pagpapahusay ng Serbisyo sa Appointment ng Opisina ng Alkalde ng LGU Bayawan City',
-    'appointment-cta-subtitle': 'Walang pila. Walang pabalik-balik. Mahusay na appointment lang.',
+    'emergency-cta-heading':
+      'Sa Oras ng Emergency, Handa Kaming Tumulong',
+    'emergency-cta-subtitle': 'I-save ang mga numerong ito. Mabilis na maabot ang tamang responder.',
+    'emergency-call-cdrrmo': 'Tumawag sa CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'Tingnan ang Lahat ng Hotline',
     'section-popular': 'Mga Sikat na Serbisyo',
     'service-certificates': 'Mga Sertipiko',
     'service-certificates-desc': 'Sertipiko ng kapanganakan, kasal, at kamatayan',
@@ -8090,7 +8092,6 @@ const translations = {
     'home-citizens-charter': "Citizen's Charter",
     'home-cmci-dti-portal': 'CMCI DTI Portal',
     'home-contact-us': 'Makipag-ugnayan sa Amin',
-    'home-create-account': 'Gumawa ng Account',
     'home-education': 'Edukasyon',
     'home-empowering-the-people-of-Bayawan City-with-transparent':
       'Pagbibigay-kapangyarihan sa mga mamamayan ng Bayawan City na may transparent na access sa mga serbisyo, programa, at pampublikong pondo ng LGU Bayawan City.',
@@ -8119,7 +8120,6 @@ const translations = {
     'home-resolution-framework': 'Balangkas ng Resolusyon',
     'home-resources': 'Mga Mapagkukunan',
     'home-sangguniang-bayan': 'Sangguniang Panlungsod',
-    'home-schedule-appointment': 'Mag-iskedyul ng Appointment',
     'home-sitemap': 'Mapa ng Site',
     'home-skip-to-main-content': 'Lumaktaw sa pangunahing nilalaman',
     'home-social-services': 'Serbisyong Panlipunan',
@@ -11511,8 +11511,10 @@ const translations = {
     'stats-subtitle': 'Datos ug estadistika mahitungod sa Bayawan City, Negros Oriental',
     'hero-welcome': 'Welcome sa BetterBayawan.org',
     'hero-subtitle': 'Access government services, information, ug resources para sa mga tawo sa Bayawan City, Negros Oriental.',
-    'appointment-cta-heading': "Enhancing Appointment Services sa LGU Bayawan City Mayor\'s Office",
-    'appointment-cta-subtitle': 'Schedule your appointment online',
+    'emergency-cta-heading': "Sa Uhog sa Emergency, Andam Kitang Makatabang",
+    'emergency-cta-subtitle': 'I-save kini nga mga numero. Dali nga makaabot sa saktong responder.',
+    'emergency-call-cdrrmo': 'Tawag sa CDRRMO: 0936 464 1233',
+    'emergency-view-all': 'Tan-awa ang Tanang Hotline',
     'services-subtitle': 'Browse all services offered by the City of Bayawan',
     'gov-subtitle': 'Meet the leadership ug offices serving Bayawan City',
     'gov-sb-subtitle': 'City Councilors serving the people of Bayawan City',

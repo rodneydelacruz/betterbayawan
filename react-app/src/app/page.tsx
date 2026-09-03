@@ -105,40 +105,65 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Appointment Services CTA */}
-      <section className="appointment-cta-section" aria-label="Mayor's Office Appointment Services">
+      {/* Emergency Hotlines CTA */}
+      <section className="emergency-cta-section" aria-label="Emergency Hotlines">
         <div className="container">
-          <div className="appointment-cta-inner">
-            <div className="appointment-cta-animation" aria-hidden="true">
-              <dotlottie-player
-                src="/assets/animation/ramonloganjr-booking.json"
-                background="transparent"
-                speed="1"
-                loop
-                autoplay
-              ></dotlottie-player>
-            </div>
-            <div className="appointment-cta-content">
-              <h2 className="appointment-cta-heading">{t('appointment-cta-heading')}</h2>
-              <p className="appointment-cta-subtitle">{t('appointment-cta-subtitle')}</p>
-              <div className="appointment-cta-actions">
-                <a
-                  href="https://Bayawan Citymayorsoffice-oasys.com/user/auth/login.php"
-                  className="appointment-cta-btn appointment-cta-btn--primary"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-calendar-check" aria-hidden="true"></i>{' '}
-                  {t('appointment-schedule-btn')}
+          <div className="emergency-cta-inner">
+            <div className="emergency-cta-quickdial">
+              <div className="emergency-chip">
+                <i className="bi bi-shield-fill" aria-hidden="true"></i>
+                <span className="emergency-chip-label">Police</span>
+                <a className="emergency-chip-num" href="tel:09271441875">
+                  0927 144 1875
                 </a>
-                <a
-                  href="https://Bayawan Citymayorsoffice-oasys.com/user/auth/register.php"
-                  className="appointment-cta-btn appointment-cta-btn--outline"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <i className="bi bi-person-plus" aria-hidden="true"></i>{' '}
-                  {t('appointment-create-btn')}
+              </div>
+              <div className="emergency-chip">
+                <i className="bi bi-fire" aria-hidden="true"></i>
+                <span className="emergency-chip-label">Fire</span>
+                <a className="emergency-chip-num" href="tel:09558173397">
+                  0955 817 3397
+                </a>
+              </div>
+              <div className="emergency-chip">
+                <i className="bi bi-heart-fill" aria-hidden="true"></i>
+                <span className="emergency-chip-label">Ambulance</span>
+                <a className="emergency-chip-num" href="tel:09455690083">
+                  0945 569 0083
+                </a>
+              </div>
+              <div className="emergency-chip">
+                <i className="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+                <span className="emergency-chip-label">Coast Guard</span>
+                <a className="emergency-chip-num" href="tel:09957468679">
+                  0995 746 8679
+                </a>
+              </div>
+              <div className="emergency-chip">
+                <i className="bi bi-building" aria-hidden="true"></i>
+                <span className="emergency-chip-label">NORECO</span>
+                <a className="emergency-chip-num" href="tel:09088642365">
+                  0908 864 2365
+                </a>
+              </div>
+              <div className="emergency-chip">
+                <i className="bi bi-truck" aria-hidden="true"></i>
+                <span className="emergency-chip-label">City Hall</span>
+                <a className="emergency-chip-num" href="tel:+63355310020">
+                  (035) 531-0020
+                </a>
+              </div>
+            </div>
+            <div className="emergency-cta-content">
+              <h2 className="emergency-cta-heading">{t('emergency-cta-heading')}</h2>
+              <p className="emergency-cta-subtitle">{t('emergency-cta-subtitle')}</p>
+              <div className="emergency-cta-actions">
+                <a href="tel:09364641233" className="emergency-cta-btn emergency-cta-btn--primary">
+                  <i className="bi bi-telephone-fill" aria-hidden="true"></i>{' '}
+                  {t('emergency-call-cdrrmo')}
+                </a>
+                <a href="/contact" className="emergency-cta-btn emergency-cta-btn--outline">
+                  <i className="bi bi-bookmark-star" aria-hidden="true"></i>{' '}
+                  {t('emergency-view-all')}
                 </a>
               </div>
             </div>

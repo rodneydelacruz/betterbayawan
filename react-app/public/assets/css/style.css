@@ -8405,6 +8405,27 @@ a.a11y-contact-item:hover i {
   color: #ffd54a;
 }
 
+/* Experience Bayawan brand — left side of the info bar, larger screens only */
+.info-bar-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  margin-right: auto;
+  font-size: 0.75rem;
+  letter-spacing: 0.01em;
+}
+
+.info-bar-brand-hashtag {
+  font-weight: 700;
+  color: #ffd54a;
+}
+
+.info-bar-brand-tagline {
+  color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  font-style: italic;
+}
+
 /* Exchange Rates - Rotating Display */
 .rate-rotator {
   display: inline-block;
@@ -8480,6 +8501,10 @@ a.a11y-contact-item:hover i {
 @media (max-width: 1024px) {
   .info-bar-inner {
     justify-content: center;
+  }
+
+  .info-bar-brand {
+    display: none;
   }
 
   .info-bar-rates-list {

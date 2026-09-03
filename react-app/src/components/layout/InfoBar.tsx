@@ -62,6 +62,10 @@ export default function InfoBar() {
     <div className="info-bar" role="complementary" aria-label="Real-time information">
       <div className="container">
         <div className="info-bar-inner" aria-live="polite" aria-atomic="false">
+          <div className="info-bar-brand" aria-hidden="true">
+            <span className="info-bar-brand-hashtag">#ExperienceBayawan</span>
+            <span className="info-bar-brand-tagline">Celebrate Life's harvest.</span>
+          </div>
           <div className="info-bar-item info-bar-rates" aria-label="Exchange rates">
             <i className="bi bi-currency-exchange" aria-hidden="true" />
             <span className="rate-rotator">

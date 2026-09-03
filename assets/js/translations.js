@@ -2880,7 +2880,7 @@ const translations = {
     'magri-market-access': 'Market Access',
     'magri-market-linkage': 'Market Linkage',
     'magri-mechanization-support': 'Mechanization Support',
-    'magri-mun-agriculture': 'Mun. Agriculture',
+    'magri-mun-agriculture': 'City Agriculture',
     'magri-municipal-agriculture-office': 'City Agriculture Office',
     'magri-municipal-agriculture-office-municipal-hall':
       'City Agriculture Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
@@ -3174,7 +3174,7 @@ const translations = {
     'mbudget-business': 'Business',
     'mbudget-certificates': 'Certificates',
     'mbudget-certification-by-the-mbo-of-the-availability-of':
-      'Certification by the MBO of the availability of appropriation and allotment',
+      'Certification by the CBO of the availability of appropriation and allotment',
     'mbudget-checkedvalidated-obligation-request-obr': 'Checked/validated Obligation Request (ObR)',
     'mbudget-checkingvalidating-of-the-availability-of':
       'Checking/validating of the availability of appropriation and allotment from the Status of Appropriation, Allotment, Obligation (SAOB)',
@@ -3271,7 +3271,7 @@ const translations = {
     'mbudget-the-municipal-budget-office-assists-barangays-in':
       'The City Budget Office assists barangays in the preparation of their Annual Budget. It conducts training whenever necessary and ensures compliance with statutory, contractual obligations and budgetary requirements prior to the review and approval of the Sangguniang Panlungsod.',
     'mbudget-the-municipal-budget-office-assists-the-different':
-      'The City Budget Office assists the different schools in the preparation of SEF Annual Budget. It assists the City School Board in the conduct of budget hearings and deliberations of budget proposals. It ensures compliance with statutory, contractual obligations and budgetary requirements prior to the review and approval by the City School Board (MSB).',
+      'The City Budget Office assists the different schools in the preparation of SEF Annual Budget. It assists the City School Board in the conduct of budget hearings and deliberations of budget proposals. It ensures compliance with statutory, contractual obligations and budgetary requirements prior to the review and approval by the City School Board (CSB).',
     'mbudget-the-municipal-budget-office-processes':
       'The City Budget Office processes disbursement vouchers particularly the integral part of Obligation Request (ObR) to ensure the existence of appropriation',
     'mbudget-total-processing-time': 'Total Processing Time',
@@ -3299,12 +3299,12 @@ const translations = {
       'Affidavit for Delayed Registration of Marriage (at the back of the document shall be accomplished)',
     'mc-affidavit-of-the-solemnizing-officer-or-the':
       'Affidavit of the solemnizing officer or the person reporting or presenting the marriage certificate for registration stating the facts and circumstances surrounding the marriage and the reason or cause of delay',
-    'mc-after-the-pmc-go-back-to-mcro': 'After the PMC, go back to MCRO',
+    'mc-after-the-pmc-go-back-to-mcro': 'After the PMC, go back to LCR',
     'mc-agriculture': 'Agriculture',
     'mc-answer-questions-for-encoding': 'Answer questions for encoding',
     'mc-application-for-marriage-license': 'Application for Marriage License',
     'mc-application-for-marriage-license-duly-signed-by':
-      'Application for Marriage License duly signed by the couple and the MCR',
+      'Application for Marriage License duly signed by the couple and the LCR',
     'mc-appointment': 'Appointment',
     'mc-attend-the-pmc': 'Attend the PMC',
     'mc-basic-requirements': 'Basic Requirements',
@@ -3364,7 +3364,7 @@ const translations = {
     'mc-freedom-of-information': 'Freedom of Information',
     'mc-frequently-asked-questions': 'Frequently Asked Questions',
     'mc-get-your-copy-of-com-duly-registered-and-signed':
-      'Get your copy of COM duly registered and signed by the Receiving Officer and MCR or any authorized signatory. Accomplish Client Feedback Form and drop at designated suggestion box.',
+      'Get your copy of COM duly registered and signed by the Receiving Officer and LCR or any authorized signatory. Accomplish Client Feedback Form and drop at designated suggestion box.',
     'mc-government': 'Government',
     'mc-health': 'Health',
     'mc-home': 'Home',
@@ -3580,7 +3580,7 @@ const translations = {
     'mcr-open-data-philippines': 'Open Data Philippines',
     'mcr-order-of-payment': 'Order of Payment',
     'mcr-ordinance-framework': 'Ordinance Framework',
-    'mcr-parental-advice-if-2225-years-old': 'Parental Advice (if 22-25 years old)',
+    'mcr-parental-advice-if-2225-years-old': 'Parental Advice (if 22-24 years old)',
     'mcr-parental-consent-if-1821-years-old': 'Parental Consent (if 18-21 years old)',
     'mcr-pay-the-required-fee-at-treasurers-office': "Pay the required fee at Treasurer's Office",
     'mcr-personnel': 'Personnel',
@@ -8583,7 +8583,7 @@ const translations = {
     'magri-market-access': 'Access sa Pamilihan',
     'magri-market-linkage': 'Koneksyon sa Pamilihan',
     'magri-mechanization-support': 'Suporta sa Mekanisasyon',
-    'magri-mun-agriculture': 'Mun. Agrikultura',
+    'magri-mun-agriculture': 'City Agrikultura',
     'magri-municipal-agriculture-office': 'Opisina ng Agrikultura ng Lungsod',
     'magri-municipal-agriculture-office-municipal-hall':
       'Kagawaran ng Agrikultura ng Lungsod Opisina, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
@@ -8886,7 +8886,7 @@ const translations = {
     'mbudget-business': 'Negosyo',
     'mbudget-certificates': 'Mga Sertipiko',
     'mbudget-certification-by-the-mbo-of-the-availability-of':
-      'Sertipikasyon ng MBO ng pagkakaroon ng appropriasyon at allotment',
+      'Sertipikasyon ng CBO ng pagkakaroon ng appropriasyon at allotment',
     'mbudget-checkedvalidated-obligation-request-obr':
       'Nasuri/napatunayan na Obligation Request (ObR)',
     'mbudget-checkingvalidating-of-the-availability-of':
@@ -8985,7 +8985,7 @@ const translations = {
     'mbudget-the-municipal-budget-office-assists-barangays-in':
       'Ang Opisina ng Badyet ng Lungsod assists barangays sa ang paghahanda ng kanilang Taunang Budget. It conducts pagsasanay whenever necessary sa ensures pagsunod na maaari statutory, contractual mga obligasyon sa budgetary mga kinakailangan bago ang ang suriin sa pag-apruba ng ang Sangguniang Panlungsod.',
     'mbudget-the-municipal-budget-office-assists-the-different':
-      "Ang Opisina ng Badyet ng Lungsod ay tumutulong sa iba't ibang paaralan sa paghahanda ng Taunang Badyet ng SEF. Tinutulungan nito ang City School Board sa pagsasagawa ng mga pagdinig sa badyet at deliberasyon ng mga panukala sa badyet. Tinitiyak nito ang pagsunod sa mga statutory, kontraktwal na obligasyon at mga kinakailangan sa badyet bago ang pagsusuri at pag-apruba ng City School Board (MSB).",
+      "Ang Opisina ng Badyet ng Lungsod ay tumutulong sa iba't ibang paaralan sa paghahanda ng Taunang Badyet ng SEF. Tinutulungan nito ang City School Board sa pagsasagawa ng mga pagdinig sa badyet at deliberasyon ng mga panukala sa badyet. Tinitiyak nito ang pagsunod sa mga statutory, kontraktwal na obligasyon at mga kinakailangan sa badyet bago ang pagsusuri at pag-apruba ng City School Board (CSB).",
     'mbudget-the-municipal-budget-office-processes':
       'Ang Opisina ng Badyet ng Lungsod ay nagpoproseso ng mga disbursement voucher lalo na ang mahalagang bahagi ng Obligation Request (ObR) upang matiyak ang pagkakaroon ng appropriasyon',
     'mbudget-total-processing-time': 'Kabuuang Oras ng Pagproseso',
@@ -9013,12 +9013,12 @@ const translations = {
       'Sinumpaang Salaysay para sa Naantalang Pagpaparehistro ng Kasal (sa likod ng dokumento ay dapat mapunan)',
     'mc-affidavit-of-the-solemnizing-officer-or-the':
       'Affidavit of the solemnizing opisyal or the tao reporting or presenting the kasal sertipiko for registration stating the facts and circumstances surrounding the kasal and the reason or cause of delay',
-    'mc-after-the-pmc-go-back-to-mcro': 'Pagkatapos ng PMC, bumalik sa MCRO',
+    'mc-after-the-pmc-go-back-to-mcro': 'Pagkatapos ng PMC, bumalik sa LCR',
     'mc-agriculture': 'Agrikultura',
     'mc-answer-questions-for-encoding': 'Sagutin ang mga tanong para sa pag-encode',
     'mc-application-for-marriage-license': 'Aplikasyon for Lisensya sa Kasal',
     'mc-application-for-marriage-license-duly-signed-by':
-      'Aplikasyon para sa Lisensya sa Kasal na wastong nilagdaan ng mag-asawa at ng MCR',
+      'Aplikasyon para sa Lisensya sa Kasal na wastong nilagdaan ng mag-asawa at ng LCR',
     'mc-appointment': 'Appointment',
     'mc-attend-the-pmc': 'Dumalo sa PMC',
     'mc-basic-requirements': 'Mga Pangunahing Kinakailangan',
@@ -9081,7 +9081,7 @@ const translations = {
     'mc-freedom-of-information': 'Kalayaan sa Impormasyon',
     'mc-frequently-asked-questions': 'Mga Madalas Itanong',
     'mc-get-your-copy-of-com-duly-registered-and-signed':
-      'Kunin ang iyong kopya ng COM na wastong nairehistro at nilagdaan ng Receiving Officer at MCR o sinumang awtorisadong lumagda. Punan ang Client Feedback Form at ihulog sa itinalagang suggestion box.',
+      'Kunin ang iyong kopya ng COM na wastong nairehistro at nilagdaan ng Receiving Officer at LCR o sinumang awtorisadong lumagda. Punan ang Client Feedback Form at ihulog sa itinalagang suggestion box.',
     'mc-government': 'Pamahalaan',
     'mc-health': 'Kalusugan',
     'mc-home': 'Tahanan',
@@ -9301,7 +9301,7 @@ const translations = {
     'mcr-open-data-philippines': 'Open Data Philippines',
     'mcr-order-of-payment': 'Order of Pagbabayad',
     'mcr-ordinance-framework': 'Balangkas ng Ordinansa',
-    'mcr-parental-advice-if-2225-years-old': 'Payo ng Magulang (kung 22-25 taong gulang)',
+    'mcr-parental-advice-if-2225-years-old': 'Payo ng Magulang (kung 22-24 taong gulang)',
     'mcr-parental-consent-if-1821-years-old': 'Pahintulot ng Magulang (kung 18-21 taong gulang)',
     'mcr-pay-the-required-fee-at-treasurers-office':
       'Magbayad ng kinakailangang bayad sa Opisina ng Ingat-Yaman',

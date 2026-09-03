@@ -69,13 +69,33 @@ const hotlines: Hotline[] = [
   },
 ];
 
+function HotlinePill({ h }: { h: Hotline }) {
+  return (
+    <a href={`tel:${h.tel}`} className="hotline-item">
+      <i className={`bi ${h.icon}`} aria-hidden="true" />
+      <span>
+        {h.label}: {h.number}
+      </span>
+    </a>
+  );
+}
+
 export default function HotlineBar() {
   const [openId, setOpenId] = useState<string | null>(null);
+  const [isMobile, setIsMobile] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
   const toggle = (id: string) => {
     setOpenId((prev) => (prev === id ? null : id));
   };
+
+  useEffect(() => {
+    const mq = window.matchMedia('(max-width: 1024px)');
+    const update = () => setIsMobile(mq.matches);
+    update();
+    mq.addEventListener('change', update);
+    return () => mq.removeEventListener('change', update);
+  }, []);
 
   useEffect(() => {
     function handleOutsideClick(e: MouseEvent) {
@@ -99,56 +119,77 @@ export default function HotlineBar() {
     <div className="hotline-bar" ref={rootRef}>
       <div className="container">
         <div className="hotline-inner">
-          <div className="hotline-groups">
-            {hotlines.map((h) => {
-              const isOpen = openId === h.id;
-              return (
-                <div
-                  key={h.id}
-                  className={`hotline-group${h.more ? ' hotline-group--multi' : ''}${
-                    isOpen ? ' open' : ''
-                  }`}
-                >
-                  {h.more ? (
-                    <>
-                      <div className="hotline-group-head">
-                        <a href={`tel:${h.tel}`} className="hotline-item">
-                          <i className={`bi ${h.icon}`} aria-hidden="true" />
-                          <span>
-                            {h.label}: {h.number}
-                          </span>
-                        </a>
-                        <button
-                          type="button"
-                          className="hotline-toggle"
-                          aria-expanded={isOpen ? 'true' : 'false'}
-                          aria-label={`More ${h.label} contacts`}
-                          aria-controls={`${h.id}-contacts`}
-                          onClick={() => toggle(h.id)}
-                        >
-                          <i className="bi bi-chevron-down" aria-hidden="true"></i>
-                        </button>
-                      </div>
-                      <ul className="hotline-more" id={`${h.id}-contacts`}>
-                        {h.more.map((m) => (
-                          <li key={m.tel}>
-                            <a href={`tel:${m.tel}`}>{m.label}</a>
-                          </li>
-                        ))}
-                      </ul>
-                    </>
-                  ) : (
-                    <a href={`tel:${h.tel}`} className="hotline-item">
-                      <i className={`bi ${h.icon}`} aria-hidden="true" />
-                      <span>
-                        {h.label}: {h.number}
-                      </span>
-                    </a>
-                  )}
+          {isMobile ? (
+            <div className="hotline-track" role="marquee" aria-label="Emergency contacts scrolling">
+              {hotlines.map((h, i) => (
+                <div key={h.id} style={{ display: 'contents' }}>
+                  <HotlinePill h={h} />
+                  <a
+                    href={`tel:${h.tel}`}
+                    className="hotline-item"
+                    aria-hidden="true"
+                    tabIndex={-1}
+                  >
+                    <i className={`bi ${h.icon}`} aria-hidden="true" />
+                    <span>
+                      {h.label}: {h.number}
+                    </span>
+                  </a>
                 </div>
-              );
-            })}
-          </div>
+              ))}
+            </div>
+          ) : (
+            <div className="hotline-groups">
+              {hotlines.map((h) => {
+                const isOpen = openId === h.id;
+                return (
+                  <div
+                    key={h.id}
+                    className={`hotline-group${h.more ? ' hotline-group--multi' : ''}${
+                      isOpen ? ' open' : ''
+                    }`}
+                  >
+                    {h.more ? (
+                      <>
+                        <div className="hotline-group-head">
+                          <a href={`tel:${h.tel}`} className="hotline-item">
+                            <i className={`bi ${h.icon}`} aria-hidden="true" />
+                            <span>
+                              {h.label}: {h.number}
+                            </span>
+                          </a>
+                          <button
+                            type="button"
+                            className="hotline-toggle"
+                            aria-expanded={isOpen ? 'true' : 'false'}
+                            aria-label={`More ${h.label} contacts`}
+                            aria-controls={`${h.id}-contacts`}
+                            onClick={() => toggle(h.id)}
+                          >
+                            <i className="bi bi-chevron-down" aria-hidden="true"></i>
+                          </button>
+                        </div>
+                        <ul className="hotline-more" id={`${h.id}-contacts`}>
+                          {h.more.map((m) => (
+                            <li key={m.tel}>
+                              <a href={`tel:${m.tel}`}>{m.label}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </>
+                    ) : (
+                      <a href={`tel:${h.tel}`} className="hotline-item">
+                        <i className={`bi ${h.icon}`} aria-hidden="true" />
+                        <span>
+                          {h.label}: {h.number}
+                        </span>
+                      </a>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
+          )}
         </div>
       </div>
     </div>

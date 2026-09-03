@@ -230,14 +230,14 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 6px 0;
+  padding: 3px 0;
 }
 
 .header-inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  min-height: 48px;
+  min-height: 44px;
 }
 
 .logo-container {
@@ -248,7 +248,7 @@ p {
 }
 
 .logo-img {
-  height: 64px;
+  height: 52px;
   width: auto;
 }
 
@@ -389,9 +389,9 @@ body.mobile-menu-open {
 
   .main-nav > ul > li > a {
     display: inline-block;
-    padding: 6px 8px;
+    padding: 4px 6px;
     font-weight: 500;
-    font-size: 0.9rem;
+    font-size: 0.85rem;
     letter-spacing: 0.01em;
     white-space: nowrap;
     border-radius: 6px;
@@ -1176,7 +1176,7 @@ body.mobile-menu-open {
   visibility: hidden;
   transform: translateY(6px);
   transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
-  z-index: 600;
+  z-index: 1100;
 }
 
 .hotline-group.open .hotline-more {
@@ -1207,25 +1207,60 @@ body.mobile-menu-open {
 /* Tablet + Mobile */
 @media (max-width: 1024px) {
   .hotline-bar {
-    padding: 5px 0;
+    padding: 4px 0;
+    overflow: hidden;
+  }
+
+  .hotline-bar .container {
+    max-width: 100%;
+    padding: 0;
+  }
+
+  .hotline-inner {
+    overflow: hidden;
   }
 
   .hotline-groups {
-    justify-content: center;
-    gap: 6px 9px;
+    display: none;
   }
 
-  .hotline-item {
+  /* Mobile carousel: seamless auto-scroll of primary hotline pills */
+  .hotline-track {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    padding: 4px 8px;
+    width: max-content;
+    animation: hotlineScroll 30s linear infinite;
+    will-change: transform;
+  }
+
+  .hotline-track:hover,
+  .hotline-track:focus-within {
+    animation-play-state: paused;
+  }
+
+  .hotline-track .hotline-item {
+    flex-shrink: 0;
     font-size: 0.75rem;
-    padding: 4px 9px;
-    font-weight: 500;
+    padding: 4px 10px;
   }
 }
 
 @media (max-width: 575px) {
-  .hotline-item {
+  .hotline-track .hotline-item {
     font-size: 0.6875rem;
     padding: 3px 8px;
+  }
+}
+
+@keyframes hotlineScroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-50%);
   }
 }
 

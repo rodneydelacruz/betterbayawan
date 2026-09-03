@@ -174,6 +174,72 @@ document.addEventListener('DOMContentLoaded', () => {
 
   initHotlineGroups();
 
+  // Hotline carousel (tablet + mobile): flatten primary hotline pills into a
+  // seamless auto-scrolling marquee, mirroring the original behavior.
+  var initHotlineCarousel = function () {
+    var isTabletOrBelow = function () {
+      return window.matchMedia('(max-width: 1024px)').matches;
+    };
+    var inner = document.querySelector('.hotline-inner');
+    if (!inner) return;
+
+    var track = null;
+    var primaryItems = [];
+
+    var gatherItems = function () {
+      primaryItems = [];
+      document.querySelectorAll('.hotline-group').forEach(function (group) {
+        var it =
+          group.querySelector('.hotline-group-head .hotline-item') ||
+          group.querySelector(':scope > .hotline-item');
+        if (it) primaryItems.push(it.cloneNode(true));
+      });
+    };
+
+    var buildMarquee = function () {
+      if (!isTabletOrBelow() || track) return;
+      gatherItems();
+      if (!primaryItems.length) return;
+      track = document.createElement('div');
+      track.className = 'hotline-track';
+      track.setAttribute('role', 'marquee');
+      track.setAttribute('aria-label', 'Emergency contacts scrolling');
+      primaryItems.forEach(function (item) {
+        track.appendChild(item);
+      });
+      primaryItems.forEach(function (item) {
+        var clone = item.cloneNode(true);
+        clone.setAttribute('aria-hidden', 'true');
+        clone.setAttribute('tabindex', '-1');
+        track.appendChild(clone);
+      });
+      inner.appendChild(track);
+    };
+
+    var destroyMarquee = function () {
+      if (!track) return;
+      track.parentNode && track.parentNode.removeChild(track);
+      track = null;
+    };
+
+    var handleResize = function () {
+      if (isTabletOrBelow()) {
+        buildMarquee();
+      } else {
+        destroyMarquee();
+      }
+    };
+
+    handleResize();
+    var resizeTimer;
+    window.addEventListener('resize', function () {
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(handleResize, 150);
+    });
+  };
+
+  initHotlineCarousel();
+
   // Mobile Menu Toggle
   var createMobileMenu = function () {
     var headerInner = document.querySelector('.header-inner');

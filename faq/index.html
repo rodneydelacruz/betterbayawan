@@ -95,31 +95,78 @@
     <div class="hotline-bar">
       <div class="container">
         <div class="hotline-inner">
-          <div class="hotline-items">
-            <a href="tel:09271441875" class="hotline-item">
-              <i class="bi bi-shield-fill"></i>
-              <span>Police: 0927 144 1875</span>
-            </a>
-            <a href="tel:09455690083" class="hotline-item">
-              <i class="bi bi-heart-fill"></i>
-              <span>Ambulance: 0945 569 0083</span>
-            </a>
-            <a href="tel:09558173397" class="hotline-item">
-              <i class="bi bi-fire"></i>
-              <span>Fire: 0955 817 3397</span>
-            </a>
-            <a href="tel:09088642365" class="hotline-item">
-              <i class="bi bi-building"></i>
-              <span>NORECO: 0908 864 2365</span>
-            </a>
-            <a href="tel:09957468679" class="hotline-item">
-              <i class="bi bi-exclamation-triangle-fill"></i>
-              <span>Coast Guard: 0995 746 8679</span>
-            </a>
-            <a href="tel:+63355310020" class="hotline-item">
-              <i class="bi bi-truck"></i>
-              <span>City Hall: (035) 531-0020</span>
-            </a>
+          <div class="hotline-groups">
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:09271441875" class="hotline-item">
+                  <i class="bi bi-shield-fill" aria-hidden="true"></i>
+                  <span>Police: 0927 144 1875</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More Police contacts" aria-controls="police-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="police-contacts">
+                <li><a href="tel:09985987514">0998 598 7514</a></li>
+                <li><a href="tel:09985987515">0998 598 7515</a></li>
+              </ul>
+            </div>
+            <div class="hotline-group">
+              <a href="tel:09455690083" class="hotline-item">
+                <i class="bi bi-heart-fill" aria-hidden="true"></i>
+                <span>Ambulance: 0945 569 0083</span>
+              </a>
+            </div>
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:09558173397" class="hotline-item">
+                  <i class="bi bi-fire" aria-hidden="true"></i>
+                  <span>Fire: 0955 817 3397</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More Fire contacts" aria-controls="fire-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="fire-contacts">
+                <li><a href="tel:09178460982">0917 846 0982</a></li>
+                <li><a href="tel:+63355272567">(035) 527-2567</a></li>
+              </ul>
+            </div>
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:09088642365" class="hotline-item">
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                  <span>NORECO: 0908 864 2365</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More NORECO contacts" aria-controls="noreco-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="noreco-contacts">
+                <li><a href="tel:09985858326">0998 585 8326</a></li>
+              </ul>
+            </div>
+            <div class="hotline-group">
+              <a href="tel:09957468679" class="hotline-item">
+                <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+                <span>Coast Guard: 0995 746 8679</span>
+              </a>
+            </div>
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:+63355310020" class="hotline-item">
+                  <i class="bi bi-truck" aria-hidden="true"></i>
+                  <span>City Hall: (035) 531-0020</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More City Hall contacts" aria-controls="cityhall-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="cityhall-contacts">
+                <li><a href="tel:+63355310020">(035) 531-0020 to 21</a></li>
+                <li><a href="tel:+63354300020">Telefax: (035) 430-0020</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -198,10 +245,38 @@
         </nav>
 
         <div class="header-actions">
-          <div class="lang-selector">
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="bis">BIS</button>
+          <div class="lang-dropdown">
+            <button
+              type="button"
+              class="lang-trigger"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-label="Select language"
+            >
+              <i class="bi bi-globe2" aria-hidden="true"></i>
+              <span class="lang-trigger-label">English</span>
+              <i class="bi bi-chevron-down lang-caret" aria-hidden="true"></i>
+            </button>
+            <ul class="lang-menu" role="listbox" aria-label="Select language">
+              <li>
+                <button type="button" class="lang-option" data-lang="en" role="option" aria-selected="false">
+                  <span>English</span>
+                  <i class="bi bi-check2 lang-check" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="lang-option" data-lang="fil" role="option" aria-selected="false">
+                  <span>Filipino</span>
+                  <i class="bi bi-check2 lang-check" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="lang-option" data-lang="bis" role="option" aria-selected="false">
+                  <span>Bisaya</span>
+                  <i class="bi bi-check2 lang-check" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>
@@ -549,12 +624,127 @@
                       open-source civic-tech projects that help modernize Philippine local
                       governments.
                     </p>
+                    
+                    <p>
+                      BetterBayawan.org is part of the
+                      <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer">BetterGov.ph</a>
+                      BetterLGU initiative and follows a template based on the open-source
+                      <a href="https://bettersolano.org" target="_blank" rel="noopener noreferrer">BetterSolano.org</a>
+                      by Ramon Logan, which was modified and adapted for Bayawan City. The project
+                      carries a version badge in the site footer, and the source is maintained openly
+                      so improvements are transparent and reproducible.
+                    </p>
                     <p data-i18n="faq-open-source-community">
                       BetterBayawan.org is an open-source project released under MIT | CC BY 4.0 to
                       empower community-driven development. Contributions are warmly welcomed from
                       everyone — whether you are a developer, data researcher, designer, content
                       writer, translator, or a concerned citizen of Bayawan City — your participation
                       helps shape the project for all.
+                    </p>
+                    <p>
+                      Please note that BetterBayawan.org is an independent, open-source community
+                      project. It is not affiliated with, funded by, or endorsed by the Bayawan City
+                      government. All content is based on publicly available information sourced from
+                      official government portals. For official transactions and authoritative
+                      updates, always refer directly to your local government office.
+                    </p>
+                  </div>
+                </details>
+              </div>
+            </div>
+
+            <!-- FAQ Category: For Developers -->
+            <div class="faq-category">
+              <div class="faq-category-header">
+                <i class="bi bi-code-slash"></i>
+                <h2>For Developers</h2>
+              </div>
+              <div class="faq-list">
+                <details class="faq-accordion">
+                  <summary>Is the source code open-source?</summary>
+                  <div class="faq-answer">
+                    <p>
+                      Yes. BetterBayawan.org is a fully open-source, community-driven project. The
+                      complete source code is publicly available so that anyone can inspect how the
+                      site works, verify the information it publishes, and reuse the templates for
+                      their own community. As an open civic-tech project, it is built to be shared
+                      and improved upon by others — not locked away.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-accordion">
+                  <summary>What license is Better Bayawan released under?</summary>
+                  <div class="faq-answer">
+                    <p>
+                      BetterBayawan.org is released under a dual license: the
+                      <strong>MIT License</strong> for the software (code, scripts, and technical
+                      infrastructure) and <strong>Creative Commons Attribution 4.0 (CC BY 4.0)</strong> for
+                      the content (text, data, and documentation). This dual approach means the code
+                      can be freely used, modified, and redistributed, while the published content
+                      can be reused provided proper attribution is given to the source.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-accordion">
+                  <summary>What technology stack is used?</summary>
+                  <div class="faq-answer">
+                    <p>
+                      The site is a fast, static website built with plain <strong>HTML</strong>,
+                      <strong>CSS</strong>, and <strong>JavaScript</strong> — no heavy frameworks are
+                      required to run it, which keeps pages light and quick to load even on older
+                      devices. A companion <strong>React</strong> application powers the more dynamic
+                      service pages, and the whole project is designed to integrate with PHP and
+                      MySQL for any server-side data needs. Translations are handled client-side
+                      through a lightweight dictionary system supporting English, Filipino, and
+                      Bisaya.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-accordion">
+                  <summary>How can I contribute to the project?</summary>
+                  <div class="faq-answer">
+                    <p>
+                      Contributions are warmly welcomed from everyone — whether you are a developer,
+                      data researcher, designer, content writer, translator, or a concerned citizen
+                      of Bayawan City. You can help by reporting errors in the information published,
+                      suggesting new services to add, helping with translations into English,
+                      Filipino, or Bisaya, improving accessibility, or contributing code and
+                      fixes. Your participation helps shape the project for all residents.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-accordion">
+                  <summary>Is this an official government website?</summary>
+                  <div class="faq-answer">
+                    <p>
+                      No. BetterBayawan.org is an independent, open-source community project. It is
+                      not affiliated with, funded by, or endorsed by the Bayawan City government or
+                      any official government body. All content is based on publicly available
+                      information sourced from official government portals and is published for the
+                      convenience of residents. For official transactions and authoritative updates,
+                      please always refer directly to your local government office.
+                    </p>
+                  </div>
+                </details>
+
+                <details class="faq-accordion">
+                  <summary>Who built the project and who do I credit?</summary>
+                  <div class="faq-answer">
+                    <p>
+                      BetterBayawan.org was developed by
+                      <a href="https://www.rodneydelacruz.space/" target="_blank" rel="noopener noreferrer"
+                        >Rodney Dela Cruz</a
+                      >. It is part of the
+                      <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer">BetterGov.ph</a>
+                      BetterLGU initiative, using a template derived from the open-source
+                      <a href="https://bettersolano.org" target="_blank" rel="noopener noreferrer">BetterSolano.org</a>
+                      project by Ramon Logan, which was modified and adapted for Bayawan City. When
+                      reusing the code or content, please credit the original author (Ramon Logan),
+                      the BetterGov.ph initiative, and the Better Bayawan maintainers accordingly.
                     </p>
                   </div>
                 </details>

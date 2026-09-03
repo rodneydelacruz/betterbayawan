@@ -248,25 +248,78 @@
     <div class="hotline-bar">
       <div class="container">
         <div class="hotline-inner">
-          <div class="hotline-items">
-            <a href="tel:09271441875" class="hotline-item"
-              ><i class="bi bi-shield-fill"></i><span>Police: 0927 144 1875</span></a
-            >
-            <a href="tel:09455690083" class="hotline-item"
-              ><i class="bi bi-heart-fill"></i><span>Ambulance: 0945 569 0083</span></a
-            >
-            <a href="tel:09558173397" class="hotline-item"
-              ><i class="bi bi-fire"></i><span>Fire: 0955 817 3397</span></a
-            >
-            <a href="tel:09088642365" class="hotline-item"
-              ><i class="bi bi-building"></i><span>NORECO: 0908 864 2365</span></a
-            >
-            <a href="tel:09957468679" class="hotline-item"
-              ><i class="bi bi-exclamation-triangle-fill"></i><span>Coast Guard: 0995 746 8679</span></a
-            >
-            <a href="tel:+63355310020" class="hotline-item"
-              ><i class="bi bi-truck"></i><span>City Hall: (035) 531-0020</span></a
-            >
+          <div class="hotline-groups">
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:09271441875" class="hotline-item">
+                  <i class="bi bi-shield-fill" aria-hidden="true"></i>
+                  <span>Police: 0927 144 1875</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More Police contacts" aria-controls="police-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="police-contacts">
+                <li><a href="tel:09985987514">0998 598 7514</a></li>
+                <li><a href="tel:09985987515">0998 598 7515</a></li>
+              </ul>
+            </div>
+            <div class="hotline-group">
+              <a href="tel:09455690083" class="hotline-item">
+                <i class="bi bi-heart-fill" aria-hidden="true"></i>
+                <span>Ambulance: 0945 569 0083</span>
+              </a>
+            </div>
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:09558173397" class="hotline-item">
+                  <i class="bi bi-fire" aria-hidden="true"></i>
+                  <span>Fire: 0955 817 3397</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More Fire contacts" aria-controls="fire-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="fire-contacts">
+                <li><a href="tel:09178460982">0917 846 0982</a></li>
+                <li><a href="tel:+63355272567">(035) 527-2567</a></li>
+              </ul>
+            </div>
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:09088642365" class="hotline-item">
+                  <i class="bi bi-building" aria-hidden="true"></i>
+                  <span>NORECO: 0908 864 2365</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More NORECO contacts" aria-controls="noreco-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="noreco-contacts">
+                <li><a href="tel:09985858326">0998 585 8326</a></li>
+              </ul>
+            </div>
+            <div class="hotline-group">
+              <a href="tel:09957468679" class="hotline-item">
+                <i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i>
+                <span>Coast Guard: 0995 746 8679</span>
+              </a>
+            </div>
+            <div class="hotline-group hotline-group--multi">
+              <div class="hotline-group-head">
+                <a href="tel:+63355310020" class="hotline-item">
+                  <i class="bi bi-truck" aria-hidden="true"></i>
+                  <span>City Hall: (035) 531-0020</span>
+                </a>
+                <button type="button" class="hotline-toggle" aria-expanded="false" aria-label="More City Hall contacts" aria-controls="cityhall-contacts">
+                  <i class="bi bi-chevron-down" aria-hidden="true"></i>
+                </button>
+              </div>
+              <ul class="hotline-more" id="cityhall-contacts">
+                <li><a href="tel:+63355310020">(035) 531-0020 to 21</a></li>
+                <li><a href="tel:+63354300020">Telefax: (035) 430-0020</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -350,10 +403,38 @@
           </ul>
         </nav>
         <div class="header-actions">
-          <div class="lang-selector">
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="en">EN</button>
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="fil">FIL</button>
-            <button class="btn btn-secondary btn-sm lang-btn" data-lang="bis">BIS</button>
+          <div class="lang-dropdown">
+            <button
+              type="button"
+              class="lang-trigger"
+              aria-haspopup="listbox"
+              aria-expanded="false"
+              aria-label="Select language"
+            >
+              <i class="bi bi-globe2" aria-hidden="true"></i>
+              <span class="lang-trigger-label">English</span>
+              <i class="bi bi-chevron-down lang-caret" aria-hidden="true"></i>
+            </button>
+            <ul class="lang-menu" role="listbox" aria-label="Select language">
+              <li>
+                <button type="button" class="lang-option" data-lang="en" role="option" aria-selected="false">
+                  <span>English</span>
+                  <i class="bi bi-check2 lang-check" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="lang-option" data-lang="fil" role="option" aria-selected="false">
+                  <span>Filipino</span>
+                  <i class="bi bi-check2 lang-check" aria-hidden="true"></i>
+                </button>
+              </li>
+              <li>
+                <button type="button" class="lang-option" data-lang="bis" role="option" aria-selected="false">
+                  <span>Bisaya</span>
+                  <i class="bi bi-check2 lang-check" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
           </div>
         </div>
       </div>

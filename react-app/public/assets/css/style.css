@@ -230,7 +230,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 8px 0;
+  padding: 6px 0;
 }
 
 .header-inner {
@@ -301,15 +301,17 @@ p {
 }
 
 .main-nav .has-dropdown > a::after {
-  content: '';
+  content: "";
   display: inline-block;
-  width: 0;
-  height: 0;
+  width: 6px;
+  height: 6px;
   margin-left: 6px;
   vertical-align: middle;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid currentColor;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s ease;
+  opacity: 0.7;
 }
 
 .main-nav .dropdown-menu {
@@ -386,47 +388,32 @@ body.mobile-menu-open {
   }
 
   .main-nav > ul > li > a {
-    position: relative;
     display: inline-block;
-    padding: 8px 6px;
+    padding: 6px 8px;
     font-weight: 500;
+    font-size: 0.9rem;
     letter-spacing: 0.01em;
     white-space: nowrap;
-    transition: color 0.2s ease;
+    border-radius: 6px;
+    transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
   }
 
-  .main-nav > ul > li > a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--color-accent);
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 0.25s ease;
+  /* Simple, quiet hover: soft translucent pill */
+  .main-nav > ul > li > a:hover {
+    color: var(--color-primary);
+    background-color: rgba(0, 50, 160, 0.06);
   }
 
-  .main-nav > ul > li > a:hover::after,
-  .main-nav > ul > li > a.active::after,
-  .main-nav > ul > li.has-dropdown.dropdown-open > a::after {
-    transform: scaleX(1);
+  /* Simplified active state: clean 2px underline via inset shadow */
+  .main-nav > ul > li > a.active {
+    color: var(--color-primary);
+    box-shadow: inset 0 -2px 0 var(--color-primary);
   }
 
-  .main-nav .has-dropdown:hover > a::after {
-    transform: rotate(180deg);
-  }
-
-  /* Hover bridge so the dropdown doesn't close while moving toward it */
-  .main-nav > ul > li.has-dropdown::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 12px;
+  /* Caret rotation on hover/open */
+  .main-nav .has-dropdown:hover > a::after,
+  .main-nav .has-dropdown.dropdown-open > a::after {
+    transform: rotate(225deg) translateY(2px);
   }
 }
 
@@ -436,7 +423,7 @@ body.mobile-menu-open {
 }
 
 .main-nav .has-dropdown.dropdown-open > a::after {
-  transform: rotate(180deg);
+  transform: rotate(225deg) translateY(2px);
 }
 
 /* Refined dropdown panel */
@@ -458,26 +445,105 @@ body.mobile-menu-open {
   padding: 4px 0;
 }
 
-.lang-selector {
-  display: flex;
-  gap: 4px;
+/* Language dropdown */
+.lang-dropdown {
+  position: relative;
 }
 
-.lang-btn {
-  padding: 6px 10px;
-  font-size: 0.75rem;
+.lang-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
   font-family: var(--font-main);
+  font-size: 0.8125rem;
   font-weight: 600;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.lang-btn:hover,
-.lang-btn.active {
+.lang-trigger:hover,
+.lang-dropdown.open .lang-trigger {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.lang-trigger i {
+  font-size: 0.875rem;
+}
+
+.lang-trigger .lang-caret {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.lang-dropdown.open .lang-caret {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 150px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background-color: var(--color-white);
+  box-shadow: 0 12px 30px rgba(2, 12, 34, 0.12);
+  border: 1px solid rgba(0, 50, 160, 0.1);
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+  z-index: 1002;
+}
+
+.lang-dropdown.open .lang-menu {
   opacity: 1;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 8px 10px;
+  font-family: var(--font-main);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: none;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.lang-option:hover,
+.lang-option.active {
+  background-color: rgba(0, 50, 160, 0.08);
+  color: var(--color-primary);
+}
+
+.lang-option .lang-check {
+  margin-left: auto;
+  color: var(--color-primary);
+  opacity: 0;
+  font-size: 0.875rem;
+}
+
+.lang-option.active .lang-check {
+  opacity: 1;
 }
 
 .section-header {
@@ -708,6 +774,57 @@ body.mobile-menu-open {
 
 .news-card-source:hover i {
   transform: translateX(2px);
+}
+
+/* Facebook page feed embed (news page) */
+.fb-feed-section {
+  background: #f8fafc;
+}
+
+.fb-feed-head {
+  text-align: center;
+  margin-bottom: var(--spacing-md);
+}
+
+.fb-feed-head h2 {
+  margin: 0 0 6px;
+}
+
+.fb-feed-head p {
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.fb-feed-embed {
+  display: flex;
+  justify-content: center;
+}
+
+.fb-feed-embed iframe {
+  border: none;
+  overflow: hidden;
+  width: 500px;
+  max-width: 100%;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.fb-feed-fallback {
+  text-align: center;
+  margin-top: var(--spacing-md);
+  font-size: 0.875rem;
+  color: var(--color-text-light);
+}
+
+.fb-feed-fallback a {
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.fb-feed-fallback a:hover {
+  text-decoration: underline;
 }
 
 .site-footer {
@@ -959,151 +1076,149 @@ body.mobile-menu-open {
   }
 }
 
-/* Search Autocomplete */
-.search-autocomplete-wrapper {
-  position: relative;
-  width: 100%;
-}
-
-.search-autocomplete-list {
-  position: absolute;
-  top: 100%;
-  left: 0;
-  right: 0;
-  background: #fff;
-  border: 1px solid #e5e7eb;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  list-style: none;
-  padding: 4px 0;
-  margin: 4px 0 0;
-  z-index: 100;
-}
-
-.search-autocomplete-item {
-  padding: 10px 16px;
-  cursor: pointer;
-  font-size: 0.9375rem;
-}
-
-.search-autocomplete-item:hover {
-  background: #f0f4ff;
-}
-
 /* Hotline Bar */
 .hotline-bar {
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
   color: var(--color-white);
-  padding: 4px 0;
-  font-size: 0.8125rem;
-  overflow: hidden;
+  padding: 3px 0;
 }
 
 .hotline-bar .container {
   max-width: 100%;
-  padding: 0;
+  padding: 0 16px;
 }
 
-.hotline-inner {
+.hotline-groups {
   display: flex;
   align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
 }
 
-.hotline-label {
-  font-weight: 600;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.hotline-group {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.hotline-items {
-  display: flex;
+.hotline-group-head {
+  display: inline-flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  flex-wrap: nowrap;
-  overflow: hidden;
-  flex: 1 1 auto;
-  min-width: 0;
-  width: 100%;
 }
 
 .hotline-item {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  flex-shrink: 0;
+  gap: 5px;
   color: var(--color-white);
-  background: rgba(255, 255, 255, 0.15);
-  padding: 4px 10px;
-  border-radius: 20px;
-  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 4px 11px;
+  border-radius: 24px;
+  transition: background 0.15s ease;
   text-decoration: none;
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 .hotline-item:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.28);
   color: var(--color-white);
   text-decoration: none;
-  transform: translateY(-1px);
 }
 
 .hotline-item i {
   font-size: 0.75rem;
 }
 
-/* Hotline marquee (all viewports) */
-.hotline-items-track {
-  display: flex;
+.hotline-toggle {
+  display: inline-flex;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: var(--spacing-sm);
-  width: max-content;
-  padding: 4px 0;
-  animation: hotlineScroll 25s linear infinite;
-  will-change: transform;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 3px;
+  padding: 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease;
 }
 
-.hotline-items-track:hover,
-.hotline-items-track:focus-within {
-  animation-play-state: paused;
+.hotline-toggle:hover {
+  background: rgba(255, 255, 255, 0.32);
 }
 
-/* Tablet + Mobile: Hotline marquee spacing */
+.hotline-toggle i {
+  font-size: 0.6875rem;
+  transition: transform 0.2s ease;
+}
+
+.hotline-group.open .hotline-toggle i {
+  transform: rotate(180deg);
+}
+
+.hotline-more {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 190px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #b00000;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+  z-index: 600;
+}
+
+.hotline-group.open .hotline-more {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.hotline-more li + li {
+  margin-top: 2px;
+}
+
+.hotline-more a {
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hotline-more a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Tablet + Mobile */
 @media (max-width: 1024px) {
   .hotline-bar {
-    padding: 0;
-    overflow: hidden;
+    padding: 5px 0;
   }
 
-  .hotline-bar .container {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .hotline-inner {
-    flex-wrap: nowrap;
-    gap: 0;
-    padding: 0;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  .hotline-label {
-    display: none;
-  }
-
-  .hotline-items {
-    width: 100%;
-    justify-content: flex-start;
+  .hotline-groups {
+    justify-content: center;
+    gap: 6px 9px;
   }
 
   .hotline-item {
     font-size: 0.75rem;
-    padding: 4px 10px;
+    padding: 4px 9px;
+    font-weight: 500;
   }
 }
 
@@ -1111,15 +1226,6 @@ body.mobile-menu-open {
   .hotline-item {
     font-size: 0.6875rem;
     padding: 3px 8px;
-  }
-}
-
-@keyframes hotlineScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% / var(--hotline-copies, 2)));
   }
 }
 
@@ -6006,6 +6112,356 @@ cklist with Icons - Proper Indentation */
   line-height: 1.5;
 }
 
+/* Latest Updates — Facebook Feed Widget */
+.home-fb-section {
+  background: linear-gradient(180deg, #f0f4ff 0%, #ffffff 100%);
+}
+
+.home-fb {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: clamp(var(--spacing-lg), 5vw, 72px);
+  align-items: center;
+}
+
+/* ── Intro column ── */
+.home-fb-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #1877f2;
+  background: rgba(24, 119, 242, 0.1);
+  padding: 6px 14px;
+  border-radius: 50px;
+  margin-bottom: 16px;
+}
+
+.home-fb-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 0 0 12px;
+  color: var(--color-text);
+}
+
+.home-fb-text {
+  font-size: 0.9375rem;
+  line-height: 1.65;
+  color: var(--color-text-light);
+  margin: 0 0 20px;
+  max-width: 42ch;
+}
+
+.home-fb-points {
+  list-style: none;
+  margin: 0 0 28px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.home-fb-points li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 0.9rem;
+  color: var(--color-text);
+}
+
+.home-fb-points i {
+  color: #1877f2;
+  font-size: 1.05rem;
+  flex-shrink: 0;
+  width: 20px;
+}
+
+.home-fb-cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: #1877f2;
+  color: #fff;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  padding: 12px 22px;
+  border-radius: var(--border-radius);
+  text-decoration: none;
+  transition: background 0.18s ease, transform 0.15s ease;
+}
+
+.home-fb-cta:hover,
+.home-fb-cta:focus {
+  background: #0b5ed7;
+  color: #fff;
+  text-decoration: none;
+  transform: translateY(-1px);
+}
+
+.home-fb-cta:focus-visible {
+  outline: 2px solid #1877f2;
+  outline-offset: 2px;
+}
+
+/* ── Feed column ── */
+.home-fb-feed {
+  width: 100%;
+  max-width: 500px;
+  justify-self: center;
+}
+
+/* Clips border-radius on the cross-origin iframe */
+.fb-plugin-wrap {
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow:
+    0 1px 4px rgba(0, 0, 0, 0.06),
+    0 8px 28px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  width: 100%;
+}
+
+.fb-page-plugin {
+  display: block;
+  width: 100%;
+  height: 700px;
+  border: none;
+  overflow: hidden;
+}
+
+/* ── Skeleton loading ── */
+.fb-feed-loading {
+  padding: 4px 0;
+}
+
+.fb-skel-post {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f2f5;
+}
+
+.fb-skel-post:last-child {
+  border-bottom: none;
+}
+
+.fb-skel-hd {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.fb-skel-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  background: linear-gradient(90deg, #f0f2f5 25%, #e4e6eb 50%, #f0f2f5 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s infinite ease-in-out;
+}
+
+.fb-skel-lines {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.fb-skel-bar {
+  height: 10px;
+  border-radius: 6px;
+  background: linear-gradient(90deg, #f0f2f5 25%, #e4e6eb 50%, #f0f2f5 75%);
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.4s infinite ease-in-out;
+}
+
+.fb-skel-bar--title { height: 13px; width: 72%; margin-bottom: 8px; }
+.fb-skel-bar--100   { width: 100%; }
+.fb-skel-bar--80    { width: 80%; }
+.fb-skel-bar--60    { width: 60%; }
+.fb-skel-bar--45    { width: 45%; }
+.fb-skel-bar--sm    { height: 8px; }
+
+/* ── Post cards ── */
+.fb-feed-local {
+  display: flex;
+  flex-direction: column;
+}
+
+.fb-post {
+  padding: 14px 16px;
+  border-bottom: 1px solid #f0f2f5;
+  text-align: left;
+  transition: background 0.15s ease;
+}
+
+.fb-post:last-child {
+  border-bottom: none;
+}
+
+.fb-post:hover {
+  background: #fafbfd;
+}
+
+.fb-post--empty {
+  padding: 28px 16px;
+  text-align: center;
+}
+
+/* Author row */
+.fb-post-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.fb-post-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  flex-shrink: 0;
+  object-fit: contain;
+}
+
+.fb-post-author-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.fb-post-page-name {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text);
+  line-height: 1.2;
+}
+
+.fb-post-date {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-light);
+  margin-top: 1px;
+}
+
+.fb-post-badge {
+  font-size: 0.6875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 3px 8px;
+  border-radius: 4px;
+  flex-shrink: 0;
+  color: #1657c9;
+  background: #e7f0fe;
+}
+
+.fb-post-badge--success {
+  color: #1a7f37;
+  background: #e6f4ea;
+}
+
+.fb-post-badge--warning {
+  color: #b54708;
+  background: #fef0e6;
+}
+
+/* Post body */
+.fb-post-body {
+  margin-bottom: 6px;
+}
+
+.fb-post-title {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 0 0 5px;
+  color: var(--color-text);
+}
+
+.fb-post-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.fb-post-title a:hover,
+.fb-post-title a:focus {
+  color: #1877f2;
+  text-decoration: underline;
+}
+
+.fb-post-text {
+  font-size: 0.875rem;
+  line-height: 1.55;
+  color: var(--color-text-light);
+  margin: 0;
+}
+
+.fb-post-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 10px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: #1877f2;
+  text-decoration: none;
+}
+
+.fb-post-link:hover,
+.fb-post-link:focus {
+  text-decoration: underline;
+}
+
+/* Fallback text below shell */
+.home-fb-fallback {
+  text-align: center;
+  font-size: 0.8125rem;
+  color: var(--color-text-light);
+  margin: 10px 0 0;
+}
+
+.home-fb-fallback a {
+  color: var(--color-primary);
+  font-weight: 500;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+  .home-fb {
+    grid-template-columns: 340px 1fr;
+  }
+}
+
+@media (max-width: 960px) {
+  .home-fb {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .home-fb-intro {
+    text-align: center;
+    max-width: 560px;
+    margin: 0 auto;
+  }
+
+  .home-fb-text {
+    max-width: none;
+  }
+
+  .home-fb-points {
+    align-items: center;
+  }
+
+  .home-fb-points li {
+    justify-content: center;
+  }
+}
+
 /* Home Leadership Section */
 .home-leadership-section {
   background: var(--color-bg-alt);
@@ -6595,6 +7051,176 @@ cklist with Icons - Proper Indentation */
   }
 
   .abakada-cta-btn {
+    width: 100%;
+    justify-content: center;
+    padding: 14px 24px;
+  }
+}
+
+/* HIV Care Philippines CTA */
+.hivcare-cta-section {
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.035) 1px, transparent 1px) var(--color-bg-alt);
+  background-size: 20px 20px;
+}
+
+.hivcare-cta-card {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  background: #ffffff;
+  border: 1px solid rgba(16, 24, 40, 0.04);
+  border-radius: 20px;
+  padding: 48px 56px;
+  box-shadow:
+    0 1px 2px rgba(16, 24, 40, 0.04),
+    0 12px 32px rgba(16, 24, 40, 0.08);
+}
+
+.hivcare-cta-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #c4123f;
+  background: rgba(255, 46, 81, 0.08);
+  padding: 6px 16px;
+  border-radius: 50px;
+}
+
+.hivcare-cta-eyebrow i {
+  font-size: 0.9375rem;
+}
+
+.hivcare-cta-logo {
+  height: 44px;
+  width: auto;
+  object-fit: contain;
+  margin: 4px 0;
+}
+
+.hivcare-cta-heading {
+  font-size: 1.75rem;
+  font-weight: 800;
+  line-height: 1.25;
+  color: var(--color-text);
+  margin: 0;
+}
+
+.hivcare-cta-text {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: var(--color-text-light);
+  margin: 0;
+  max-width: 560px;
+}
+
+.hivcare-cta-stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 12px 28px;
+  margin: 4px 0 8px;
+}
+
+.hivcare-cta-stat {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.hivcare-cta-stat i {
+  color: #ff2e51;
+  font-size: 1.0625rem;
+}
+
+.hivcare-cta-stat strong {
+  font-size: 1.0625rem;
+  font-weight: 800;
+  color: #ff2e51;
+}
+
+.hivcare-cta-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 36px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 10px;
+  text-decoration: none;
+  transition:
+    background 0.2s ease,
+    box-shadow 0.2s ease,
+    transform 0.2s ease;
+  background: #ff2e51;
+  color: white;
+  box-shadow: 0 4px 16px rgba(255, 46, 81, 0.25);
+  margin-top: 8px;
+}
+
+.hivcare-cta-btn:hover,
+.hivcare-cta-btn:focus {
+  background: #e0193c;
+  color: white;
+  box-shadow: 0 6px 20px rgba(255, 46, 81, 0.4);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.hivcare-cta-btn:active {
+  transform: translateY(0);
+}
+
+@media (max-width: 767px) {
+  .hivcare-cta-card {
+    padding: 36px 28px;
+    gap: 14px;
+  }
+
+  .hivcare-cta-heading {
+    font-size: 1.4375rem;
+  }
+
+  .hivcare-cta-stats {
+    gap: 10px 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  .hivcare-cta-card {
+    padding: 32px 20px;
+    border-radius: 16px;
+  }
+
+  .hivcare-cta-logo {
+    height: 32px;
+  }
+
+  .hivcare-cta-heading {
+    font-size: 1.25rem;
+  }
+
+  .hivcare-cta-text {
+    font-size: 0.9375rem;
+  }
+
+  .hivcare-cta-stats {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .hivcare-cta-btn {
     width: 100%;
     justify-content: center;
     padding: 14px 24px;
@@ -7717,8 +8343,8 @@ a.a11y-contact-item:hover i {
 .info-bar {
   background-color: #00184d;
   color: #ffffff;
-  padding: 6px 0;
-  font-size: 0.6875rem;
+  padding: 7px 0;
+  font-size: 0.75rem;
   font-family: var(--font-main);
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -7740,8 +8366,8 @@ a.a11y-contact-item:hover i {
 }
 
 .info-bar-item i {
-  font-size: 0.75rem;
-  color: #ffff00;
+  font-size: 0.8125rem;
+  color: #ffd54a;
 }
 
 /* Exchange Rates - Rotating Display */
@@ -7839,7 +8465,7 @@ a.a11y-contact-item:hover i {
   }
 
   .info-bar-item {
-    font-size: 0.6875rem;
+    font-size: 0.7rem;
     gap: 3px;
     white-space: nowrap;
   }
@@ -7864,7 +8490,7 @@ a.a11y-contact-item:hover i {
   }
 
   .rate-item {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
   }
 
   .datetime-separator {
@@ -7882,7 +8508,7 @@ a.a11y-contact-item:hover i {
   }
 
   .info-bar-item {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
     gap: 2px;
   }
 
@@ -7893,7 +8519,7 @@ a.a11y-contact-item:hover i {
   }
 
   .info-bar-item i {
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
   }
 
   .info-bar-rates-list {
@@ -9241,173 +9867,333 @@ a.a11y-contact-item:hover i {
     padding: 4px 8px;
   }
 }
-/* HIV Care Philippines CTA */
-.hivcare-cta-section {
-  background: radial-gradient(circle, rgba(0, 0, 0, 0.035) 1px, transparent 1px) var(--color-bg-alt);
-  background-size: 20px 20px;
+
+/* ===================================================
+   Volunteer Recruitment Popup
+   =================================================== */
+@keyframes vol-popup-in {
+  from {
+    opacity: 0;
+    transform: scale(0.93) translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
 }
 
-.hivcare-cta-card {
-  width: 100%;
-  text-align: center;
+@keyframes vol-popup-out {
+  from {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.96) translateY(10px);
+  }
+}
+
+.vol-popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.72);
+  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(4px);
+  z-index: 20000;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  gap: 16px;
-  background: #ffffff;
-  border: 1px solid rgba(16, 24, 40, 0.04);
-  border-radius: 20px;
-  padding: 48px 56px;
-  box-shadow:
-    0 1px 2px rgba(16, 24, 40, 0.04),
-    0 12px 32px rgba(16, 24, 40, 0.08);
+  justify-content: center;
+  padding: var(--spacing-sm);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  /* Pre-promote the overlay to its own persistent GPU compositing layer at page
+     load — even while hidden (opacity:0). This forces the backdrop-filter layer
+     to be established ONCE up front, so toggling opacity 0->1 on reveal can no
+     longer create/destroy that layer. Without this, the layer is built lazily at
+     reveal time, producing the "appear -> disappear -> reappear" flash as the
+     compositor recomposites and snapshots the backdrop a frame late. */
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.hivcare-cta-eyebrow {
+.vol-popup-overlay--visible {
+  opacity: 1;
+  pointer-events: auto;
+  /* No transition on open: the browser would otherwise set up a backdrop-filter
+     compositing layer while simultaneously fading in, causing a GPU compositor
+     flash (the visible "appears → disappears → reappears" artifact).
+     The base rule's transition: opacity 0.3s still fires on close because
+     CSS transitions are evaluated using the after-change computed style. */
+  transition: none;
+}
+
+.vol-popup {
+  position: relative;
+  width: 100%;
+  max-width: 460px;
+  background: var(--color-bg);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(0, 50, 160, 0.12),
+    0 8px 32px rgba(0, 0, 0, 0.24),
+    0 28px 72px rgba(0, 0, 0, 0.2);
+  /* Pre-set to match animation from-state — prevents 1-frame render at
+     natural opacity before the animation's fill mode can apply. */
+  opacity: 0;
+  transform: scale(0.93) translateY(24px);
+  /* Pre-promote to GPU layer so no mid-animation layer promotion causes a flash. */
+  will-change: transform, opacity;
+}
+
+/* Entry animation — forwards fill holds the to-state after completion.
+   backwards fill is not needed because .vol-popup already matches the from-state. */
+.vol-popup-overlay--visible .vol-popup:not(.is-closing) {
+  animation: vol-popup-in 0.38s cubic-bezier(0.34, 1.56, 0.64, 1) forwards;
+}
+
+.vol-popup.is-closing {
+  animation: vol-popup-out 0.22s ease-in both;
+}
+
+.vol-popup-close {
+  position: absolute;
+  top: 14px;
+  right: 14px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  z-index: 2;
+  transition: background 0.18s ease, transform 0.18s ease;
+}
+
+.vol-popup-close:hover,
+.vol-popup-close:focus-visible {
+  background: rgba(255, 255, 255, 0.32);
+  transform: scale(1.1);
+  outline: 2px solid rgba(255, 255, 255, 0.6);
+  outline-offset: 2px;
+}
+
+.vol-popup-header {
+  position: relative;
+  padding: 38px 32px 30px;
+  background: linear-gradient(140deg, #0032a0 0%, #003d82 55%, #001f6b 100%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.vol-popup-header-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.vol-popup-header-bg::before,
+.vol-popup-header-bg::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.vol-popup-header-bg::before {
+  width: 260px;
+  height: 260px;
+  top: -90px;
+  right: -70px;
+}
+
+.vol-popup-header-bg::after {
+  width: 180px;
+  height: 180px;
+  bottom: -70px;
+  left: -50px;
+  background: rgba(247, 127, 0, 0.1);
+}
+
+.vol-popup-logo {
+  position: relative;
+  z-index: 1;
+  display: block;
+  width: 210px;
+  height: auto;
+  max-width: 72%;
+  margin: 0 auto 18px;
+  /* Subtle drop-shadow so the white mark reads against any bg bleed */
+  filter: drop-shadow(0 2px 8px rgba(0, 0, 0, 0.22));
+  -webkit-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+}
+
+.vol-popup-title {
+  position: relative;
+  z-index: 1;
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin: 0 0 10px;
+}
+
+.vol-popup-header-sub {
+  position: relative;
+  z-index: 1;
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.75);
+  margin: 0;
+  line-height: 1.55;
+}
+
+.vol-popup-body {
+  padding: 26px 28px 30px;
+}
+
+.vol-popup-lead {
+  font-size: 0.9375rem;
+  color: var(--color-text);
+  line-height: 1.6;
+  margin: 0 0 20px;
+  text-align: center;
+}
+
+.vol-popup-lead strong {
+  color: var(--color-primary);
+}
+
+.vol-popup-roles {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 26px;
+}
+
+.vol-popup-role {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
+  gap: 6px;
+  padding: 7px 14px;
+  background: rgba(0, 50, 160, 0.06);
+  border: 1.5px solid rgba(0, 50, 160, 0.14);
+  border-radius: 100px;
   font-size: 0.8125rem;
-  font-weight: 700;
-  letter-spacing: 0.02em;
-  text-transform: uppercase;
-  color: #c4123f;
-  background: rgba(255, 46, 81, 0.08);
-  padding: 6px 16px;
-  border-radius: 50px;
+  font-weight: 600;
+  color: var(--color-primary);
 }
 
-.hivcare-cta-eyebrow i {
+.vol-popup-role i {
   font-size: 0.9375rem;
 }
 
-.hivcare-cta-logo {
-  height: 44px;
-  width: auto;
-  object-fit: contain;
-  margin: 4px 0;
-}
-
-.hivcare-cta-heading {
-  font-size: 1.75rem;
-  font-weight: 800;
-  line-height: 1.25;
-  color: var(--color-text);
-  margin: 0;
-}
-
-.hivcare-cta-text {
-  font-size: 1rem;
-  line-height: 1.7;
-  color: var(--color-text-light);
-  margin: 0;
-  max-width: 560px;
-}
-
-.hivcare-cta-stats {
+.vol-popup-actions {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 12px 28px;
-  margin: 4px 0 8px;
-}
-
-.hivcare-cta-stat {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  font-size: 0.875rem;
-  font-weight: 600;
-  color: var(--color-text);
-}
-
-.hivcare-cta-stat i {
-  color: #ff2e51;
-  font-size: 1.0625rem;
-}
-
-.hivcare-cta-stat strong {
-  font-size: 1.0625rem;
-  font-weight: 800;
-  color: #ff2e51;
-}
-
-.hivcare-cta-btn {
-  display: inline-flex;
+  flex-direction: column;
   align-items: center;
   gap: 10px;
-  padding: 16px 36px;
+}
+
+.vol-popup-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  padding: 14px 24px;
+  background: linear-gradient(135deg, var(--color-primary) 0%, #003d82 100%);
+  color: #fff;
   font-size: 1rem;
-  font-weight: 600;
-  border-radius: 10px;
+  font-weight: 700;
+  border-radius: 12px;
   text-decoration: none;
-  transition:
-    background 0.2s ease,
-    box-shadow 0.2s ease,
-    transform 0.2s ease;
-  background: #ff2e51;
-  color: white;
-  box-shadow: 0 4px 16px rgba(255, 46, 81, 0.25);
-  margin-top: 8px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+  box-shadow: 0 4px 16px rgba(0, 50, 160, 0.32);
+  font-family: var(--font-main);
 }
 
-.hivcare-cta-btn:hover,
-.hivcare-cta-btn:focus {
-  background: #e0193c;
-  color: white;
-  box-shadow: 0 6px 20px rgba(255, 46, 81, 0.4);
-  text-decoration: none;
+.vol-popup-cta:hover,
+.vol-popup-cta:focus-visible {
   transform: translateY(-2px);
+  box-shadow: 0 8px 28px rgba(0, 50, 160, 0.44);
+  color: #fff;
+  text-decoration: none;
 }
 
-.hivcare-cta-btn:active {
-  transform: translateY(0);
+.vol-popup-cta i {
+  font-size: 1.125rem;
 }
 
-@media (max-width: 767px) {
-  .hivcare-cta-card {
-    padding: 36px 28px;
-    gap: 14px;
+.vol-popup-skip {
+  background: none;
+  border: none;
+  color: var(--color-text-light);
+  font-size: 0.8125rem;
+  font-family: var(--font-main);
+  cursor: pointer;
+  padding: 4px 8px;
+  border-radius: 4px;
+  transition: color 0.18s ease;
+}
+
+.vol-popup-skip:hover,
+.vol-popup-skip:focus-visible {
+  color: var(--color-text);
+  text-decoration: underline;
+  outline: none;
+}
+
+/* Reduced-motion: skip all animations and transitions */
+@media (prefers-reduced-motion: reduce) {
+  .vol-popup-overlay {
+    transition: none;
   }
 
-  .hivcare-cta-heading {
-    font-size: 1.4375rem;
+  .vol-popup,
+  .vol-popup.is-closing {
+    animation: none;
   }
 
-  .hivcare-cta-stats {
-    gap: 10px 20px;
+  /* Restore visibility — base opacity:0 is only safe when animation drives the reveal.
+     With animation disabled the card must be made visible immediately. */
+  .vol-popup-overlay--visible .vol-popup {
+    opacity: 1;
+    transform: none;
   }
 }
 
-@media (max-width: 575px) {
-  .hivcare-cta-card {
-    padding: 32px 20px;
+@media (max-width: 500px) {
+  .vol-popup {
     border-radius: 16px;
+    max-height: calc(100dvh - 32px);
+    overflow-y: auto;
   }
 
-  .hivcare-cta-logo {
-    height: 32px;
+  .vol-popup-header {
+    padding: 28px 20px 24px;
   }
 
-  .hivcare-cta-heading {
+  .vol-popup-logo {
+    width: 170px;
+  }
+
+  .vol-popup-title {
     font-size: 1.25rem;
   }
 
-  .hivcare-cta-text {
-    font-size: 0.9375rem;
-  }
-
-  .hivcare-cta-stats {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-  }
-
-  .hivcare-cta-btn {
-    width: 100%;
-    justify-content: center;
-    padding: 14px 24px;
+  .vol-popup-body {
+    padding: 20px 20px 24px;
   }
 }
-

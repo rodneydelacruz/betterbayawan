@@ -147,56 +147,32 @@ document.addEventListener('DOMContentLoaded', () => {
     return window.matchMedia('(max-width: 1024px)').matches;
   };
 
-  // Hotline Marquee (all viewports)
-  var initHotlineMarquee = function () {
-    var hotlineItems = document.querySelector('.hotline-items');
-    if (!hotlineItems) return;
-
-    var track = null;
-    var originalItems = Array.from(hotlineItems.children);
-    var copies = 0;
-
-    var appendCopy = function () {
-      originalItems.forEach(function (item) {
-        var clone = item.cloneNode(true);
-        clone.setAttribute('aria-hidden', 'true');
-        clone.setAttribute('tabindex', '-1');
-        track.appendChild(clone);
+  // Hotline Group Toggles (multi-contact agencies)
+  var initHotlineGroups = function () {
+    document.querySelectorAll('.hotline-toggle').forEach(function (btn) {
+      btn.addEventListener('click', function (e) {
+        e.preventDefault();
+        e.stopPropagation();
+        var group = this.closest('.hotline-group');
+        if (!group) return;
+        var isOpen = group.classList.toggle('open');
+        this.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
-      copies += 1;
-      track.style.setProperty('--hotline-copies', copies);
-    };
+    });
 
-    var buildMarquee = function () {
-      if (track) return;
-      track = document.createElement('div');
-      track.className = 'hotline-items-track';
-      track.setAttribute('aria-label', 'Emergency contacts scrolling');
-      while (hotlineItems.firstChild) {
-        track.appendChild(hotlineItems.firstChild);
-      }
-      copies = 1;
-      track.style.setProperty('--hotline-copies', copies);
-      hotlineItems.appendChild(track);
-      ensureCopies();
-    };
-
-    var ensureCopies = function () {
-      if (!track) return;
-      while (track.scrollWidth < hotlineItems.clientWidth * 2) {
-        appendCopy();
-      }
-    };
-
-    buildMarquee();
-    var resizeTimer;
-    window.addEventListener('resize', function () {
-      clearTimeout(resizeTimer);
-      resizeTimer = setTimeout(ensureCopies, 150);
+    // Close open hotline groups on outside click
+    document.addEventListener('click', function (e) {
+      document.querySelectorAll('.hotline-group.open').forEach(function (group) {
+        if (!group.contains(e.target)) {
+          group.classList.remove('open');
+          var btn = group.querySelector('.hotline-toggle');
+          if (btn) btn.setAttribute('aria-expanded', 'false');
+        }
+      });
     });
   };
 
-  initHotlineMarquee();
+  initHotlineGroups();
 
   // Mobile Menu Toggle
   var createMobileMenu = function () {

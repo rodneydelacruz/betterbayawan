@@ -12,10 +12,18 @@ function isMobileNav(): boolean {
 export default function Header() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<number | null>(null);
+  const [langOpen, setLangOpen] = useState(false);
   const pathname = usePathname();
   const { language, setLanguage, t } = useLanguage();
   const navRef = useRef<HTMLElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
+  const langRef = useRef<HTMLDivElement>(null);
+
+  const langNames: Record<string, string> = {
+    en: 'English',
+    fil: 'Filipino',
+    bis: 'Bisaya',
+  };
 
   const scrollYRef = useRef(0);
   const isAnimatingRef = useRef(false);
@@ -116,6 +124,30 @@ export default function Header() {
       window.removeEventListener('resize', handleResize);
     };
   }, [mobileMenuOpen, closeMenu]);
+
+  // Close language dropdown on outside click
+  useEffect(() => {
+    function handleClickOutside(e: MouseEvent) {
+      if (langRef.current && !langRef.current.contains(e.target as Node)) {
+        setLangOpen(false);
+      }
+    }
+    if (langOpen) {
+      document.addEventListener('click', handleClickOutside);
+      return () => document.removeEventListener('click', handleClickOutside);
+    }
+  }, [langOpen]);
+
+  // Close language dropdown on Escape
+  useEffect(() => {
+    function handleEscape(e: KeyboardEvent) {
+      if (e.key === 'Escape' && langOpen) {
+        setLangOpen(false);
+      }
+    }
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
+  }, [langOpen]);
 
   return (
     <header className="site-header">
@@ -221,31 +253,42 @@ export default function Header() {
         </nav>
 
         <div className="header-actions">
-          <div className="lang-selector">
+          <div ref={langRef} className={`lang-dropdown${langOpen ? ' open' : ''}`}>
             <button
               type="button"
-              className={`btn btn-secondary btn-sm lang-btn ${language === 'en' ? 'active' : ''}`}
-              onClick={() => setLanguage('en')}
-              aria-label="Switch to English"
+              className="lang-trigger"
+              aria-haspopup="listbox"
+              aria-expanded={langOpen ? 'true' : 'false'}
+              aria-label="Select language"
+              onClick={() => setLangOpen((prev) => !prev)}
             >
-              EN
+              <i className="bi bi-globe2" aria-hidden="true"></i>
+              <span className="lang-trigger-label">{langNames[language]}</span>
+              <i
+                className={`bi bi-chevron-down lang-caret${langOpen ? ' open' : ''}`}
+                aria-hidden="true"
+              ></i>
             </button>
-            <button
-              type="button"
-              className={`btn btn-secondary btn-sm lang-btn ${language === 'fil' ? 'active' : ''}`}
-              onClick={() => setLanguage('fil')}
-              aria-label="Switch to Filipino"
-            >
-              FIL
-            </button>
-            <button
-              type="button"
-              className={`btn btn-secondary btn-sm lang-btn ${language === 'bis' ? 'active' : ''}`}
-              onClick={() => setLanguage('bis')}
-              aria-label="Switch to Bisaya"
-            >
-              BIS
-            </button>
+            <ul className="lang-menu" role="listbox" aria-label="Select language">
+              {(['en', 'fil', 'bis'] as const).map((lang) => (
+                <li key={lang}>
+                  <button
+                    type="button"
+                    className={`lang-option${language === lang ? ' active' : ''}`}
+                    data-lang={lang}
+                    role="option"
+                    aria-selected={language === lang ? 'true' : 'false'}
+                    onClick={() => {
+                      setLanguage(lang);
+                      setLangOpen(false);
+                    }}
+                  >
+                    <span>{langNames[lang]}</span>
+                    <i className="bi bi-check2 lang-check" aria-hidden="true"></i>
+                  </button>
+                </li>
+              ))}
+            </ul>
           </div>
         </div>
 

@@ -230,7 +230,7 @@ p {
   position: sticky;
   top: 0;
   z-index: 1000;
-  padding: 8px 0;
+  padding: 6px 0;
 }
 
 .header-inner {
@@ -301,15 +301,17 @@ p {
 }
 
 .main-nav .has-dropdown > a::after {
-  content: '';
+  content: "";
   display: inline-block;
-  width: 0;
-  height: 0;
+  width: 6px;
+  height: 6px;
   margin-left: 6px;
   vertical-align: middle;
-  border-left: 4px solid transparent;
-  border-right: 4px solid transparent;
-  border-top: 4px solid currentColor;
+  border-right: 2px solid currentColor;
+  border-bottom: 2px solid currentColor;
+  transform: rotate(45deg) translateY(-2px);
+  transition: transform 0.2s ease;
+  opacity: 0.7;
 }
 
 .main-nav .dropdown-menu {
@@ -386,47 +388,32 @@ body.mobile-menu-open {
   }
 
   .main-nav > ul > li > a {
-    position: relative;
     display: inline-block;
-    padding: 8px 6px;
+    padding: 6px 8px;
     font-weight: 500;
+    font-size: 0.9rem;
     letter-spacing: 0.01em;
     white-space: nowrap;
-    transition: color 0.2s ease;
+    border-radius: 6px;
+    transition: color 0.15s ease, background-color 0.15s ease, box-shadow 0.15s ease;
   }
 
-  .main-nav > ul > li > a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: -4px;
-    height: 2px;
-    border-radius: 2px;
-    background: var(--color-accent);
-    transform: scaleX(0);
-    transform-origin: left center;
-    transition: transform 0.25s ease;
+  /* Simple, quiet hover: soft translucent pill */
+  .main-nav > ul > li > a:hover {
+    color: var(--color-primary);
+    background-color: rgba(0, 50, 160, 0.06);
   }
 
-  .main-nav > ul > li > a:hover::after,
-  .main-nav > ul > li > a.active::after,
-  .main-nav > ul > li.has-dropdown.dropdown-open > a::after {
-    transform: scaleX(1);
+  /* Simplified active state: clean 2px underline via inset shadow */
+  .main-nav > ul > li > a.active {
+    color: var(--color-primary);
+    box-shadow: inset 0 -2px 0 var(--color-primary);
   }
 
-  .main-nav .has-dropdown:hover > a::after {
-    transform: rotate(180deg);
-  }
-
-  /* Hover bridge so the dropdown doesn't close while moving toward it */
-  .main-nav > ul > li.has-dropdown::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    height: 12px;
+  /* Caret rotation on hover/open */
+  .main-nav .has-dropdown:hover > a::after,
+  .main-nav .has-dropdown.dropdown-open > a::after {
+    transform: rotate(225deg) translateY(2px);
   }
 }
 
@@ -436,7 +423,7 @@ body.mobile-menu-open {
 }
 
 .main-nav .has-dropdown.dropdown-open > a::after {
-  transform: rotate(180deg);
+  transform: rotate(225deg) translateY(2px);
 }
 
 /* Refined dropdown panel */
@@ -458,26 +445,105 @@ body.mobile-menu-open {
   padding: 4px 0;
 }
 
-.lang-selector {
-  display: flex;
-  gap: 4px;
+/* Language dropdown */
+.lang-dropdown {
+  position: relative;
 }
 
-.lang-btn {
-  padding: 6px 10px;
-  font-size: 0.75rem;
+.lang-trigger {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 7px 12px;
   font-family: var(--font-main);
+  font-size: 0.8125rem;
   font-weight: 600;
-  opacity: 0.7;
-  transition: opacity 0.2s ease;
+  color: var(--color-white);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
 }
 
-.lang-btn:hover,
-.lang-btn.active {
+.lang-trigger:hover,
+.lang-dropdown.open .lang-trigger {
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
+}
+
+.lang-trigger i {
+  font-size: 0.875rem;
+}
+
+.lang-trigger .lang-caret {
+  font-size: 0.7rem;
+  transition: transform 0.2s ease;
+}
+
+.lang-dropdown.open .lang-caret {
+  transform: rotate(180deg);
+}
+
+.lang-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  min-width: 150px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background-color: var(--color-white);
+  box-shadow: 0 12px 30px rgba(2, 12, 34, 0.12);
+  border: 1px solid rgba(0, 50, 160, 0.1);
+  border-radius: 8px;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+  z-index: 1002;
+}
+
+.lang-dropdown.open .lang-menu {
   opacity: 1;
-  background-color: var(--color-primary);
-  color: var(--color-white);
-  border-color: var(--color-primary);
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.lang-option {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 8px;
+  padding: 8px 10px;
+  font-family: var(--font-main);
+  font-size: 0.8125rem;
+  font-weight: 500;
+  color: var(--color-text);
+  background: none;
+  border: none;
+  border-radius: 6px;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.12s ease, color 0.12s ease;
+}
+
+.lang-option:hover,
+.lang-option.active {
+  background-color: rgba(0, 50, 160, 0.08);
+  color: var(--color-primary);
+}
+
+.lang-option .lang-check {
+  margin-left: auto;
+  color: var(--color-primary);
+  opacity: 0;
+  font-size: 0.875rem;
+}
+
+.lang-option.active .lang-check {
+  opacity: 1;
 }
 
 .section-header {
@@ -1014,116 +1080,145 @@ body.mobile-menu-open {
 .hotline-bar {
   background: linear-gradient(135deg, #ff0000 0%, #cc0000 100%);
   color: var(--color-white);
-  padding: 4px 0;
-  font-size: 0.8125rem;
-  overflow: hidden;
+  padding: 3px 0;
 }
 
 .hotline-bar .container {
   max-width: 100%;
-  padding: 0;
+  padding: 0 16px;
 }
 
-.hotline-inner {
+.hotline-groups {
   display: flex;
   align-items: center;
-  gap: 0;
-  flex-wrap: nowrap;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px 14px;
 }
 
-.hotline-label {
-  font-weight: 600;
-  white-space: nowrap;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.hotline-group {
+  position: relative;
+  display: inline-flex;
+  flex-direction: column;
 }
 
-.hotline-items {
-  display: flex;
+.hotline-group-head {
+  display: inline-flex;
   align-items: center;
-  gap: var(--spacing-sm);
-  flex-wrap: nowrap;
-  overflow: hidden;
-  flex: 1 1 auto;
-  min-width: 0;
-  width: 100%;
 }
 
 .hotline-item {
   display: inline-flex;
   align-items: center;
-  gap: 4px;
-  flex-shrink: 0;
+  gap: 5px;
   color: var(--color-white);
-  background: rgba(255, 255, 255, 0.15);
-  padding: 4px 10px;
-  border-radius: 20px;
-  transition: all 0.2s ease;
+  background: rgba(255, 255, 255, 0.16);
+  padding: 4px 11px;
+  border-radius: 24px;
+  transition: background 0.15s ease;
   text-decoration: none;
   white-space: nowrap;
+  font-weight: 500;
+  font-size: 0.75rem;
 }
 
 .hotline-item:hover {
-  background: rgba(255, 255, 255, 0.3);
+  background: rgba(255, 255, 255, 0.28);
   color: var(--color-white);
   text-decoration: none;
-  transform: translateY(-1px);
 }
 
 .hotline-item i {
   font-size: 0.75rem;
 }
 
-/* Hotline marquee (all viewports) */
-.hotline-items-track {
-  display: flex;
+.hotline-toggle {
+  display: inline-flex;
   align-items: center;
-  flex-wrap: nowrap;
-  gap: var(--spacing-sm);
-  width: max-content;
-  padding: 4px 0;
-  animation: hotlineScroll 25s linear infinite;
-  will-change: transform;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  margin-left: 3px;
+  padding: 0;
+  color: #fff;
+  background: rgba(255, 255, 255, 0.16);
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background 0.15s ease;
 }
 
-.hotline-items-track:hover,
-.hotline-items-track:focus-within {
-  animation-play-state: paused;
+.hotline-toggle:hover {
+  background: rgba(255, 255, 255, 0.32);
 }
 
-/* Tablet + Mobile: Hotline marquee spacing */
+.hotline-toggle i {
+  font-size: 0.6875rem;
+  transition: transform 0.2s ease;
+}
+
+.hotline-group.open .hotline-toggle i {
+  transform: rotate(180deg);
+}
+
+.hotline-more {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 0;
+  min-width: 190px;
+  margin: 0;
+  padding: 6px;
+  list-style: none;
+  background: #b00000;
+  border-radius: 8px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.22);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(6px);
+  transition: opacity 0.15s ease, transform 0.15s ease, visibility 0s linear 0.15s;
+  z-index: 600;
+}
+
+.hotline-group.open .hotline-more {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+  transition: opacity 0.15s ease, transform 0.15s ease;
+}
+
+.hotline-more li + li {
+  margin-top: 2px;
+}
+
+.hotline-more a {
+  display: block;
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 0.75rem;
+  font-weight: 400;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.hotline-more a:hover {
+  background: rgba(255, 255, 255, 0.22);
+}
+
+/* Tablet + Mobile */
 @media (max-width: 1024px) {
   .hotline-bar {
-    padding: 0;
-    overflow: hidden;
+    padding: 5px 0;
   }
 
-  .hotline-bar .container {
-    max-width: 100%;
-    padding: 0;
-  }
-
-  .hotline-inner {
-    flex-wrap: nowrap;
-    gap: 0;
-    padding: 0;
-    justify-content: flex-start;
-    text-align: left;
-  }
-
-  .hotline-label {
-    display: none;
-  }
-
-  .hotline-items {
-    width: 100%;
-    justify-content: flex-start;
+  .hotline-groups {
+    justify-content: center;
+    gap: 6px 9px;
   }
 
   .hotline-item {
     font-size: 0.75rem;
-    padding: 4px 10px;
+    padding: 4px 9px;
+    font-weight: 500;
   }
 }
 
@@ -1131,15 +1226,6 @@ body.mobile-menu-open {
   .hotline-item {
     font-size: 0.6875rem;
     padding: 3px 8px;
-  }
-}
-
-@keyframes hotlineScroll {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(calc(-100% / var(--hotline-copies, 2)));
   }
 }
 
@@ -8257,8 +8343,8 @@ a.a11y-contact-item:hover i {
 .info-bar {
   background-color: #00184d;
   color: #ffffff;
-  padding: 6px 0;
-  font-size: 0.6875rem;
+  padding: 7px 0;
+  font-size: 0.75rem;
   font-family: var(--font-main);
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -8280,8 +8366,8 @@ a.a11y-contact-item:hover i {
 }
 
 .info-bar-item i {
-  font-size: 0.75rem;
-  color: #ffff00;
+  font-size: 0.8125rem;
+  color: #ffd54a;
 }
 
 /* Exchange Rates - Rotating Display */
@@ -8379,7 +8465,7 @@ a.a11y-contact-item:hover i {
   }
 
   .info-bar-item {
-    font-size: 0.6875rem;
+    font-size: 0.7rem;
     gap: 3px;
     white-space: nowrap;
   }
@@ -8404,7 +8490,7 @@ a.a11y-contact-item:hover i {
   }
 
   .rate-item {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
   }
 
   .datetime-separator {
@@ -8422,7 +8508,7 @@ a.a11y-contact-item:hover i {
   }
 
   .info-bar-item {
-    font-size: 0.625rem;
+    font-size: 0.6875rem;
     gap: 2px;
   }
 
@@ -8433,7 +8519,7 @@ a.a11y-contact-item:hover i {
   }
 
   .info-bar-item i {
-    font-size: 0.6875rem;
+    font-size: 0.75rem;
   }
 
   .info-bar-rates-list {

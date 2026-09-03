@@ -1,77 +1,153 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useState, useEffect, useRef } from 'react';
 
-const hotlines = [
-  { icon: 'bi-shield-fill', label: 'Police', number: '0927 144 1875', tel: '09271441875' },
-  { icon: 'bi-heart-fill', label: 'Ambulance', number: '0945 569 0083', tel: '09455690083' },
-  { icon: 'bi-fire', label: 'Fire', number: '0955 817 3397', tel: '09558173397' },
-  { icon: 'bi-building', label: 'NORECO', number: '0908 864 2365', tel: '09088642365' },
+interface Hotline {
+  id: string;
+  icon: string;
+  label: string;
+  number: string;
+  tel: string;
+  more?: { label: string; tel: string }[];
+}
+
+const hotlines: Hotline[] = [
   {
+    id: 'police',
+    icon: 'bi-shield-fill',
+    label: 'Police',
+    number: '0927 144 1875',
+    tel: '09271441875',
+    more: [
+      { label: '0998 598 7514', tel: '09985987514' },
+      { label: '0998 598 7515', tel: '09985987515' },
+    ],
+  },
+  {
+    id: 'ambulance',
+    icon: 'bi-heart-fill',
+    label: 'Ambulance',
+    number: '0945 569 0083',
+    tel: '09455690083',
+  },
+  {
+    id: 'fire',
+    icon: 'bi-fire',
+    label: 'Fire',
+    number: '0955 817 3397',
+    tel: '09558173397',
+    more: [
+      { label: '0917 846 0982', tel: '09178460982' },
+      { label: '(035) 527-2567', tel: '+63355272567' },
+    ],
+  },
+  {
+    id: 'noreco',
+    icon: 'bi-building',
+    label: 'NORECO',
+    number: '0908 864 2365',
+    tel: '09088642365',
+    more: [{ label: '0998 585 8326', tel: '09985858326' }],
+  },
+  {
+    id: 'coast-guard',
     icon: 'bi-exclamation-triangle-fill',
     label: 'Coast Guard',
     number: '0995 746 8679',
     tel: '09957468679',
   },
-  { icon: 'bi-truck', label: 'City Hall', number: '(035) 531-0020', tel: '+63355310020' },
+  {
+    id: 'cityhall',
+    icon: 'bi-truck',
+    label: 'City Hall',
+    number: '(035) 531-0020',
+    tel: '+63355310020',
+    more: [
+      { label: '(035) 531-0020 to 21', tel: '+63355310020' },
+      { label: 'Telefax: (035) 430-0020', tel: '+63354300020' },
+    ],
+  },
 ];
 
 export default function HotlineBar() {
-  const itemsRef = useRef<HTMLDivElement>(null);
+  const [openId, setOpenId] = useState<string | null>(null);
+  const rootRef = useRef<HTMLDivElement>(null);
+
+  const toggle = (id: string) => {
+    setOpenId((prev) => (prev === id ? null : id));
+  };
 
   useEffect(() => {
-    const container = itemsRef.current;
-    if (!container || container.querySelector('.hotline-items-track')) return;
-
-    const originalItems = Array.from(container.children);
-    if (originalItems.length === 0) return;
-
-    const track = document.createElement('div');
-    track.className = 'hotline-items-track';
-    track.setAttribute('aria-label', 'Emergency contacts scrolling');
-
-    let copies = 0;
-    while (container.firstChild) track.appendChild(container.firstChild);
-    copies = 1;
-
-    const appendCopy = () => {
-      originalItems.forEach((item) => {
-        const clone = item.cloneNode(true) as HTMLElement;
-        clone.setAttribute('aria-hidden', 'true');
-        clone.setAttribute('tabindex', '-1');
-        track.appendChild(clone);
-      });
-      copies += 1;
-      track.style.setProperty('--hotline-copies', String(copies));
-    };
-
-    const ensureCopies = () => {
-      while (track.scrollWidth < container.clientWidth * 2) {
-        appendCopy();
+    function handleOutsideClick(e: MouseEvent) {
+      if (rootRef.current && !rootRef.current.contains(e.target as Node)) {
+        setOpenId(null);
       }
-    };
+    }
+    document.addEventListener('click', handleOutsideClick);
+    return () => document.removeEventListener('click', handleOutsideClick);
+  }, []);
 
-    track.style.setProperty('--hotline-copies', String(copies));
-    container.appendChild(track);
-    ensureCopies();
-
-    window.addEventListener('resize', ensureCopies);
-    return () => window.removeEventListener('resize', ensureCopies);
+  useEffect(() => {
+    function handleEscape(e: KeyboardEvent) {
+      if (e.key === 'Escape') setOpenId(null);
+    }
+    document.addEventListener('keydown', handleEscape);
+    return () => document.removeEventListener('keydown', handleEscape);
   }, []);
 
   return (
-    <div className="hotline-bar">
+    <div className="hotline-bar" ref={rootRef}>
       <div className="container">
         <div className="hotline-inner">
-          <div className="hotline-items" ref={itemsRef}>
-            {hotlines.map((h) => (
-              <a key={h.tel} href={`tel:${h.tel}`} className="hotline-item">
-                <i className={`bi ${h.icon}`} aria-hidden="true" />
-                <span>
-                  {h.label}: {h.number}
-                </span>
-              </a>
-            ))}
+          <div className="hotline-groups">
+            {hotlines.map((h) => {
+              const isOpen = openId === h.id;
+              return (
+                <div
+                  key={h.id}
+                  className={`hotline-group${h.more ? ' hotline-group--multi' : ''}${
+                    isOpen ? ' open' : ''
+                  }`}
+                >
+                  {h.more ? (
+                    <>
+                      <div className="hotline-group-head">
+                        <a href={`tel:${h.tel}`} className="hotline-item">
+                          <i className={`bi ${h.icon}`} aria-hidden="true" />
+                          <span>
+                            {h.label}: {h.number}
+                          </span>
+                        </a>
+                        <button
+                          type="button"
+                          className="hotline-toggle"
+                          aria-expanded={isOpen ? 'true' : 'false'}
+                          aria-label={`More ${h.label} contacts`}
+                          aria-controls={`${h.id}-contacts`}
+                          onClick={() => toggle(h.id)}
+                        >
+                          <i className="bi bi-chevron-down" aria-hidden="true"></i>
+                        </button>
+                      </div>
+                      <ul className="hotline-more" id={`${h.id}-contacts`}>
+                        {h.more.map((m) => (
+                          <li key={m.tel}>
+                            <a href={`tel:${m.tel}`}>{m.label}</a>
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : (
+                    <a href={`tel:${h.tel}`} className="hotline-item">
+                      <i className={`bi ${h.icon}`} aria-hidden="true" />
+                      <span>
+                        {h.label}: {h.number}
+                      </span>
+                    </a>
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </div>

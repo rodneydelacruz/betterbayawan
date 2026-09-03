@@ -72,13 +72,9 @@
     padding: 2px 0;
   }
 
-  .lang-selector {
-    gap: 3px;
-  }
-
-  .lang-btn {
-    padding: 5px 9px;
-    font-size: 0.6875rem;
+  .lang-trigger {
+    padding: 6px 10px;
+    font-size: 0.75rem;
   }
 
   .main-nav {
@@ -161,7 +157,7 @@
   }
 
   .main-nav .has-dropdown.dropdown-open > a::after {
-    transform: rotate(180deg);
+    transform: rotate(225deg) translateY(2px);
   }
 
   .main-nav .dropdown-menu {
@@ -471,13 +467,12 @@
   }
 
   /* Language selector */
-  .lang-selector {
-    gap: 2px;
+  .lang-trigger {
+    padding: 6px 10px;
+    font-size: 0.75rem;
   }
-
-  .lang-btn {
-    padding: 4px 8px;
-    font-size: 0.6875rem;
+  .lang-option {
+    font-size: 0.75rem;
   }
 
   /* Contact form */
@@ -624,7 +619,7 @@
   .site-header,
   .site-footer,
   .mobile-menu-toggle,
-  .lang-selector,
+  .lang-dropdown,
   .skip-link,
   .btn {
     display: none !important;

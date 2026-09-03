@@ -6710,7 +6710,7 @@ cklist with Icons - Proper Indentation */
     var(--color-secondary) 55%,
     #0b3a78 100%
   );
-  padding: 130px 0 190px;
+  padding: 56px 0 190px;
 }
 
 /* ------- Bayawan Coastal Scene (decorative) ------- */
@@ -6745,16 +6745,6 @@ cklist with Icons - Proper Indentation */
   );
 }
 
-.hero-kite {
-  position: absolute;
-  top: 6%;
-  left: 3%;
-  width: 150px;
-  opacity: 0.9;
-  filter: drop-shadow(0 8px 14px rgba(0, 0, 0, 0.25));
-  animation: hero-float 6s ease-in-out infinite;
-}
-
 .hero-palms {
   position: absolute;
   bottom: 0;
@@ -6783,22 +6773,6 @@ cklist with Icons - Proper Indentation */
   z-index: 0;
 }
 
-@keyframes hero-float {
-  0%,
-  100% {
-    transform: translateY(0) rotate(-3deg);
-  }
-  50% {
-    transform: translateY(-14px) rotate(3deg);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .hero-kite {
-    animation: none !important;
-  }
-}
-
 .home-hero-v2-inner {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -6811,14 +6785,15 @@ cklist with Icons - Proper Indentation */
   font-size: 2.75rem;
   line-height: 1.2;
   color: #f5c76a;
-  margin: 0;
+  margin: 0 0 var(--spacing-md);
+  text-align: center;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 @media (min-width: 993px) {
   .home-hero-slogan {
-    font-size: 4.25rem;
-    margin-bottom: 0;
+    font-size: 4.5rem;
+    margin-bottom: var(--spacing-lg);
   }
 }
 
@@ -7462,6 +7437,10 @@ cklist with Icons - Proper Indentation */
 
 /* Hero V2 Responsive */
 @media (max-width: 992px) {
+  .home-hero-slogan {
+    display: none;
+  }
+
   .home-hero-v2-inner {
     grid-template-columns: 1fr;
     gap: var(--spacing-lg);
@@ -7473,12 +7452,6 @@ cklist with Icons - Proper Indentation */
 
   .home-hero-v2-actions {
     justify-content: center;
-  }
-
-  .hero-kite {
-    width: 120px;
-    left: 2%;
-    top: 4%;
   }
 
   .hero-palms {
@@ -7512,14 +7485,7 @@ cklist with Icons - Proper Indentation */
   }
 
   .home-hero-v2 {
-    padding: 90px 0 120px;
-  }
-
-  .hero-kite {
-    width: 84px;
-    top: 4%;
-    left: 4%;
-    opacity: 0.7;
+    padding: 36px 0 120px;
   }
 
   .hero-palms {

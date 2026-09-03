@@ -1,11 +1,3 @@
-/**
- * Real-Time Information Bar Module
- * Displays live exchange rates, weather, and Philippine Time
- */
-
-// ============================================
-// FORMATTER FUNCTIONS
-// ============================================
 
 /**
  * Format exchange rate to 2 decimal places
@@ -46,7 +38,7 @@ function formatTime12Hour(date) {
   const ampm = hours >= 12 ? 'PM' : 'AM';
 
   hours = hours % 12;
-  hours = hours ? hours : 12; // 0 should be 12
+  hours = hours ? hours : 12; 
 
   const minutesStr = minutes < 10 ? '0' + minutes : minutes;
 

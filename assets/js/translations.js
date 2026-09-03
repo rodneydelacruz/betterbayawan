@@ -340,6 +340,8 @@ const translations = {
     'contact-closed': 'Closed',
     'contact-emergency': 'Emergency Hotline',
     'contact-hotlines': 'Emergency Hotlines',
+    'contact-hotlines-alt':
+      'Additional official numbers: Police 0998 598 7514 / 0998 598 7515 \u00B7 Fire 0917 846 0982 / (035) 527-2567 \u00B7 NORECO 0998 585 8326',
     'contact-hotlines-desc': 'For emergencies and inquiries, contact these numbers anytime.',
     'contact-medical': 'Medical',
 
@@ -594,7 +596,7 @@ const translations = {
     'acct-municipal-accountant': 'City Accountant',
     'acct-municipal-accounting-office': 'City Accounting Office',
     'acct-municipal-accounting-office-municipal-hall-Bayawan City':
-      'City Accounting Office, City Hall, Bayawan City, Negros Oriental',
+      'City Accounting Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'acct-municipal-hall': 'City Hall',
     'acct-obligation-request-obr': 'Obligation Request (ObR)',
     'acct-office': 'Office',
@@ -916,8 +918,6 @@ const translations = {
       'Follow these steps to request your birth certificate',
     'bc-freedom-of-information': 'Freedom of Information',
     'bc-frequently-asked-questions': 'Frequently Asked Questions',
-    'bc-go-to-the-local-civil-registrar-office-at-2nd':
-      'Go to the Local Civil Registrar Office at 2nd Floor, City Hall. Office hours: Mon-Fri, 8AM-5PM.',
     'bc-government': 'Government',
     'bc-health': 'Health',
     'bc-home': 'Home',
@@ -1065,7 +1065,7 @@ const translations = {
     'bpl-business-permit-services': 'Business Permit Services',
     'bpl-business-permits-licensing-section': 'Business Permits & Licensing Section',
     'bpl-business-permits-licensing-section-municipal-hall':
-      'Business Permits & Licensing Section, City Hall, Bayawan City, Negros Oriental',
+      'Business Permits & Licensing Section, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'bpl-cda-registration-for-cooperatives': 'CDA Registration (for cooperatives)',
     'bpl-certificates': 'Certificates',
     'bpl-citizens-charter': "Citizen's Charter",
@@ -1746,7 +1746,7 @@ const translations = {
     'eng-municipal-engineer': 'City Engineer',
     'eng-municipal-engineering-office': 'City Engineering Office',
     'eng-municipal-engineering-office-municipal-hall-Bayawan City':
-      'City Engineering Office, City Hall, Bayawan City',
+      'City Engineering Office, City Hall, Cabcabon Hills, Banga, Bayawan City',
     'eng-office': 'Office',
     'eng-office-information': 'Office Information',
     'eng-office-personnel': 'Office Personnel',
@@ -2500,7 +2500,7 @@ const translations = {
     'hrm-hrmo-staff': 'HRMO Staff',
     'hrm-human-resource-management-section': 'Human Resource Management Section',
     'hrm-human-resource-management-section-mayors-office':
-      "Human Resource Management Section, Mayor\'s Office, City Hall, Bayawan City, Negros Oriental",
+      "Human Resource Management Section, Mayor\'s Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental",
     'hrm-important-notes': 'Important Notes',
     'hrm-infrastructure': 'Infrastructure',
     'hrm-issuance-of-certificate-of-employment': 'Issuance of Certificate of Employment',
@@ -2883,7 +2883,7 @@ const translations = {
     'magri-mun-agriculture': 'Mun. Agriculture',
     'magri-municipal-agriculture-office': 'City Agriculture Office',
     'magri-municipal-agriculture-office-municipal-hall':
-      'City Agriculture Office, City Hall, Bayawan City, Negros Oriental',
+      'City Agriculture Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'magri-municipal-hall': 'City Hall',
     'magri-no-payment-required': 'No Payment Required',
     'magri-office': 'Office',
@@ -3212,7 +3212,7 @@ const translations = {
     'mbudget-mun-budget': 'Mun. Budget',
     'mbudget-municipal-budget-office': 'City Budget Office',
     'mbudget-municipal-budget-office-municipal-hall-Bayawan City':
-      'City Budget Office, City Hall, Bayawan City, Negros Oriental',
+      'City Budget Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'mbudget-municipal-budget-officer': 'City Budget Officer',
     'mbudget-municipal-hall': 'City Hall',
     'mbudget-obligation-request': 'Obligation Request',
@@ -3564,9 +3564,9 @@ const translations = {
       'Medical Certificate (if attended by physician)',
     'mcr-municipal-civil-registrar': 'City Civil Registrar',
     'mcr-municipal-civil-registrars-office': "City Civil Registrar's Office",
-    'mcr-municipal-civil-registrars-office-2nd-floor':
-      "City Civil Registrar's Office, 2nd Floor, City Hall, Bayawan City, Negros Oriental",
-    'mcr-municipal-hall-2f': 'City Hall, 2F',
+    'mcr-municipal-civil-registrars-office-city-hall':
+      "City Civil Registrar's Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental",
+    'mcr-location-city-hall': 'City Hall',
     'mcr-nbipolice-clearance': 'NBI/Police Clearance',
     'mcr-negative-certification-from-psa': 'Negative Certification from PSA',
     'mcr-newspaper-publication': 'Newspaper Publication',
@@ -3725,7 +3725,7 @@ const translations = {
     'mgs-motorcycles': 'Motorcycles',
     'mgs-municipal-general-services-office': 'City General Services Office',
     'mgs-municipal-general-services-office-municipal-hall':
-      'City General Services Office, City Hall, Bayawan City, Negros Oriental',
+      'City General Services Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'mgs-municipal-hall': 'City Hall',
     'mgs-none': 'None',
     'mgs-office': 'Office',
@@ -4292,10 +4292,9 @@ const translations = {
     'mswdosvc-medical-certificatehospital-bill-for-medical':
       'Medical Certificate/Hospital Bill (for medical assistance)',
     'mswdosvc-mswdo-head': 'CSWDO Head',
-    'mswdosvc-mswdo-office-2nd-floor-municipal-hall-Bayawan City':
-      'CSWDO Office, 2nd Floor, City Hall, Bayawan City, Negros Oriental',
+    'mswdosvc-mswdo-office-city-hall-Bayawan City':
+      'CSWDO Office, City Hall, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'mswdosvc-mswdo-services': 'CSWDO Services',
-    'mswdosvc-municipal-hall-2nd-floor': 'City Hall, 2nd Floor',
     'mswdosvc-municipal-social-welfare-development-office':
       'City Social Welfare & Development Office',
     'mswdosvc-office': 'Office',
@@ -4751,7 +4750,7 @@ const translations = {
     'propdec-freedom-of-information': 'Freedom of Information',
     'propdec-full-name-of-owner': 'Full Name of Owner',
     'propdec-government': 'Government',
-    'propdec-ground-floor-municipal-hall-Bayawan City': 'Ground Floor, City Hall, Bayawan City',
+    'propdec-ground-floor-municipal-hall-Bayawan City': 'Ground Floor, City Hall, Cabcabon Hills, Banga, Bayawan City',
     'propdec-handles-property-assessment-tax-declaration-and':
       'Handles property assessment, tax declaration, and real property records.',
     'propdec-health': 'Health',
@@ -6037,6 +6036,8 @@ const translations = {
     'contact-closed': 'Sarado',
     'contact-emergency': 'Emergency Hotline',
     'contact-hotlines': 'Mga Emergency Hotline',
+    'contact-hotlines-alt':
+      'Karagdagang opisyal na numero: Pulis 0998 598 7514 / 0998 598 7515 \u00B7 Sunog 0917 846 0982 / (035) 527-2567 \u00B7 NORECO 0998 585 8326',
     'contact-hotlines-desc':
       'Para sa mga emergency at katanungan, tawagan ang mga numerong ito anumang oras.',
     'contact-medical': 'Medikal',
@@ -6274,7 +6275,7 @@ const translations = {
     'acct-municipal-accountant': 'Accountant ng Lungsod',
     'acct-municipal-accounting-office': 'Opisina ng Accounting ng Lungsod',
     'acct-municipal-accounting-office-municipal-hall-Bayawan City':
-      'Panlungsod Opisina ng Accounting, Lungsod, Bayawan City, Negros Oriental',
+      'Panlungsod Opisina ng Accounting, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'acct-municipal-hall': 'Lungsod',
     'acct-obligation-request-obr': 'Kahilingan ng Obligasyon (ObR)',
     'acct-office': 'Opisina',
@@ -6600,8 +6601,6 @@ const translations = {
       'Sundin ang mga hakbang na ito upang humiling ng iyong sertipiko ng kapanganakan',
     'bc-freedom-of-information': 'Kalayaan sa Impormasyon',
     'bc-frequently-asked-questions': 'Mga Madalas Itanong',
-    'bc-go-to-the-local-civil-registrar-office-at-2nd':
-      'Pumunta to the Lokal Tagapagrehistro Sibil Opisina at 2nd Floor, Panlungsod Hall. Opisina hours: Mon-Fri, 8AM-5PM.',
     'bc-government': 'Pamahalaan',
     'bc-health': 'Kalusugan',
     'bc-home': 'Tahanan',
@@ -6753,7 +6752,7 @@ const translations = {
     'bpl-business-permit-services': 'Permiso sa Negosyo Mga serbisyo',
     'bpl-business-permits-licensing-section': 'Business Mga permiso & Licensing Seksyon',
     'bpl-business-permits-licensing-section-municipal-hall':
-      'Business Mga permiso & Licensing Seksyon, Lungsod, Bayawan City, Negros Oriental',
+      'Business Mga permiso & Licensing Seksyon, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'bpl-cda-registration-for-cooperatives': 'CDA Registration (para sa mga kooperatiba)',
     'bpl-certificates': 'Mga Sertipiko',
     'bpl-citizens-charter': "Citizen's Charter",
@@ -7440,7 +7439,7 @@ const translations = {
     'eng-municipal-engineer': 'Inhinyero ng Lungsod',
     'eng-municipal-engineering-office': 'Opisina ng Inhinyero ng Lungsod',
     'eng-municipal-engineering-office-municipal-hall-Bayawan City':
-      'Panlungsod Opisina ng Inhinyero, Lungsod, Bayawan City',
+      'Panlungsod Opisina ng Inhinyero, Lungsod, Cabcabon Hills, Banga, Bayawan City',
     'eng-office': 'Opisina',
     'eng-office-information': 'Impormasyon ng Opisina',
     'eng-office-personnel': 'Mga Tauhan ng Opisina',
@@ -8200,7 +8199,7 @@ const translations = {
     'hrm-hrmo-staff': 'HRMO Kawani',
     'hrm-human-resource-management-section': 'Pamamahala ng Yamang Tao Seksyon',
     'hrm-human-resource-management-section-mayors-office':
-      'Pamamahala ng Yamang Tao Seksyon, Opisina ng Punong Lungsod, Lungsod, Bayawan City, Negros Oriental',
+      'Pamamahala ng Yamang Tao Seksyon, Opisina ng Punong Lungsod, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'hrm-important-notes': 'Mahahalagang Paalala',
     'hrm-infrastructure': 'Imprastraktura',
     'hrm-issuance-of-certificate-of-employment': 'Pagbibigay ng Sertipiko ng Trabaho',
@@ -8587,7 +8586,7 @@ const translations = {
     'magri-mun-agriculture': 'Mun. Agrikultura',
     'magri-municipal-agriculture-office': 'Opisina ng Agrikultura ng Lungsod',
     'magri-municipal-agriculture-office-municipal-hall':
-      'Kagawaran ng Agrikultura ng Lungsod Opisina, Lungsod, Bayawan City, Negros Oriental',
+      'Kagawaran ng Agrikultura ng Lungsod Opisina, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'magri-municipal-hall': 'Lungsod',
     'magri-no-payment-required': 'No Pagbabayad Kinakailangan',
     'magri-office': 'Opisina',
@@ -8926,7 +8925,7 @@ const translations = {
     'mbudget-mun-budget': 'Mun. Badyet',
     'mbudget-municipal-budget-office': 'Opisina ng Badyet ng Lungsod',
     'mbudget-municipal-budget-office-municipal-hall-Bayawan City':
-      'Panlungsod Opisina ng Badyet, Lungsod, Bayawan City, Negros Oriental',
+      'Panlungsod Opisina ng Badyet, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'mbudget-municipal-budget-officer': 'Opisyal ng Badyet ng Lungsod',
     'mbudget-municipal-hall': 'Lungsod',
     'mbudget-obligation-request': 'Kahilingan ng Obligasyon',
@@ -9285,9 +9284,9 @@ const translations = {
       'Medical Certificate (kung dinaluhan ng doktor)',
     'mcr-municipal-civil-registrar': 'Tagapagrehistro Sibil ng Lungsod',
     'mcr-municipal-civil-registrars-office': 'Panlungsod Opisina ng Tagapagrehistro Sibil',
-    'mcr-municipal-civil-registrars-office-2nd-floor':
-      'Panlungsod Opisina ng Tagapagrehistro Sibil, Ikalawang Palapag, Lungsod, Bayawan City, Negros Oriental',
-    'mcr-municipal-hall-2f': 'Panlungsod Hall, 2F',
+    'mcr-municipal-civil-registrars-office-city-hall':
+      'Panlungsod Opisina ng Tagapagrehistro Sibil, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
+    'mcr-location-city-hall': 'Lungsod',
     'mcr-nbipolice-clearance': 'NBI/Police Clearance',
     'mcr-negative-certification-from-psa': 'Negatibong Sertipikasyon mula sa PSA',
     'mcr-newspaper-publication': 'Publikasyon sa Pahayagan',
@@ -9448,7 +9447,7 @@ const translations = {
     'mgs-motorcycles': 'Mga Motorsiklo',
     'mgs-municipal-general-services-office': 'Opisina ng Pangkalahatang Serbisyo ng Lungsod',
     'mgs-municipal-general-services-office-municipal-hall':
-      'Panlungsod Opisina ng Pangkalahatang Serbisyo, Lungsod, Bayawan City, Negros Oriental',
+      'Panlungsod Opisina ng Pangkalahatang Serbisyo, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'mgs-municipal-hall': 'Lungsod',
     'mgs-none': 'Wala',
     'mgs-office': 'Opisina',
@@ -10030,10 +10029,9 @@ const translations = {
     'mswdosvc-medical-certificatehospital-bill-for-medical':
       'Medical Certificate/Hospital Bill (for medical tulong)',
     'mswdosvc-mswdo-head': 'CSWDO Pinuno',
-    'mswdosvc-mswdo-office-2nd-floor-municipal-hall-Bayawan City':
-      'CSWDO Opisina, Ikalawang Palapag, Lungsod, Bayawan City, Negros Oriental',
+    'mswdosvc-mswdo-office-city-hall-Bayawan City':
+      'Opisina ng CSWDO, Lungsod, Cabcabon Hills, Banga, Bayawan City, Negros Oriental',
     'mswdosvc-mswdo-services': 'Mga Serbisyo ng CSWDO',
-    'mswdosvc-municipal-hall-2nd-floor': 'Panlungsod Hall, Ikalawang Palapag',
     'mswdosvc-municipal-social-welfare-development-office':
       'Kagawaran ng Kapakanan ng Lungsod & Development Opisina',
     'mswdosvc-office': 'Opisina',
@@ -10496,7 +10494,7 @@ const translations = {
     'propdec-freedom-of-information': 'Kalayaan sa Impormasyon',
     'propdec-full-name-of-owner': 'Buong Name of May-ari',
     'propdec-government': 'Pamahalaan',
-    'propdec-ground-floor-municipal-hall-Bayawan City': 'Unang Palapag, Lungsod, Bayawan City',
+    'propdec-ground-floor-municipal-hall-Bayawan City':       'Unang Palapag, Lungsod, Cabcabon Hills, Banga, Bayawan City',
     'propdec-handles-property-assessment-tax-declaration-and':
       'Handles ari-arian pagtatasa, buwis declaration, and real ari-arian mga rekord.',
     'propdec-health': 'Kalusugan',

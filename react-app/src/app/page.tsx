@@ -11,8 +11,83 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="home-hero-v2">
-        <div className="container">
+      <section className="home-hero-v2" aria-label="Introduction">
+        {/* Decorative Bayawan coastal scene */}
+        <div className="hero-scene" aria-hidden="true">
+          <div className="hero-banner" />
+
+          <svg
+            className="hero-kite"
+            viewBox="0 0 120 150"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M60 6 L110 76 L60 146 L10 76 Z"
+              fill="rgba(255,255,255,0.92)"
+            />
+            <path
+              d="M60 6 L60 146 M10 76 L110 76"
+              stroke="#f5c76a"
+              strokeWidth="3"
+              strokeLinecap="round"
+            />
+            <path
+              d="M60 146 C 88 158 34 164 60 176 C 88 188 34 196 60 208"
+              stroke="rgba(245,199,106,0.9)"
+              strokeWidth="3"
+              fill="none"
+              strokeLinecap="round"
+            />
+          </svg>
+
+          <svg
+            className="hero-palms"
+            viewBox="0 0 360 220"
+            preserveAspectRatio="xMidYMax meet"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <g fill="rgba(4,22,60,0.5)">
+              <path d="M88 220 C 82 176 92 130 100 94 L 116 97 C 108 130 110 178 116 220 Z" />
+              <path d="M100 94 Q 150 70 158 50 Q 146 84 108 94 Z" />
+              <path d="M104 94 Q 176 84 198 74 Q 164 96 108 96 Z" />
+              <path d="M106 98 Q 168 128 178 152 Q 146 122 104 100 Z" />
+              <path d="M100 94 Q 44 68 26 46 Q 50 76 108 92 Z" />
+              <path d="M98 96 Q 28 92 8 86 Q 40 100 100 98 Z" />
+              <path d="M102 100 Q 62 136 48 160 Q 82 128 104 102 Z" />
+              <path d="M272 220 C 268 186 276 148 282 122 L 294 124 C 288 148 290 188 292 220 Z" />
+              <path d="M282 122 Q 318 104 326 90 Q 316 112 288 124 Z" />
+              <path d="M286 124 Q 336 120 350 114 Q 330 130 286 126 Z" />
+              <path d="M284 126 Q 320 148 326 164 Q 310 142 282 128 Z" />
+            </g>
+          </svg>
+
+          <svg
+            className="hero-wave-back"
+            viewBox="0 0 1440 110"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="M0,66 C240,110 480,10 720,50 C960,90 1200,18 1440,58 L1440,110 L0,110 Z"
+            />
+          </svg>
+
+          <svg
+            className="hero-wave-front"
+            viewBox="0 0 1440 76"
+            preserveAspectRatio="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill="currentColor"
+              d="M0,42 C240,76 480,6 720,34 C960,62 1200,10 1440,38 L1440,76 L0,76 Z"
+            />
+          </svg>
+        </div>
+
+        <div className="container hero-content">
           <div className="home-hero-v2-inner">
             <div className="home-hero-v2-text">
               <p className="home-hero-slogan">Ibayaw Bayawan, Kita ang Bayawan</p>

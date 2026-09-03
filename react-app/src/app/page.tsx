@@ -60,10 +60,10 @@ export default function HomePage() {
         </div>
 
         <div className="container hero-content">
-          <p className="home-hero-slogan">Ibayaw Bayawan, Kita ang Bayawan</p>
           <div className="home-hero-v2-inner">
             <div className="home-hero-v2-text">
               <h1>{t('hero-welcome')}</h1>
+              <p className="home-hero-slogan">#IbayawBayawan #KitaAngBayawan</p>
               <p>{t('hero-subtitle')}</p>
               <div className="home-hero-v2-actions">
                 <Link href="/services" className="btn btn-primary">

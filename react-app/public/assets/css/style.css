@@ -6708,7 +6708,7 @@ cklist with Icons - Proper Indentation */
     var(--color-secondary) 55%,
     #0b3a78 100%
   );
-  padding: 56px 0 190px;
+  padding: 96px 0 190px;
 }
 
 /* ------- Bayawan Coastal Scene (decorative) ------- */
@@ -6738,8 +6738,9 @@ cklist with Icons - Proper Indentation */
   inset: 0;
   background: linear-gradient(
     180deg,
-    rgba(4, 24, 60, 0.45) 0%,
-    rgba(4, 24, 60, 0.82) 100%
+    rgba(255, 200, 96, 0.35) 0%,
+    rgba(255, 168, 52, 0.62) 55%,
+    rgba(212, 116, 24, 0.85) 100%
   );
 }
 
@@ -6778,20 +6779,22 @@ cklist with Icons - Proper Indentation */
   align-items: center;
 }
 
-.home-hero-slogan {
-  font-family: 'Great Vibes', 'Segoe Script', cursive;
-  font-size: 2.75rem;
+.home-hero-v2-text .home-hero-slogan {
+  font-family: var(--font-main);
+  font-weight: 700;
+  font-size: 1.375rem;
   line-height: 1.2;
-  color: #f5c76a;
-  margin: 0 0 var(--spacing-md);
-  text-align: center;
+  color: #ffd54a;
+  letter-spacing: 0.01em;
+  margin: 4px 0 8px;
+  text-align: left;
   text-shadow: 0 1px 3px rgba(0, 0, 0, 0.35);
 }
 
 @media (min-width: 993px) {
-  .home-hero-slogan {
-    font-size: 2.75rem;
-    margin-bottom: var(--spacing-lg);
+  .home-hero-v2-text .home-hero-slogan {
+    font-size: 1.5rem;
+    margin: 4px 0 8px;
   }
 }
 
@@ -7612,7 +7615,7 @@ cklist with Icons - Proper Indentation */
   }
 
   .home-hero-v2 {
-    padding: 36px 0 120px;
+    padding: 72px 0 120px;
   }
 
   .hero-palms {

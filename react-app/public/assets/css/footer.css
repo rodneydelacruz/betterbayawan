@@ -166,6 +166,25 @@ ter Columns */
   gap: 16px;
 }
 
+.footer-initiative-credit {
+  width: 100%;
+  text-align: center;
+  padding: 0 16px 18px;
+  font-size: 0.8125rem;
+  color: rgba(255, 255, 255, 0.55);
+  line-height: 1.6;
+}
+
+.footer-initiative-credit a {
+  color: rgba(255, 255, 255, 0.75);
+  text-decoration: none;
+}
+
+.footer-initiative-credit a:hover {
+  color: white;
+  text-decoration: none;
+}
+
 .footer-copyright {
   display: flex;
   align-items: center;
@@ -186,6 +205,10 @@ ter Columns */
 
 .footer-copyright-disclaimer {
   color: rgba(255, 255, 255, 0.4);
+}
+
+.footer-dev-credit {
+  color: rgba(255, 255, 255, 0.5);
 }
 
 .footer-copyright .footer-version {

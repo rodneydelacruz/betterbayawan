@@ -68,5 +68,5 @@ We welcome feedback on both versions. Please:
 
 ## Thank you to all contributors who have helped build BetterBayawan.org. Your continued participation, regardless of which version you prefer, is valued and appreciated. Shout out to Gat. @jasontorres for the support!
 
-Ramon Logan Jr.
+Rodney Dela Cruz
 BetterBayawan.org

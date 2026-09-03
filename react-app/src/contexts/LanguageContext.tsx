@@ -247,7 +247,7 @@ const translations: Record<string, Record<string, string>> = {
     'footer-contribute': 'Contribute code with us',
     'footer-copyright-text': 'BetterBayawan.org',
     'footer-copyright-disclaimer':
-      'All public information sourced from official government portals.',
+      'An independent, open-source community project. Not affiliated with or endorsed by the Bayawan City government. All content is based on publicly available information, sourced from official government portals.',
   },
   fil: {
     // Navigation - Filipino
@@ -496,7 +496,7 @@ const translations: Record<string, Record<string, string>> = {
     'footer-contribute': 'Mag-ambag ng code sa amin',
     'footer-copyright-text': 'BetterBayawan.org',
     'footer-copyright-disclaimer':
-      'Lahat ng pampublikong impormasyon ay mula sa mga opisyal na portal ng pamahalaan.',
+      'Isang independiyenteng, open-source na proyekto ng komunidad. Hindi kaakibat o ineendorso ng pamahalaan ng Bayawan City. Ang lahat ng nilalaman ay batay sa mga pampublikong impormasyon mula sa mga opisyal na portal ng pamahalaan.',
   },
   bis: {
     // Navigation - Bisaya
@@ -588,7 +588,8 @@ const translations: Record<string, Record<string, string>> = {
     'footer-lgu-portal': 'LGU Bayawan Portal',
     'footer-lgu-facebook': 'LGU Bayawan Facebook',
     'footer-copyright-text': '© 2026 BetterBayawan.org. All rights reserved.',
-    'footer-copyright-disclaimer': 'Not an official government website.',
+    'footer-copyright-disclaimer':
+      'An independente, open-source nga proyekto sa komunidad. Wala kini labot o gi-endorso sa gobyerno sa Bayawan City. Ang tanang impormasyon gibase sa mga opisyal nga portal sa gobyerno.',
     'footer-cost': 'Cost to the People of Bayawan City =',
 
     // Services Page

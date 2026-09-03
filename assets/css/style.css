@@ -372,6 +372,85 @@ body.mobile-menu-open {
   text-decoration: none;
 }
 
+/* ===== Navbar refinements ===== */
+.main-nav ul {
+  gap: var(--spacing-sm);
+}
+
+/* Desktop: fill and truly center the nav track between logo and actions */
+@media (min-width: 1025px) {
+  .main-nav {
+    flex: 1 1 auto;
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-nav > ul > li > a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 6px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    white-space: nowrap;
+    transition: color 0.2s ease;
+  }
+
+  .main-nav > ul > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -4px;
+    height: 2px;
+    border-radius: 2px;
+    background: var(--color-accent);
+    transform: scaleX(0);
+    transform-origin: left center;
+    transition: transform 0.25s ease;
+  }
+
+  .main-nav > ul > li > a:hover::after,
+  .main-nav > ul > li > a.active::after,
+  .main-nav > ul > li.has-dropdown.dropdown-open > a::after {
+    transform: scaleX(1);
+  }
+
+  .main-nav .has-dropdown:hover > a::after {
+    transform: rotate(180deg);
+  }
+
+  /* Hover bridge so the dropdown doesn't close while moving toward it */
+  .main-nav > ul > li.has-dropdown::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    height: 12px;
+  }
+}
+
+/* Dropdown caret: animate on click-open too */
+.main-nav .has-dropdown > a::after {
+  transition: transform 0.2s ease;
+}
+
+.main-nav .has-dropdown.dropdown-open > a::after {
+  transform: rotate(180deg);
+}
+
+/* Refined dropdown panel */
+.main-nav .dropdown-menu {
+  box-shadow: 0 12px 30px rgba(2, 12, 34, 0.12);
+  border-radius: 10px;
+  border: 1px solid rgba(0, 50, 160, 0.08);
+}
+
+.main-nav .dropdown-menu a {
+  padding: 10px var(--spacing-sm);
+  font-size: 0.9375rem;
+}
+
 .header-actions {
   display: flex;
   align-items: center;

@@ -204,6 +204,17 @@ export default function Footer() {
             </div>
           </div>
         </div>
+        <div className="footer-initiative-credit">
+          Part of the{' '}
+          <a href="https://bettergov.ph" target="_blank" rel="noopener noreferrer">
+            BetterGov.ph
+          </a>{' '}
+          BetterLGU initiative &middot; A template from the open-source{' '}
+          <a href="https://betteresolano.org" target="_blank" rel="noopener noreferrer">
+            BetterSolano.org
+          </a>{' '}
+          by Ramon Logan, modified and adapted for Bayawan City.
+        </div>
         <div className="footer-bottom-new">
           <div className="footer-copyright">
             <span className="footer-copyright-text">
@@ -211,6 +222,12 @@ export default function Footer() {
             </span>
             <span className="footer-copyright-license">MIT | CC BY 4.0</span>
             <span className="footer-copyright-disclaimer">{t('footer-copyright-disclaimer')}</span>
+            <span className="footer-dev-credit">
+              Developed by{' '}
+              <a href="https://www.rodneydelacruz.space/" target="_blank" rel="noopener noreferrer">
+                Rodney Dela Cruz
+              </a>
+            </span>
             <span className="footer-version">
               <i className="bi bi-boxes"></i> {version ? `Ver. ${version}` : ''}
             </span>

@@ -23,7 +23,7 @@
     "government",
     "lgu"
   ],
-  "author": "Ramon Logan Jr.",
+  "author": "Rodney Dela Cruz",
   "license": "MIT",
   "devDependencies": {
     "@babel/cli": "^7.23.9",

@@ -2027,9 +2027,9 @@ const translations = {
     'faq-privacy-policy': 'Privacy Policy',
     'faq-public-safety': 'Public Safety',
     'faq-quick-links': 'Quick Links',
-    'faq-ramon-has-made-the-Bayawan City-project-open-source':
-      'Ramon has made the Bayawan City Project open source under MIT | CC BY 4.0 to empower community-driven development, and contributions are warmly welcomed from everyone; whether you are a developer, data researcher, designer, content writer, translator, or a concerned citizen of Bayawan City, your participation helps shape the project for all.',
-    'faq-ramon-logan-jr': 'Ramon Logan Jr.',
+    'faq-open-source-community':
+      'BetterBayawan.org is an open-source project released under MIT | CC BY 4.0 to empower community-driven development. Contributions are warmly welcomed from everyone; whether you are a developer, data researcher, designer, content writer, translator, or a concerned citizen of Bayawan City, your participation helps shape the project for all.',
+    'faq-rodney-dela-cruz': 'Rodney Dela Cruz',
     'faq-resolution-framework': 'Resolution Framework',
     'faq-resources': 'Resources',
     'faq-sangguniang-bayan': 'Sangguniang Panlungsod',
@@ -7721,9 +7721,9 @@ const translations = {
     'faq-privacy-policy': 'Patakaran sa Pagkapribado',
     'faq-public-safety': 'Kaligtasang Pampubliko',
     'faq-quick-links': 'Mga Mabilisang Link',
-    'faq-ramon-has-made-the-Bayawan City-project-open-source':
-      'Ramon has made the Bayawan City Project bukas source under MIT | CC BY 4.0 to empower community-driven development, and contributions are warmly welcomed from everyone; whether you are a developer, datos researcher, designer, content writer, translator, or a concerned mamamayan of Bayawan City, your participation helps shape the project for all.',
-    'faq-ramon-logan-jr': 'Ramon Logan Jr.',
+    'faq-open-source-community':
+      'Ang BetterBayawan.org ay isang open-source na proyekto na inilabas sa ilalim ng MIT | CC BY 4.0 upang palakasin ang community-driven development. Malugod naming tinatanggap ang mga ambag mula sa lahat; kung ikaw man ay isang developer, data researcher, designer, content writer, translator, o isang nagmamalasakit na mamamayan ng Bayawan City, ang iyong partisipasyon ay nakakatulong sa paghubog ng proyekto para sa lahat.',
+    'faq-rodney-dela-cruz': 'Rodney Dela Cruz',
     'faq-resolution-framework': 'Balangkas ng Resolusyon',
     'faq-resources': 'Mga Mapagkukunan',
     'faq-sangguniang-bayan': 'Sangguniang Panlungsod',

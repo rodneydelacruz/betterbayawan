@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: { default: 'BetterBayawan.org | Civic Portal', template: '%s | BetterBayawan.org' },
   description: 'BetterBayawan.org - Civic portal for Bayawan City services.',
   keywords: ['BetterBayawan', 'Bayawan City Negros Oriental', 'LGU Bayawan City', 'City services'],
-  authors: [{ name: 'Ramon Logan Jr.' }],
+  authors: [{ name: 'Rodney Dela Cruz' }],
   openGraph: {
     type: 'website',
     locale: 'en_PH',

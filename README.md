@@ -475,4 +475,4 @@ Made for the people of Bayawan City, Negros Oriental
 
 ## Developer
 
-[Ramon Logan Jr.](https://ramonloganjr.com/) is a UAE-based full-stack developer and IT professional specializing in web development, design, cloud services, and cybersecurity. He is the developer behind BetterBayawan.org, [Abakada.org](https://abakada.org), and the founder of the small cloud-based solutions initiative, [HelloPinas.com](https://hellopinas.com). Ramon actively contributes to civic-tech efforts like [BetterGov.ph](https://bettergov.ph) and is an individual participant in the [OpenJS Foundation](https://openjsf.org/).
+[Rodney Dela Cruz](https://www.rodneydelacruz.space/) is a local student and full-stack developer from Bayawan City, Negros Oriental. He built BetterBayawan.org as a community-driven initiative to build a digital bridge between the residents of Bayawan City and the local government. Rodney specializes in full-stack development and automation, and has worked on open-source civic-tech projects that help modernize Philippine local governments.

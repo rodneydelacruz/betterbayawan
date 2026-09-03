@@ -1,5 +1,5 @@
 # Better Bayawan City - Robots.txt
-# Author: Ramon Logan Jr
+# Author: Rodney Dela Cruz
 # This file tells search engine crawlers which pages to index
 
 User-agent: *

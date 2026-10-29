@@ -160,7 +160,7 @@
                 : code >= 95
                   ? 'Thunderstorm'
                   : 'Showers';
-      const icon =
+      const iconFor = (code) =>
         code === 0
           ? 'bi-sun-fill'
           : code >= 95
@@ -168,14 +168,20 @@
             : code >= 50
               ? 'bi-cloud-rain-fill'
               : 'bi-cloud-fill';
+      const icon = iconFor(code);
       const hours = data.hourly.time
-        .map((time, i) => ({ time, temp: data.hourly.temperature_2m[i] }))
-        .filter((h) => h.time >= c.time)
+        .map((time, i) => ({
+          time,
+          temp: data.hourly.temperature_2m[i],
+          code: data.hourly.weather_code[i],
+        }))
+        .filter((h) => h.time > c.time)
         .slice(0, 4);
       target.className = 'weather-widget';
       target.removeAttribute('aria-busy');
-      target.innerHTML = `<div class="weather-current"><div class="weather-current-icon" aria-hidden="true"><i class="bi ${icon}"></i></div><div class="weather-current-info"><div class="weather-current-temp">${Math.round(c.temperature_2m)}°C</div><div class="weather-current-condition">${t(label)}</div><div class="weather-current-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Bayawan City</div></div></div><div class="weather-stats"><div class="weather-stat"><i class="bi bi-droplet" aria-hidden="true"></i><span>${c.relative_humidity_2m}%</span></div><div class="weather-stat"><i class="bi bi-wind" aria-hidden="true"></i><span>${Math.round(c.wind_speed_10m)} km/h</span></div></div><div class="weather-hourly">${hours.map((h) => `<div class="weather-hour"><span class="weather-hour-time">${new Intl.DateTimeFormat('en-PH', { hour: 'numeric', timeZone: 'Asia/Manila' }).format(new Date(h.time + '+08:00'))}</span><i class="bi ${icon}" aria-hidden="true"></i><span class="weather-hour-temp">${Math.round(h.temp)}°</span></div>`).join('')}</div>`;
+      target.innerHTML = `<div class="weather-current"><div class="weather-current-icon" aria-hidden="true"><i class="bi ${icon}"></i></div><div class="weather-current-info"><div class="weather-current-temp">${Math.round(c.temperature_2m)}°C</div><div class="weather-current-condition">${t(label)}</div><div class="weather-current-location"><i class="bi bi-geo-alt" aria-hidden="true"></i> Bayawan City</div></div></div><div class="weather-stats"><div class="weather-stat"><i class="bi bi-droplet" aria-hidden="true"></i><span>${c.relative_humidity_2m}%</span></div><div class="weather-stat"><i class="bi bi-wind" aria-hidden="true"></i><span>${Math.round(c.wind_speed_10m)} km/h</span></div></div><div class="weather-hourly">${hours.map((h) => `<div class="weather-hour"><span class="weather-hour-time">${new Intl.DateTimeFormat('en-PH', { hour: 'numeric', timeZone: 'Asia/Manila' }).format(new Date(h.time + '+08:00'))}</span><i class="bi ${iconFor(h.code)}" aria-hidden="true"></i><span class="weather-hour-temp">${Math.round(h.temp)}°</span></div>`).join('')}</div>`;
       target.setAttribute('aria-label', t('Current conditions'));
+      target.removeAttribute('data-loading');
     } catch {
       target.className = 'weather-widget';
       target.removeAttribute('aria-busy');

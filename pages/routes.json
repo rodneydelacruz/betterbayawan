@@ -6,10 +6,19 @@
     "title": "Bayawan City Services and Community Information",
     "description": "BetterBayawan.org - Civic portal for Bayawan City services.",
     "layout": "civic",
-    "styles": [],
+    "styles": [
+      "https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.css",
+      "/assets/css/pages/glance.css"
+    ],
     "scripts": [
       {
         "src": "/assets/js/news.js"
+      },
+      {
+        "src": "https://cdn.jsdelivr.net/npm/maplibre-gl@4.7.1/dist/maplibre-gl.js"
+      },
+      {
+        "src": "/assets/js/pages/glance-map.js"
       }
     ]
   },

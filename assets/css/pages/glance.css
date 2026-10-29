@@ -1,0 +1,341 @@
+/* Bayawan City at a Glance: full-bleed map with frosted overlay cards (issue #2). */
+.glance {
+  /* Match .container (max-width + side padding) so the cards line up with Popular Services. */
+  --glance-max: var(--max-width, 1200px);
+  --glance-pad: var(--spacing-md, 24px);
+  --glance-edge: calc(max(0px, (100% - var(--glance-max)) / 2) + var(--glance-pad));
+  position: relative;
+  width: 100%;
+  height: clamp(600px, 72vh, 680px);
+  overflow: hidden;
+  background: #e8ecf1;
+  font-family: var(--font-family, Inter, system-ui, sans-serif);
+  color: var(--color-text, #1a1a1a);
+}
+.glance-map {
+  position: absolute;
+  inset: 0;
+}
+.glass {
+  background: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: blur(10px) saturate(1.4);
+  backdrop-filter: blur(10px) saturate(1.4);
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 12px;
+  box-shadow:
+    0 8px 24px rgba(15, 23, 42, 0.16),
+    0 1px 2px rgba(15, 23, 42, 0.08);
+}
+@supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+  .glass {
+    background: rgba(255, 255, 255, 0.96);
+  }
+}
+.glance-header {
+  padding-top: var(--spacing-xl, 32px);
+}
+.glance-header .home-stats-v2-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 24px;
+}
+.glance-header .home-section-link:focus-visible {
+  outline: 3px solid var(--color-accent, #f77f00);
+  outline-offset: 2px;
+}
+.glance-legend {
+  position: absolute;
+  bottom: 34px;
+  left: var(--glance-edge);
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin: 0;
+  padding: 10px 14px;
+  list-style: none;
+  font-size: 12.5px;
+  color: #1a1a1a;
+}
+.glance-legend li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.glance-legend-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  font-size: 15px;
+  color: var(--color-accent, #f77f00);
+}
+.glance-rail {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+.glance-rail > * {
+  pointer-events: auto;
+}
+.glance-stats {
+  position: absolute;
+  top: 24px;
+  left: var(--glance-edge);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  width: 300px;
+}
+.glance-stat {
+  display: block;
+  padding: 12px 14px;
+  color: inherit;
+  text-decoration: none;
+}
+.glance-stat {
+  transition: all 0.2s ease;
+}
+/* Same hover as the home page Popular Services cards (.home-service-card:hover). */
+.glance-stat:hover,
+.glance-stat:focus-visible {
+  border-color: var(--color-primary, #0032a0);
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    0 4px 12px rgba(0, 50, 160, 0.1),
+    0 8px 24px rgba(15, 23, 42, 0.16);
+}
+.glance a,
+.glance a:hover,
+.glance a:focus,
+.glance a:focus-visible,
+.glance-legend li:hover {
+  text-decoration: none;
+}
+.glance-stat:focus-visible {
+  outline: 2px solid var(--color-primary, #0032a0);
+  outline-offset: 2px;
+}
+.glance .maplibregl-ctrl-attrib.maplibregl-compact {
+  margin: 0 6px 6px 0;
+}
+.glance-stat i {
+  font-size: 15px;
+  color: var(--color-primary, #0032a0);
+}
+.glance-stat-value {
+  display: block;
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.15;
+  color: var(--color-primary, #0032a0);
+}
+.glance-stat-value--text {
+  font-size: 16px;
+}
+.glance-stat-label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+}
+.glance-stat-source {
+  display: block;
+  margin-top: 2px;
+  font-size: 11px;
+  color: var(--color-text-light, #666);
+}
+.glance a:focus-visible {
+  outline: 3px solid var(--color-accent, #f77f00);
+  outline-offset: 2px;
+}
+.glance-wx {
+  position: absolute;
+  right: var(--glance-edge);
+  bottom: 40px;
+  width: 280px;
+  padding: 14px 16px;
+}
+#weather-container.glance-wx {
+  height: auto;
+}
+.glance-wx .weather-widget,
+.glance-wx .weather-loading {
+  height: auto;
+  padding: 0;
+  background: none;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+.glance-wx .weather-current {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+}
+.glance-wx .weather-current-icon i {
+  font-size: 40px;
+  color: var(--color-primary, #0032a0);
+}
+.glance-wx .weather-current-temp {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 1;
+}
+.glance-wx .weather-current-condition {
+  font-size: 13px;
+  font-weight: 600;
+}
+.glance-wx .weather-current-location {
+  font-size: 11px;
+  color: var(--color-text-light, #666);
+}
+.glance-wx .weather-stats {
+  display: flex;
+  gap: 14px;
+  margin: 10px 0;
+  padding: 0;
+  border: 0;
+  font-size: 12px;
+  color: #333;
+}
+.glance-wx .weather-stat {
+  display: flex;
+  gap: 4px;
+  padding: 0;
+  background: none;
+}
+.glance-wx .weather-hourly {
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 6px;
+}
+.glance-wx .weather-hour {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0;
+  padding: 6px 0;
+  font-size: 11px;
+  text-align: center;
+  background: rgba(0, 50, 160, 0.06);
+  border-radius: 8px;
+}
+.glance-wx .weather-hour i {
+  margin: 2px 0;
+  color: var(--color-primary, #0032a0);
+}
+.glance-wx .weather-hour-temp {
+  font-size: 12px;
+  font-weight: 700;
+}
+.glance-wx-credit {
+  margin: 6px 0 0;
+  font-size: 11px;
+  color: #666;
+}
+.glance-wx-credit a {
+  color: inherit;
+}
+.glance .maplibregl-ctrl-top-right {
+  top: 20px;
+  right: 12px;
+}
+.glance .maplibregl-ctrl-attrib {
+  font-size: 11px;
+}
+@media (max-width: 1199px) and (min-width: 1025px) {
+  .glance {
+    --glance-max: 960px;
+  }
+}
+@media (max-width: 767px) {
+  .glance {
+    --glance-pad: var(--spacing-sm, 16px);
+  }
+}
+@media (max-width: 480px) {
+  .glance {
+    --glance-pad: var(--spacing-xs, 8px);
+  }
+}
+@media (max-width: 768px) {
+  .glance {
+    height: 70vh;
+    min-height: 520px;
+  }
+  .glance-header .home-stats-v2-header {
+    flex-direction: row;
+    margin-bottom: 14px;
+    text-align: left;
+  }
+  .glance-legend {
+    top: 10px;
+    bottom: auto;
+    left: 10px;
+    flex-direction: row;
+    gap: 10px;
+    padding: 5px 9px;
+    font-size: 10.5px;
+    white-space: nowrap;
+  }
+  .glance-legend li {
+    gap: 4px;
+  }
+  .glance-legend-icon {
+    width: 11px;
+    height: 11px;
+    font-size: 11px;
+  }
+  .glance-header h2 {
+    font-size: 1.125rem;
+  }
+  .glance-header .home-section-link {
+    font-size: 0.875rem;
+  }
+  .glance .maplibregl-ctrl-top-right {
+    top: auto;
+    bottom: 208px;
+  }
+  .glance-rail {
+    inset: auto 0 44px 0;
+    display: flex;
+    gap: 8px;
+    padding: 0 var(--glance-pad) 4px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-padding-inline: var(--glance-pad);
+    scrollbar-width: none;
+  }
+  .glance-stats {
+    display: contents;
+  }
+  .glance-wx {
+    position: static;
+    order: -1;
+    flex: 0 0 auto;
+    width: 236px;
+    padding: 10px 12px;
+    scroll-snap-align: start;
+  }
+  .glance-stat {
+    flex: 0 0 auto;
+    width: 140px;
+    scroll-snap-align: start;
+  }
+  .glance-wx .weather-hourly,
+  .glance-wx-credit {
+    display: none;
+  }
+  .glance-wx .weather-stats {
+    margin: 6px 0 0;
+  }
+}
